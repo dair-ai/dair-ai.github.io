@@ -1,27 +1,8 @@
 ---
-sitemap: false
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-/*
- *
- *  Moon
- *
- *  Designer: Taylan Tatlı
- *  WEB: http://taylantatli.me
- *
-*/
+@charset "utf-8";
 
-// Partials
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "site";
-@import "typography";
-@import "elements";
-@import "syntax";
-@import "nav";
-@import "vendor/fonts";
-@import "vendor/font-awesome";
-@import "vendor/animate";
-@import "vendor/magnific-popup/magnific-popup";
-@import "print"
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

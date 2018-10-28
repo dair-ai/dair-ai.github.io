@@ -1,3 +1,15 @@
-{% assign wpm = site.words_per_minute | append: '.0' %}
-{% assign readtime = content | strip_html | number_of_words | divided_by:wpm | round %}
-Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+{% assign words_per_minute = site.words_per_minute | default: 200 %}
+
+{% if post.read_time %}
+  {% assign words = post.content | strip_html | number_of_words %}
+{% elsif page.read_time %}
+  {% assign words = page.content | strip_html | number_of_words %}
+{% endif %}
+
+{% if words < words_per_minute %}
+  {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+{% elsif words == words_per_minute %}
+  1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+{% else %}
+  {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+{% endif %}

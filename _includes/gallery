@@ -1,21 +1,51 @@
-{% assign images = include.images | split:" " %}
-{% assign caption = include.caption %}
-{% assign cols = include.cols %}
+{% if include.id %}
+  {% assign gallery = page[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
 
-{% case cols %}
-    {% when 1 %}
-        {% assign class = "" %}
-    {% when 2 %}
-        {% assign class = "half" %}
-    {% when 3 %}
-        {% assign class = "third" %}
+{% if include.layout %}
+  {% assign gallery_layout = include.layout %}
+{% else %}
+  {% if gallery.size == 2 %}
+    {% assign gallery_layout = 'half' %}
+  {% elsif gallery.size >= 3 %}
+    {% assign gallery_layout = 'third' %}
+  {% else %}
+    {% assign gallery_layout = '' %}
+  {% endif %}
+{% endif %}
+
+<figure class="{{ gallery_layout }} {{ include.class }}">
+  {% for img in gallery %}
+    {% if img.url %}
+      <a href=
+        {% if img.url contains "://" %}
+          "{{ img.url }}"
+        {% else %}
+          "{{ img.url | relative_url }}"
+        {% endif %}
+        {% if img.title %}title="{{ img.title }}"{% endif %}
+      >
+        <img src=
+          {% if img.image_path contains "://" %}
+            "{{ img.image_path }}"
+          {% else %}
+            "{{ img.image_path | relative_url }}"
+          {% endif %}
+          alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+      </a>
     {% else %}
-        {% assign class = "" %}
-{% endcase %}
-
-<figure {% if class != "" %}class="{{ class }}"{% endif %}>
-    {% for image in images %}
-    <a href="{{ image }}"><img src="{{ image }}" alt=""></a>
-    {% endfor %}
-    <figcaption>{{ caption }}</figcaption>
+      <img src=
+        {% if img.image_path contains "://" %}
+          "{{ img.image_path }}"
+        {% else %}
+          "{{ img.image_path | relative_url }}"
+        {% endif %}
+        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+    {% endif %}
+  {% endfor %}
+  {% if include.caption %}
+    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
 </figure>
