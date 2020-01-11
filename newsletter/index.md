@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About dair.ai
+title: NLP Newsletter
 tags: [about, Jekyll, theme, responsive]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: false
@@ -10,4 +10,4 @@ image:
   creditlink: http://www.ibelmopan.com/
 ---
 
-dair.ai is a community effort to democratize Artificial Intelligence (AI) research, education, and technologies.
+Comging soon!
