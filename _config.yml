@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title:            Elvis Saravia
+title:            dair.ai
 locale:           en_US
-url:              http://elvissaravia.com
+url:              http://dair.ai
 
 
 # Jekyll configuration
@@ -28,16 +28,16 @@ kramdown:
 
 # Site owner
 owner:
-  name: Elvis Saravia
+  name: DAIR
   avatar: white_background_elvis.jpg
-  bio: "Researcher in Machine Learning and Natural Language Processing - Affective Computing - Computational Social Science - Computational Health"
+  bio: "Democratizing Artificial Intelligence Research, Education, and Technologies"
   email: ellfae@gmail.com
   disqus-shortname: elvissaravia
-  twitter: omarsar0
+  twitter:
   facebook:
   google:
     plus: #OmarSar27
-    analytics: UA-75648820-1
+    analytics:
     verify:
     ad-client:
     ad-slot:
