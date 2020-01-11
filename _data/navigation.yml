@@ -6,38 +6,20 @@
 - title: About
   url: /about/
 
-- title: Speaking
-  url: /activities/
-
-#- title: Bleets
-#  url: /bleets/
-
 - title: Projects
   url: /projects/
 
-- title: DAIR.AI
+- title: Medium
   url: https://medium.com/dair-ai
-#- title: Projects
-#  url: /projects/
 
-#- title: Books
-#  url: /books/
-
-#- title: Courses
-#  url: /books/
-
-- title: NLP Overview 
+- title: NLP Overview
   url: https://nlpoverview.com/
 
-- title: 2018 NLP Highlights (PDF)
-  url: https://github.com/omarsar/nlp_highlights
-
-#- title: Speaking
-#  url: /books/
+- title: 2019 NLP Highlights (PDF)
+  url: https://github.com/dair-ai/nlp_highlights
 
 - title: NLP Newsletter
   url: /subscribe/
-  #url: https://goo.gl/forms/zLiYBvLdsHo37Dei1
 
 #- title: Theme Setup
 #  url: /theme-setup/
