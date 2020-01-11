@@ -28,8 +28,8 @@ kramdown:
 
 # Site owner
 owner:
-  name: DAIR
-  avatar: white_background_elvis.jpg
+  name: DAIR.ai
+  avatar: dair-ai.png
   bio: "Democratizing Artificial Intelligence Research, Education, and Technologies"
   email: ellfae@gmail.com
   disqus-shortname: elvissaravia
