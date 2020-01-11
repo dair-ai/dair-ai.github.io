@@ -1,0 +1,11 @@
+---
+layout: {{ layout }}
+title: {{ title }}
+modified:
+categories: {{ dir }}
+excerpt:
+tags: []
+image: {{ image }}
+  thumb: {{ thumb }}
+  feature: {{ feature }}
+---

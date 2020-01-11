@@ -1,4 +1,2 @@
-# dair.ai
-Artificial Intelligence Research, Perspectives, and Technologies
-
-Website: [dair.ai](dair.ai)
+## My Personal Blog using Jekyll
+Output: [Link](http://elvissaravia.com)

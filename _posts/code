@@ -1,0 +1,2 @@
+<!--{% if post.type == "project" %}-->
+      <!--<a href="href="{{site.url}}{{post.url}}""><img src="{{post.image}}"></img></a>-->
