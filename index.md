@@ -1,9 +1,9 @@
 ---
 layout: home
-excerpt: "Elvis Saravia - From an academic point of view"
+excerpt: "Democratizing Artificial Intelligence Research, Education, and Technologies"
 tags: []
 image:
-  feature: front-quote.jpg
+  feature: dair-header.png
   credit: iBelmopan
   creditlink: http://www.ibelmopan.com/
 ---
