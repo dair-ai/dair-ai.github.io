@@ -22,17 +22,23 @@ Hello and Happy New Year! Due to numerous requests, I have decided to bring back
 # Publications 📙
 
 ***AI system for breast cancer screening***
+
+\\
 DeepMind published a new paper in Nature titled “[International evaluation of an AI system for breast cancer screening](https://www.nature.com/articles/s41586-019-1799-6)”. According to the authors, the work is about the evaluation of an AI system that surpasses human experts in breast cancer screening. Whether this is actually achievable by current AI systems is still up for debate and there has been continuous criticism on this type of system and how they are evaluated. Here is [short summary](https://www.nature.com/articles/d41586-019-03822-8) of the paper.
 
 \\
 ***Information Extraction***
+
+\\
 Pankaj Gupta publicly released his Ph.D. Thesis titled “[Neural Information Extraction From Natural Language Text](https://www.researchgate.net/publication/336739252_PhD_Thesis_Neural_Information_Extraction_From_Natural_Language_Text)”. The main discussion is how to efficiently extract the semantic relationships from natural language text using neural-based approaches. Such research effort aims to contribute to building structured knowledge bases, that can be used in a series of downstream NLP applications such as web search, question-answering, among other tasks.
 
 \\
 ***Improved recommendations***
-Researchers at MIT and IBM developed a [method](http://news.mit.edu/2019/finding-good-read-among-billions-of-choices-1220) (published at NeurIPS last year) for categorizing, surfacing, and searching relevant documents based on a combination of three widely-used text-analysis tools: *topic modeling*, *word embeddings*, and *optimal transport*. The method also gives promising results for sorting documents. Such methods are applicable in a wide variety of scenarios and applications that require improved and faster suggestions on large-scale data such as search and recommendation systems.
 
 \\
+Researchers at MIT and IBM developed a [method](http://news.mit.edu/2019/finding-good-read-among-billions-of-choices-1220) (published at NeurIPS last year) for categorizing, surfacing, and searching relevant documents based on a combination of three widely-used text-analysis tools: *topic modeling*, *word embeddings*, and *optimal transport*. The method also gives promising results for sorting documents. Such methods are applicable in a wide variety of scenarios and applications that require improved and faster suggestions on large-scale data such as search and recommendation systems.
+
+
 # ML and NLP Creativity and Society 🎨
 
 ***AI careers***
@@ -80,8 +86,8 @@ If you are curious about how contextualized representations can be applied to se
 \\
 [TorchIO](https://github.com/fepegar/torchio) is a Python package based on the popular deep learning library called PyTorch. TorchIO offers functionalities to easily and efficiently read and sample 3D medical images. Features include spatial transforms for data augmentation and preprocessing.
 
+\\
 ![](https://cdn-images-1.medium.com/max/1600/0*FSPuSC8TK9X-NQ2q.gif)
-
 
 [source](https://github.com/fepegar/torchio)
 
@@ -126,6 +132,7 @@ Benjamin Heinzerling published an interesting article in The Gradient where he d
 For the new year, I released a [report](https://medium.com/dair-ai/nlp-year-in-review-2019-fb8d523bcb19) documenting some of the most interesting NLP and ML highlights that I came across in 2019.
 Sebastian Ruder also recently wrote an excellent and detailed [blog post](https://ruder.io/research-highlights-2019/) about the top ten ML and NLP research directions that he found impactful in 2019. Among the list are topics such as universal unsupervised pretraining, ML and NLP applied to science, augmenting pretrained models, efficient and long-range Transformers, among others.
 
+\\
 ![](https://cdn-images-1.medium.com/max/1600/0*8zoPc5OnYERIaaMP.png)
 
 *“VideoBERT (*[*Sun et al., 2019*](https://arxiv.org/abs/1904.01766)*), a recent multimodal variant of BERT that generates video “tokens” given a recipe (above) and predicts future tokens at different time scales given a video token (below).” —* [*source*](https://arxiv.org/pdf/1904.01766.pdf)
