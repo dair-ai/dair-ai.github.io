@@ -10,8 +10,6 @@ image:
   thumb: nlp_newsletter_1.png
 ---
 
-----------
-
 
 ![](https://cdn-images-1.medium.com/max/2400/1*gLVPodYjYd4YaF9sJbSpjg.png)
 
