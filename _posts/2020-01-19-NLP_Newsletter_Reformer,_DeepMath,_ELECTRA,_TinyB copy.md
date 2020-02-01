@@ -237,6 +237,3 @@ Chris Said shares his [experience](https://chris-said.io/2020/01/10/optimizing-s
 
 \\
 Neural Data Server (NDS) is a dedicated search engine for obtaining transfer learning data. Read about the method [here](https://arxiv.org/abs/2001.02799) and the service [here](http://aidemos.cs.toronto.edu/nds/).
-
-
-----------
