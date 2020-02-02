@@ -5,7 +5,7 @@
 <!-- Asynchronous Google Analytics snippet -->
 <script>
   var _gaq = _gaq || [];
-  var pluginUrl = 
+  var pluginUrl =
  '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
   _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', '{{ site.owner.google.analytics }}']);
@@ -17,6 +17,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 {% endif %}
 {% if page.comments %}
   {% include _disqus_comments.html %}
