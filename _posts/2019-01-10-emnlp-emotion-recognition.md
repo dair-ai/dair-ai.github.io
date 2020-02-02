@@ -3,6 +3,7 @@ layout: post
 title: "EMNLP 2018 Oral Presentation on Affective Computing (Emotion Recognition)"
 author: billy_rick
 modified:
+excerpt: "NLP Newsletter"
 comments: true
 excerpt: "EMNLP 2018 Oral Presentation on Affective Computing (Emotion Recognition)"
 tags: []

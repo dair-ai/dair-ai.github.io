@@ -2,11 +2,15 @@
 layout: page
 title: NLP Newsletter
 modified:
+excerpt: "NLP Newsletter brought to you by dair.ai"
 comments: false
 image:
   thumb: nlp_newsletter.png
 ---
 
+![alt txt](https://github.com/omarsar/omarsar.github.io/blob/master/images/nlp_newsletter.png?raw=true)
+
+\\
 [Follow on GitHub](https://github.com/dair-ai/nlp_newsletter)
 
 \\
