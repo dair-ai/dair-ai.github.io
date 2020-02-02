@@ -1,14 +1,10 @@
 ---
 layout: page
 title: NLP Newsletter
-tags: [nlp_newsletter]
 modified:
 comments: false
 image:
-  feature: nlp_newsletter.png
   thumb: nlp_newsletter.png
-  credit: dair.ai
-  creditlink: https://dair.ai/
 ---
 
 [Follow on GitHub](https://github.com/dair-ai/nlp_newsletter)
