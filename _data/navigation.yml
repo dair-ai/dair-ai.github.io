@@ -6,8 +6,14 @@
 - title: About
   url: /about/
 
+- title: NLP Newsletter
+  url: /newsletter/
+
 - title: Projects
   url: /projects/
+
+- title: GitHub
+  url: https://github.com/dair-ai
 
 - title: Medium
   url: https://medium.com/dair-ai
@@ -18,8 +24,6 @@
 - title: 2019 NLP Highlights (PDF)
   url: https://github.com/dair-ai/nlp_highlights
 
-- title: NLP Newsletter
-  url: /newsletter/
 
 #- title: Theme Setup
 #  url: /theme-setup/
