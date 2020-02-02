@@ -8,7 +8,7 @@ image:
   thumb: nlp_newsletter.png
 ---
 
-![alt txt](https://github.com/dair-ai/dair-ai.github.io/tree/master/images/nlp_newsletter.png?raw=true)
+![alt txt](https://github.com/dair-ai/dair-ai.github.io/blob/master/images/nlp_newsletter.png?raw=true)
 
 \\
 [Follow on GitHub](https://github.com/dair-ai/nlp_newsletter)
