@@ -142,6 +142,8 @@ Lyft 发布了Flyte[32]，它是一个多租户，可用于生产的无服务器
 
 \\
 **3.5 A tool for conversational AI**
+
+\\
 开源对话式 AI 框架DeepPavlov[33]为构建对话系统和复杂的对话系统提供了免费且易于使用的解决方案。DeepPavlov 带有几个预定义的组件，用于解决与 NLP 相关的问题。它将 BERT（包括会话 BERT）集成到三个下游任务中：文本分类，命名实体识别（和一般的序列标记）以及问题解答。结果，它在所有这些任务上都取得了重大改进。(Google Colab[34] | Blog[35] | Demo[36])
 
 
@@ -259,57 +261,165 @@ An Opinionated Guide to ML Research[55]：John Schulman 就如何更好地选择
 ----------
 
 [1] **RobBERT:** [https://arxiv.org/abs/2001.06286](https://arxiv.org/abs/2001.06286)
+
+\\
 [2] **BERTje:** [https://arxiv.org/abs/1912.09582](https://arxiv.org/abs/1912.09582)
+
+\\
 [3] **德语 German BERT:** [https://deepset.ai/german-bert](https://deepset.ai/german-bert)
+
+\\
 [4] **葡萄牙语 Portuguese BERT:** [https://github.com/neuralmind-ai/portuguese-bert](https://github.com/neuralmind-ai/portuguese-bert)
+
+\\
 [5] **CamemBERT:** [https://arxiv.org/abs/1911.03894](https://arxiv.org/abs/1911.03894)
+
+\\
 [6] **FlauBERT:** [https://arxiv.org/abs/1912.05372](https://arxiv.org/abs/1912.05372)
+
+\\
 [7] **AlBERTo:** [http://ceur-ws.org/Vol-2481/paper57.pdf](http://ceur-ws.org/Vol-2481/paper57.pdf)
+
+\\
 [8] **UmBERTo:** [https://github.com/musixmatchresearch/umberto](https://github.com/musixmatchresearch/umberto)
+
+\\
 [9] **BETO:** [https://github.com/dccuchile/beto](https://github.com/dccuchile/beto)
+
+\\
 [10] **araBERT:** [https://colab.research.google.com/drive/1KSy89fAkWt6EGfnFQElDjXrBror9lIZh](https://colab.research.google.com/drive/1KSy89fAkWt6EGfnFQElDjXrBror9lIZh)
+
+\\
 [11] **Transformer 库:** [https://huggingface.co/models](https://huggingface.co/models)
+
+\\
 [12] **2.4.1:** [https://github.com/huggingface/transformers/releases](https://github.com/huggingface/transformers/releases)
+
+\\
 [13] **论文:** [https://arxiv.org/abs/2001.06296](https://arxiv.org/abs/2001.06296)
+
+\\
 [14] **hallucination :** [https://arxiv.org/abs/1910.08684](https://arxiv.org/abs/1910.08684)
+
+\\
 [15] **LaserTagger:** [https://ai.googleblog.com/2020/01/encode-tag-and-realize-controllable-and.html](https://ai.googleblog.com/2020/01/encode-tag-and-realize-controllable-and.html)
+
+\\
 [16] **报告:** [https://arxiv.org/abs/2001.07092](https://arxiv.org/abs/2001.07092)
+
+\\
 [17] **mBART:** [https://arxiv.org/pdf/2001.08210.pdf](https://arxiv.org/pdf/2001.08210.pdf)
+
+\\
 [18] **Meena:** [https://ai.googleblog.com/2020/01/towards-conversational-agent-that-can.html](https://ai.googleblog.com/2020/01/towards-conversational-agent-that-can.html)
+
+\\
 [19] **关于这项工作的想法:** [https://venturebeat.com/2020/01/31/with-googles-meena-are-ai-assistants-about-to-get-a-lot-smarter/](https://venturebeat.com/2020/01/31/with-googles-meena-are-ai-assistants-about-to-get-a-lot-smarter/)
+
+\\
 [20] **Albert Learns to Read:** [https://littlealbert.now.sh/#/](https://littlealbert.now.sh/#/)
+
+\\
 [21] **ALBERT:** [https://ai.googleblog.com/2019/12/albert-lite-bert-for-self-supervised.html](https://ai.googleblog.com/2019/12/albert-lite-bert-for-self-supervised.html)
+
+\\
 [22] **博客 Teaching Machines to Read:** [https://www.spark64.com/post/machine-comprehension](https://www.spark64.com/post/machine-comprehension)
+
+\\
 [23] **A Self-Taught AI Researcher at Google:** [https://blog.floydhub.com/emils-story-as-a-self-taught-ai-researcher/](https://blog.floydhub.com/emils-story-as-a-self-taught-ai-researcher/)
+
+\\
 [24] **Google 数据集搜索:** [https://blog.google/products/search/discovering-millions-datasets-web/](https://blog.google/products/search/discovering-millions-datasets-web/)
+
+\\
 [25] **Big Bad NLP 数据库:** [https://quantumstat.com/dataset/dataset.html](https://quantumstat.com/dataset/dataset.html)
+
+\\
 [26] **PyTorch 库:** [https://github.com/cpnota/autonomous-learning-library](https://github.com/cpnota/autonomous-learning-library)
+
+\\
 [27] **Captum:** [https://captum.ai/](https://captum.ai/)
+
+\\
 [28] **这套教程:** [https://www.kaggle.com/learn/machine-learning-explainability](https://www.kaggle.com/learn/machine-learning-explainability)
+
+\\
 [29] **Flax:** [https://github.com/google-research/flax/tree/prerelease](https://github.com/google-research/flax/tree/prerelease)
+
+\\
 [30] **JAX:** [https://github.com/google/jax](https://github.com/google/jax)
+
+\\
 [31] **Thinc:** [https://thinc.ai/](https://thinc.ai/)
+
+\\
 [32] **Flyte:** [https://eng.lyft.com/introducing-flyte-cloud-native-machine-learning-and-data-processing-platform-fb2bb3046a59](https://eng.lyft.com/introducing-flyte-cloud-native-machine-learning-and-data-processing-platform-fb2bb3046a59)
+
+\\
 [33] **DeepPavlov:** [https://github.com/deepmipt/DeepPavlov](https://github.com/deepmipt/DeepPavlov)
+
+\\
 [34] **Google Colab:** [https://colab.research.google.com/github/deepmipt/dp_notebooks/blob/master/DP_tf.ipynb](https://colab.research.google.com/github/deepmipt/dp_notebooks/blob/master/DP_tf.ipynb)
+
+\\
 [35] **Blog:** [https://medium.com/tensorflow/deeppavlov-an-open-source-library-for-end-to-end-dialog-systems-and-chatbots-31cf26849e37](https://medium.com/tensorflow/deeppavlov-an-open-source-library-for-end-to-end-dialog-systems-and-chatbots-31cf26849e37)
+
+\\
 [36] **Demo:** [https://demo.deeppavlov.ai/#/en/textqa](https://demo.deeppavlov.ai/#/en/textqa)
+
+\\
 [37] **此处:** [https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html](https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html)
+
+\\
 [38] **这个报告:** [https://fortune.com/longform/ai-artificial-intelligence-big-tech-microsoft-alphabet-openai/](https://fortune.com/longform/ai-artificial-intelligence-big-tech-microsoft-alphabet-openai/)
+
+\\
 [39] **这份非常详尽的报告:** [https://www.turing.ac.uk/sites/default/files/2019-06/understanding_artificial_intelligence_ethics_and_safety.pdf](https://www.turing.ac.uk/sites/default/files/2019-06/understanding_artificial_intelligence_ethics_and_safety.pdf)
+
+\\
 [40] **这篇文章:** [https://towardsdatascience.com/a-small-timing-experiment-on-the-new-tokenizers-library-a-write-up-7caab6f80ea6](https://towardsdatascience.com/a-small-timing-experiment-on-the-new-tokenizers-library-a-write-up-7caab6f80ea6)
+
+\\
 [41] **HuggingFace 的新 Tokenizer 库:** [https://github.com/huggingface/tokenizers](https://github.com/huggingface/tokenizers)
+
+\\
 [42] **Gary Marcus 的这篇文章:** [https://thegradient.pub/gpt2-and-the-nature-of-intelligence/](https://thegradient.pub/gpt2-and-the-nature-of-intelligence/)
+
+\\
 [43] **几种基于课程的方法:** [https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html](https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html)
+
+\\
 [44] **非常详细的 numpy 教程:** [https://numpy.org/devdocs/user/absolute_beginners.html](https://numpy.org/devdocs/user/absolute_beginners.html)
+
+\\
 [45] **视频播放列表:** [https://www.youtube.com/playlist?list=PLVNifWxslHCDlbyitaLLYBOAEPbmF1AHg](https://www.youtube.com/playlist?list=PLVNifWxslHCDlbyitaLLYBOAEPbmF1AHg)
+
+\\
 [46] **课程提纲:** [http://tensorlab.cms.caltech.edu/users/anima/cms165-2020.html](http://tensorlab.cms.caltech.edu/users/anima/cms165-2020.html)
+
+\\
 [47] **深度学习讲座系列:** [https://www.eventbrite.co.uk/o/ucl-x-deepmind-deep-learning-lecture-series-general-29078980901](https://www.eventbrite.co.uk/o/ucl-x-deepmind-deep-learning-lecture-series-general-29078980901)
+
+\\
 [48] **Open Syllabus:** [https://opensyllabus.org/](https://opensyllabus.org/)
+
+\\
 [49] **r/ResearchML:** [https://www.reddit.com/r/ResearchML/](https://www.reddit.com/r/ResearchML/)
+
+\\
 [50] **PracticalAI:** [https://practicalai.me/explore/content/](https://practicalai.me/explore/content/)
+
+\\
 [51] **How we built the good first issues feature:** [https://github.blog/2020-01-22-how-we-built-good-first-issues/](https://github.blog/2020-01-22-how-we-built-good-first-issues/)
+
+\\
 [52] **NLP News:** [http://newsletter.ruder.io/issues/nlp-progress-restrospectives-and-look-ahead-new-nlp-courses-independent-research-initiatives-interviews-lots-of-resources-217744](http://newsletter.ruder.io/issues/nlp-progress-restrospectives-and-look-ahead-new-nlp-courses-independent-research-initiatives-interviews-lots-of-resources-217744)
+
+\\
 [53] **TensorFlow 2.0 深度学习 notebook:** [https://github.com/NERSC/dl4sci-tf-tutorials](https://github.com/NERSC/dl4sci-tf-tutorials)
+
+\\
 [54] **贝叶斯神经网络:** [https://engineering.papercup.com/posts/bayesian-neural-nets/](https://engineering.papercup.com/posts/bayesian-neural-nets/)
+
+\\
 [55] **An Opinionated Guide to ML Research:** [http://joschu.net/blog/opinionated-guide-ml-research.html](http://joschu.net/blog/opinionated-guide-ml-research.html)
