@@ -13,6 +13,8 @@ image:
 
 ![](https://cdn-images-1.medium.com/max/2400/1*qaOM0D2tfy3chvnWRdycGA.png)
 
+\\
+**Thanks to [Kaiyuan](https://blog.csdn.net/Kaiyuan_sjtu) (WeChat: NewBeeNLP) for this great translation.**
 
 \\
 欢迎来到 NLP 时事简报！涵盖了诸如特定语言 BERT 模型、免费数据集、深度学习库等主题。
