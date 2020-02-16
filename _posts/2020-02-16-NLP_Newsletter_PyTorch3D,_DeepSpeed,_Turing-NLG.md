@@ -88,6 +88,7 @@ François Chollet has recently posted a [Kaggle competition](https://www.kaggle.
 \\
 ***ML and NLP Publications in 2019***
 
+\\
 Marek Rei releases his [yearly analysis](https://www.marekrei.com/blog/ml-and-nlp-publications-in-2019/) of machine learning and NLP publication statistics from 2019. The conferences included in the analysis are ACL, EMNLP, NAACL, EACL, COLING, TACL, CL, CoNLL, NeurIPS, ICML, ICLR, and AAAI.
 
 \\

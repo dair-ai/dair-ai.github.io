@@ -17,7 +17,7 @@ image:
 The NLP newsletter provides (weekly or biweekly) quick summaries of some of the latest natural language processing (NLP) and machine learning (ML) stories across a range of important categories such as fairness & ethics, society, educational resources, publications, etc. Tips to Elvis Saravia via ellfae@gmail.com or [Twitter](https://twitter.com/omarsar0).
 
 \\
-**NLP Newsletter Issue #4 (Feb 16, 2020)** - [PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…]()
+**NLP Newsletter Issue #4 (Feb 16, 2020)** - [PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…](https://dair.ai/NLP_Newsletter_PyTorch3D,_DeepSpeed,_Turing-NLG/)
 
 \\
 **NLP Newsletter Issue #3 (Feb 2, 2020)** - [Flax, Thinc, Language-specific BERT models, Meena, Flyte, LaserTagger,.…](https://dair.ai/NLP_Newsletter_Flax,_Thinc,_Language-specific_BERT/)
