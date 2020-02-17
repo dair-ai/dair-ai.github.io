@@ -22,7 +22,7 @@ image:
 \\
 另外加了目录方便直接索引到自己感兴趣的部分。enjoy
 
-\\
+
 - **1、Publications 📙**
     - 1.1 Turing-NLG:
     - 1.2 Neural based Dependency Parsing
@@ -126,14 +126,20 @@ REALM [9] 是基于神经的大规模检索方法，该方法利用文本知识�
 
 \\
 **2.2 Abstraction and Reasoning Challenge**
+
+\\
 FrançoisChollet 最近发布了一个 Kaggle 竞赛，他发布了抽象推理语料库（ARC）[12]，旨在鼓励用户创建可以解决从未接触过的推理任务的 AI 系统。希望能够开始构建更强大的 AI 系统，从而能够更好，快速地自行解决新问题，这可能有助于解决更具挑战性的现实应用，例如改善在极端和多样化环境中运行的自动驾驶汽车 。
 
 \\
 **2.3 ML and NLP Publications in 2019**
+
+\\
 Marek Rei 发布机器学习和 NLP 领域 2019 年出版数据统计[13]，分析中包括的会议是 ACL，EMNLP，NAACL，EACL，COLING，TACL，CL，CoNLL，NeurIPS，ICML，ICLR 和 AAAI。
 
 \\
 **2.4 Growing Neural Cellular Automata**
+
+\\
 `Morphogenesis`是一个自组织过程，通过该过程，蝾螈等某些生物可以再生或修复身体损伤。该过程对于扰动是鲁棒的，并且本质上是自适应的。受这种生物学现象的启发，需要更好地了解这一过程，研究人员发表了一篇题为"Growing Neural Cellular Automata"[14]的论文，该论文采用了可区分的形态发生模型，旨在复制自我修复系统的行为和特性，并希望能够制造出具有与生物生命相同的坚固性和可塑性的自我修复 machines。此外，这将有助于更好地了解再生过程本身， 许多应用注入再生医学以及社会和生物系统的建模等都将受益。
 
 \\
@@ -148,6 +154,7 @@ Hendrik Strobelt 开源项目显示了如何使用 Hugging Face 库和 d3.js 通
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*lMaZGDRJUI1Qcv7T5AdhlQ.gif)
 
+\\
 **2.6 SketchTransfer**
 
 \\
