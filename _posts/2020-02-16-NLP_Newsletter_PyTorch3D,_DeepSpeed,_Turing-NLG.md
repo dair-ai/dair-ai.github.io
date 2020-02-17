@@ -152,7 +152,7 @@ Microsoft open sources a training optimization library called DeepSpeed, which i
 ***Managing Configuration of ML projects***
 
 \\
-Hydra is a Python-based configuration tool for more efficiently managing complex ML projects. It is meant to help PyTorch researchers by offering functional reuse of configurations for ML projects. The main benefit it offers is that it allows the programmer to *compose the configuration like composing code*, which means the configuration file can be easily overridden. Hydra can also help with automatically managing the working directory of your ML project outputs which is useful when needing to save and accessing the results of several experiments for multiple jobs. Learn more about it [here](https://medium.com/pytorch/hydra-a-fresh-look-at-configuration-for-machine-learning-projects-50583186b710%27).
+Hydra is a Python-based configuration tool for more efficiently managing complex ML projects. It is meant to help PyTorch researchers by offering functional reuse of configurations for ML projects. The main benefit it offers is that it allows the programmer to *compose the configuration like composing code*, which means the configuration file can be easily overridden. Hydra can also help with automatically managing the working directory of your ML project outputs which is useful when needing to save and accessing the results of several experiments for multiple jobs. Learn more about it [here](https://medium.com/pytorch/hydra-a-fresh-look-at-configuration-for-machine-learning-projects-50583186b710).
 
 \\
 ***A Toolkit for Causal Inferencing with Bayesian Networks***
