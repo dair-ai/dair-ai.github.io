@@ -11,7 +11,7 @@ Olá e Feliz Ano Novo! Devido a vários pedidos, eu decidi trazer de volta a **N
 
 # Publicações 📙
 
-***Sistema de IA para ressonância de câncer de mama ***
+***Sistema de IA para ressonância de câncer de mama***
 A DeepMind publicou um novo artigo na Nature intitulado “[International evaluation of an AI system for breast cancer screening](https://www.nature.com/articles/s41586-019-1799-6)” (Avaliação internacional de um sistema de IA para ressonância de câncer de mama). De acordo com os autores, o trabalho é sobre a avaliação de um sistema de IA que ultrapassa especialistas humanos na ressonância de câncer de mama. Se isso é realmente alcançável pelos sistemas de IA atuais ainda está em debate e há uma crítica contínua nesse tipo de sistema e como ele é avaliado. Aqui está um [pequeno resumo](https://www.nature.com/articles/d41586-019-03822-8) do artigo.
 
 ***Extração de Informação***
