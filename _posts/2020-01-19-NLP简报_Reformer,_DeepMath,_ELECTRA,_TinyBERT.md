@@ -266,8 +266,10 @@ Chris Said 分享了他在优化 A/B 测试样本量[39]方面的经验，这是
 \\
 Neural Data Server (NDS)[40] 是用于获取转移学习数据的专用搜索引擎， 在此处阅读有关方法和服务[41]的信息。
 
-
+\\
 **本文参考资料**
+
+\\
 [1] **Can You Trust Your Model's Uncertainty?:** https://arxiv.org/abs/1906.02530
 
 \\
