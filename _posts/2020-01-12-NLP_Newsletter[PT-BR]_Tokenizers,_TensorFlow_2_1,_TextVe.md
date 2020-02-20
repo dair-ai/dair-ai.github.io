@@ -1,6 +1,14 @@
-# NLP Newsletter: **Tokenizadores, TensorFlow 2.1, Vetorização de Texto, TorchIO, Déficits de NLP, …**
-
-----------
+---
+layout: post
+title: "NLP Newsletter: Tokenizadores, TensorFlow 2.1, Vetorização de Texto, TorchIO, Déficits de NLP,…"
+author: billy_rick
+modified:
+comments: true
+excerpt: ""
+tags: [nlp_newsletter]
+image:
+  thumb: nlp_newsletter_1.png
+---
 
 
 ![](https://cdn-images-1.medium.com/max/2400/1*gLVPodYjYd4YaF9sJbSpjg.png)
@@ -15,7 +23,7 @@ Olá e Feliz Ano Novo! Devido a vários pedidos, eu decidi trazer de volta a **N
 A DeepMind publicou um novo artigo na Nature intitulado “[International evaluation of an AI system for breast cancer screening](https://www.nature.com/articles/s41586-019-1799-6)” (Avaliação internacional de um sistema de IA para ressonância de câncer de mama). De acordo com os autores, o trabalho é sobre a avaliação de um sistema de IA que ultrapassa especialistas humanos na ressonância de câncer de mama. Se isso é realmente alcançável pelos sistemas de IA atuais ainda está em debate e há uma crítica contínua nesse tipo de sistema e como ele é avaliado. Aqui está um [pequeno resumo](https://www.nature.com/articles/d41586-019-03822-8) do artigo.
 
 ***Extração de Informação***
-O Pankaj Gupta liberou publicamento sua tese de Ph.D. intitulada “[Neural Information Extraction From Natural Language Text](https://www.researchgate.net/publication/336739252_PhD_Thesis_Neural_Information_Extraction_From_Natural_Language_Text)” (Extração neural de informação de texto de linguagem natural). A discussão principal é como extrair eficientemente as relações semânticas de texto em linguagem natural usando abordagens neurais. Tal esforço em pesquisa visa contribuir com a construção estruturada de bases de conhecimento, que possam ser usadas em uma série de aplicações de NLP como busca na web, respostas de questões, dentre outras. 
+O Pankaj Gupta liberou publicamento sua tese de Ph.D. intitulada “[Neural Information Extraction From Natural Language Text](https://www.researchgate.net/publication/336739252_PhD_Thesis_Neural_Information_Extraction_From_Natural_Language_Text)” (Extração neural de informação de texto de linguagem natural). A discussão principal é como extrair eficientemente as relações semânticas de texto em linguagem natural usando abordagens neurais. Tal esforço em pesquisa visa contribuir com a construção estruturada de bases de conhecimento, que possam ser usadas em uma série de aplicações de NLP como busca na web, respostas de questões, dentre outras.
 
 ***Recomendações Melhoradas***
 Pesquisadores no MIT e na IBM desenvolveram um [método](http://news.mit.edu/2019/finding-good-read-among-billions-of-choices-1220) (publicado na NeurIPS ano passado) para categorização, surgimento, e busca de documentos relevantes baseados numa combinação de três ferramentas altamente usadas para análise de texto: *modelagem de tópicos*, *embeddings de palavras*, e *transporte ideal*. O método também dá resultados promissores para a classificação de documentos. Tais métodos são aplicáveis em uma grande variedade de cenários que requerem sugestões melhoradas e mais rápidas em grande escala tal como sistemas de busca e recomendação.
@@ -24,11 +32,11 @@ Pesquisadores no MIT e na IBM desenvolveram um [método](http://news.mit.edu/201
 # ML e NLP Criatividade e Sociedade 🎨
 
 ***Carreiras em IA***
-O [relatório](https://hai.stanford.edu/sites/g/files/sbiybj10986/f/ai_index_2019_report.pdf) do índice de IA de 2019 sugere que há mais demanda que suprimento de praticantes de IA. Entretanto, há vários aspectos de empregos relacionados a IA como transições de carreira e entrevistas que ainda não são propriamente definidas. 
+O [relatório](https://hai.stanford.edu/sites/g/files/sbiybj10986/f/ai_index_2019_report.pdf) do índice de IA de 2019 sugere que há mais demanda que suprimento de praticantes de IA. Entretanto, há vários aspectos de empregos relacionados a IA como transições de carreira e entrevistas que ainda não são propriamente definidas.
 
-Nesse [post](https://towardsdatascience.com/how-i-found-my-current-job-3fb22e511a1f), Vladimir Iglovivok detalha sua carreira e aventura em ML desde a construção de sistemas de recomendação tradicionais a construção de modelos espetaculares de visão computacional que ganharam competições no Kaggle. Ele agora trabalha em veículos autônomos na Lyft, mas a [jornada](https://towardsdatascience.com/how-i-found-my-current-job-3fb22e511a1f) de chegar lá não foi tão fácil. 
+Nesse [post](https://towardsdatascience.com/how-i-found-my-current-job-3fb22e511a1f), Vladimir Iglovivok detalha sua carreira e aventura em ML desde a construção de sistemas de recomendação tradicionais a construção de modelos espetaculares de visão computacional que ganharam competições no Kaggle. Ele agora trabalha em veículos autônomos na Lyft, mas a [jornada](https://towardsdatascience.com/how-i-found-my-current-job-3fb22e511a1f) de chegar lá não foi tão fácil.
 
-Se você está realmente interessado e sério em uma carreira em IA, a companhia do Andrew Ng, deeplearning.ai, fundou Workera, que visa a especificamente ajudar cientistas de dados e engenheiros de aprendizado de máquina com suas carreiras em IA. Obtenha o relatório oficial [aqui](https://workera.ai/candidates/report). 
+Se você está realmente interessado e sério em uma carreira em IA, a companhia do Andrew Ng, deeplearning.ai, fundou Workera, que visa a especificamente ajudar cientistas de dados e engenheiros de aprendizado de máquina com suas carreiras em IA. Obtenha o relatório oficial [aqui](https://workera.ai/candidates/report).
 
 
 # Ferramentas e Base de Dados de ML/NLP ⚙️
@@ -48,7 +56,7 @@ Um dos campos que fez tremendo progresso no ano passado foi NLP  com uma gama de
 
 Apesar de a busca pertencer ao campo de recuperação da informação, há uma oportunidade para construir engines que melhores a busca semântica usando técnicas modernas de NLP como representações contextualizadas de um modelo baseado em transformer como [BERT](https://arxiv.org/abs/1810.04805). O Google liberou um [post de blog](https://www.blog.google/products/search/search-language-understanding-bert/) alguns meses atrás discutindo como eles estão alavancando modelos BERT para melhorar e entender buscas.
 
-Se você está curioso sobre como representações contextualizadas podem ser aplicadas à busca usando tecnologias abertas tais como Elasticsearch e Tensorflow, você pode dar uma olhada ou nesse [post](https://towardsdatascience.com/elasticsearch-meets-bert-building-search-engine-with-elasticsearch-and-bert-9e74bf5b4cf2) ou [aqui](https://towardsdatascience.com/building-a-search-engine-with-bert-and-tensorflow-c6fdc0186c8a). 
+Se você está curioso sobre como representações contextualizadas podem ser aplicadas à busca usando tecnologias abertas tais como Elasticsearch e Tensorflow, você pode dar uma olhada ou nesse [post](https://towardsdatascience.com/elasticsearch-meets-bert-building-search-engine-with-elasticsearch-and-bert-9e74bf5b4cf2) ou [aqui](https://towardsdatascience.com/building-a-search-engine-with-bert-and-tensorflow-c6fdc0186c8a).
 
 ***Análise médica de imagem***
 
@@ -63,13 +71,13 @@ Se você está curioso sobre como representações contextualizadas podem ser ap
 # Ética em IA 🚨
 
 ***Comportamento fraudulento na comunidade de ML***
-Isso acabou de sair! O primeiro lugar de uma competição do Kaggle foi desqualificado por uma atividade fraudulenta. O time usou uma tática esperta mas irresponsável e inaceitável ao vencer o primeiro lugar da competição. Aqui está a [história completa](https://www.kaggle.com/c/petfinder-adoption-prediction/discussion/125436). Essa história realça um dos muitos dos comportamentos inaceitávies que a comunidade de aprendizado de máquina quer mitigar. O uso apropriado e ético de tecnologias de ML é o único caminho a seguir. 
+Isso acabou de sair! O primeiro lugar de uma competição do Kaggle foi desqualificado por uma atividade fraudulenta. O time usou uma tática esperta mas irresponsável e inaceitável ao vencer o primeiro lugar da competição. Aqui está a [história completa](https://www.kaggle.com/c/petfinder-adoption-prediction/discussion/125436). Essa história realça um dos muitos dos comportamentos inaceitávies que a comunidade de aprendizado de máquina quer mitigar. O uso apropriado e ético de tecnologias de ML é o único caminho a seguir.
 
 ***Viés de gênero em tradução de máquina***
 A respeito do tópico se tradução de máquina reflete viés de gênero, um grupo de pesquisadores publicou esse excelente [artigo](https://arxiv.org/abs/1809.02208) apresentando um estudo de caso usando o tradutor do Google. Uma das descobertas dos autores afirma que o tradutor do Google “exibe uma tedência forte a padrões masculinos, em particular para campos ligados a distribuições desbalanceadas de gênero tal como trabalhos STEM.”
 
 ***Viés e Justiça em ML***
-Se você quer se atualizar com tudo de ética e justiça em IA, esse é um ótimo [episódio de podcast](https://twimlai.com/twiml-talk-336-trends-in-fairness-and-ai-ethics-with-timnit-gebru/) com a participação de Timnit Gebru e apresentado por TWIML. 
+Se você quer se atualizar com tudo de ética e justiça em IA, esse é um ótimo [episódio de podcast](https://twimlai.com/twiml-talk-336-trends-in-fairness-and-ai-ethics-with-timnit-gebru/) com a participação de Timnit Gebru e apresentado por TWIML.
 
 Timit é uma pesquisadora proeminente em justiça em ML que, junto com Eun Seo Jo, publicou um [artigo](https://arxiv.org/abs/1912.10389) onde identificam cinco abordagens chave em práticas de coleta de documentos em arquivos que podem prover métodos mais confiáveis para coleta de dados em ML sociocultural. Isso pode potencialmente levar a um método de coleta de dados mais sistemático, ganhado de uma pesquisa colaborativa.
 
@@ -114,7 +122,7 @@ Aqui está uma lista de histórias dignas de nota e da sua atenção:
 
 - John Langford cuida desse incrível [blog](https://hunch.net/) que discute teoria de aprendizado de máquina
 - Muitas das tecnologias da indústria orientadas a ML têm usado máquinas de Gradient Boosting por anos. Cheque esse [post](https://opendatascience.com/xgboost-enhancement-over-gradient-boosting-machines/?utm_campaign=Learning%20Posts&utm_content=111061559&utm_medium=social&utm_source=twitter&hss_channel=tw-3018841323) introduzindo uma das bibliotecas usadas para aplicar o gradient boosting chamado XGBoost.
-- Se você está interessado em aprender como fazer o design e construir aplicações de aprendizado de máquina e levá-las à produção, Emmanual Ameisen cobre isso com esse [livro](https://www.amazon.com/Building-Machine-Learning-Powered-Applications/dp/149204511X/). 
+- Se você está interessado em aprender como fazer o design e construir aplicações de aprendizado de máquina e levá-las à produção, Emmanual Ameisen cobre isso com esse [livro](https://www.amazon.com/Building-Machine-Learning-Powered-Applications/dp/149204511X/).
 ----------
 
-*Se você tem uma história que gostaria de ser publicada na próxima edição da Newsletter de NLP, por favor mande um email para ellfae@gmail ou me mande uma mensagem via* [*Twitter*](https://twitter.com/omarsar0)*.* 
+*Se você tem uma história que gostaria de ser publicada na próxima edição da Newsletter de NLP, por favor mande um email para ellfae@gmail ou me mande uma mensagem via* [*Twitter*](https://twitter.com/omarsar0)*.*
