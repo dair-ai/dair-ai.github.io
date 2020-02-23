@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP简报: Reformer, DeepMath, ELECTRA, TinyBERT for Search, VizSeq, Open-Sourcing ML,…"
+title: "NLP简报 [CH]: Reformer, DeepMath, ELECTRA, TinyBERT for Search, VizSeq, Open-Sourcing ML,…"
 author: billy_rick
 modified:
 comments: true
