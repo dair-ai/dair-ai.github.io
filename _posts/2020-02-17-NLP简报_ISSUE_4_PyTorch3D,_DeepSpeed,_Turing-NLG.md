@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP简报（ISSUE#4): PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…"
+title: "NLP简报 [CH]: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…"
 author: billy_rick
 modified:
 comments: true

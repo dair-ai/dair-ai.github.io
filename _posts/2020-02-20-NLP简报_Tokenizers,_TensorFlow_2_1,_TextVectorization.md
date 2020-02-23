@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP简报: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…"
+title: "NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…"
 author: billy_rick
 modified:
 comments: true
