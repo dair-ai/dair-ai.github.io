@@ -4,6 +4,6 @@ excerpt: "Democratizing Artificial Intelligence Research, Education, and Technol
 tags: []
 image:
   feature: dair-header.png
-  credit: iBelmopan
-  creditlink: http://www.ibelmopan.com/
+  credit: dair.ai
+  creditlink: https://www.dair.ai
 ---
