@@ -13,7 +13,7 @@ image:
 
 ![](https://cdn-images-1.medium.com/max/1200/1*YIhZsPaiBFkRMMWo5FAhGw.png)
 
-
+\\
 First of all, I can’t thank ❤️ all of you enough for the incredible support and encouragement to continue with the NLP Newsletter. This effort requires tedious research and editing which I find to be both rewarding and also useful to provide you the best content. Hope you are enjoying them because I do. 😉
 
 \\
