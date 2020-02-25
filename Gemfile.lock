@@ -49,11 +49,11 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.10.1)
     multi_json (1.12.1)
-    nokogiri (1.10.4)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.4-x64-mingw32)
+    nokogiri (1.10.8-x64-mingw32)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.4-x86-mingw32)
+    nokogiri (1.10.8-x86-mingw32)
       mini_portile2 (~> 2.4.0)
     octopress (3.0.12.pre.1)
       jekyll (>= 2.0)
@@ -99,7 +99,7 @@ DEPENDENCIES
   jekyll
   jekyll-sitemap
   jemoji
-  nokogiri (~> 1.10.4)
+  nokogiri (~> 1.10.8)
   octopress (~> 3.0.0.rc.12)
   pygments.rb
 
