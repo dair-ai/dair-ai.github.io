@@ -20,8 +20,10 @@ Bem vindo novamente à NLP Newsletter! 👋 Esta segunda newsletter aborda topic
 
 ***Confiando na incerteza dos modelos***
 
-\\Um artigo recente do Google AI, publicado na NeurIPS, analisa se as probabilidades de um modelo refletem a sua capacidade de prever dados fora de distribuição ou mudança no conjunto de dados (shifted data).
+\\
+Um artigo recente do Google AI, publicado na NeurIPS, analisa se as probabilidades de um modelo refletem a sua capacidade de prever dados fora de distribuição ou mudança no conjunto de dados (shifted data).
 
+\\
 Ensembles profundos (Deep ensembles) tiveram um melhor desempenho (_i.e._, melhoraram a incerteza do modelo) no dataset com mudança no conjunto de dados (data shift), enquanto outros modelos não tornaram-se mais incertos com o mesmo data shift, mas ao contrario transformaram-se confidentemente errados(Leia o paper [aqui](https://arxiv.org/abs/1906.02530) e o sumário [aqui](https://ai.googleblog.com/2020/01/can-you-trust-your-models-uncertainty.html).).
 
 \\
