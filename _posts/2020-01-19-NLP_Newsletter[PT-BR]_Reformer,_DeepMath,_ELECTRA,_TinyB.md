@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NLP Newsletter: Reformer, DeepMath, ELECTRA, TinyBERT para busca, VizSeq, Open-Sourcing ML,…"
-author: billy_rick
+author: billy_rick, fclesio
 modified:
 comments: true
 excerpt: "Esta segunda newsletter aborda topics que vão de interpretabilidade de modelos para enovelamento de proteínas (protein folding) até active transfer learning"
@@ -9,7 +9,6 @@ tags: [nlp_newsletter]
 image:
   thumb: nlp_newsletter_2.png
 ---
-
 
 ![](https://cdn-images-1.medium.com/max/1200/1*mgWc3FhHPRfCxdPir6wSeg.png)
 
