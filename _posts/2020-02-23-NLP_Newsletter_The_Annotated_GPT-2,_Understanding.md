@@ -35,7 +35,7 @@ In the context of deep learning, [*self-distillation*](https://arxiv.org/pdf/150
 ***The 2010s: Our Decade of Deep Learning / Outlook on the 2020s***
 
 \\
-[Jürgen Schmidhuber,](http://people.idsia.ch/~juergen/) a pioneer in Artificial Intelligence, recently posted a [**new blog post**](http://people.idsia.ch/~juergen/2010s-our-decade-of-deep-learning.html) ****focusing on providing a historical overview of deep learning since 2010. Some topics include LSTMs, feedforward neural networks, GANs, deep reinforcement learning, meta-learning, world models, distilling NNs, attention learning, etc. The article concludes with an outlook on the 2020s encouraging attention to pressing issues such as privacy and data markets.
+[Jürgen Schmidhuber,](http://people.idsia.ch/~juergen/) a pioneer in Artificial Intelligence, recently posted a [**new blog post**](http://people.idsia.ch/~juergen/2010s-our-decade-of-deep-learning.html) focusing on providing a historical overview of deep learning since 2010. Some topics include LSTMs, feedforward neural networks, GANs, deep reinforcement learning, meta-learning, world models, distilling NNs, attention learning, etc. The article concludes with an outlook on the 2020s encouraging attention to pressing issues such as privacy and data markets.
 
 \\
 ***Using neural networks to solve advanced mathematics equations***
@@ -94,7 +94,7 @@ There is also a lot of interest to use self-supervised learning for learning gen
 ***A tool for processing Wikipedia data***
 
 \\
-[**Sparkwiki**](https://github.com/epfl-lts2/sparkwiki) ****is a tool to process Wikipedia data. This release is part of many efforts to enable interesting behavioral analytics research such as [capturing trends and language biases across different language editions of Wikipedia](https://arxiv.org/abs/2002.06885). The authors discovered that independent of language, the browsing behavior of Wikipedia users shows that they tend to share common interests for categories such as movies, music, and sports but differences become more apparent with local events and cultural particularities.
+[**Sparkwiki**](https://github.com/epfl-lts2/sparkwiki) is a tool to process Wikipedia data. This release is part of many efforts to enable interesting behavioral analytics research such as [capturing trends and language biases across different language editions of Wikipedia](https://arxiv.org/abs/2002.06885). The authors discovered that independent of language, the browsing behavior of Wikipedia users shows that they tend to share common interests for categories such as movies, music, and sports but differences become more apparent with local events and cultural particularities.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*K7N9KbQlbuqowUeePjLtdw.jpeg)
@@ -203,7 +203,7 @@ Learn how to train a model for named entity recognition (NER) using a Transforme
 
 ----------
 
-If you have any datasets, projects, blog posts, tutorials, or papers that you wish to share in the next iteration of the NLP Newsletter, please free to reach out to me at ellfae@gmail.com or ****[**DM on Twitter**](https://twitter.com/omarsar0).
+If you have any datasets, projects, blog posts, tutorials, or papers that you wish to share in the next iteration of the NLP Newsletter, please free to reach out to me at ellfae@gmail.com or [**DM on Twitter**](https://twitter.com/omarsar0).
 
 \\
 [*Subscribe*](https://dair.ai/newsletter/) *🔖 to the NLP Newsletter to receive future issues in your inbox.*
