@@ -50,11 +50,21 @@
   <article class="post">
     <div class="headline-wrap">
       {% if page.link %}
-        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+        {% if page.language == "arabic" %}
+          <h1 style="direction: rtl ! important; font-family: Dubai ! important;"><a href="{{ page.link }}">{{ page.title }}</a></h1>
+        {% else %}
+          <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+        {% endif %}
       {% else %}
-        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+        {% if page.language == "arabic" %}
+          <h1 style="direction: rtl ! important; font-family: Dubai ! important;"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+        {% else %}
+          <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+        {% endif %}
       {% endif %}
     </div><!--/ .headline-wrap -->
+
+    
     <div class="article-wrap">
       {{ content }}
       <hr />
