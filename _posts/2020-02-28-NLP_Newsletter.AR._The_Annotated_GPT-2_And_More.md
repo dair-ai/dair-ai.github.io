@@ -3,6 +3,7 @@ layout: post
 title: "الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ..."
 author: SufianDira
 modified:
+language: arabic
 comments: true
 excerpt: "هذا العدد يغطي مواضيع مثل: فهم التقطير-الذاتي (Self-Distillation)، ترجمة صورة-إلى-رسمة (Image-to-illustration Translation)، الاعتبارات الأخلاقية في علم معالجة اللغات الطبيعية (NLP)، النماذج، وغيرها الكثير."
 tags: [nlp_newsletter]
