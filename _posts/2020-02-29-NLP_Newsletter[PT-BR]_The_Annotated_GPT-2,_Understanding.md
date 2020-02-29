@@ -14,7 +14,7 @@ image:
 ![](https://cdn-images-1.medium.com/max/1200/1*YIhZsPaiBFkRMMWo5FAhGw.png)
 
 \\
-Antes de tudo, gostaria de agradecer de ❤️ a todos vocês pelo incrível apoio e incentivo para continuar com a NLP Newsletter. Esse esforço requer pesquisa, edição e tradução tediosas, mas que considero gratificantes e úteis para fornecer o melhor conteúdo. Espero que você esteja gostando deste conteúdo. 😉
+Antes de tudo, gostaria de agradecer de ❤️ a todos vocês pelo incrível apoio e incentivo para continuar com a NLP Newsletter. Esse esforço requer pesquisa, edição, e tradução tediosas, mas que considero gratificantes e úteis para fornecer o melhor conteúdo. Espero que você esteja gostando deste conteúdo. 😉
 
 \\
 [*Assine a NLP Newsletter*](https://dair.ai/newsletter/) *🔖 para receber edições futuras via e-mail.*
@@ -24,7 +24,7 @@ Antes de tudo, gostaria de agradecer de ❤️ a todos vocês pelo incrível apo
 ***Um entendimento teórico do self-distillation***
 
 \\
-No contexto de Deep Learning, [*self-distillation*](https://arxiv.org/pdf/1503.02531.pdf) (*NT: auto-destilação*) é o processo de transferência de conhecimento de uma arquitetura para outra com os mesmos parâmetros. As previsões do modelo original são alimentadas como valores de destino para o outro modelo durante o treinamento. Além de ter propriedades desejáveis como a redução do tamanho dos modelos, os resultados empíricos mostram que essa abordagem funciona bem em conjuntos de dados não vistos (NT: _held out_). Um grupo de pesquisadores publicou recentemente um artigo que fornece uma análise teórica com o foco em um melhor entendimento sobre que está acontecendo neste processo de _destilação do conhecimento_ e porque ele é eficaz. Os resultados mostram que alguns poucos ciclos de destilação amplificam a regularização (devido ao fato que a técnica [*progressivamente ajuda a limitar o número de funções base que representam a solução*](https://twitter.com/TheGradient/status/1228132843630387201?s=20)) as quais tendem a reduzir o over-fitting. (Leia o paper [**aqui**](https://arxiv.org/abs/2002.05715))
+No contexto de Deep Learning, [*self-distillation*](https://arxiv.org/pdf/1503.02531.pdf) (*NT: auto-destilação*) é o processo de transferência de conhecimento de uma arquitetura para outra. As previsões do modelo original são alimentadas como valores de destino para o outro modelo durante o treinamento. Além de ter propriedades desejáveis como a redução do tamanho dos modelos, os resultados empíricos mostram que essa abordagem funciona bem em conjuntos de dados não vistos anteriormente pelo modelo (NT: amostras _held out_). Um grupo de pesquisadores publicou recentemente um artigo que fornece uma análise teórica com o foco em um melhor entendimento sobre o que está acontecendo neste processo de _destilação do conhecimento_ e o porque ele é eficaz. Os resultados mostram que alguns poucos ciclos de destilação amplificam a regularização (devido ao fato que a técnica [*progressivamente ajuda a limitar o número de funções base que representam a solução*](https://twitter.com/TheGradient/status/1228132843630387201?s=20)) as quais tendem a reduzir o over-fitting. (Leia o paper [**aqui**](https://arxiv.org/abs/2002.05715))
 
 
 \\
@@ -36,7 +36,7 @@ No contexto de Deep Learning, [*self-distillation*](https://arxiv.org/pdf/1503.0
 ***Os anos 2010s: Nossa década de Deep Learning / Perspectivas para os 2020s***
 
 \\
-[Jürgen Schmidhuber,](http://people.idsia.ch/~juergen/) um dos pioneiros em Inteligência Artificial, postou recentemente [**um novo post em seu blog**](http://people.idsia.ch/~juergen/2010s-our-decade-of-deep-learning.html) que mostra uma visão histórica sobre Deep Learning desde o ano de 2010. Alguns tópicos incluem LSTMs, feedforward neural networks, GANs, deep reinforcement learning, meta-learning, world models, distilling NNs, attention learning, etc. O artigo traz algumas perspectivas futuras para os anos 2020 chamando atenção para questões como privacidade e mercado de dados.
+[Jürgen Schmidhuber,](http://people.idsia.ch/~juergen/) um dos pioneiros em Inteligência Artificial,  [**postou recentemente em seu blog**](http://people.idsia.ch/~juergen/2010s-our-decade-of-deep-learning.html) uma visão histórica sobre Deep Learning desde o ano de 2010. Alguns tópicos incluem LSTMs, feedforward neural networks, GANs, deep reinforcement learning, meta-learning, world models, distilling NNs, attention learning, etc. O artigo traz algumas perspectivas futuras para os anos 2020 chamando atenção para questões como privacidade e mercado de dados.
 
 \\
 ***Usando Redes Neurais para a resolução de equações matemáticas***
@@ -55,13 +55,13 @@ Pesquisadores do Facebook AI publicaram um [**paper**](https://arxiv.org/abs/191
 ***Inteligência Artificial para descobertas científicas***
 
 \\
-Mattew Hutson [**informa**](https://www.sciencemag.org/news/2020/02/models-galaxies-atoms-simple-ai-shortcuts-speed-simulations-billions-times) como a inteligência artificial (IA) pode ser utilizada para produzir emuladores que têm um uso importante na modelagem de fenômenos naturais complexos e que, por sua vez, podem levar a diferentes tipos de *descobertas científicas*. A mudança na construção desses emuladores se dá devido ao fato de que estes modelos geralmente exigem dados em larga escala e uma vasta exploração de parâmetros. Um [**paper recente**](https://arxiv.org/abs/2001.08055) propõe um método chamado DENSE que é uma abordagem baseada em [*neural architecture search*](https://en.wikipedia.org/wiki/Neural_architecture_search) (NT: Exploração e busca de arquitetura de Redes Neurais) para criar emuladores precisos, contando apenas com uma quantidade limitada de dados de treinamento. Eles o testaram executando simulações para casos que incluem astrofísica, ciência climática e energia de fusão, entre outros.
+Mattew Hutson [**informa**](https://www.sciencemag.org/news/2020/02/models-galaxies-atoms-simple-ai-shortcuts-speed-simulations-billions-times) como a inteligência artificial (IA) pode ser utilizada para produzir emuladores que têm um uso importante na modelagem de fenômenos naturais complexos e que, por sua vez, podem levar a diferentes tipos de *descobertas científicas*. A mudança na construção desses emuladores acontece devido ao fato de que estes modelos geralmente exigem dados em larga escala e uma vasta exploração de parâmetros. Um [**paper recente**](https://arxiv.org/abs/2001.08055) propõe um método chamado DENSE que é uma abordagem baseada em [*neural architecture search (NAS)*](https://en.wikipedia.org/wiki/Neural_architecture_search) (NT: Exploração e busca de arquitetura de Redes Neurais) para criar emuladores precisos, contando apenas com uma quantidade limitada de dados de treinamento. Eles o testaram executando simulações para casos que incluem astrofísica, ciência climática e energia de fusão, entre outros.
 
 \\
 ***Melhorando a tradução de imagem para imagem***
 
 \\
-GANILLA é uma abordagem que propõe o uso de GANs para melhorar a transferência de estilo e conteúdo em pares para tarefas de tradução [*image-to-image*](https://paperswithcode.com/task/image-to-image-translation) (NT: imagem para imagem). Em particular, é proposto um modelo de imagem para ilustração (com uma rede de geradores aprimorada) e este modelo é avaliado com base em uma nova estrutura de avaliação quantitativa que considera o conteúdo e o estilo. A novidade do trabalho está na rede de geradores proposta, que considera um equilíbrio entre estilo e conteúdo que os modelos anteriores não conseguem. O código e os modelos pré-treinados estão [disponíveis](https://github.com/giddyyupp/ganilla). Leia o artigo completo [**aqui**](https://arxiv.org/abs/2002.05638).
+[GANILLA](https://arxiv.org/abs/2002.05638) é uma abordagem que propõe o uso de GANs para melhorar a transferência de estilo e conteúdo em pares para tarefas de tradução [*image-to-image*](https://paperswithcode.com/task/image-to-image-translation) (NT: imagem para imagem). A abordagem propōe um modelo de imagem para imagem (com uma rede de geradores aprimorada) e este modelo é avaliado com base em uma nova estrutura de avaliação quantitativa que considera tanto o conteúdo quanto o estilo. A novidade do trabalho está na rede de geradores proposta, que considera um equilíbrio entre estilo e conteúdo que os modelos anteriores não conseguem. O código e os modelos pré-treinados estão [disponíveis](https://github.com/giddyyupp/ganilla). Leia o artigo completo [**aqui**](https://arxiv.org/abs/2002.05638).
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*l_B4vfaHVkXDwzM7SldiqQ.png)
@@ -70,14 +70,14 @@ GANILLA é uma abordagem que propõe o uso de GANs para melhorar a transferênci
 ***Andrew Ng fala sobre o interesse em aprendizagem auto-supervisionada***
 
 \\
-Andrew Ng, o fundador do deeplearning.ai, falou no [**podcast de Inteligência Artificial do Lex Friedman**](https://www.youtube.com/watch?v=0jspaMLxBig) sobre os seguintes tópicos: seus primeiros anos em ML, o futuro da IA, educação em IA, recomendações para o uso adequado da ML, seus objetivos pessoais e quais técnicas de ML prestar atenção na década de 2020.
+Andrew Ng, o fundador do [deeplearning.ai](deeplearning.ai), falou no [**podcast de Inteligência Artificial do Lex Friedman**](https://www.youtube.com/watch?v=0jspaMLxBig) sobre os seguintes tópicos: seus primeiros anos em ML, o futuro da IA, educação em IA, recomendações para o uso adequado da ML, seus objetivos pessoais e quais técnicas de ML que devemos prestar atenção nesta década de 2020.
 
 \\
-Andrew explicou por que está muito animado com o *self-supervised representation learning.* [**Self-supervised learning**](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) (NT: aprendizado de representação auto-supervisionado) que envolve a estruturação de um problema de aprendizagem que visa obter supervisão dos próprios dados para fazer uso de grandes quantidades de dados não rotulados, o que é mais comum que os dados rotulados limpos. As representações, em oposição ao desempenho da tarefa, são importantes e podem ser usadas para lidar com tarefas posteriores, semelhantes às usadas em modelos de linguagem como o [BERT](https://lilianweng.github.io/lil-log/2019/01/31/generalized-language-models.html#bert).
+Andrew explicou o motivo da sua animação em relação ao *self-supervised representation learning.* [**Self-supervised learning**](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) (NT: aprendizado de representação auto-supervisionado) envolve a estruturação de um problema de aprendizagem que visa obter supervisão dos próprios dados para fazer uso de grandes quantidades de dados não rotulados, o que é mais comum que os dados rotulados limpos. As representações são importantes e podem ser usadas para lidar com tarefas posteriores, semelhantes às usadas em modelos de linguagem como o [BERT](https://lilianweng.github.io/lil-log/2019/01/31/generalized-language-models.html#bert).
 
 
 \\
-Também há muito interesse em usar o aprendizado auto-supervisionado para aprender representações visuais generalizadas que tornam os modelos mais precisos em ambientes com poucos recursos. Por exemplo, um método recente chamado [**SimCLR**](https://arxiv.org/abs/2002.05709) (liderado por Geoffrey Hinton) propõe uma estrutura para *aprendizagem auto-supervisionada contrastante* (*NT: contrastive self-supervised learning*) de representações visuais para melhorar a classificação de imagens em diferentes configurações, como transferência de aprendizado (NT: transfer learning) e aprendizado semi-supervisionado.
+Também há muito interesse em usar o aprendizado auto-supervisionado para treinamento de representações visuais generalizadas que tornam os modelos mais precisos em ambientes com poucos recursos. Por exemplo, um método recente chamado [**SimCLR**](https://arxiv.org/abs/2002.05709) (liderado por Geoffrey Hinton) propõe uma estrutura para *aprendizagem auto-supervisionada contrastante* (*NT: contrastive self-supervised learning*) de representações visuais para melhorar a classificação de imagens em diferentes configurações, como transferência de aprendizado (NT: transfer learning) e aprendizado semi-supervisionado.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*8zLzHFCyM3goc9y7KApHfg.png)
@@ -96,7 +96,7 @@ Também há muito interesse em usar o aprendizado auto-supervisionado para apren
 ***Uma ferramenta para processar dados da Wikipédia***
 
 \\
-[**Sparkwiki**](https://github.com/epfl-lts2/sparkwiki) é uma ferramenta para processar dados da Wikipédia. Esta versão faz parte de muitos esforços para permitir pesquisas interessantes de análise comportamental, como [capturar tendências e preconceitos de idiomas em diferentes edições de idiomas da Wikipédia](https://arxiv.org/abs/2002.06885). Os autores descobriram que, independentemente do idioma, o comportamento de navegação dos usuários da Wikipédia mostra que eles tendem a compartilhar interesses comuns por categorias como filmes, música e esportes, mas as diferenças se tornam mais aparentes com eventos locais e particularidades culturais.
+[**Sparkwiki**](https://github.com/epfl-lts2/sparkwiki) é uma ferramenta para processar dados da Wikipédia. Esta versão faz parte de muitos esforços para permitir pesquisas interessantes de análise comportamental, como [a captura de tendências e preconceitos em diferentes idiomas na Wikipédia](https://arxiv.org/abs/2002.06885). Os autores descobriram que, independentemente do idioma, o comportamento de navegação dos usuários da Wikipédia mostra que eles tendem a compartilhar interesses comuns por categorias como filmes, música e esportes, mas as diferenças se tornam mais aparentes com eventos locais e particularidades culturais.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*K7N9KbQlbuqowUeePjLtdw.jpeg)
@@ -113,16 +113,16 @@ Um novo release dos [**Transformers**](https://github.com/huggingface/transforme
 ***Considerações éticas para modelos de NLP (Processamento de Linguagem Natural) e Machine Learning***
 
 \\
-Em um novo [**episódio**](https://soundcloud.com/nlp-highlights/106-ethical-considerations-in-nlp-research-emily-bender) do postcast [NLP Highlights,](https://soundcloud.com/nlp-highlights) Emily Bender e os hosts falaram sobre algumas considerações éticas no desenvolvimento de modelos e tecnologias de NLP no contexto da academia e do uso no mundo real. Alguns dos tópicos da discussão incluem considerações éticas nas tarefas de NLP, abordagens sobre coleta de dados e eventualmente considerações na publicação de resultados.
+Em um novo [**episódio**](https://soundcloud.com/nlp-highlights/106-ethical-considerations-in-nlp-research-emily-bender) do postcast [NLP Highlights,](https://soundcloud.com/nlp-highlights) Emily Bender e os hosts falaram sobre algumas considerações éticas no desenvolvimento de modelos e tecnologias de NLP no contexto da academia e do seu uso no mundo real. Alguns dos tópicos da discussão incluem considerações éticas nas tarefas de NLP, abordagens sobre coleta de dados e eventualmente considerações na publicação de resultados.
 
 
 \\
-Além de todas as considerações acima, uma preocupação sempre discutida é que a comunidade de IA está se concentrando demais na otimização de métricas específicas, o que contraria os fundamentos de que a IA pretende alcançar. Rachel Thomas e David Uminsky discutem os problemas dessa abordagem através de uma [**análise completa**](https://arxiv.org/abs/2002.08512) de diferentes casos de uso. Eles também propõem uma estrutura simples para mitigar este problema, que envolve o uso e a combinação de várias métricas, seguidas pelo envolvimento das pessoas afetadas diretamente pela tecnologia.
+Além de todas as considerações acima, uma preocupação discutida é que a comunidade de IA está se concentrando demais na otimização de métricas específicas, o que contraria os objetivos que a IA pretende alcançar. Rachel Thomas e David Uminsky discutem os problemas dessa abordagem através de uma [**análise completa**](https://arxiv.org/abs/2002.08512) de diferentes casos de uso. Eles também propõem uma estrutura simples para mitigar este problema, que envolve o uso e a combinação de várias métricas, seguidas pelo envolvimento das pessoas afetadas diretamente pela tecnologia.
 
 
 # Artigos e Blog posts ✍️
 
-***GPT-2 anotado***
+**"The Annotated GPT-2"**
 
 \\
 Aman Arora publicou recentemente uma postagem no blog excepcionalmente intitulada ["The Annotated GPT-2“](https://amaarora.github.io/2020/02/18/annotatedGPT2.html) explicando o funcionamento interno do modelo baseado em Transformer chamado GPT-2. Sua abordagem foi inspirada em [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html) que adotou uma abordagem de anotação para explicar as partes importantes do modelo. Aman fez um grande esforço para reimplementar o GPT-2 da OpenAI usando o PyTorch e a biblioteca Transformers da Hugging Face. É um trabalho brilhante!
@@ -136,7 +136,7 @@ Aman Arora publicou recentemente uma postagem no blog excepcionalmente intitulad
 ***Além do BERT?***
 
 \\
-Interessante [**ponto levantado**](https://towardsdatascience.com/beyond-bert-6f51a8bc5ce1) por Sergi Castella sobre o que está além do BERT. Os principais tópicos incluem o aprimoramento das métricas, como a biblioteca Transformers da Hugging Face capacita a pesquisa, conjuntos de dados interessantes para analisar, desembalar modelos etc.
+[**Um ponto interessante foi levantado**](https://towardsdatascience.com/beyond-bert-6f51a8bc5ce1) por Sergi Castella sobre o que está além do BERT. Os principais tópicos incluem o aprimoramento das métricas, uma reflexão de como a biblioteca Transformers da Hugging Face ajuda na pesquisa, alguns conjuntos de dados interessantes para análise, etc.
 
 \\
 ***Operador de Compressão de Matrizes***
@@ -161,10 +161,10 @@ Estou animado por lançar um rascunho do Capítulo 1 da minha nova série chamad
 ![](https://cdn-images-1.medium.com/max/800/1*mS5NcoJ_c8hYTjiJsuu_8g.gif)
 
 \\
-***[Online] Revisão/Discussão: Parte I sessão de leitura para fundamentos da matemática***
+***Revisão/Discussão Online: Parte I sessão de leitura para fundamentos da matemática***
 
 \\
-O time do Meetup Machine Learning Tokyo está hospedando uma discussão on-line remota, revisando capítulos que foram abordados em suas recentes sessões de estudo on-line. O grupo já havia estudado capítulos com base no livro [Mathematics For Machine Learning](https://mml-book.github.io/) escrito por Marc Peter Deisenroth, A Aldo Faisal e Cheng Soon Ong. O [**evento**](https://www.meetup.com/Machine-Learning-Tokyo/events/268817313/) está programado para 8 de março de 2020.
+O time do Meetup "Machine Learning Tokyo" está hospedando uma discussão on-line remota, revisando capítulos que foram abordados em suas recentes sessões de estudo on-line. O grupo já havia estudado capítulos com base no livro [Mathematics For Machine Learning](https://mml-book.github.io/) escrito por Marc Peter Deisenroth, A Aldo Faisal e Cheng Soon Ong. O [**evento**](https://www.meetup.com/Machine-Learning-Tokyo/events/268817313/) está programado para 8 de março de 2020.
 
 \\
 ***Recomendações de livros***
@@ -192,13 +192,13 @@ Outro livro interessante para ficar de olho é o próximo título  **“**[**Dee
 Você pode acessar a NLP Newsletter anterior em PT-BR [aqui](https://dair.ai/NLP_Newsletter-PT-BR-_PyTorch3D,_DeepSpeed,_Turing-NLG/).
 
 \\
-[**Torchmeta**](https://arxiv.org/abs/1909.06576) é uma biblioteca que permite o uso fácil de carregadores de dados relacionados para pesquisa de meta-aprendizado. Foi de autoria de Tristan Deleu.
+[**Torchmeta**](https://arxiv.org/abs/1909.06576) é uma biblioteca para pesquisa em meta-aprendizado. Esta biblioteca é de autoria de Tristan Deleu.
 
 \\
-Manuel Tonneau escreveu um [**post**](https://creatext.ai/blog-posts/machine-text-writing-gpt2-beam-search?utm_medium=newsletter) oferecendo uma visão mais detalhada de algumas das máquinas (hardware) envolvidas na modelagem de linguagem. Alguns tópicos incluem *greedy* e *beam search* e *nucleus sampling*.
+Manuel Tonneau escreveu um [**post**](https://creatext.ai/blog-posts/machine-text-writing-gpt2-beam-search?utm_medium=newsletter) oferecendo uma visão mais detalhada em relação ao hardware envolvido em modelagem de linguagem. Alguns tópicos incluem *greedy* e *beam search* e *nucleus sampling*.
 
 \\
-O MIT [**lançou**](http://introtodeeplearning.com/) o plano de estudos completo e a programação do curso intitulado "Introdução à aprendizagem profunda", incluindo vídeos das palestras já ministradas. Eles pretendem lançar palestras em vídeo e slides toda semana.
+O MIT [**lançou**](http://introtodeeplearning.com/) o plano de estudos completo e a programação do curso intitulado "Introdução à aprendizagem profunda", incluindo vídeos das palestras já ministradas. Eles pretendem lançar palestras em vídeo e slides uma vez por semana.
 
 \\
 Aprenda a treinar um modelo para reconhecimento de entidade (NER) usando uma abordagem baseada no Transformer em [**300 linhas de código**](https://github.com/huggingface/transformers/blob/master/examples/ner/run_pl_ner.py). Você pode encontrar o Google Colab em anexo [aqui](https://colab.research.google.com/drive/184LPlygvdGGR64hgQl3ztqzZJu8MmITn).
