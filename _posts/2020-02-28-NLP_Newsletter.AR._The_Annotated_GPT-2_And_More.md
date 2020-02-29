@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ar_post
 title: "الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ..."
 author: SufianDira
 modified:
