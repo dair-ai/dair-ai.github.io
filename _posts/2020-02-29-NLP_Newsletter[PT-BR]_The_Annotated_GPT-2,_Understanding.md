@@ -14,7 +14,7 @@ image:
 ![](https://cdn-images-1.medium.com/max/1200/1*YIhZsPaiBFkRMMWo5FAhGw.png)
 
 \\
-Antes de tudo, gostaria de agradecer de ❤️ a todos vocês pelo incrível apoio e incentivo para continuar com a NLP Newsletter. Esse esforço requer pesquisa, edição e tradução tediosas, mas que considero gratificantes e úteis para fornecer o melhor conteúdo. Espero que você esteja gostando desde conteudo. 😉
+Antes de tudo, gostaria de agradecer de ❤️ a todos vocês pelo incrível apoio e incentivo para continuar com a NLP Newsletter. Esse esforço requer pesquisa, edição e tradução tediosas, mas que considero gratificantes e úteis para fornecer o melhor conteúdo. Espero que você esteja gostando deste conteúdo. 😉
 
 \\
 [*Assine a NLP Newsletter*](https://dair.ai/newsletter/) *🔖 para receber edições futuras via e-mail.*
@@ -24,7 +24,7 @@ Antes de tudo, gostaria de agradecer de ❤️ a todos vocês pelo incrível apo
 ***Um entendimento teórico do self-distillation***
 
 \\
-No contexto de Deep Learning, [*self-distillation*](https://arxiv.org/pdf/1503.02531.pdf) (*NT: auto-destilação*) é o processo de transferência de conhecimento de uma arquitetura para outra com os mesmos parâmetros. As previsões do modelo original são alimentadas como valores de destino para o outro modelo durante o treinamento. Além de ter propriedades desejáveis como a redução do tamanho dos modelos, os resultados empíricos mostram que essa abordagem funciona bem em conjuntos de dados não vistos (NT: _held out_). Um grupo de pesquisadores publicou recentemente um artigo que fornece uma análise teórica com o foco em um melhor entendimento sobre que está acontecendo neste processo de _destilação do conhecimento_ e por que ele é eficaz. Os resultados mostram que alguns poucos ciclos de destilação amplificam a regularização (devido ao fato que a técnica [*progressivamente ajuda a limitar o número de funções base que representam a solução*](https://twitter.com/TheGradient/status/1228132843630387201?s=20)) as quais tendem a reduzir o over-fitting. (Leia o paper [**aqui**](https://arxiv.org/abs/2002.05715))
+No contexto de Deep Learning, [*self-distillation*](https://arxiv.org/pdf/1503.02531.pdf) (*NT: auto-destilação*) é o processo de transferência de conhecimento de uma arquitetura para outra com os mesmos parâmetros. As previsões do modelo original são alimentadas como valores de destino para o outro modelo durante o treinamento. Além de ter propriedades desejáveis como a redução do tamanho dos modelos, os resultados empíricos mostram que essa abordagem funciona bem em conjuntos de dados não vistos (NT: _held out_). Um grupo de pesquisadores publicou recentemente um artigo que fornece uma análise teórica com o foco em um melhor entendimento sobre que está acontecendo neste processo de _destilação do conhecimento_ e porque ele é eficaz. Os resultados mostram que alguns poucos ciclos de destilação amplificam a regularização (devido ao fato que a técnica [*progressivamente ajuda a limitar o número de funções base que representam a solução*](https://twitter.com/TheGradient/status/1228132843630387201?s=20)) as quais tendem a reduzir o over-fitting. (Leia o paper [**aqui**](https://arxiv.org/abs/2002.05715))
 
 
 \\
@@ -36,7 +36,7 @@ No contexto de Deep Learning, [*self-distillation*](https://arxiv.org/pdf/1503.0
 ***Os anos 2010s: Nossa década de Deep Learning / Perspectivas para os 2020s***
 
 \\
-[Jürgen Schmidhuber,](http://people.idsia.ch/~juergen/) um dos pioneiros em Inteligência Artificial, postou recentemente [**um novo post em seu blog**](http://people.idsia.ch/~juergen/2010s-our-decade-of-deep-learning.html) que mostra uma visão historica sobre Deep Learning desde o ano de 2010. Alguns tópicos incluem LSTMs, feedforward neural networks, GANs, deep reinforcement learning, meta-learning, world models, distilling NNs, attention learning, etc. O artigo traz algumas perspectivas futuras para os anos 2020 chamando atenção para questões como privacidade e mercado de dados.
+[Jürgen Schmidhuber,](http://people.idsia.ch/~juergen/) um dos pioneiros em Inteligência Artificial, postou recentemente [**um novo post em seu blog**](http://people.idsia.ch/~juergen/2010s-our-decade-of-deep-learning.html) que mostra uma visão histórica sobre Deep Learning desde o ano de 2010. Alguns tópicos incluem LSTMs, feedforward neural networks, GANs, deep reinforcement learning, meta-learning, world models, distilling NNs, attention learning, etc. O artigo traz algumas perspectivas futuras para os anos 2020 chamando atenção para questões como privacidade e mercado de dados.
 
 \\
 ***Usando Redes Neurais para a resolução de equações matemáticas***
@@ -55,13 +55,13 @@ Pesquisadores do Facebook AI publicaram um [**paper**](https://arxiv.org/abs/191
 ***Inteligência Artificial para descobertas científicas***
 
 \\
-Mattew Hutson [**informa**](https://www.sciencemag.org/news/2020/02/models-galaxies-atoms-simple-ai-shortcuts-speed-simulations-billions-times) como a inteligência artificial (IA) pode ser utilizada para produzir emuladores que têm um uso importante na modelagem de fenômenos naturais complexos e que, por sua vez, podem levar a diferentes tipos de *descobertas científicas*. A mudança na construção desses emuladores se dá devido ao fato de que estes modelos geralmente exigem dados em larga escala e uma vasta exploração de parâmetros. Um [**paper recente**](https://arxiv.org/abs/2001.08055) propōe um método chamado DENSE que é uma abordagem baseada em [*neural architecture search*](https://en.wikipedia.org/wiki/Neural_architecture_search) (NT: Exploração e busca de arquitetura de Redes Neurais) para criar emuladores precisos, contando apenas com uma quantidade limitada de dados de treinamento. Eles o testaram executando simulações para casos que incluem astrofísica, ciência climática e energia de fusão, entre outros.
+Mattew Hutson [**informa**](https://www.sciencemag.org/news/2020/02/models-galaxies-atoms-simple-ai-shortcuts-speed-simulations-billions-times) como a inteligência artificial (IA) pode ser utilizada para produzir emuladores que têm um uso importante na modelagem de fenômenos naturais complexos e que, por sua vez, podem levar a diferentes tipos de *descobertas científicas*. A mudança na construção desses emuladores se dá devido ao fato de que estes modelos geralmente exigem dados em larga escala e uma vasta exploração de parâmetros. Um [**paper recente**](https://arxiv.org/abs/2001.08055) propõe um método chamado DENSE que é uma abordagem baseada em [*neural architecture search*](https://en.wikipedia.org/wiki/Neural_architecture_search) (NT: Exploração e busca de arquitetura de Redes Neurais) para criar emuladores precisos, contando apenas com uma quantidade limitada de dados de treinamento. Eles o testaram executando simulações para casos que incluem astrofísica, ciência climática e energia de fusão, entre outros.
 
 \\
 ***Melhorando a tradução de imagem para imagem***
 
 \\
-GANILLA é uma abordagem que propõe o uso de GANs para melhorar a transferência de estilo e conteúdo em pares para tarefas de tradução [*image-to-image*](https://paperswithcode.com/task/image-to-image-translation) (NT: imagem para imagem). Em particular, é proposto um modelo de imagem para ilustração (com uma rede de geradores aprimorada) e este modelo é avaliado com base em uma nova estrutura de avaliação quantitativa que considera o conteúdo e o estilo. A novidade do trabalho está na rede de geradores proposta, que considera um equilíbrio entre estilo e conteúdo que os modelos anteriores não conseguem. O código e os modelos pre-treinados estão [disponíveis](https://github.com/giddyyupp/ganilla). Leia o artigo completo [**aqui**](https://arxiv.org/abs/2002.05638).
+GANILLA é uma abordagem que propõe o uso de GANs para melhorar a transferência de estilo e conteúdo em pares para tarefas de tradução [*image-to-image*](https://paperswithcode.com/task/image-to-image-translation) (NT: imagem para imagem). Em particular, é proposto um modelo de imagem para ilustração (com uma rede de geradores aprimorada) e este modelo é avaliado com base em uma nova estrutura de avaliação quantitativa que considera o conteúdo e o estilo. A novidade do trabalho está na rede de geradores proposta, que considera um equilíbrio entre estilo e conteúdo que os modelos anteriores não conseguem. O código e os modelos pré-treinados estão [disponíveis](https://github.com/giddyyupp/ganilla). Leia o artigo completo [**aqui**](https://arxiv.org/abs/2002.05638).
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*l_B4vfaHVkXDwzM7SldiqQ.png)
@@ -93,16 +93,16 @@ Também há muito interesse em usar o aprendizado auto-supervisionado para apren
 [JAX](https://github.com/google/jax) é uma nova biblioteca que combina o NumPy e diferenciação automática para realizar pesquisas de ML de alto desempenho. Para simplificar os pipelines para a construção de redes neurais usando JAX, a DeepMind lançou o [**Haiku**](https://github.com/deepmind/dm-haiku) e [**RLax**](https://github.com/deepmind/rlax). O RLax simplifica a implementação de agentes de aprendizado por reforço e o Haiku simplifica a construção de redes neurais usando *modelos familiares com o paradigma de programação orientada a objetos.*
 
 \\
-***Uma ferramenta para processar dados da Wikipedia***
+***Uma ferramenta para processar dados da Wikipédia***
 
 \\
-[**Sparkwiki**](https://github.com/epfl-lts2/sparkwiki) é uma ferramenta para processar dados da Wikipedia. Esta versão faz parte de muitos esforços para permitir pesquisas interessantes de análise comportamental, como [capturar tendências e preconceitos de idiomas em diferentes edições de idiomas da Wikipedia](https://arxiv.org/abs/2002.06885). Os autores descobriram que, independentemente do idioma, o comportamento de navegação dos usuários da Wikipedia mostra que eles tendem a compartilhar interesses comuns por categorias como filmes, música e esportes, mas as diferenças se tornam mais aparentes com eventos locais e particularidades culturais.
+[**Sparkwiki**](https://github.com/epfl-lts2/sparkwiki) é uma ferramenta para processar dados da Wikipédia. Esta versão faz parte de muitos esforços para permitir pesquisas interessantes de análise comportamental, como [capturar tendências e preconceitos de idiomas em diferentes edições de idiomas da Wikipédia](https://arxiv.org/abs/2002.06885). Os autores descobriram que, independentemente do idioma, o comportamento de navegação dos usuários da Wikipédia mostra que eles tendem a compartilhar interesses comuns por categorias como filmes, música e esportes, mas as diferenças se tornam mais aparentes com eventos locais e particularidades culturais.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*K7N9KbQlbuqowUeePjLtdw.jpeg)
 
 \\
-***Tokenizers em Rust, DistilBERT, e outros***
+***Tokenizers em Rust, DistilBERT e outros***
 
 \\
 Um novo release dos [**Transformers**](https://github.com/huggingface/transformers/releases/tag/v2.5.0) da Hugging Face inclui a integração de sua biblioteca de tokenização rápida, que visa acelerar modelos como o BERT, RoBERTa, GPT2 e outros modelos criados pela comunidade.
@@ -155,7 +155,7 @@ O Blog do TensorFlow publicou um [**post**](https://blog.tensorflow.org/2020/02/
 ***Fundamentos de NLP***
 
 \\
-Estou animado por lançar um rascunho do Capítulo 1 da minha nova série chamado [**Fundamentos de NLP**](https://medium.com/dair-ai/fundamentals-of-nlp-chapter-1-tokenization-lemmatization-stemming-and-sentença-segmentação-b362c5d07684) . Esta série ensina conceitos de NLP a partir do básico, compartilhando boas práticas, referências importantes, erros comuns a serem evitados e o que está por vir no que se refere a NLP. Um [notebook no Colab](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) foi incluído e o projeto será mantido [aqui](https://github.com/dair-ai/nlp_fundamentals).
+Estou animado por lançar um rascunho do Capítulo 1 da minha nova série chamado [**Fundamentos de NLP**](https://medium.com/dair-ai/fundamentals-of-nlp-chapter-1-tokenization-lemmatization-stemming-and-sentença-segmentação-b362c5d07684). Esta série ensina conceitos de NLP a partir do básico, compartilhando boas práticas, referências importantes, erros comuns a serem evitados e o que está por vir no que se refere a NLP. Um [notebook no Colab](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ) foi incluído e o projeto será mantido [aqui](https://github.com/dair-ai/nlp_fundamentals).
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*mS5NcoJ_c8hYTjiJsuu_8g.gif)
