@@ -205,6 +205,7 @@ dair.ai releases a [series of notebooks](https://github.com/dair-ai/pytorch_note
 \\
 Jeremy Howard and Sylvain Gugger release a [comprehensive list](https://github.com/fastai/fastbook) of draft notebooks for an upcoming course that introduces deep learning concepts and how to develop different methods using PyTorch and the fastai library.
 
+\\
 ***Free Data Science courses***
 
 \\
