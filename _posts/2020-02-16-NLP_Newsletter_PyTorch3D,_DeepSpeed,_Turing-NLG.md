@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…"
+title: "NLP Newsletter #4: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…"
 author: billy_rick
 modified:
 comments: true
@@ -279,7 +279,7 @@ Keep track of the “[Introduction to Deep Learning](http://introtodeeplearning.
 ***Deep Learning with PyTorch***
 
 \\
-Alfredo Canziani has published the slides and notebooks for the minicourse on Deep Learning with PyTorch. The repository also contains a [companion website](https://atcold.github.io/pytorch-Deep-Learning-Minicourse/) that includes text descriptions of the concepts taught in the course.
+Alfredo Canziani has published the slides and notebooks for the minicourse on Deep Learning with PyTorch. The repository also contains a [companion website](https://atcold.github.io/pytorch-Deep-Learning/) that includes text descriptions of the concepts taught in the course.
 
 \\
 ***Missing Semester of Your CS***
@@ -304,7 +304,7 @@ CMU released the slides and syllabus for the “[Advanced Deep Learning](https:/
 You can catch the previous NLP Newsletter here. The [issue](https://medium.com/dair-ai/nlp-newsletter-flax-thinc-language-specific-bert-models-meena-flyte-lasertagger-4f7da04a9060) covers topics such as improving conversational agents, releases of language-specific BERT models, free datasets, releases of deep learning libraries, and much more.
 
 \\
-Xu et al. (2020) proposed a [method](https://arxiv.org/abs/2002.02925]) for progressively replacing and compressing a BERT model by dividing it into its original components. Through progressive replacement and training, there is also the advantage of combining the original components and compacted versions of the model. The proposed model outperforms other knowledge distillation approaches on the GLUE benchmark.
+Xu et al. (2020) proposed a [method](https://arxiv.org/abs/2002.02925) for progressively replacing and compressing a BERT model by dividing it into its original components. Through progressive replacement and training, there is also the advantage of combining the original components and compacted versions of the model. The proposed model outperforms other knowledge distillation approaches on the GLUE benchmark.
 
 \\
 Here is another interesting course called “[Introduction to Machine Learning](https://compstat-lmu.github.io/lecture_i2ml/index.html)” which covers the ML basics, supervised regression, random forests, parameter tuning, and many more fundamental ML topics.

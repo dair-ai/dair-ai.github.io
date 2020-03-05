@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter: Flax, Thinc, Language-specific BERT models, Meena, Flyte, LaserTagger,…"
+title: "NLP Newsletter #3: Flax, Thinc, Language-specific BERT models, Meena, Flyte, LaserTagger,…"
 author: billy_rick
 modified:
 comments: true

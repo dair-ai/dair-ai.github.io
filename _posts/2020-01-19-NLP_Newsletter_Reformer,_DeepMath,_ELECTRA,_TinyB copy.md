@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter: Reformer, DeepMath, ELECTRA, TinyBERT for Search, VizSeq, Open-Sourcing ML,…"
+title: "NLP Newsletter #1: Reformer, DeepMath, ELECTRA, TinyBERT for Search, VizSeq, Open-Sourcing ML,…"
 author: billy_rick
 modified:
 comments: true
@@ -200,7 +200,7 @@ Here is another promising [video series](https://www.youtube.com/watch?v=fMqL5vc
 [*source*](https://www.youtube.com/watch?v=fMqL5vckiU0&list=PL-wATfeyAMNrtbkCNsLcpoAyBBRJZVlnf)
 
 \\
-Andrew Trask released a set of [step-by-step notebook tutorials](https://c4ejournal.net/2020/01/16/zack-lipton-fairness-interpretability-and-the-dangers-of-solutionism-ethics-of-ai-in-context2020-c4ej-2/) for achieving privacy-preserving and decentralized deep learning. All notebooks contain PyTorch implementations and are meant for beginners.
+Andrew Trask released a set of [step-by-step notebook tutorials](https://github.com/OpenMined/PySyft/tree/master/examples/tutorials) for achieving privacy-preserving and decentralized deep learning. All notebooks contain PyTorch implementations and are meant for beginners.
 
 \\
 ***Deep Learning State of the Art***
