@@ -244,7 +244,6 @@ Fabian Fuchs e Ed Wagstaff [discutiram](https://fabianfuchsml.github.io/equivari
 ***Self-supervised learning com imagens***
 
 \\
-
 A técnica de *self-supervised learning* foi amplamente discutida nas edições anteriores da Newsletter devido ao seu papel em modelos recentes para *language modeling*. Esse [*blog post*](https://datasciencecastnet.home.blog/2020/02/22/self-supervised-learning-with-image%e7%bd%91/), feito pelo Jonathan Whitaker, fornece uma explicação intuitiva da técnica de aprendizado no contexto de imagens. Se você deseja um conhecimento mais profundo sobre o assunto, o Amit Chaudhary também publicou um [artigo interessante](https://amitness.com/2020/02/illustrated-self-supervised-learning/) descrevendo o conceito de maneira visual.
 
 <!-- Self-supervised has been discussed a lot in previous issues of the NLP Newsletter due to the role it has played in modern techniques for language modeling. This [blog post](https://datasciencecastnet.home.blog/2020/02/22/self-supervised-learning-with-image%e7%bd%91/) by Jonathan Whitaker provides a nice and intuitive explanation of self-supervision in the context of images. If you are really interested in the topic, Amit Chaudhary also wrote an excellent [blog post](https://amitness.com/2020/02/illustrated-self-supervised-learning/) describing the concept in a visual way. -->
@@ -263,7 +262,6 @@ A universidade de Stanford liberou recentemente suas vídeo-aulas, numa *playlis
 ***PyTorch Notebooks***
 
 \\
-
 A dar.ai liberou recentemente um [compilado de *notebooks*](https://github.com/dair-ai/pytorch_notebooks) apresentando uma introdução à redes neurais profundas utilizando o PyTorch. O trabalho continua em desenvolvimento, e alguns dos tópicos já disponíveis incluem como implementar um modelo de regressão logística do zero, assim como a programação de redes neurais *feed-forward* e recorrentes. Notebooks no Colab estão disponíveis no GitHub.
 
 <!-- dair.ai releases a [series of notebooks](https://github.com/dair-ai/pytorch_notebooks) that aim to get you started with deep neural networks using PyTorch. This is a work in progress and some current topics include how to implement a logistic regression model from scratch and how to program a neural network or recurrent neural network from scratch. Colab notebooks are also available in the GitHub repository. -->
@@ -272,7 +270,6 @@ A dar.ai liberou recentemente um [compilado de *notebooks*](https://github.com/d
 ***The fastai book (draft)***
 
 \\
-
 Jeremy Howard e Sylvain Gugger liberaram uma [lista](https://github.com/fastai/fastbook) com alguns *notebooks* para um futuro curso que introduz conceitos de *Deep Learning* e como implementar diferentes métodos utilizando o PyTorch e a biblioteca da fastai.
 
 <!-- Jeremy Howard and Sylvain Gugger release a [comprehensive list](https://github.com/fastai/fastbook) of draft notebooks for an upcoming course that introduces deep learning concepts and how to develop different methods using PyTorch and the fastai library. -->
