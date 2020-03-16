@@ -192,10 +192,10 @@ Sabrina J. Mielke a publié un [article](https://sjmielke.com/jax-purify.htm) qu
 \\
 ![](https://cdn-images-1.medium.com/max/800/0*Nrw4UnmnIZ__elHu.png)
 
-[*Source*](https://sjmielke.com/jax-purify.htm) **
+[*Source*](https://sjmielke.com/jax-purify.htm)
 
 \\
-***Pourquoi utilisons-nous encore des jeux de données test créés il y a plus de 18 ans ?*
+***Pourquoi utilisons-nous encore des jeux de données test créés il y a plus de 18 ans ?***
 
 \\
 Dans cet [article de blog](https://ehudreiter.com/2020/03/02/why-use-18-year-old-bleu/), Ehud Reiter explique pourquoi nous utilisons encore de vieilles techniques d'évaluation comme BLUE pour évaluer les modèles de NLP pour des tâches comme la traduction automatique
