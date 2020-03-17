@@ -1,0 +1,559 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,… &#8211; dair.ai</title>
+<meta name="description" content="
+
+">
+<meta name="keywords" content="nlp_newsletter">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">
+<meta name="twitter:description" content="
+
+">
+<meta name="twitter:site" content="@dair_ai">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dair.ai/images/nlp_newsletter_7.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">
+<meta property="og:description" content="
+
+">
+<meta property="og:url" content="https://dair.ai/NLP_Newsletter_-7_-FR/">
+<meta property="og:site_name" content="dair.ai">
+
+<meta property="og:image" content="https://dair.ai/images/nlp_newsletter_7.png">
+
+
+
+
+
+
+
+<link rel="canonical" href="https://dair.ai/NLP_Newsletter_-7_-FR/">
+<link href="https://dair.ai/feed.xml" type="application/atom+xml" rel="alternate" title="dair.ai Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://dair.ai/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="https://dair.ai/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="https://dair.ai/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://dair.ai/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://dair.ai/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dair.ai/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dair.ai/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dair.ai/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1537934899816329";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43ef4f23bf37b0"></script>
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="https://dair.ai/">dair.ai</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				    <li><a href="https://dair.ai/posts/" >Blog ✍️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/about/" >About ℹ️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/newsletter/" >NLP Newsletter 🗞️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/projects/" >Projects 💡</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai" target="_blank">GitHub 📁</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/dair-ai.github.io/contribute" target="_blank">Contribute ✨</a></li>
+				
+				    
+				    <li><a href="https://medium.com/dair-ai" target="_blank">Medium 📰</a></li>
+				
+				    
+				    <li><a href="https://nlpoverview.com/" target="_blank">NLP Overview 📘</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/nlp_highlights" target="_blank">2019 NLP Highlights (PDF) 🔥</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="https://dair.ai/images/lbourdois.png" class="bio-photo" alt="Loïck BOURDOIS bio photo">
+
+
+  <h3 itemprop="name">Loïck BOURDOIS</h3>
+  <p>Data Scientist working at the Bordeaux Population Health Research Centre of INSERM University of Bordeaux.</p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        
+          <h1><a href="https://dair.ai/NLP_Newsletter_-7_-FR/" rel="bookmark" title="NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></h1>
+        
+      
+    </div><!--/ .headline-wrap -->
+
+    
+    <div class="article-wrap">
+      <p><img src="https://cdn-images-1.medium.com/max/1200/1*9gNslKwKiRaffDt2RSOgoQ.png" alt="" /></p>
+
+<h1 id="avant-propos-delvis">Avant-propos d’Elvis</h1>
+<p><br />
+Bienvenue au 7e numéro de la lettre d’information consacrée au NLP. J’espère que vous passez une merveilleuse journée et que vous et vos proches êtes en sécurité en ces temps difficiles. Nous avons décidé de publier ce bulletin pour apporter un peu de joie à nos lecteurs, alors n’hésitez pas à le lire quand vous aurez du temps libre. Pour l’instant, concentrons-nous sur les choses qui sont de la plus haute priorité : nos familles et nos amis. ❤️ 💛 💚</p>
+
+<p><br />
+<strong><em>Quelques mises à jour sur la lettre d’information sur le NLP et sur dair.ai.</em></strong></p>
+
+<p><br />
+Les traductions françaises et chinoises de tous les numéros précédents de la newsletter sont désormais <a href="https://github.com/dair-ai/nlp_newsletter">disponibles</a>. Découvrez comment vous pouvez contribuer à la traduction des numéros précédents et à venir en cliquant sur ce <a href="https://github.com/dair-ai/dair-ai.github.io/issues/11">lien</a>.</p>
+
+<p><br />
+Nous avons récemment créé deux nouveaux dépôts GitHub qui contiennent des <a href="https://github.com/dair-ai/nlp_paper_summaries">résumés de publications sur le NLP</a> et des <a href="https://github.com/dair-ai/pytorch_notebooks">notebooks PyTorch</a> pour vous aider à démarrer avec les réseaux de neurones.</p>
+
+<h1 id="publications-">Publications 📙</h1>
+
+<p><strong><em>Mesure de la généralisation de la composition</em></strong></p>
+
+<p><br />
+Dans le contexte de l’apprentissage machine, la généralisation de la composition est la capacité d’apprendre à représenter le sens et des séquences (combinaisons inédites) à partir de ce qui est appris dans le jeu d’entraînement. À ce jour, la manière de mesurer correctement la composition dans les réseaux neuronaux n’est pas claire. Une équipe de Google AI <a href="https://ai.googleblog.com/2020/03/measuring-compositional-generalization.html">propose</a> l’un des plus grands benchmarks pour la généralisation de la composition en utilisant des tâches telles que le question/ answering et l’analyse sémantique. L’image ci-dessous montre un exemple du modèle proposé utilisant des atomes (produire, diriger, etc.) pour produire de nouveaux composés, c’est-à-dire des combinaisons d’atomes. L’idée de ce travail est de produire des échantillons entraînement/test qui contiennent des exemples qui partagent des atomes similaires (blocs de construction pour générer des exemples) de distribution mais une distribution de composés différente (la composition des atomes). Les auteurs affirment que c’est une façon plus fiable de tester la généralisation de la composition.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*lXmUWOY8HJL7YVn1.gif" alt="" /></p>
+
+<p><em>Credit: Google AI Blog</em></p>
+
+<p><br />
+<strong><em>Fine-Tuning de modèles linguistiques pré-entraînés : Initialisation des poids, ordonnancement des données et arrêt anticipé</em></strong></p>
+
+<p><br />
+Des chercheurs ont mené une <a href="https://arxiv.org/abs/2002.06305">série d’essais de fine-tuning</a> pour mieux comprendre l’effet de l’initialisation du poids et de l’arrêt précoce dans la performance des modèles. Au cours de diverses expériences qui ont nécessité des centaines de tunage de BERT, il a été constaté que des graines aléatoires distinctes donnent des résultats très différents. En particulier, l’étude indique qu’une certaine initialisation des poids donne de bons résultats pour un ensemble de tâches. Toutes les données expérimentales et les essais ont été rendus publics pour les autres chercheurs qui souhaitent mieux comprendre les différentes dynamiques lors de la mise au point.</p>
+
+<p><br />
+<strong><em>Une introduction aux circuits</em></strong></p>
+
+<p><br />
+Les chercheurs d’OpenAI ont publié un <a href="https://distill.pub/2020/circuits/zoom-in/">article</a> sur l’interprétabilité des réseaux de neurones et proposent une nouvelle approche pour les interpréter. Inspirés par la biologie cellulaire, les auteurs approfondissent la compréhension des modèles de vision et de ce qu’ils apprennent en inspectant le poids des réseaux neuronaux. Essentiellement, l’étude présente quelques affirmations ainsi que des preuves recueillies qui, selon eux, pourraient ouvrir la voie à une meilleure interprétation des réseaux neuronaux.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*i0c-qpiire6dD4IqJVKlYg.png" alt="" /></p>
+
+<p><br />
+<strong><em>NLP Research Highlights — Issue #1</em></strong></p>
+
+<p><br />
+Dans une nouvelle série de dair.ai intitulée <a href="https://medium.com/dair-ai/nlp-newsletter-bertology-primer-fastpages-t5-data-science-education-pytorch-notebooks-slow-8ae5d499e040">NLP Research Highlights</a>, nous fournissons des descriptions détaillées des recherches actuelles intéressantes et importantes sur le NLP. Dans le premier numéro trimestriel, les sujets vont de l’amélioration des modèles de langage à l’amélioration des agents conversationnels en passant par les systèmes de reconnaissance vocale de pointe. Ces résumés seront également mis à jour <a href="https://github.com/dair-ai/nlp_paper_summaries">ici</a>.</p>
+
+<p><br />
+<strong><em>Apprendre à simuler la physique complexe avec les réseaux de graphes</em></strong></p>
+
+<p><br />
+Ces derniers mois, nous avons beaucoup parlé des réseaux de neurones de graphes (GNN) en raison de leur efficacité non seulement en NLP mais aussi dans d’autres domaines tels que la génomique et les matériaux. Dans un récent <a href="https://arxiv.org/abs/2002.09405">article</a>, des chercheurs proposent un cadre général basé sur les réseaux de graphes qui est capable d’apprendre des simulations dans différents domaines tels que les fluides et les matériaux déformables. Les auteurs affirment qu’ils obtiennent des performances de pointe dans différents domaines et que leur approche générale est potentiellement le simulateur de physique le mieux appris à ce jour. Les expériences comprennent la simulation de matériaux tels que le « goop over water » (je ne sais pas comment cela se traduit en français) et d’autres interactions avec des obstacles rigides. Ils ont également testé un modèle pré-entraîné sur des tâches hors distribution et ont trouvé des résultats prometteurs qui montrent la généralisation du framework à des domaines plus vastes.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*48EolUDJoHpYRCTZxgn_qg.png" alt="" /></p>
+
+<p><a href="https://arxiv.org/pdf/2002.09405.pdf"><em>(Sanchez-Gonzalez et al., 2020)</em></a></p>
+
+<p><br />
+<strong><em>Modèles BERT spécifiques à chaque langue</em></strong></p>
+
+<p><br />
+Le BERT en arabe (AraBERT) est maintenant disponible dans la librairie Transformer. Vous pouvez accéder au modèle <a href="https://huggingface.co/aubmindlab/bert-base-arabert">ici</a> et au document <a href="https://arxiv.org/abs/2003.00104">ici</a>. Récemment, une version japonaise de BERT a également été <a href="https://github.com/akirakubo/bert-japanese-aozora">publiée</a>. Il existe également une version polonaise de BERT appelée <a href="https://github.com/kldarek/polbert">Polbert</a>.</p>
+
+<h1 id="créativité-éthique-et-société-">Créativité, éthique et société 🌎</h1>
+
+<p><strong><em>Prévisions des structures protéiques associées au COVID-19</em></strong></p>
+
+<p><br />
+DeepMind dévoile <a href="https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19">des structures prédites par calcul</a> pour les protéines liées au COVID-19. Les prédictions sont directement obtenues à partir des systèmes AlphaFold mais n’ont pas été vérifiées expérimentalement. L’idée de cette publication est d’encourager les contributions qui visent à mieux comprendre le virus et son fonctionnement.</p>
+
+<p><br />
+<strong><em>Utilisation du GPT2 pour une expérience sur des cas judiciaires</em></strong></p>
+
+<p><br />
+Janelle Shane partage les <a href="https://aiweirdness.com/post/612669075940900864/court-cases-that-sound-like-the-weirdest-fights">résultats</a> d’une expérience amusante où un modèle GPT-2 est fine-tuné pour générer des cas contre des objets inanimés. Le modèle a été alimenté par une liste de cas où le gouvernement saisissait des marchandises de contrebande ou dangereuses. Cela a généré des cas comme ceux présentés dans l’image ci-dessous.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*E5mHmkm1h4VQJ2Ni.png" alt="" /></p>
+
+<p><a href="https://aiweirdness.com/post/612669075940900864/court-cases-that-sound-like-the-weirdest-fights"><em>Source</em></a></p>
+
+<p><br />
+<strong><em>Vers une conception centrée sur l’homme des frameworks de ML</em></strong></p>
+
+<p><br />
+Google AI <a href="https://ai.googleblog.com/2020/03/toward-human-centered-design-for-ml.html">a publié</a> les résultats d’une enquête à grande échelle menée auprès de 645 personnes ayant utilisé TensorFlow.js. L’objectif était de connaître les caractéristiques les plus importantes ainsi que l’expérience générale des développeurs de logiciels non ML testant des frameworks de ML actuels.
+Les résultats montrent notamment que le “manque de compréhension conceptuelle du ML” entrave l’utilisation des frameworks de ML pour cet ensemble d’utilisateurs. Les participants à l’étude ont également signalé le besoin de meilleures instructions sur la façon d’appliquer les modèles de ML à différents problèmes et d’un soutien plus explicite pour les modifications.</p>
+
+<p><br />
+<strong><em>Tracking du visage et de la main avec MediaPipe et TensorFlow.js</em></strong></p>
+
+<p><br />
+Cet <a href="https://blog.tensorflow.org/2020/03/face-and-hand-tracking-in-browser-with-mediapipe-and-tensorflowjs.html?linkId=83996111">article sur TensorFlow</a> explique comment activer le suivi des visages et des mains en temps réel à l’aide de TensorFlow.js et de MediaPipe.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*XsRsB-tSOZo9yWOc.gif" alt="" /></p>
+
+<p><em>Credit: TensorFlow Blog</em></p>
+
+<h1 id="outils-et-jeux-de-données-️">Outils et jeux de données ⚙️</h1>
+
+<p><strong><em>NLP Paper Summaries</em></strong></p>
+
+<p><br />
+Nous avons récemment créé un <a href="https://github.com/dair-ai/nlp_paper_summaries">dépôt</a> contenant des résumés des publications de NLP les intéressantes et les plus importantes de ces dernières années. L’objectif est d’améliorer l’accessibilité de ces recherches et sujets.</p>
+
+<p><br />
+<strong><em>Une librairie de vision par ordinateur pour PyTorch</em></strong>
+<br />
+<a href="https://github.com/kornia/kornia">Kornia</a> est une librairie open-source construite sur PyTorch qui permet aux chercheurs d’utiliser un ensemble d’opérateurs pour réaliser une vision informatique différenciée en utilisant PyTorch. Parmi les fonctionnalités, on trouve les transformations d’images, l’estimation de la profondeur et le traitement d’images de bas niveau, pour n’en citer que quelques-unes. Elle est fortement inspirée d’OpenCV, mais la différence est qu’elle est destinée à la recherche plutôt qu’à la création d’applications prêtes à la production.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*gN_-llcA4_3lIHYE.gif" alt="" /></p>
+
+<p><br />
+<strong><em>Présentation de DIET : une architecture qui surpasse le fine-tuning de BERT et qui est 6X plus rapide à entraîner</em></strong></p>
+
+<p><br />
+DIET (Dual Intent and Entity Transformer) est une architecture multitâche de compréhension du langage naturel (NLU) <a href="https://blog.rasa.com/introducing-dual-intent-and-entity-transformer-diet-state-of-the-art-performance-on-a-lightweight-architecture/">proposée</a> par Rasa. Le framework se concentre sur l’entraînement multitâche afin d’améliorer les résultats en matière de classification des intentions et de reconnaissance des entités. Un autre avantage de DIET est que l’on peut utiliser n’importe quel élément pré entrainé tels que BERT et GloVe. L’objectif principale de cette librairie est de fournir un modèle qui améliore les performances actuelles de ces tâches et qui est plus rapide à entraîner (accélération de 6X). Le modèle est disponible dans la <a href="https://rasa.com/docs/rasa/1.8.0/nlu/components/#dietclassifier">librairie python Rasa Open Source</a>.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*R_8FOU-CVZabv7hJ.jpg" alt="" /></p>
+
+<p><a href="https://blog.rasa.com/introducing-dual-intent-and-entity-transformer-diet-state-of-the-art-performance-on-a-lightweight-architecture/?utm_source=twitter"><em>DIET framework</em></a></p>
+
+<p><br />
+<strong><em>Perdu parmi toutes les langues disponibles pour BERT ?</em></strong>
+<a href="https://bertlang.unibocconi.it/">BERT Lang Street</a> est un site web qui offre la possibilité de rechercher plus de 30 modèles basés sur le BERT, en 18 langues et 28 tâches, soit un total de 177 entrées. Par exemple, si vous souhaitez connaître les résultats de la classification des sentiments à l’aide des modèles de BERT, il vous suffit de rechercher “sentiment” dans la barre de recherche (exemple illustré dans la capture d’écran ci-dessous).</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*UuVno2eOAzYb_wlSSfukPA.png" alt="" /></p>
+
+<p><br />
+<strong><em>Med7</em></strong></p>
+
+<p><br />
+Andrey Kormilitzin publie <a href="https://github.com/kormilitzin/med7">Med7</a> qui est un modèle pour du NLP à usage clinique (en particulier les tâches de reconnaissance d’entités nommées (NER)) sur les dossiers médicaux électroniques. Le modèle peut identifier jusqu’à sept catégories et est disponible pour être utilisé avec la bibliothèque spaCy.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*yOMqhvTwYnxB4LYXv2Mgjg.png" alt="" /></p>
+
+<p><br />
+<strong><em>Une bibliothèque open source pour le ML quantique</em></strong></p>
+
+<p><br />
+<a href="https://ai.googleblog.com/2020/03/announcing-tensorflow-quantum-open.html">TensorFlow Quantum</a> est une bibliothèque open-source qui fournit une boîte à outils pour le prototypage rapide de la recherche en ML quantique qui permet l’application de modèles de ML pour aborder des problèmes allant de la médecine aux matériaux.</p>
+
+<p><br />
+<strong><em>Des réseaux infiniment larges, rapides et faciles, avec Neural Tangents</em></strong></p>
+
+<p><br />
+Neural Tangents est une librairie open-source qui permet aux chercheurs de d’entraîner des modèles de largeur finie ou infinie en utilisant JAX. Lisez l’article du blog de la version <a href="https://ai.googleblog.com/2020/03/fast-and-easy-infinitely-wide-networks.html">ici</a> et accédez à la librairie <a href="https://github.com/google/neural-tangents">ici</a>.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*CojgKJwB_n_7-j0DJZ0y7g.png" alt="" /></p>
+
+<h1 id="articles-et-blog-️">Articles et Blog ✍️</h1>
+
+<p><strong><em>De PyTorch à JAX</em></strong></p>
+
+<p><br />
+Sabrina J. Mielke a publié un <a href="https://sjmielke.com/jax-purify.htm">article</a> qui explique comment construire et entraîner des réseaux de neurones en utilisant JAX. L’article se concentre sur la comparaison du fonctionnement interne de PyTorch et de JAX lors de la construction de réseaux neuronaux, ce qui permet de mieux comprendre certains des avantages et des différences de JAX.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*Nrw4UnmnIZ__elHu.png" alt="" /></p>
+
+<p><a href="https://sjmielke.com/jax-purify.htm"><em>Source</em></a></p>
+
+<p><br />
+<strong><em>Pourquoi utilisons-nous encore des jeux de données test créés il y a plus de 18 ans ?</em></strong></p>
+
+<p><br />
+Dans cet <a href="https://ehudreiter.com/2020/03/02/why-use-18-year-old-bleu/">article de blog</a>, Ehud Reiter explique pourquoi nous utilisons encore de vieilles techniques d’évaluation comme BLUE pour évaluer les modèles de NLP pour des tâches comme la traduction automatique</p>
+
+<p><br />
+<strong><em>Introduction à BART</em></strong></p>
+
+<p><br />
+<a href="https://arxiv.org/abs/1910.13461">BART</a> est un modèle proposé par Facebook qui implique un autoencodeur de débruitage pour le pré-entraînement de modèles seq2seq, ce qui améliorent les performances sur les tâches de génération de texte telles que le résumé abstrait. Sam Shleifer fournit un <a href="https://sshleifer.github.io/blog_v2/jupyter/2020/03/12/bart.html">résumé</a> de BART et explique comment il l’a intégré dans la librairie Transformers de Hugging Face.</p>
+
+<p><br />
+<strong><em>Améliorations des Transformers</em></strong></p>
+
+<p><br />
+Madison May a récemment rédigé une <a href="https://www.pragmatic.ml/a-survey-of-methods-for-incorporating-long-term-context/">enquête</a> décrivant les moyens d’améliorer les approches basées sur les Transformers. L’article aborde ainsi les Sparse Transformers, les Adaptive Span Transformers, le Transformer-XL, les compressive Transformers, le Reformer, et les routing transformers.</p>
+
+<p><br />
+<strong><em>Contrôler le style et le contenu dans la rédaction automatique de textes</em></strong></p>
+
+<p><br />
+Malgré l’impressionnante fluidité dont a fait preuve l’écriture automatique des textes l’année dernière, il est toujours difficile de contrôler des attributs comme la structure ou le contenu du texte. Dans un <a href="https://creatext.ai/blog-posts/controllable-text-generation">récent article de blog</a>, Manuel Tonneau évoque les progrès récents et les perspectives dans le domaine de la génération de texte contrôlable, du modèle GPT-2 de Hugging Face, fine-tuné sur arXiv, au T5 de Google, en passant par CTRL de Salesforce et PPLM de Uber AI.</p>
+
+<h1 id="education-">Education 🎓</h1>
+
+<p><strong><em>L’avenir du NLP en Python</em></strong></p>
+
+<p><br />
+Dans l’un de nos numéros précédents, nous avons présenté <a href="https://thinc.ai/">THiNC</a>, qui est une librairie de DL fonctionnelle axée sur la compatibilité avec d’autres librairies existantes. Ces <a href="https://speakerdeck.com/inesmontani/the-future-of-nlp-in-python-keynote-pycon-colombia-2020?slide=9">diapositives</a> présentent un peu plus cette livrairie qui a été utilisée par Ines Montani pour la conférence PyCon Colombia.</p>
+
+<p><br />
+<strong><em>Les notebooks de Transformers</em></strong></p>
+
+<p><br />
+HuggingFace a publié un ensemble de <a href="https://github.com/huggingface/transformers/tree/master/notebooks">notebooks</a> qui aident à démarrer avec leur librairie Transformers. Certains notebooks comprennent l’utilisation de la tokenisation, la mise en place de pipelines et l’entraînement d’un modèle sur des données personnalisées.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*0AYHYUsHbaqV2vqN2zCzLQ.png" alt="" /></p>
+
+<p><br />
+<strong><em>TensorFlow 2.0 en 7 heures</em></strong></p>
+
+<p><br />
+Jetez un oeil à ce <a href="https://www.freecodecamp.org/news/massive-tensorflow-2-0-free-course/">cours gratuity d’environ 7h</a> consacré à TensorFlow 2.0 abordant des sujets qui vont des réseaux neuronaux de base au NLP avec les RNN, en passant par une introduction à l’apprentissage par renforcement.</p>
+
+<p><br />
+<strong><em>DeepMind: le podcast</em></strong></p>
+
+<p><br />
+DeepMind a publié tous les épisodes (sous la forme d’une <a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZBiUr6_Qf8YTS2Oqy3OGZEj">playlist YouTube</a>) de son podcast qui présente des scientifiques, des chercheurs et des ingénieurs discutant de sujets allant de l’IAG aux neurosciences en passant par la robotique.</p>
+
+<p><br />
+<strong><em>Cours de Machine Learning et de Deep Learning</em></strong></p>
+
+<p><br />
+Berkeley rend public le <a href="https://sites.google.com/view/berkeley-cs294-158-sp20/home">programme complet</a> de son cours sur “l’apprentissage profond non supervisé”, principalement axé sur les aspects théoriques de l’apprentissage autosupervisé ainsi que sur les modèles générateurs. Parmi les sujets abordés, citons les modèles de variables latentes, les modèles autorégressifs et les modèles de flux pour n’en citer que quelques-uns. Des vidéos et des diapositives sont disponibles sur Youtube.</p>
+
+<p><br />
+Nous avons également trouvé cette importante <a href="https://www.reddit.com/r/MachineLearning/comments/fdw0ax/d_advanced_courses_update/">liste</a> de cours en ligne sur l’apprentissage machine, le NLP et l’apprentissage approfondi.</p>
+
+<p><br />
+Et voici un autre cours intitulé <a href="https://compstat-lmu.github.io/lecture_i2ml/index.html">“Introduction to Machine Learning”</a> qui comprend des sujets tels que la régression supervisée, l’évaluation des performances, les forêts aléatoires, le réglage des paramètres, des conseils pratiques, et bien plus encore.</p>
+
+<h1 id="mentions-spéciales-️">Mentions spéciales ⭐️</h1>
+
+<p>Connon Shorten a publié une <a href="https://www.youtube.com/watch?v=QWu7j1nb_jI&amp;feature=emb_logo">vidéo</a> expliquant le modèle ELECTRA qui propose une technique appelée “remplacement de la détection de jeton” pour prétraiter les Transformers plus efficacement. Si vous êtes intéressé, nous avons également rédigé un bref résumé du modèle <a href="https://medium.com/dair-ai/nlp-research-highlights-cd522b21b01a">ici</a> (en anglais).</p>
+
+<p><br />
+Rachael Tatman travaille sur une nouvelle série intitulée <a href="https://www.youtube.com/watch?v=-G36q8_cYsc&amp;feature=emb_logo">NLP for Developers</a> où l’idée est de parler plus en profondeur des différentes méthodes de NLP du moment et d’expliquer les problèmes communs que vous pourriez rencontrer.</p>
+
+<p><br />
+DeepMind diffuse <a href="https://youtu.be/WXuK6gekU1Y">AlphaGo - The Movie</a> sur YouTube pour célébrer le 4ème anniversaire de la victoire d’AlphaGo sur Lee Sedol au jeu de Go.</p>
+
+<p><br />
+OpenMined <a href="https://blog.openmined.org/introducing-openmined-research/">évoque</a> les rôles d’ingénieur de recherche et de chercheur scientifique, ce qui est une bonne occasion de s’impliquer dans la préservation de la vie privée en matière d’IA.</p>
+
+<hr />
+
+<p>Vous pouvez retrouver la précédente newsletter <a href="https://dair.ai/NLP_Newsletter_-6_-FR/">ici</a></p>
+
+<p><br />
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n’hésitez pas à contacter Elvis à ellfae@gmail.com ou par message sur <a href="https://twitter.com/omarsar0">Twitter</a>.</p>
+
+<p><br />
+<a href="https://dair.ai/newsletter/">Abonnez-vous</a> pour recevoir les prochains numéros dans votre boîte mail.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+  <div class="addthis_inline_share_toolbox"></div>
+  <!--
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=https://dair.ai/NLP_Newsletter_-7_-FR/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://dair.ai/NLP_Newsletter_-7_-FR/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=https://dair.ai/NLP_Newsletter_-7_-FR/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>-->
+</div><!-- /.social-share -->
+        <p class="byline"><strong>NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</strong> was published on <time datetime="2020-03-16T00:00:00-05:00">March 16, 2020</time>.</p>
+        
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  
+  <footer>
+    
+
+<span>&copy; 2020 dair.ai. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://dair.ai/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://dair.ai/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-158959084-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+
+
+
+</body>
+</html>

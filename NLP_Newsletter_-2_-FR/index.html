@@ -1,0 +1,535 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,… &#8211; dair.ai</title>
+<meta name="description" content="">
+<meta name="keywords" content="nlp_newsletter">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,…">
+<meta name="twitter:description" content="">
+<meta name="twitter:site" content="@dair_ai">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dair.ai/images/nlp_newsletter_2.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,…">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://dair.ai/NLP_Newsletter_-2_-FR/">
+<meta property="og:site_name" content="dair.ai">
+
+<meta property="og:image" content="https://dair.ai/images/nlp_newsletter_2.png">
+
+
+
+
+
+
+
+<link rel="canonical" href="https://dair.ai/NLP_Newsletter_-2_-FR/">
+<link href="https://dair.ai/feed.xml" type="application/atom+xml" rel="alternate" title="dair.ai Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://dair.ai/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="https://dair.ai/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="https://dair.ai/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://dair.ai/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://dair.ai/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dair.ai/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dair.ai/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dair.ai/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1537934899816329";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43ef4f23bf37b0"></script>
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="https://dair.ai/">dair.ai</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				    <li><a href="https://dair.ai/posts/" >Blog ✍️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/about/" >About ℹ️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/newsletter/" >NLP Newsletter 🗞️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/projects/" >Projects 💡</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai" target="_blank">GitHub 📁</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/dair-ai.github.io/contribute" target="_blank">Contribute ✨</a></li>
+				
+				    
+				    <li><a href="https://medium.com/dair-ai" target="_blank">Medium 📰</a></li>
+				
+				    
+				    <li><a href="https://nlpoverview.com/" target="_blank">NLP Overview 📘</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/nlp_highlights" target="_blank">2019 NLP Highlights (PDF) 🔥</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="https://dair.ai/images/lbourdois.png" class="bio-photo" alt="Loïck BOURDOIS bio photo">
+
+
+  <h3 itemprop="name">Loïck BOURDOIS</h3>
+  <p>Data Scientist working at the Bordeaux Population Health Research Centre of INSERM University of Bordeaux.</p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        
+          <h1><a href="https://dair.ai/NLP_Newsletter_-2_-FR/" rel="bookmark" title="NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,…">NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,…</a></h1>
+        
+      
+    </div><!--/ .headline-wrap -->
+
+    
+    <div class="article-wrap">
+      <p><img src="https://cdn-images-1.medium.com/max/1200/1*mgWc3FhHPRfCxdPir6wSeg.png" alt="" /></p>
+
+<h1 id="avant-propos">Avant-propos</h1>
+<p>Bienvenue à cette nouvelle newsletter consacrée au NLP ! Ce deuxième numéro aborde des sujets qui vont de l’interprétabilité des modèles au repliement des protéines en passant par l’apprentissage par transfert actif.</p>
+
+<h1 id="publications-">Publications 📙</h1>
+
+<p><strong><em>Sur l’incertitude de la confiance dans un modèle</em></strong></p>
+
+<p><br />
+Un article récent de Google AI, publié au NeurIPS, examine si les probabilités sorties par un modèle reflètent sa capacité à prévoir les données décalées et hors distribution. Ils ont constaté que les ensembles profonds ont de meilleures performances (c’est-à-dire une meilleure incertitude du modèle) sur le décalage de l’ensemble de données, tandis que d’autres modèles ne sont pas devenus de plus en plus incertains sur le décalage de l’ensemble de données, mais se sont plutôt trompés avec confiance. (Lire l’article <a href="https://arxiv.org/abs/1906.02530">ici</a> et le résumé <a href="https://ai.googleblog.com/2020/01/can-you-trust-your-models-uncertainty.html">ici</a>).</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*NrsUnHS1thKq3ChK.png" alt="" /></p>
+
+<p><em>image corruption —</em> <a href="https://ai.googleblog.com/2020/01/can-you-trust-your-models-uncertainty.html"><em>source</em></a></p>
+
+<p><br />
+<strong><em>Généralisation systématique</em></strong></p>
+
+<p><br />
+Un <a href="https://www.semanticscholar.org/paper/Systematic-Generalization%3A-What-Is-Required-and-Can-Bahdanau-Murty/6c7494a47cc5421a7b636c244e13586dc2dab007">travail</a> intéressant publié dans ICLR présente une comparaison entre les modèles modulaires et les modèles génériques concernant leur efficacité pour la généralisation systématique dans la compréhension des langues. Sur la base d’une évaluation effectuée des questions/réponses en lien avec une <a href="https://arxiv.org/abs/1909.01860">tâche visuelle</a>, les auteurs concluent qu’il peut être nécessaire d’utiliser des régularisateurs et des antécédents explicites pour parvenir à une généralisation systématique.</p>
+
+<p><br />
+<strong><em>Le Reformer</em></strong></p>
+
+<p><br />
+Un Transformer est limité au niveau de la fenêtre de contexte qu’il peut couvrir en raison des calculs coûteux effectués dans la couche d’attention. Ainsi, il est possible d’appliquer le Transformer qu’à des tailles de texte limitées ou de générer que de courtes phrases / morceaux de musique. GoogleAI a récemment publié une variante efficace du modèle Transformer, appelée <a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">Reformer</a>. L’objectif principal de cette méthode est de pouvoir traiter des séquences de contexte beaucoup plus grandes tout en réduisant les besoins de calcul et en améliorant l’efficacité de la mémoire. Reformer utilise le “locality-sensitive-hashing” (<a href="https://fr.wikipedia.org/wiki/Locality_sensitive_hashing">LSH</a>) pour regrouper des vecteurs similaires et créer des segments à partir de ceux-ci. Cela permet ainsi un traitement en parallèle. L’attention est ensuite portée sur ces segments plus petits et sur les parties voisines correspondantes, réduisant la charge de calcul. L’efficacité de la mémoire est obtenue grâce à des couches réversibles qui permettent de recalculer à la demande les informations d’entrée de chaque couche tout en s’entraînant par rétropropagation. C’est une technique simple qui évite au modèle de devoir stocker en mémoire les activations. Une description de ce modèle est disponible en langue française sur ce <a href="https://lbourdois.github.io/blog/nlp/Reformer/">site</a>. Pour voir comment le Reformer peut être appliqué à une tâche de génération d’images, je vous invite à consulter ce <a href="https://colab.research.google.com/github/google/trax/blob/master/trax/models/reformer/image_generation.ipynb">Google Colab</a>.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*Q6FHJ5bqZRCrBAp9.png" alt="" /></p>
+
+<p><em><a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">source</a></em></p>
+
+<p><br />
+ <strong><em>Adaptation non supervisée de domaines pour la classification de textes</em></strong></p>
+
+<p><br />
+Ce <a href="https://arxiv.org/abs/2001.04362">travail</a> propose une combinaison de mesures de distance qui incorporées dans une fonction de perte lors de l’entraînement d’un modèle, permet d’améliorer l’adaptation du domaine non supervisé. Le modèle est étendu à un modèle « DistanceNet Bandit ». Le problème clé abordé par cette méthode est de comprendre comment traiter la dissimilitude entre les données de différents domaines.</p>
+
+<p><br />
+<strong><em>Amélioration des représentations contextualisées</em></strong></p>
+
+<p><br />
+Ce <a href="https://openreview.net/forum?id=r1xMH1BtvB">document</a> propose une tâche de pré-entraînement, appelée token detection, qui se révèle plus efficace pour entraîner un modèle linguistique que les méthodes de basées sur un pré-entaînement avec des masques telles que BERT par exemple. Le modèle est baptisé ELECTRA et ses représentations contextualisées surpassent celles de BERT et XLNET à données identiques et à taille de modèle identique. La méthode fonctionne particulièrement bien sur des machines à faible capacité de calcul. Il s’agit d’un effort pour construire des modèles de langage plus petits et moins chers.</p>
+
+<p><br />
+<strong><em>Interprétabilité des modèles</em></strong></p>
+
+<p><br />
+Distill a publié un document intitulé “<a href="https://distill.pub/2020/attribution-baselines/">Visualizing the Impact of Feature Attribution Baselines</a>” qui traite des <a href="https://medium.com/@kartikeyabhardwaj98/integrated-gradients-for-deep-neural-networks-c114e3968eae">gradients intégrés</a> utilisés pour interpréter les réseaux neuronaux dans divers problèmes. Dans le contexte de l’interprétabilité du modèle, le défi consiste à ce que la méthode puisse garantir que le modèle ne considère pas les caractéristiques manquantes comme étant importantes mais aussi que le modèle évite de donner aux entrées de la baseline une importance nulle (ce qui peut facilement arriver). L’auteur propose d’évaluer quantitativement les différents effets de certains choix précédemment utilisés et propose des choix de baseline qui préservent mieux la notion de manque.</p>
+
+<h1 id="créativité-et-société-">Créativité et société 🎨</h1>
+
+<p><strong><em>L’inadéquation des sentiments</em></strong></p>
+
+<p><br />
+Cette <a href="https://ieeexplore.ieee.org/abstract/document/8952437">étude</a> longitudinale révèle que les émotions extraites via l’utilisation d’algorithmes basés sur le texte ne sont souvent pas les mêmes que les émotions autodéclarées.</p>
+
+<p><br />
+<strong><em>Compréhension de la dopamine et repliement des protéines</em></strong></p>
+
+<p><br />
+DeepMind a récemment publié deux articles intéressants dans Nature. Le <a href="https://deepmind.com/blog/article/Dopamine-and-temporal-difference-learning-A-fruitful-relationship-between-neuroscience-and-AI">premier</a> vise à mieux comprendre le fonctionnement de la dopamine dans le cerveau grâce à l’apprentissage par renforcement. Le <a href="https://deepmind.com/blog/article/AlphaFold-Using-AI-for-scientific-discovery">second</a> est lié au repliement des protéines et tente de mieux comprendre ce fonctionnement afin de pouvoir éventuellement découvrir des traitements pour un large éventail de maladies.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*0mfEtacqGLSrmaUlNjJa0g.png" alt="" /></p>
+
+<p> <a href="https://deepmind.com/blog/article/AlphaFold-Using-AI-for-scientific-discovery"><em>source</em></a></p>
+
+<p><br />
+<strong><em>Entretiens sur le ML</em></strong></p>
+
+<p><br />
+Dans une <a href="https://www.youtube.com/watch?v=I-EIVlHvHRM&amp;feature=youtu.be">vidéo</a> de Wired, Refik Anadol discute du potentiel des algorithmes d’apprentissage automatique pour créer des œuvres d’art.</p>
+
+<p><br />
+L’un des secteurs où l’IA pourrait avoir un impact majeur est celui de l’éducation. Dans un nouvel <a href="https://engineering.stanford.edu/magazine/article/emma-brunskill-amped-education-ai?sf115875862=1">épisode</a> de “The Future of Everything”, Russ Altman et Emma Brunskill ont une discussion approfondie sur l’apprentissage assisté par ordinateur.</p>
+
+<h1 id="outils-et-jeux-de-données-️">Outils et jeux de données ⚙️</h1>
+
+<p><strong><em>Modèles PyTorch en production</em></strong></p>
+
+<p><br />
+Cortex est un outil permettant d’automatiser l’infrastructure et de déployer les modèles PyTorch en tant qu’API en production avec AWS. Pour en savoir plus sur la façon dont cela se fait, cliquez <a href="https://medium.com/pytorch/how-to-build-production-software-with-pytorch-9a8725382f2a">ici</a>.</p>
+
+<p><br />
+<strong><em>Visualisation des séquences de génération de texte</em></strong></p>
+
+<p><br />
+Facebook AI a lancé <a href="https://ai.facebook.com/blog/vizseq-a-visual-analysis-toolkit-for-accelerating-text-generation-research/">VizSeq</a>, un outil qui aide à évaluer visuellement les séquences de textes générées sous des métriques comme BLUE et METEOR. L’objectif principal de cet outil est de fournir une analyse plus intuitive des ensembles de données textuelles via des visualisations. Pour lire l’article complet, cliquez <a href="https://www.aclweb.org/anthology/D19-3043.pdf">ici</a>.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*Ff7BTxmEjUXHtYu9JkfClg.jpeg" alt="" /></p>
+
+<p><a href="https://ai.facebook.com/blog/vizseq-a-visual-analysis-toolkit-for-accelerating-text-generation-research/"><em>Source</em></a></p>
+
+<p><br />
+<strong><em>Reconnaissance vocale en ligne</em></strong></p>
+
+<p><br />
+Facebook AI a mis en open source son outil <a href="https://ai.facebook.com/blog/online-speech-recognition-with-wav2letteranywhere/">wav2letter@anywhere</a>. Il s’agit d’un framework basé sur un Transformer acoustique afin d’établir un état de l’art en ligne de la reconnaissance vocale. Les principales améliorations portent sur la taille du modèle et la réduction de la latence entre l’audio et la transcription, deux éléments importants pour accélérer l’inférence en temps réel.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*4_2Obuu8u8l2Vtp8UMHe7Q.gif" alt="" /></p>
+
+<p> <a href="https://ai.facebook.com/blog/online-speech-recognition-with-wav2letteranywhere/"><em>source</em></a></p>
+
+<h1 id="ethique-en-ia-">Ethique en IA 🚨</h1>
+
+<p><strong><em>Implications de l’IA</em></strong></p>
+
+<p><br />
+Dans un objectif de prévenir les abus et les actions contraires à l’éthique des systèmes d’IA sur le public, l’Union européenne envisage d’interdire la technologie de reconnaissance faciale au public pendant cinq ans. (<a href="https://www.reuters.com/article/us-eu-ai/eu-mulls-five-year-ban-on-facial-recognition-tech-in-public-areas-idUSKBN1ZF2QL">Article complet</a>).</p>
+
+<p><br />
+<strong><em>Coûts environnementaux des modèles de NLP modernes</em></strong></p>
+
+<p><br />
+Cet <a href="https://arxiv.org/abs/1906.02243">article</a> aborde les considérations énergétiques et politiques des approches modernes en NLP. Les modèles actuels reposent sur des millions/milliards de paramètres et par conséquent sur d’importantes ressources de calcul. En résulte une consommation d’énergie très importante. Les auteurs espèrent sensibiliser davantage les chercheurs aux coûts environnementaux liés à l’entraînement de ces modèles de NLP.
+Zachary Lipton parle d’équité, d’interprétabilité et des dangers du solutionnisme dans cette <a href="https://c4ejournal.net/2020/01/16/zack-lipton-fairness-interpretability-and-the-dangers-of-solutionism-ethics-of-ai-in-context2020-c4ej-2/">conférence</a> donnée à l’Université de Toronto. Les principaux sujets tournent autour des considérations et des implications des approches d’équité en matière de blanchiment d’argent.</p>
+
+<h1 id="articles-et-blog-️">Articles et Blog ✍️</h1>
+<p><strong><em>ML open source</em></strong></p>
+
+<p><br />
+Thomas Wolf, responsable scientifique de Hugging Face, donne des conseils à ceux qui envisagent d’utiliser du code open-source ou de faire des recherches. Trouvez le fil de discussion Twitter <a href="https://twitter.com/Thom_Wolf/status/1216990543533821952?s=20">ici</a>.</p>
+
+<p><br />
+<strong><em>Introduction à l’apprentissage auto-supervisé en computer vision</em></strong></p>
+
+<p><br />
+Jeremy Howard a écrit <a href="https://www.fast.ai/2020/01/13/self_supervised/">cet article de blog</a> qui présente brièvement le concept d’apprentissage auto-supervisé dans le contexte de la vision par ordinateur.</p>
+
+<p><br />
+<strong><em>TinyBERT</em></strong></p>
+
+<p><br />
+Nous avons déjà constaté le succès de nombreuses variantes des modèles BERT (par exemple, <a href="https://medium.com/huggingface/distilbert-8cf3380435b5">DistilBERT</a>) qui utilisent une certaine forme de <a href="https://nervanasystems.github.io/distiller/knowledge_distillation.html">distillation des connaissances</a> pour réduire considérablement la taille du modèle et améliorer la vitesse. <a href="https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TinyBERT">TinyBERT</a> est une variante de BERT que ses auteurs ont appliqué à une solution de <a href="https://towardsdatascience.com/tinybert-for-search-10x-faster-and-20x-smaller-than-bert-74cd1b6b5aec">recherche par mots-clés</a>. Ce projet a été inspiré par cette <a href="https://www.blog.google/products/search/search-language-understanding-bert/">publication</a> de Google. L’intérêt de l’architecture est qu’elle fonctionne sur un CPU standard et peut être utilisée pour améliorer et comprendre les résultats de recherche.</p>
+
+<p><br />
+<strong><em>Transfert Learning actif</em></strong></p>
+
+<p><br />
+Rober Monarch a écrit un <a href="https://medium.com/pytorch/https-medium-com-robert-munro-active-learning-with-pytorch-2f3ee8ebec">article Medium</a> sur l’apprentissage actif par transfert, extrait de son prochain livre, <a href="https://www.manning.com/books/human-in-the-loop-machine-learning">Human-in-the-loop Machine Learning</a>. Il écrit aussi d’autres articles sur les méthodes permettant de combiner l’intelligence humaine et l’intelligence machine pour résoudre des problèmes. Ses propos sont accompagnés de code Pytorch.</p>
+
+<p><br />
+<strong><em>Les sombres secrets de BERT</em></strong></p>
+
+<p><br />
+Anna Roger a écrit cet <a href="https://text-machine-lab.github.io/blog/2020/bert-secrets/">article</a> de blog qui parle de ce qui se passe réellement avec un BERT bien fine-tuné. Les résultats des analyses proposées suggèrent que BERT est sévèrement surparamétré et que les avantages identifiés de l’auto-attention ne sont pas nécessairement aussi affirmés, en particulier en ce qui concerne les informations linguistiques qui sont encodées et utilisées pour l’inférence.</p>
+
+<h1 id="education-">Education 🎓</h1>
+
+<p><strong><em>Neural Nets for NLP</em></strong></p>
+
+<p><br />
+Graham Neubig, professeur de NLP à la CMU, a publié des <a href="https://www.youtube.com/playlist?list=PL8PYTP1V4I8CJ7nMxMC8aXv8WqKYwj-aJ">vidéos</a> pour le cours “Neural Nets for NLP” dispensé ce semestre.</p>
+
+<p><br />
+<strong><em>DeepMath</em></strong></p>
+
+<p><br />
+Vous voulez vous plonger dans les mathématiques qui se cachent derrière les méthodes d’apprentissage approfondies ? Voici une série de <a href="https://www.youtube.com/playlist?list=PLWQvhvMdDChzsThHFe4lYAff3pu2m0v2H">conférences vidéo</a> accueillant un large éventail d’intervenants.</p>
+
+<p><br />
+<strong><em>Cours et tutoriels Python</em></strong></p>
+
+<p><br />
+Google a publié le “Google IT Automation with Python Professional Certificate”. Pour en savoir plus sur le moyen d’obtention de ce certificat cliquez <a href="https://blog.google/outreach-initiatives/grow-with-google/new-certificate-help-people-grow-careers">ici</a> et pours en savoir plus sur les cours, cliquez <a href="https://www.coursera.org/professional-certificates/google-it-automation">ici</a>.
+Bien que le cours ne soit pas directement lié à la ML ou à l’IA, cela peut consister en un cours de base pour maîtriser le langage Python. Des bourses d’études sont également disponibles.</p>
+
+<p><br />
+Voici une autre <a href="https://www.youtube.com/watch?v=fMqL5vckiU0&amp;list=PL-wATfeyAMNrtbkCNsLcpoAyBBRJZVlnf">série de vidéos</a> intitulée “Deep Learning (for Audio) with Python”, qui met l’accent sur l’utilisation de Tensorflow et de Python pour construire des applications liées à l’audio/musique en tirant parti de l’apprentissage profond.</p>
+
+<p><br />
+Andrew Trask a publié une <a href="https://github.com/OpenMined/PySyft/tree/master/examples/tutorials">série de tutoriels</a>, pour parvenir, étape par étape, à un apprentissage approfondi décentralisé et respectueux de la vie privée. Tous les notebooks contiennent des implémentations de PyTorch et sont destinés aux débutants.</p>
+
+<p><br />
+<strong><em>Etats de l’art du deep learning</em></strong></p>
+
+<p><br />
+Cette <a href="https://www.youtube.com/watch?v=0VH1Lim8gL8">conférence</a> de Lex Fridman traite de la recherche et le développement récents dans le domaine de l’apprentissage approfondi. Il parle des grandes avancées sur des sujets tels que les perceptrons, les réseaux de neurones, la rétropropagation, CNN, l’apprentissage profond, ImageNet, les GAN, AlphaGo et les Transformers plus récemment. Cette conférence fait partie de la série “Deep Learning” du MIT.</p>
+
+<p><br />
+<strong><em>Groupes d’études</em></strong></p>
+
+<p><br />
+Deux groupes d’étude / lectures d’articles conseillés par Elvis : le <a href="https://twitter.com/__MLT__">MLT</a> et le <a href="https://www.nightai.co/">nightai</a>.</p>
+
+<p><br />
+<strong><em>Le paysage de l’apprentissage par renforcement</em></strong></p>
+
+<p><br />
+Découvrez avec le Dr Katja Hofmann de Microsoft, les concepts et méthodes clés de l’apprentissage par renforcement dans <a href="https://note.microsoft.com/MSR-Webinar-RL-Algorithm-to-Adoption-Registration-Live.html?wt.mc_id=twitter_MSR-WBNR_post_v3">sa série d’articles</a>.</p>
+
+<h1 id="mentions-spéciales-️">Mentions spéciales ⭐️</h1>
+
+<p>Jettez un œil à cette <a href="https://gist.github.com/y0ast/d91d09565462125a1eb75acc65da1469">implémentation PyTorch</a> utilisant de ResNet-18 appliquée à CIFAR-10 permettant d’atteindre une précision de 94%.</p>
+
+<p><br />
+PyTorch 1.4 est sorti ! Consultez les notes de mise à jour <a href="https://github.com/pytorch/pytorch/releases/tag/v1.4.0">ici</a>.</p>
+
+<p><br />
+Elona Shatri a rédigé un <a href="https://medium.com/@e.shatri1/what-is-optical-music-recognition-6515d8a53e01">résumé</a> sur la façon dont elle entend aborder la reconnaissance optique de la musique par un apprentissage approfondi.</p>
+
+<p><br />
+Le titre de cet article de blog est explicite : “<a href="https://cims.nyu.edu/~andrewgw/caseforbdl/">Les arguments en faveur de l’apprentissage approfondi bayésien</a>”.</p>
+
+<p><br />
+Chris Said partage son <a href="https://chris-said.io/2020/01/10/optimizing-sample-sizes-in-ab-testing-part-I/">expérience</a> dans l’optimisation de la taille des échantillons pour les tests A/B, une partie importante de la science des données pratiques. Les sujets abordés comprennent les coûts et les avantages des grandes tailles d’échantillon et les meilleures pratiques pour les praticiens.</p>
+
+<p><br />
+Neural Data Server (NDS) est un moteur de recherche dédié à l’obtention de données d’apprentissage par transfert. Pour en savoir plus sur la méthode cliquez <a href="https://arxiv.org/abs/2001.02799">ici</a>,  et sur le service cliquez <a href="http://aidemos.cs.toronto.edu/nds/">ici</a>.</p>
+
+<hr />
+
+<p>Vous pouvez retrouver la précédente newsletter <a href="https://dair.ai/NLP_Newsletter_-1_-FR/">ici</a></p>
+
+<p><br />
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n’hésitez pas à me contacter à ellfae@gmail.com ou par message sur <a href="https://twitter.com/omarsar0">Twitter</a>.</p>
+
+<p><br />
+<a href="https://dair.ai/newsletter/">Abonnez-vous</a> pour recevoir les prochains numéros dans votre boîte mail.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+  <div class="addthis_inline_share_toolbox"></div>
+  <!--
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=https://dair.ai/NLP_Newsletter_-2_-FR/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://dair.ai/NLP_Newsletter_-2_-FR/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=https://dair.ai/NLP_Newsletter_-2_-FR/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>-->
+</div><!-- /.social-share -->
+        <p class="byline"><strong>NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,…</strong> was published on <time datetime="2020-03-09T00:00:00-05:00">March 09, 2020</time>.</p>
+        
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="https://dair.ai/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7-ZH-.md/" title="NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7/" title="NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_-7_-FR/" title="NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
+  <footer>
+    
+
+<span>&copy; 2020 dair.ai. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://dair.ai/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://dair.ai/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-158959084-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+
+
+
+</body>
+</html>
