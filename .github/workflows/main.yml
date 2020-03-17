@@ -29,7 +29,7 @@ jobs:
       uses: fastai/fastpages@master
 
     - name: Jekyll build
-      uses: docker://hamelsmu/fastpages-jekyll
+      uses: docker://jekyll/jekyll
       with:
         args: bash -c "gem install bundler && jekyll build -V"
       env:
