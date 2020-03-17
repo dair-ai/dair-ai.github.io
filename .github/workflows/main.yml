@@ -27,6 +27,11 @@ jobs:
     
     - name: Convert notebooks and words docs to posts
       uses: fastai/fastpages@master
+  
+    - name: setup directories for Jekyll build
+      run: |
+        rm -rf _site
+        sudo chmod -R 777 .
 
     - name: Jekyll build
       uses: docker://jekyll/jekyll
