@@ -36,13 +36,13 @@ Welcome to the 7th issue of the NLP Newsletter.希望您今天过得愉快，并
 
 *Credit: Google AI Blog*
 
-\\
+
 #### 1.2 微调预训练语言模
 
 \\
 研究人员进行了一系列全面的微调试验，以更好地了解权重初始化和早停对语言模型的效果，发表在论文《[Fine-Tuning Pretrained Language Models: Weight Initializations, Data Orders, and Early Stopping](https://arxiv.org/abs/2002.06305)》中。 通过涉及对BERT进行数百次微调的各种实验，发现不同的随机种子会产生截然不同的结果。特别是，该研究报告称，一些权重初始化在一组任务中确实表现良好。所有实验数据和试验均已公开发布，供有兴趣进一步了解微调过程中不同动态的其他研究人员使用。
 
-\\
+
 #### 1.3 Zoom In: An Introduction to Circuits
 
 \\
@@ -51,13 +51,13 @@ OpenAI研究人员发表了一篇文章，[Zoom In: An Introduction to Circuits]
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*i0c-qpiire6dD4IqJVKlYg.png)
 
-\\
+
 #### 1.4 NLP Research Highlights — Issue #1
 
 \\
 在dair.ai的新系列[NLP Research Highlights](https://medium.com/dair-ai/nlp-newsletter-bertology-primer-fastpages-t5-data-science-education-pytorch-notebooks-slow-8ae5d499e040)中，详细介绍了当前有趣且重要的NLP研究。通过对这些工作的总性，这将成为跟踪NLP进展的一种方式。在第一季度中，主题涉及从改进语言模型到改进对话代理到最新的语音识别系统。 这些摘要也将保留在[nlp_paper_summaries](https://github.com/dair-ai/nlp_paper_summaries)中。
 
-\\
+
 #### 1.5用图网络模拟复杂物理
 
 \\
@@ -68,7 +68,7 @@ OpenAI研究人员发表了一篇文章，[Zoom In: An Introduction to Circuits]
 
 [*(Sanchez-Gonzalez et al., 2020)*](https://arxiv.org/pdf/2002.09405.pdf)
 
-\\
+
 #### 1.6 特定语言BERT模型
 
 \\
@@ -84,7 +84,6 @@ Hugging Face Transformer库中现在提供阿拉伯语BERT（AraBERT）。 你�
 DeepMind公开与COVID-19相关病毒相关的蛋白质的计算预测结构，[computational-predictions-of-protein-structures-associated-with-COVID-19](https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19)。这些预测是直接从AlphaFold系统获得的，但尚未经过实验验证。该开源的初衷是鼓励为更好地了解该病毒及其功能做出贡献。
 
 
-\\
 #### 2.2 Court cases that sound like the weirdest fights
 
 \\
@@ -95,13 +94,12 @@ Janelle Shane分享了一个有趣实验的结果，[court-cases-that-sound-like
 
 [*Source*](https://aiweirdness.com/post/612669075940900864/court-cases-that-sound-like-the-weirdest-fights)
 
-\\
 #### 2.3 以人为中心的ML框架设计
 
 \\
 Google AI公布了对使用TensorFlow.js的645人的大规模调查结果，[toward-human-centered-design-for-ml](https://ai.googleblog.com/2020/03/toward-human-centered-design-for-ml.html)。 他们旨在从非ML软件开发人员那里了解最重要的功能是什么，以及他们在使用当前ML框架时的总体经验。研究发现包括“缺乏对ML的概念性理解”阻碍了ML框架针对此特定用户集的使用。该研究的参与者还报告了关于如何将ML模型应用于不同问题的需求
 
-\\
+
 #### 2.4 在浏览器中进行面部和手部跟踪
 
 \\
@@ -121,7 +119,7 @@ Google AI公布了对使用TensorFlow.js的645人的大规模调查结果，[tow
 \\
 我们最近创建了一个[nlp_paper_summaries库](https://github.com/dair-ai/nlp_paper_summaries)，其中包含经过精心挑选的NLP论文摘要列表，这些摘要是过去几年中一些最有趣和最重要的NLP论文。着重于精选重要论文的论文摘要和博客文章，以帮助提高NLP主题和研究的可及性。
 
-\\
+
 #### 3.2 PyTorch的计算机视觉库
 
 \\
@@ -130,7 +128,7 @@ Google AI公布了对使用TensorFlow.js的645人的大规模调查结果，[tow
 \\
 ![](https://cdn-images-1.medium.com/max/800/0*gN_-llcA4_3lIHYE.gif)
 
-\\
+
 #### 3.3 DIET简介
 
 \\
@@ -141,7 +139,7 @@ Google AI公布了对使用TensorFlow.js的645人的大规模调查结果，[tow
 
 [*DIET framework*](https://blog.rasa.com/introducing-dual-intent-and-entity-transformer-diet-state-of-the-art-performance-on-a-lightweight-architecture/?utm_source=twitter)
 
-\\
+
 #### 3.4 迷失在众多BERT模型中？
 [BERT Lang Street](https://bertlang.unibocconi.it/)是一个简洁的网站，它能够搜索30种基于BERT的模型，其中包含18种语言和28个任务，共177个条目。 例如，如果你想使用BERT模型找出最新的情感分类结果，则可以在搜索栏中搜索“情感”（如下面的图片所示）。
 
@@ -149,7 +147,7 @@ Google AI公布了对使用TensorFlow.js的645人的大规模调查结果，[tow
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*UuVno2eOAzYb_wlSSfukPA.png)
 
-\\
+
 #### 3.5 Med7
 
 \\
@@ -159,18 +157,18 @@ Andrey Kormilitzin发布了[Med7](https://github.com/kormilitzin/med7) ，这是
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*yOMqhvTwYnxB4LYXv2Mgjg.png)
 
-\\
+
 #### 3.6 量子机器学习开源库
 
 \\
 [TensorFlow Quantum](https://ai.googleblog.com/2020/03/announcing-tensorflow-quantum-open.html)是一个开放源代码库，提供了用于快速进行量子ML研究原型的工具箱，该工具箱应用ML模型来解决从医学到材料的各种问题。
 
 
-\\
+
 #### 3.7 快速简便的无限宽网络
 
 \\
-[Neural Tangents](https://github.com/google/neural-tangents)是一个开放源代码库，允许研究人员使用JAX建立和训练无限宽模型和有限神经网络。可以阅读相应地博客获取更多信息，[fast-and-easy-infinitely-wide-networks](https://ai.googleblog.com/2020/03/fast-and-easy-infinitely-wide-networks.html)。 
+[Neural Tangents](https://github.com/google/neural-tangents)是一个开放源代码库，允许研究人员使用JAX建立和训练无限宽模型和有限神经网络。可以阅读相应地博客获取更多信息，[fast-and-easy-infinitely-wide-networks](https://ai.googleblog.com/2020/03/fast-and-easy-infinitely-wide-networks.html)。
 
 
 \\
@@ -188,26 +186,26 @@ Sabrina J. Mielke发表了一篇文章，[From PyTorch to JAX: towards neural ne
 
 [*Source*](https://sjmielke.com/jax-purify.htm) **
 
-\\
+
 #### 4.2 Why do we still use 18-year old BLEU?***
 
 \\
 在博客[ Why do we still use 18-year old BLEU?](https://ehudreiter.com/2020/03/02/why-use-18-year-old-bleu/)中，Ehud Reiter谈到了为什么我们仍然使用BLUE等旧的评估技术进行评估诸如机器翻译之类的任务的NLP模型。作为该领域的研究人员，他还表达了对对较新任务进行评估的技术的含义。
 
-\\
+
 #### 4.3 BART简介
 
 \\
 [BART](https://arxiv.org/abs/1910.13461)是Facebook提出的一种新模型，其中涉及一种用于对seq2seq模型进行预训练的降噪自动编码器，该模型可以改善下游文本生成任务（如抽象摘要）的性能。 Sam Shleifer提供了[BART的摘要简介](https://sshleifer.github.io/blog_v2/jupyter/2020/03/12/bart.html)，以及他如何将其集成到Hugging Face Transformers代码库中。
 
 
-\\
+
 #### 4.4 Transformer长程上下文综述
 
 \\
-Madison May最近写了一篇有趣的综述，[A Survey of Long-Term Context in Transformers](https://www.pragmatic.ml/a-survey-of-methods-for-incorporating-long-term-context/)，描述了改进基于Transformer的方法，其中包括Sparse Transformers, Adaptive Span Transformers, Transformer-XL, compressive Transformers, Reformer以及routing transformer。 
+Madison May最近写了一篇有趣的综述，[A Survey of Long-Term Context in Transformers](https://www.pragmatic.ml/a-survey-of-methods-for-incorporating-long-term-context/)，描述了改进基于Transformer的方法，其中包括Sparse Transformers, Adaptive Span Transformers, Transformer-XL, compressive Transformers, Reformer以及routing transformer。
 
-\\
+
 #### 4.5 如何在自动文本编写中控制样式和内容
 
 \\
@@ -221,7 +219,7 @@ Madison May最近写了一篇有趣的综述，[A Survey of Long-Term Context in
 \\
 在我们以前的NLP简报中，我们介绍了[THiNC](https://thinc.ai/)，这是一个功能深层学习库，致力于与其他现有库的兼容性。 Ines Montani在PyCon哥伦比亚的演讲使用的PPT[The Future of NLP in Python](https://speakerdeck.com/inesmontani/the-future-of-nlp-in-python-keynote-pycon-colombia-2020?slide=9)引入了更多的库。
 
-\\
+
 #### 5.2 Transformers Notebooks
 
 \\
@@ -231,20 +229,20 @@ HuggingFace发布了一组[Colab notebooks](https://github.com/huggingface/trans
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*0AYHYUsHbaqV2vqN2zCzLQ.png)
 
-\\
+
 #### 5.3 TensorFlow 2.0免费课程
 
 \\
 在TensorFlow 2.0上查看此[〜7小时免费课程](https://www.freecodecamp.org/news/massive-tensorflow-2-0-free-course/) ，其中包含从基本神经网络到NLP到强化学习的介绍。
 
-\\
+
 #### 5.4 DeepMind播客
 
 \\
 DeepMind已为其播客发布了所有剧集，[DeepMind: The Podcast](https://www.youtube.com/playlist?list=PLqYmG7hTraZBiUr6_Qf8YTS2Oqy3OGZEj)，其中有科学家，研究人员和工程师讨论主题涵盖了AGI 到 神经科学 到 机器人技术。
 
 
-\\
+
 #### 5.5 ML&DL课程
 
 \\
@@ -261,7 +259,7 @@ DeepMind已为其播客发布了所有剧集，[DeepMind: The Podcast](https://w
 
 # Noteworthy Mentions ⭐️
 
-上一期的NLP简报(Issue #6) 可以在[这里](https://medium.com/dair-ai/nlp-newsletter-bertology-primer-fastpages-t5-data-science-education-pytorch-notebooks-slow-8ae5d499e040)查看。 
+上一期的NLP简报(Issue #6) 可以在[这里](https://medium.com/dair-ai/nlp-newsletter-bertology-primer-fastpages-t5-data-science-education-pytorch-notebooks-slow-8ae5d499e040)查看。
 
 \\
 Connon Shorten发表了解释[ELECTRA模型的视频](https://www.youtube.com/watch?v=QWu7j1nb_jI&feature=emb_logo)，该模型提出了一种称为 `replaced token detection`的技术，可以更有效地对Transformers进行预训练。 如果您有兴趣，我们也在[此处](https://medium.com/dair-ai/nlp-research-highlights-cd522b21b01a)写了该模型的简短摘要。
