@@ -19,6 +19,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    
+    - name: Copy Repository Contents
+      uses: actions/checkout@master
+      with:
+        persist-credentials: false
+    
     - name: Convert notebooks and words docs to posts
       uses: fastai/fastpages@master
 
