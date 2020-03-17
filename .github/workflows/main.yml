@@ -22,6 +22,13 @@ jobs:
     - name: Convert notebooks and words docs to posts
       uses: fastai/fastpages@master
 
+    - name: Jekyll build
+      uses: docker://hamelsmu/fastpages-jekyll
+      with:
+        args: bash -c "gem install bundler && jekyll build -V"
+      env:
+        JEKYLL_ENV: 'production'
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.event_name == 'push'
