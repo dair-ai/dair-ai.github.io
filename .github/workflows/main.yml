@@ -22,11 +22,6 @@ jobs:
     - name: Convert notebooks and words docs to posts
       uses: fastai/fastpages@master
 
-    - name: Jekyll build
-      uses: docker://jekyll/jekyll
-      with:
-        args: jekyll build
-
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.event_name == 'push'
