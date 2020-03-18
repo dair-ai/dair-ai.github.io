@@ -1,0 +1,62 @@
+# Site wide configuration
+
+title:            dair.ai
+locale:           en_US
+url:              https://dair.ai
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+#highlighter: pygments
+
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jemoji
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  syntax_highlighter: rouge
+
+# Site owner
+owner:
+  name: dair.ai
+  avatar: dair-ai.png
+  bio: "Democratizing Artificial Intelligence Research, Education, and Technologies"
+  email: ellfae@gmail.com
+  disqus-shortname: dair-ai
+  twitter: dair_ai
+  facebook:
+  google:
+    plus: #OmarSar27
+    analytics: UA-158959084-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: dair-ai
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

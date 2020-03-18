@@ -1,0 +1,60 @@
+# Authors
+naraquev:
+  name: Nicolas Araque Volk
+  web: https://medium.com/@nicolas_araque
+  bio: "Hardware Knight. Artificial Intelligence Advocate and Data Driven Geek."
+  twitter: nicolas_araque
+  avatar: naraquev.png
+
+lbourdois:
+  name: Loïck BOURDOIS
+  web: https://lbourdois.github.io/blog/
+  bio: "Data Scientist working at the Bordeaux Population Health Research Centre of INSERM University of Bordeaux."
+  avatar: lbourdois.png
+
+KaiyuanGao:
+  name: kaiyuan
+  web: https://blog.csdn.net/Kaiyuan_stju
+  twitter: kaiyuan70895595
+  github: KaiyuanGao
+  avatar: kaiyuan.jpg
+
+SufianDira:
+  name: Sufian Diraneyya
+  avatar: sufian.jpg
+
+fclesio:
+  name: Flavio Clesio
+  web: https://flavioclesio.com
+  bio: "Machine Learning Engineer (NLP, CV, Marketplace RecSys)"
+  twitter: flavioclesio
+  instagram: flavioclesio
+  avatar: flavio.png
+  github: fclesio
+
+VictorGarritano:
+  name: Victor Garritano Noronha
+  twitter: vic_garritano
+  github: VictorGarritano
+  avatar: victor.jpg
+
+billy_rick:
+  name: Elvis Saravia
+  web: http://dair.ai
+  email: ellfae@gmail.com
+  bio: "Editor at dair.ai"
+  avatar: white_background_elvis.png
+  twitter: omarsar0
+  instagram:
+  github: omarsar
+  google:
+    plus: #BillyRick
+
+cornelius_fiddlebone:
+  name: Cornelius Fiddlebone
+  email: cornelius@thewhip.com
+  bio: "I ordered what?"
+  avatar: bio-photo.jpg
+  twitter: rhymeswithsackit
+  google:
+    plus: CorneliusFiddlebone

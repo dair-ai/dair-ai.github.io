@@ -1,546 +1,0 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-
-<head>
-<meta charset="utf-8">
-<title>الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ... &#8211; dair.ai</title>
-<meta name="description" content="هذا العدد يغطي مواضيع مثل: فهم التقطير-الذاتي (Self-Distillation)، ترجمة صورة-إلى-رسمة (Image-to-illustration Translation)، الاعتبارات الأخلاقية في علم معالجة اللغات الطبيعية (NLP)، النماذج، وغيرها الكثير.">
-<meta name="keywords" content="nlp_newsletter">
-
-
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ...">
-<meta name="twitter:description" content="هذا العدد يغطي مواضيع مثل: فهم التقطير-الذاتي (Self-Distillation)، ترجمة صورة-إلى-رسمة (Image-to-illustration Translation)، الاعتبارات الأخلاقية في علم معالجة اللغات الطبيعية (NLP)، النماذج، وغيرها الكثير.">
-<meta name="twitter:site" content="@dair_ai">
-
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://dair.ai/images/nlp_newsletter_5.png">
-
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ...">
-<meta property="og:description" content="هذا العدد يغطي مواضيع مثل: فهم التقطير-الذاتي (Self-Distillation)، ترجمة صورة-إلى-رسمة (Image-to-illustration Translation)، الاعتبارات الأخلاقية في علم معالجة اللغات الطبيعية (NLP)، النماذج، وغيرها الكثير.">
-<meta property="og:url" content="https://dair.ai/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/">
-<meta property="og:site_name" content="dair.ai">
-
-<meta property="og:image" content="https://dair.ai/images/nlp_newsletter_5.png">
-
-
-
-
-
-
-
-<link rel="canonical" href="https://dair.ai/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/">
-<link href="https://dair.ai/feed.xml" type="application/atom+xml" rel="alternate" title="dair.ai Feed">
-
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="https://dair.ai/assets/css/main.css">
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- HTML5 Shiv and Media Query Support -->
-<!--[if lt IE 9]>
-	<script src="https://dair.ai/assets/js/vendor/html5shiv.min.js"></script>
-	<script src="https://dair.ai/assets/js/vendor/respond.min.js"></script>
-<![endif]-->
-
-<!-- Modernizr -->
-<script src="https://dair.ai/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
-<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="https://dair.ai/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="https://dair.ai/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="https://dair.ai/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dair.ai/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dair.ai/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dair.ai/images/apple-touch-icon-144x144-precomposed.png">
-
-</head>
-
-<body class="post">
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1537934899816329";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43ef4f23bf37b0"></script>
-
-<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
-
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="https://dair.ai/">dair.ai</a>
-	</div><!-- /.site-name -->
-	<div class="top-navigation">
-		<nav role="navigation" id="site-nav" class="nav">
-		    <ul>
-		        
-				    
-				    <li><a href="https://dair.ai/posts/" >Blog ✍️</a></li>
-				
-				    
-				    <li><a href="https://dair.ai/about/" >About ℹ️</a></li>
-				
-				    
-				    <li><a href="https://dair.ai/newsletter/" >NLP Newsletter 🗞️</a></li>
-				
-				    
-				    <li><a href="https://dair.ai/projects/" >Projects 💡</a></li>
-				
-				    
-				    <li><a href="https://github.com/dair-ai" target="_blank">GitHub 📁</a></li>
-				
-				    
-				    <li><a href="https://github.com/dair-ai/dair-ai.github.io/contribute" target="_blank">Contribute ✨</a></li>
-				
-				    
-				    <li><a href="https://medium.com/dair-ai" target="_blank">Medium 📰</a></li>
-				
-				    
-				    <li><a href="https://nlpoverview.com/" target="_blank">NLP Overview 📘</a></li>
-				
-				    
-				    <li><a href="https://github.com/dair-ai/nlp_highlights" target="_blank">2019 NLP Highlights (PDF) 🔥</a></li>
-				
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-</div><!-- /.navigation-wrapper -->
-
-
-
-<div id="main" role="main">
-  <div class="article-author-side">
-    
-
-<div itemscope itemtype="http://schema.org/Person">
-
-
-	<img src="https://dair.ai/images/sufian.jpg" class="bio-photo" alt="Sufian Diraneyya bio photo">
-
-
-  <h3 itemprop="name">Sufian Diraneyya</h3>
-  <p></p>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-  </div>
-
-  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-    <style>
-      .h-entry {
-          direction: rtl;
-          font-family: Dubai;
-      }
-
-      .h-entry h1 {
-          direction: rtl;
-          font-family: Dubai;
-          line-height: 1.2;
-      }
-    </style>
-    <header class="post-header">
-      <h1 class="post-title p-name" itemprop="name headline">الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ...</h1>
-
-    </header>
-
-    <div class="post-content e-content" itemprop="articleBody">
-      <p><img src="https://cdn-images-1.medium.com/max/1200/1*YIhZsPaiBFkRMMWo5FAhGw.png" alt="" /></p>
-
-<p><br />
-بداية، لا أستطيع شكركم ❤️ جميعاً كفاية للدعم الهائل والتشجيع لمواصلة هذه القائمة البريدية. هذا الجهد يحتاج بحث وتعديل مضجرين، الذين أراهما يستحقان، ويساعدان في تزويدكم بأفضل محتوى. أتمنى أن تستمتعوا بهذه الإصدارات، لأنني أفعل 😉.</p>
-
-<p><br />
-<a href="https://dair.ai/newsletter/"><strong>اشترك</strong></a> <em>🔖 في قائمة NLP البريدية لتصلك الأعداد القادمة مباشرة على صندوق بريدك.</em></p>
-
-<h1 id="المنشورات-">المنشورات 📙</h1>
-
-<p><strong><em>فهم نظري لل”التقطير الذاتي” (Self-Distillation)</em></strong></p>
-
-<p><br />
-في سياق التعلم العميق (Deep Learning)، التقطير الذاتي أو ال(<a href="https://arxiv.org/pdf/1503.02531.pdf"><strong>Self-Distillation</strong></a>) بالإنجليزية هي عملية تحويل المعرفة من معمارية (Architecture) ما إلى معمارية أخرى مماثلة. توقعات النموذج الأصلي تتم تغذيتها كقيم مستهدفة إلى النموذج الآخر أثناء التدريب. بجانب وجود بعض مزايا، مثل تقليل حجم النموذج، تُظهر النتائج التجريبية أن هذا الأسلوب يعمل جيداً على قواعد البيانات المفصولة (Held-Out Datasets). نشر مجموعة من الباحثين ورقة بحثية مؤخراً تقدم تحليلاً نظرياً مع التركيز على فهم أعمق لما يحدث في عملية استخراج (“تقطير”) المعرفة هذه ولماذا هي فعالة. النتائج تظهر أن بضع جولات من “التقطير” تزيد التنظيم (Regularization) (عن طريق <a href="https://twitter.com/TheGradient/status/1228132843630387201?s=20"><strong>الحد تدريجياً من عدد الوظائف الأساسية التي تمثل الحل</strong></a>) الذي يميل إلى تقليل الملائمة الزائدة (Over-Fitting). (اقرأ الورقة كاملة (باللغة الإنجليزية) <a href="https://arxiv.org/abs/2002.05715"><strong>هنا</strong></a>)</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/1*nWYO71awfooL4MrGK-tFww.png" alt="" /></p>
-
-<p>الشكل 1: مخطط توضيحي لعملية التقطير الذاتي لدورتين</p>
-
-<p><br />
-<a href="https://arxiv.org/abs/2002.05715"><em>المصدر</em></a></p>
-
-<p><br />
-<strong><em>عقد 2010 إلى 2019: عقدنا من التعلم العميق / توقعات العقد القادم 2020 - 2029</em></strong></p>
-
-<p><br />
-<a href="http://people.idsia.ch/~juergen/"><strong>Jürgen Schmidhuber</strong></a>، رائد في الذكاء الاصطناعي، نشر مؤخراً <a href="http://people.idsia.ch/~juergen/2010s-our-decade-of-deep-learning.html"><strong>تدوينة جديدة</strong></a> مركزاً على تقديم نظرة تاريخية على التعلم العميق من عام 2010 وحتى الآن. ذكر فيها بعض المواضيع مثل: وحدات الذاكرة الطويلة قصيرة-المدى (LSTMs)، شبكات التغذية الأمامية العصبية (Feedforward Neural Network)، شبكات الخصومة المولِدة (Generative Adversarial Networks - GANs)، التعليم المعزز العميق (Deep Reinforcement Learning)، التعليم الفوقي (Meta-Learning)، نماذج العالم (World Models)، تقطير الشبكات العصبية (Distilling NNs)، التعلم بالانتباه (Attention Learning)، وغيرها من المواضيع. المقالة ختمت بنظرة إلى القرن القادم بدئاً من عام 2020 مشجعة الاهتمام بمشاكل مثل الخصوصية وأسواق البيانات.</p>
-
-<p><br />
-<strong><em>استخدام الشبكات العصبية لحل معادلات رياضية متقدمة</em></strong></p>
-
-<p><br />
-باحثو الذكاء الاصطناعي في فيسبوك نشروا <a href="https://arxiv.org/abs/1912.01412"><strong>ورقة بحثية</strong></a> تدعي أن تقدم نموذجاً مدرباً على المسائل الرياضية ومطابقة الحلول لتعلم توقع الحلول الممكنة لمهام مثل حل المعادلات التكاملية. هذا الأسلوب مبني على إطار عمل (Framework) جديد مشابه للمستخدم في الترجمة الآلية العصبية (Neural Machine Translation) حيث تكون التعبيرات الرياضية مقدمة كلغة والحلول تتم معاملتها كعملية ترجمة. وهكذا، بدل أن يخرج النموذج ترجمة، المخرج يكون حل المسألة. بهذه الطريقة، يدعي الباحثون أن الشبكات العصبية العميقة ليست جيدة فقط في المنطق الرمزي (Symbolic Reasoning) بل أيضاً في مهام أكثر تنوعاً.</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/1*P_JtxoC8pYkXuXCp3e3QeQ.png" alt="" /></p>
-
-<p><br />
-المعادلات المغذاة كمدخلات والحلول المقابلة الذي أخرجها النموذج</p>
-
-<p><br />
-<a href="https://ai.facebook.com/blog/using-neural-networks-to-solve-advanced-mathematics-equations/"><em>المصدر</em></a></p>
-
-<h1 id="الإبداع-والمجتمع-">الإبداع والمجتمع 🎨</h1>
-
-<p><strong><em>الذكاء الاصطناعي للاكتشافات العلمية</em></strong></p>
-
-<p><br />
-Mattew Hutson قدم <a href="https://www.sciencemag.org/news/2020/02/models-galaxies-atoms-simple-ai-shortcuts-speed-simulations-billions-times"><strong>تقريراً</strong></a> عن كيف أن الذكاء الاصطناعي (A.I.) يمكن استخدامه لإنتاج محاكيات ذات استخدام مهم في نمذجة ظواهر طبيعية معقدة، التي بدورها أدت إلى أنواع أخرى من الاكتشافات العلمية. التغيير في بناء هذه المحاكيات هو أنهم غالباً ما يحتاجون لبيانات على نطاق واسع (Large-Scale Data) واستكشاف معاملات (Parameter Exploration) مكثف. <a href="https://arxiv.org/abs/2001.08055"><strong>ورقة بحثية حديثة</strong></a> اقترحت DENSE، أسلوب مبني على بحث الهندسة العصبية (Neural Architecture Search) لبناء محاكيات دقيقة مع الاعتماد على قدر محدود من بيانات التدريب. جربوها بتشغيل محاكاة لحالات مثل: الفيزياء الفلكية، علم المناخ، طاقة الاندماج (Fusion)، وغيرها.</p>
-
-<p><br />
-<strong><em>تحسين ترجمة صورة-إلى-رسمة (Image-to-illustration Translation)</em></strong></p>
-
-<p><br />
-GANILLA هو أسلوب يقترح استخدام شبكات الخصومة المولِدة (Generative Adversarial Networks - GANs) لتطوير تحويل كل من النمط الفني (Style) والمحتوى في عملتي <a href="https://paperswithcode.com/task/image-to-image-translation"><strong>ترجمة صورة-إلى-صورة</strong></a> غير مترابطتين. بالتحديد اقترح نموذج لل”صورة-إلى-رسمة” (مع شبكة توليد محسنة) وقيمها بناءً على إطار عمل (Framework) جديد للتقييم الكمي (Quantitative Evaluation) الذي يأخذ بعين الاعتبار كلاً من النمط الفني والمحتوى. ميزة عمله هي شبكة التوليد المقترحة التي تملك موازنة بين النمط الفني والمحتوى فشلت النماذج السابقة في تحقيقها. الشفرة بالإضافة إلى نماذج مدربة مسبقاً تم نشرها. اقرأ كامل الورقة (باللغة الإنجليزية) <a href="https://arxiv.org/abs/2002.05638"><strong>هنا</strong></a>.</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/1*l_B4vfaHVkXDwzM7SldiqQ.png" alt="" /></p>
-
-<p>الشكل 1: مثال على مخرجات كل من CycleGAN (3) وDualGAN (4) وطريقتنا (GANILLA) باستخدام أنماط فنية مختلفة. CycleGAN و GANILLAيولدان صور بأسلوب الرسم اليدوي، لكن DualGAN يفشل في تحويل النمط الفني. وعلى الصعيد الأخر فشل CycleGAN في الحفاظ على محتوى الصور المدخلة، على سبيل المثال وضع وجوه حيوانات في الهواء بشكل عشوائي. طريقتنا تحافظ على المحتوى وتغيير النمط في نفس الوقت.</p>
-
-<p><br />
-<strong><em>Andrew Ng يتحدث عن الاهتمام بالتعليم الذاتي الإشراف (Self-Supervised Learning)</em></strong></p>
-
-<p><br />
-Andrew Ng، مؤسس deeplearning.ai، شارك في بودكاست الذكاء الاصطناعي <a href="https://www.youtube.com/watch?v=0jspaMLxBig"><strong>ليتحدث</strong></a> عن مواضيع من ضمنها بداياته مع تعلم الآلة، مستقبل الذكاء الاصطناعي وتدريس الذكاء الاصطناعي، اقتراحات لاستخدام صحيح لتعلم الآلة، أهدافه الشخصية وتكنيكيات تعلم الآلة المهمة في القرن الحالي 2020.</p>
-
-<p><br />
-Andrew يشرح لماذا هو متحمس جداً بشأن تعلم الإشراف الذاتي الممثل (Self-Supervised Representation Learning). <a href="https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html"><strong>التعليم الذاتي الإشراف</strong></a> يتضمن صياغة مشكلة تعلم تهدف إلى الحصول على رقابة من البيانات نفسها لاستخدام قدر كبير من البيانات الغير مصنفة (Unlabeled) وهي شائعة أكثر من البيانات الواضحة المصنفة (Labeled). التمثيلات (Representations) ذات أهمية في مقابل أداء المهمة ويمكن استخدامها لحل مهام باتجاه التيار (Downstream) مشابهة لما يستخدم في نماذج اللغات مثل <a href="https://lilianweng.github.io/lil-log/2019/01/31/generalized-language-models.html#bert"><strong>BERT</strong></a>.</p>
-
-<p><br />
-هناك أيضاً الكثير من الاهتمام لاستخدام التعليم الذاتي الإشراف لتعلم تمثيلات مرئية معممة التي ستجعل النماذج أكثر دقة في الظروف المنخفضة الدقة. مثلاً، طريقة جديدة تسمى <a href="https://arxiv.org/abs/2002.05709"><strong>SimCLR</strong></a> (كتبت بإشرافGeoffrey Hinton ) تقدم إطار عمل (Framework) للتعلم الذاتي الإشراف المختلف (Contrastive Self-Supervised Learning) لتمثيلات مرئية لتطوير نتائج تصنيف الصور في ظروف مختلفة مثل تحويل التعلم والتعلم شبه المراقب (Semi-Supervised Learning).</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/1*8zLzHFCyM3goc9y7KApHfg.png" alt="" /></p>
-
-<p>الشكل 1: مقياس Top-1 من مكتبة ImageNet للمصنِفات الخطية المدربة على تمثيلات تم تعلمها بطرائق مختلفة خاضعة للإشراف الذاتي (مدربة مسبقاً على ImageNet). يشير الصليب الرمادي إلى ResNet-50 الخاضع للإشراف. طريقتنا SimCLR، موضحة بالخط العريض.</p>
-
-<p><br />
-على محور X مقياس Top-1 السابق ذكره، وعلى محور Y عدد المعاملات بالملايين.</p>
-
-<p><br />
-<a href="https://arxiv.org/abs/2002.05709"><em>المصدر</em></a></p>
-
-<h1 id="أدوات-ومجموعات-بيانات-️">أدوات ومجموعات بيانات ⚙️</h1>
-
-<p><strong><em>مكتبات JAX</em></strong></p>
-
-<p><br />
-<a href="https://github.com/google/jax"><strong>JAX</strong></a> هي مكتبة (Library) جديدة تدمج NumPy والاشتقاق الآلي (Automatic Differentiation) لإجراء أبحاث تعلم آلة عالية الأداء. لتبسيط خطوط الأنابيب (Pipelines) لبناء شبكات عصبية باستخدام JAX، DeepMind أصدرت <a href="https://github.com/deepmind/dm-haiku"><strong>Haiku</strong></a> و<a href="https://github.com/deepmind/rlax"><strong>RLax</strong></a>.. RLax يبسط تنفيذ وكلاء التعليم المعزز (Reinforcement Learning Agents) وHaiku يبسط بناء الشبكات العصبية باستخدام نماذج برمجة كائنية التوجه (Object-Oriented) مألوفة.</p>
-
-<p><br />
-<strong><em>أداة لمعالجة بيانات ويكيبيديا</em></strong></p>
-
-<p><br />
-<a href="https://github.com/epfl-lts2/sparkwiki"><strong>Sparkwiki</strong></a> هي أداة لمعالجة بيانات ويكيبيديا. هذا الإصدار هو جزء من جهود كثيرة لتفعيل بحوث تحليلية سلوكية مثيرة للاهتمام مثل <a href="https://arxiv.org/abs/2002.06885"><strong>التقاط الاتجاهات الرائجة وانحيازيات اللغات من إصدارات ويكيبديا بلغاتها المختلفة</strong></a>. المؤلف اكتشف استقلال اللغات، سلوك مستخدمي ويكيبيديا في التصفح يظهر أنهم غالباً ما يشاركون اهتمامات مشتركة للتصنيفات مثل الأفلام، الأغاني، والرياضات، لكن الفروق تتضح في الأحداث المحلية والخصوصيات الثقافية.</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/1*K7N9KbQlbuqowUeePjLtdw.jpeg" alt="" /></p>
-
-<p><br />
-<strong><em>مرمزات Rust (Rust Tokenizers)، قاعدة DistilBERT المغلفة (DistilBERT Base Cased)، بطاقات النماذج (Model Cards)</em></strong></p>
-
-<p><br />
-<a href="https://github.com/huggingface/transformers/releases/tag/v2.5.0"><strong>إطلاق محولات</strong></a> (Transformers) جديد من قبل Hugging Face يتضمن دمج مكتبة الترميز السريعة خاصتهم مما يهدف إلى تسريع نماذج مثل BERT، RoBERTa، GPT2، وغيرها من النماذج المجتمعية الصنع.</p>
-
-<h1 id="الأخلاق-في-الذكاء-الاصطناعي-">الأخلاق في الذكاء الاصطناعي 🚨</h1>
-
-<p><strong><em>الاعتبارات الأخلاقية لنماذج معالجة اللغات الطبيعية (NLP) ونماذج تعلم الآلة (ML)</em></strong></p>
-
-<p><br />
-في <a href="https://soundcloud.com/nlp-highlights/106-ethical-considerations-in-nlp-research-emily-bender"><strong>حلقة</strong></a> جديدة من بودكاست <a href="https://soundcloud.com/nlp-highlights"><strong>NLP Highlights</strong></a>، تحدثت Emily Bende والمقدمون حول بعض الاعتبارات الأخلاقية عند تطوير نماذج معالجة اللغات الطبيعية والتقنيات في سياق كل من الأكاديميا والاستخدام الفعلي على أرض الواقع. كان من المواضيع في النقاش: الاعتبارات الأخلاقية عند تصميم مهام معالجة اللغات الطبيعية، أساليب جمع البيانات، ونشر النتائج في النهاية.</p>
-
-<p><br />
-بالإضافة لكل الاعتبارات في الأعلى، قلق دائم النقاش في مجتمع الذكاء الاصطناعي هو التركيز المفرط على تحسين مقياس، وهذا يتعارض مع أساس ما يحاول الذكاء الاصطناعي تحقيقه. Rachel Thomas و David Uminsky ناقشا متى يمكن أن يصبح هذا خاطئاً عبر <a href="https://arxiv.org/abs/2002.08512"><strong>تحليل دقيق</strong></a> لحالات استخدام مختلفة. اقترحا أيضاً إطار عمل (Framework) بسيطاً لتخفيف المشكلة ويتضمن استخدام ودمج عدة مقاييس، متبوعاً بإشراك المتضررين من التقنية بشكل مباشر.</p>
-
-<h1 id="المقالات-والتدوينات-️">المقالات والتدوينات ✍️</h1>
-
-<p><strong><em>GPT-2 المشروح</em></strong></p>
-
-<p><br />
-Aman Arora نشر مؤخراً في تدوينة استثنائية بعنوان “<a href="https://amaarora.github.io/2020/02/18/annotatedGPT2.html"><strong>The Annotated GPT-2</strong></a>” (بمعنى GPT-2 المشروح) يشرح فيها تفاصيل عمل النموذج المسمى GPT-2 المبني على محول (Transformer). أسلوبه مستوحى من <a href="https://nlp.seas.harvard.edu/2018/04/03/attention.html">The Annotated Transformer</a> (بمعنى المحول المشروح) الذي أخذ مسعى الحاشية والملاحظات لشرح أجزاء مهمة من النموذج عبر الشفرة (“الكود”) وشروحات سهلة المتابعة. بذل Aman جهداً عظيماً ليعيد تنفيذ GPT-2 الخاص ب OpenAIباستخدام PyTorch ومكتبة المحولات (Transformers Library) الخاصة ب Hugging Face. إنه عمل عبقري!</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/1*oRFMJTEojyQ-uocVES5GYA.png" alt="" /></p>
-
-<p><br />
-محول فك التشفير داخل GPT-2</p>
-
-<p><br />
-لإعادة استخدام المصطلحات المستخدمة لوصف المحول، الانتباه (Attention) هو دالة من الاستعلام (Q) ومجموعة المفتاح (K) وأزواج القيمة (V). للتعامل مع المتتابعات الأطول، نقوم بتعديل الاهتمام الذاتي متعدد الرؤوس للمحول ليقلل من استخدام الذاكرة عن طريق الحد من المنتج النقطي بين Q وK في معادلة “الانتباه بمعلومية الاستعلام والمفتاح والقيمة” الظاهرة في الرسم.</p>
-
-<p><br />
-<a href="https://amaarora.github.io/2020/02/18/annotatedGPT2.html"><em>المصدر</em></a></p>
-
-<p><br />
-<strong><em>ما وراء BERT؟</em></strong></p>
-
-<p><br />
-<a href="https://towardsdatascience.com/beyond-bert-6f51a8bc5ce1"><strong>مقال</strong></a> مثير للاهتمام من كتابة Sergi Castella يتساءل فيه عن أسرار BERT. كان من المواضيع الأساسية: تطوير المقاييس، كيف مكنت مكتبة محولات Hugging Face البحث العلمي، مجموعات بيانات مثيرة تستحق النظر، تشريح نماذج، والمزيد.</p>
-
-<p><br />
-<strong><em>عملية ضغط المصفوفات (Matrix Compression Operator)</em></strong></p>
-
-<p><br />
-مدونة TensorFlow نشرت <a href="https://blog.tensorflow.org/2020/02/matrix-compression-operator-tensorflow.html?linkId=82298016"><strong>تدوينة</strong></a> تشرح تكنيكات والأهمية وراء ضغط المصفوفات في نموذج شبكة عصبية عميقة. ضغط المصفوفات يمكنه أن يساعد لبناء نماذج صغيرة أكثر كفاءة التي يمكن أن تدمج في أجهزة صغيرة مثل الهواتف والمساعدات المنزلية (Home Assistants). التركيز على ضغط النماذج عبر طرق مثل التقريب المنخفض الرتبة (Low-Rank Approximation) والتكميم (Quantization) يعنى أننا لا نحتاج إلى أن نضر بجودة النموذج.</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/1*fpAdJvBIf4SKxF3gTIpe_g.png" alt="" /></p>
-
-<p><br />
-الضغط كتحول: ربط طبقة إلى طبقتين.</p>
-
-<p><br />
-على اليسار الشبكة الأصلية، وعلى اليمين الشبكة المتحولة.</p>
-
-<p><br />
-<a href="https://blog.tensorflow.org/2020/02/matrix-compression-operator-tensorflow.html?linkId=82298016"><em>المصدر</em></a></p>
-
-<h1 id="التعليم-">التعليم 🎓</h1>
-
-<p><strong><em>أساسيات معالجة اللغات الطبيعية (NLP)</em></strong></p>
-
-<p><br />
-أنا متحمس لنشر مسودة من الفصل الأول من سلسلتي الجديدة المسماة <a href="https://medium.com/dair-ai/fundamentals-of-nlp-chapter-1-tokenization-lemmatization-stemming-and-sentence-segmentation-b362c5d07684"><strong>Fundamentals of NLP</strong></a>(أساسيات معالجة اللغات الطبيعية). إنها تعلم مفاهيم معالجة اللغات الطبيعية بدئاً من الأساسيات في أثناء ما تشارك أفضل الممارسات، مراجع مهمة، أخطاء شائعة لتجنبها، وما ينتظرنا في معالجة اللغات العصبية. <a href="https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ"><strong>دفتر</strong></a> كولاب (Google Colab) مرفق والمشروع سيتم تحديثه <a href="https://github.com/dair-ai/nlp_fundamentals"><strong>هنا</strong></a>.</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/1*mS5NcoJ_c8hYTjiJsuu_8g.gif" alt="" /></p>
-
-<p><br />
-<strong><em>[عبر الانترنت] مراجعة/مناقشة: الجزء 1 جلسة قراءة الأسس الرياضية</em></strong></p>
-
-<p><br />
-<a href="https://mml-book.github.io/"><strong>Mathematics For Machine Learning</strong></a> تستضيف نقاش على الإنترنت لمراجعة الفصول التي تمت تغطيتها مؤخراً في جلساتهم للدراسة عبر الإنترنت. المجموعة درست سابقاً فصولاً بناءً على كتاب يدعى Mathematics For Machine Learning كتبه Marc Peter Deisenroth وA Aldo Faisal وCheng Soon Ong. <a href="https://www.meetup.com/Machine-Learning-Tokyo/events/268817313/"><em>الحدث</em></a> مخطط ليقام في الثامن من مارس 2020.</p>
-
-<p><br />
-<strong><em>اقتراحات الكتب</em></strong></p>
-
-<p><br />
-في قطعة سابقة ناقشنا أهمية ضغط المصفوفات لبناء نماذج تعلم آلة صغيرة. إذا كنت مهتماً لتعلم المزيد عن كيفية بناء شبكات عصبية عميقة أصغر للأنظمة المتضمنة (Embedded Systems) خذ نظرة على هذا الكتاب الرائع باسم <a href="https://tinymlbook.com/?linkId=82595412"><strong>TinyML</strong></a> (بمعنى: تعلم آلة صغير) من تأليف Pete Warden و Daniel Situnayake.</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/0*omOa3aw2bfMzX2Qm.jpg" alt="" /></p>
-
-<p><br />
-<a href="https://www.amazon.com/TinyML-Learning-TensorFlow-Ultra-Low-Micro-Controllers/dp/1492052043"><em>المصدر</em></a></p>
-
-<p><br />
-كتاب آخر مثير للاهتمام للمتابعة هو العنوان القادم “<a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527"><strong>Deep Learning for Coders with fastai and PyTorch: AI Applications Without a PhD</strong></a>” (بمعنى: التعلم العميق للمبرمجين ب fastai و PyTorch: تطبيقات الذكاء الاصطناعي بدون شهادة دكتوراة) من تأليف Jeremy Howard و Sylvain Gugger. الكتاب يهدف إلى تقديم البناء الرياضي الضروري لبناء وتدريب النماذج لتتعامل مع مهام في مجالات الرؤية الحاسوبية (Computer Vision) ومعالجة اللغات الطبيعية (NLP).</p>
-
-<p><br />
-<img src="https://cdn-images-1.medium.com/max/800/0*i2OmtWOncatOYsZv.jpg" alt="" /></p>
-
-<p><br />
-<a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527"><em>المصدر</em></a></p>
-
-<h1 id="إضافات-جديرة-بالذكر-️">إضافات جديرة بالذكر ⭐️</h1>
-
-<p><br />
-يمكنك الوصول إلى الإصدار السابق من قائمة معالجة اللغات الطبيعية (NLP) البريدية من <a href="https://medium.com/dair-ai/nlp-newsletter-pytorch3d-deepspeed-turing-nlg-question-answering-benchmarks-hydra-sparse-322f018ee096"><strong>هنا</strong></a>.</p>
-
-<p><br />
-<a href="https://arxiv.org/abs/1909.06576"><strong>Torchmeta</strong></a> هي مكتبة (Library) تتيح سهولة الاستخدام لمحملات البيانات (Data Loaders) ذات الصلة لأبحاث التعلم الفوقي (Meta-Learning). كتبها Tristan Deleu.</p>
-
-<p><br />
-Manuel Tonneau كتبت <a href="https://creatext.ai/blog-posts/machine-text-writing-gpt2-beam-search?utm_medium=newsletter"><strong>مقالاً</strong></a> يقدم نظرة أقرب لبعض الآلات المستخدمة في نمذجة اللغة (Language Modeling). بعض المواضيع تضمنت البحث الجشع (Greedy Search) والبحث الشعاعي (Beam Search) وأخذ العينات النووي (Nucleus Sampling).</p>
-
-<p><br />
-MIT <a href="http://introtodeeplearning.com/"><strong>نشرت</strong></a> المنهج والجدول الدراسي الكاملين لكورس “Introduction to Deep Learning” (مقدمة إلى التعلم العميق)، بما في ذلك مقاطع الفيديو للمحاضرات التي ألقيت بالفعل. يهدفون إلى نشر مقاطع فيديو وشرائح العرض للمحاضرات أسبوعياً.</p>
-
-<p><br />
-تعلم كيف تدرب نموذجاً للتعرف على الكيانات المسماة (Named Entity Recognition (NER)) باستخدام أسلوب مبنى على المحول (Transformer) في أقل من <a href="https://github.com/huggingface/transformers/blob/master/examples/ner/run_pl_ner.py"><strong>300 سطر من الشفرة “الكود”</strong></a>. يمكنك العثور على جوجل كولاب المصاحب <a href="https://colab.research.google.com/drive/184LPlygvdGGR64hgQl3ztqzZJu8MmITn"><strong>هنا</strong></a>.</p>
-
-<hr />
-
-<p><br />
-إذا كان لديك أي مجموعات بيانات، مشاريع، تدوينات، شروحات، أو أوراق بحثية تتمنى أن يتم نشرهم في العدد القادم من قائمة معالجة اللغات الطبيعية (NLP) البريدية، لا تترد في التواصل معي عبر البريد الالكتروني ellfae@gmail.com أو<a href="https://twitter.com/omarsar0"><strong>الرسائل الخاصة على تويتر</strong></a>.</p>
-
-<p><br />
-<a href="https://dair.ai/newsletter/"><strong>اشترك</strong></a> <em>🔖 في قائمة NLP البريدية لتصلك الأعداد القادمة مباشرة على صندوق بريدك.</em></p>
-
-      <hr />
-      <footer role="contentinfo">
-        <div class="social-share">
-  <!-- Go to www.addthis.com/dashboard to customize your tools --> 
-  <div class="addthis_inline_share_toolbox"></div>
-  <!--
-  <h4>Share on</h4>
-  <ul>
-    <li>
-      <a href="https://twitter.com/intent/tweet?text=https://dair.ai/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://dair.ai/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
-    </li>
-    <li>
-      <a href="https://plus.google.com/share?url=https://dair.ai/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
-    </li>
-  </ul>-->
-</div><!-- /.social-share -->
-        <p class="byline"><strong>الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ...</strong> was published on <time datetime="2020-02-28T00:00:00-06:00">February 28, 2020</time>.</p>
-        
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-<!--
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
--->
-
-      </footer>
-
-      
-        <section id="disqus_thread"></section><!-- /#disqus_thread -->
-      
-    </div>
-
-
-    <a class="u-url" href="/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/" hidden></a>
-  </article>
-
-</div><!-- /#main -->
-
-<div class="footer-wrap">
-  
-  <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="https://dair.ai/posts/">View all posts</a>)</small></h4>
-    <ul>
-    
-      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7-ZH-.md/" title="NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
-    
-      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7/" title="NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
-    
-      <li><a href="https://dair.ai/NLP_Newsletter_-7_-FR/" title="NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
-    
-    </ul>
-    <hr />
-  </div><!-- /.related-articles -->
-  
-  <footer>
-    
-
-<span>&copy; 2020 dair.ai. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
-
-  </footer>
-</div><!-- /.footer-wrap -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://dair.ai/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="https://dair.ai/assets/js/scripts.min.js"></script>
-
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-  var _gaq = _gaq || [];
-  var pluginUrl =
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', 'UA-158959084-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
-
-  
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-<!--
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
--->
-
-
-
-
-</body>
-</html>

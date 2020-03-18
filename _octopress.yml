@@ -1,0 +1,12 @@
+# Default extensions
+post_ext: md
+page_ext: md
+project_ext: md
+
+# Found in _templates/
+post_layout: post
+page_layout: page
+project_layout: project
+
+# Format titles with titlecase?
+titlecase: true

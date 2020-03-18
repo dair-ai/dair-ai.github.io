@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">dair.ai</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="https://dair.ai/feed.xml" />
-<link rel="alternate" type="text/html" href="https://dair.ai" />
-<updated>2020-03-17T18:43:50-05:00</updated>
-<id>https://dair.ai/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2020-03-18T01:25:37+01:00</updated>
+<id>http://localhost:4000/</id>
 <author>
   <name>dair.ai</name>
-  <uri>https://dair.ai/</uri>
+  <uri>http://localhost:4000/</uri>
   <email>ellfae@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_NLP_7-ZH-.md/" />
-  <id>https://dair.ai/NLP_Newsletter_NLP_7[ZH].md</id>
-  <published>2020-03-16T00:00:00-05:00</published>
-  <updated>2020-03-16T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_NLP_7-ZH-.md/" />
+  <id>http://localhost:4000/NLP_Newsletter_NLP_7[ZH].md</id>
+  <published>2020-03-16T00:00:00+01:00</published>
+  <updated>2020-03-16T00:00:00+01:00</updated>
   <author>
     <name>kaiyuan</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -259,20 +259,20 @@ OpenMined为研究工程师和研究科学家&lt;a href=&quot;https://blog.openm
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;&lt;em&gt;Subscribe&lt;/em&gt;&lt;/a&gt;&lt;em&gt;🔖至NLP新闻通讯，以在收件箱中接收以后的新闻。&lt;/em&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_NLP_7-ZH-.md/&quot;&gt;NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 16, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_NLP_7-ZH-.md/&quot;&gt;NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 16, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_NLP_7/" />
-  <id>https://dair.ai/NLP_Newsletter_NLP_7</id>
-  <published>2020-03-16T00:00:00-05:00</published>
-  <updated>2020-03-16T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_NLP_7/" />
+  <id>http://localhost:4000/NLP_Newsletter_NLP_7</id>
+  <published>2020-03-16T00:00:00+01:00</published>
+  <updated>2020-03-16T00:00:00+01:00</updated>
   <author>
     <name>Elvis Saravia</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     <email>ellfae@gmail.com</email>
   </author>
   <content type="html">
@@ -530,20 +530,20 @@ OpenMined has &lt;a href=&quot;https://blog.openmined.org/introducing-openmined-
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;&lt;em&gt;Subscribe&lt;/em&gt;&lt;/a&gt; &lt;em&gt;🔖 to the NLP Newsletter to receive future issues in your inbox.&lt;/em&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_NLP_7/&quot;&gt;NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 16, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_NLP_7/&quot;&gt;NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 16, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_-7_-FR/" />
-  <id>https://dair.ai/NLP_Newsletter_#7_[FR]</id>
-  <published>2020-03-16T00:00:00-05:00</published>
-  <updated>2020-03-16T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_-7_-FR/" />
+  <id>http://localhost:4000/NLP_Newsletter_#7_[FR]</id>
+  <published>2020-03-16T00:00:00+01:00</published>
+  <updated>2020-03-16T00:00:00+01:00</updated>
   <author>
     <name>Loïck BOURDOIS</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -804,20 +804,20 @@ Si vous avez des jeux de données, des projets, des articles de blog, des tutori
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;Abonnez-vous&lt;/a&gt; pour recevoir les prochains numéros dans votre boîte mail.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_-7_-FR/&quot;&gt;NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 16, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_-7_-FR/&quot;&gt;NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 16, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter [FR] #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_-6_-FR/" />
-  <id>https://dair.ai/NLP_Newsletter_#6_[FR]</id>
-  <published>2020-03-09T00:00:00-05:00</published>
-  <updated>2020-03-09T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_-6_-FR/" />
+  <id>http://localhost:4000/NLP_Newsletter_#6_[FR]</id>
+  <published>2020-03-09T00:00:00+01:00</published>
+  <updated>2020-03-09T00:00:00+01:00</updated>
   <author>
     <name>Loïck BOURDOIS</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1043,20 +1043,20 @@ Si vous avez des jeux de données, des projets, des articles de blog, des tutori
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;Abonnez-vous&lt;/a&gt; pour recevoir les prochains numéros dans votre boîte mail.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_-6_-FR/&quot;&gt;NLP Newsletter [FR] #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_-6_-FR/&quot;&gt;NLP Newsletter [FR] #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter [FR] #5: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_-5_-FR/" />
-  <id>https://dair.ai/NLP_Newsletter_#5_[FR]</id>
-  <published>2020-03-09T00:00:00-05:00</published>
-  <updated>2020-03-09T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_-5_-FR/" />
+  <id>http://localhost:4000/NLP_Newsletter_#5_[FR]</id>
+  <published>2020-03-09T00:00:00+01:00</published>
+  <updated>2020-03-09T00:00:00+01:00</updated>
   <author>
     <name>Loïck BOURDOIS</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1241,20 +1241,20 @@ Si vous avez des jeux de données, des projets, des articles de blog, des tutori
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;Abonnez-vous&lt;/a&gt; pour recevoir les prochains numéros dans votre boîte mail.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_-5_-FR/&quot;&gt;NLP Newsletter [FR] #5: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_-5_-FR/&quot;&gt;NLP Newsletter [FR] #5: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter [FR] #4: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_-4_-FR/" />
-  <id>https://dair.ai/NLP_Newsletter_#4_[FR]</id>
-  <published>2020-03-09T00:00:00-05:00</published>
-  <updated>2020-03-09T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_-4_-FR/" />
+  <id>http://localhost:4000/NLP_Newsletter_#4_[FR]</id>
+  <published>2020-03-09T00:00:00+01:00</published>
+  <updated>2020-03-09T00:00:00+01:00</updated>
   <author>
     <name>Loïck BOURDOIS</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1562,20 +1562,20 @@ Si vous avez des jeux de données, des projets, des articles de blog, des tutori
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;Abonnez-vous&lt;/a&gt; pour recevoir les prochains numéros dans votre boîte mail.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_-4_-FR/&quot;&gt;NLP Newsletter [FR] #4: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_-4_-FR/&quot;&gt;NLP Newsletter [FR] #4: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter [FR] #3: Flax, Thinc, Language-specific BERT models, Meena, Flyte, LaserTagger,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_-3_-FR/" />
-  <id>https://dair.ai/NLP_Newsletter_#3_[FR]</id>
-  <published>2020-03-09T00:00:00-05:00</published>
-  <updated>2020-03-09T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_-3_-FR/" />
+  <id>http://localhost:4000/NLP_Newsletter_#3_[FR]</id>
+  <published>2020-03-09T00:00:00+01:00</published>
+  <updated>2020-03-09T00:00:00+01:00</updated>
   <author>
     <name>Loïck BOURDOIS</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1841,20 +1841,20 @@ Si vous avez des jeux de données, des projets, des articles de blog, des tutori
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;Abonnez-vous&lt;/a&gt; pour recevoir les prochains numéros dans votre boîte mail.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_-3_-FR/&quot;&gt;NLP Newsletter [FR] #3: Flax, Thinc, Language-specific BERT models, Meena, Flyte, LaserTagger,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_-3_-FR/&quot;&gt;NLP Newsletter [FR] #3: Flax, Thinc, Language-specific BERT models, Meena, Flyte, LaserTagger,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_-2_-FR/" />
-  <id>https://dair.ai/NLP_Newsletter_#2_[FR]</id>
-  <published>2020-03-09T00:00:00-05:00</published>
-  <updated>2020-03-09T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_-2_-FR/" />
+  <id>http://localhost:4000/NLP_Newsletter_#2_[FR]</id>
+  <published>2020-03-09T00:00:00+01:00</published>
+  <updated>2020-03-09T00:00:00+01:00</updated>
   <author>
     <name>Loïck BOURDOIS</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -2083,20 +2083,20 @@ Si vous avez des jeux de données, des projets, des articles de blog, des tutori
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;Abonnez-vous&lt;/a&gt; pour recevoir les prochains numéros dans votre boîte mail.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_-2_-FR/&quot;&gt;NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_-2_-FR/&quot;&gt;NLP Newsletter [FR] #2: Reformer, DeepMath, ELECTRA, TinyBERT, VizSeq, Open-Sourcing ML,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter [FR] #1: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_-1_-FR/" />
-  <id>https://dair.ai/NLP_Newsletter_#1_[FR]</id>
-  <published>2020-03-09T00:00:00-05:00</published>
-  <updated>2020-03-09T00:00:00-05:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_-1_-FR/" />
+  <id>http://localhost:4000/NLP_Newsletter_#1_[FR]</id>
+  <published>2020-03-09T00:00:00+01:00</published>
+  <updated>2020-03-09T00:00:00+01:00</updated>
   <author>
     <name>Loïck BOURDOIS</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -2246,20 +2246,20 @@ Si vous souhaitez apprendre à concevoir et à construire des applications de ML
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;Abonnez-vous&lt;/a&gt; pour recevoir les prochains numéros dans votre boîte mail.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_-1_-FR/&quot;&gt;NLP Newsletter [FR] #1: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_-1_-FR/&quot;&gt;NLP Newsletter [FR] #1: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 09, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP 简报（Issue#6）]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP%E7%AE%80%E6%8A%A5/" />
-  <id>https://dair.ai/NLP简报</id>
-  <published>2020-03-02T00:00:00-06:00</published>
-  <updated>2020-03-02T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP%E7%AE%80%E6%8A%A5/" />
+  <id>http://localhost:4000/NLP简报</id>
+  <published>2020-03-02T00:00:00+01:00</published>
+  <updated>2020-03-02T00:00:00+01:00</updated>
   <author>
     <name>kaiyuan</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -2355,20 +2355,20 @@ Connor Shorten发布了一个15分钟的简短视频，&lt;a href=&quot;https://
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;http://newsletter.ruder.io/issues/accelerating-science-memorizing-vs-learning-to-look-things-up-schmidhuber-s-2010s-greek-bert-arc-illustrated-reformer-annotated-gpt-2-olmpics-223195&quot;&gt;Sebastian Ruder&lt;/a&gt;发布了新一期的NLP News newsletter，主题和资源包括对2019年NLP和ML论文的分析，到用于学习有关转移学习和深度学习要点的幻灯片。&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP%E7%AE%80%E6%8A%A5/&quot;&gt;NLP 简报（Issue#6）&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 02, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP%E7%AE%80%E6%8A%A5/&quot;&gt;NLP 简报（Issue#6）&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 02, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5/" />
-  <id>https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5</id>
-  <published>2020-03-02T00:00:00-06:00</published>
-  <updated>2020-03-02T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_BERTology_Primer_fastpages_T5/" />
+  <id>http://localhost:4000/NLP_Newsletter_BERTology_Primer_fastpages_T5</id>
+  <published>2020-03-02T00:00:00+01:00</published>
+  <updated>2020-03-02T00:00:00+01:00</updated>
   <author>
     <name>Elvis Saravia</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     <email>ellfae@gmail.com</email>
   </author>
   <content type="html">
@@ -2604,20 +2604,20 @@ Sebastian Ruder published a new issue of the NLP News newsletter that highlights
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;&lt;em&gt;Subscribe&lt;/em&gt;&lt;/a&gt; &lt;em&gt;🔖 to the NLP Newsletter to receive future issues in your inbox.&lt;/em&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5/&quot;&gt;NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 02, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_BERTology_Primer_fastpages_T5/&quot;&gt;NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 02, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter [PT-BR] #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter-PT-BR-_BERTology_Primer_fastpages_T5/" />
-  <id>https://dair.ai/NLP_Newsletter[PT-BR]_BERTology_Primer_fastpages_T5</id>
-  <published>2020-03-02T00:00:00-06:00</published>
-  <updated>2020-03-02T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter-PT-BR-_BERTology_Primer_fastpages_T5/" />
+  <id>http://localhost:4000/NLP_Newsletter[PT-BR]_BERTology_Primer_fastpages_T5</id>
+  <published>2020-03-02T00:00:00+01:00</published>
+  <updated>2020-03-02T00:00:00+01:00</updated>
   <author>
     <name>Victor Garritano Noronha</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -2760,7 +2760,7 @@ O time de pesquisa da Microsoft liberou uma &lt;a href=&quot;https://github.com/
 &lt;p&gt;&lt;br /&gt;
 Você já pensou em treinar o seu próprio modelo de linguagem do zero, mas nunca teve o poder computacional necessário para isso? Se já, então o Aditya Malte pode lhe ajudar com esse excelente &lt;a href=&quot;https://gist.github.com/aditya-malte/2d4f896f471be9c38eb4d723a710768b#file-smallberta_pretraining-ipynb&quot;&gt;notebook no Colab&lt;/a&gt; que exemplifica o processo de treinamento de um modelo de linguagem numa base de dados reduzida.&lt;/p&gt;
 
-&lt;h1 id=&quot;ética-em-ia-&quot;&gt;Ética em IA 🚨&lt;/h1&gt;
+&lt;h1 id=&quot;Ética-em-ia-&quot;&gt;Ética em IA 🚨&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Why faces don’t always tell the truth about feelings&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -2927,20 +2927,20 @@ Sebastian Ruder publicou uma nova edição da newsletter &lt;em&gt;NLP News&lt;/
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;&lt;em&gt;Inscreva-se&lt;/em&gt;&lt;/a&gt; &lt;em&gt;🔖 para receber as próximas edições na sua caixa de entrada!&lt;/em&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter-PT-BR-_BERTology_Primer_fastpages_T5/&quot;&gt;NLP Newsletter [PT-BR] #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on March 02, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter-PT-BR-_BERTology_Primer_fastpages_T5/&quot;&gt;NLP Newsletter [PT-BR] #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on March 02, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP简报（Issue#5）：The Annotated GPT-2、CodeBERT、JAX、GANILLA等]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP%E7%AE%80%E6%8A%A5-Issue-5-The_Annotated_GPT-2-CodeBERT-JAX-GA/" />
-  <id>https://dair.ai/NLP简报（Issue#5）：The_Annotated_GPT-2、CodeBERT、JAX、GA</id>
-  <published>2020-02-29T00:00:00-06:00</published>
-  <updated>2020-02-29T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP%E7%AE%80%E6%8A%A5-Issue-5-The_Annotated_GPT-2-CodeBERT-JAX-GA/" />
+  <id>http://localhost:4000/NLP简报（Issue#5）：The_Annotated_GPT-2、CodeBERT、JAX、GA</id>
+  <published>2020-02-29T00:00:00+01:00</published>
+  <updated>2020-02-29T00:00:00+01:00</updated>
   <author>
     <name>Elvis Saravia</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     <email>ellfae@gmail.com</email>
   </author>
   <content type="html">
@@ -3303,20 +3303,20 @@ MIT发布了名为“Introduction to Deep Learning[37]”的课程的完整提�
 &lt;p&gt;&lt;br /&gt;
 [39] &lt;strong&gt;随附的Google Colab:&lt;/strong&gt; https://colab.research.google.com/drive/184LPlygvdGGR64hgQl3ztqzZJu8MmITn&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP%E7%AE%80%E6%8A%A5-Issue-5-The_Annotated_GPT-2-CodeBERT-JAX-GA/&quot;&gt;NLP简报（Issue#5）：The Annotated GPT-2、CodeBERT、JAX、GANILLA等&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on February 29, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP%E7%AE%80%E6%8A%A5-Issue-5-The_Annotated_GPT-2-CodeBERT-JAX-GA/&quot;&gt;NLP简报（Issue#5）：The Annotated GPT-2、CodeBERT、JAX、GANILLA等&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on February 29, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter: GPT-2 Anotado, Entendendo self-distillation, Haiku, GANILLA, Sparkwiki, Ética em NLP, Torchmeta,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter-PT-BR-_The_Annotated_GPT-2,_Understanding/" />
-  <id>https://dair.ai/NLP_Newsletter[PT-BR]_The_Annotated_GPT-2,_Understanding</id>
-  <published>2020-02-29T00:00:00-06:00</published>
-  <updated>2020-02-29T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter-PT-BR-_The_Annotated_GPT-2,_Understanding/" />
+  <id>http://localhost:4000/NLP_Newsletter[PT-BR]_The_Annotated_GPT-2,_Understanding</id>
+  <published>2020-02-29T00:00:00+01:00</published>
+  <updated>2020-02-29T00:00:00+01:00</updated>
   <author>
     <name>Flavio Clesio</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -3412,7 +3412,7 @@ Também há muito interesse em usar o aprendizado auto-supervisionado para trein
 &lt;p&gt;&lt;br /&gt;
 Um novo release dos &lt;a href=&quot;https://github.com/huggingface/transformers/releases/tag/v2.5.0&quot;&gt;&lt;strong&gt;Transformers&lt;/strong&gt;&lt;/a&gt; da Hugging Face inclui a integração de sua biblioteca de tokenização rápida, que visa acelerar modelos como o &lt;a href=&quot;https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270&quot;&gt;BERT&lt;/a&gt;, &lt;a href=&quot;https://arxiv.org/abs/1907.11692&quot;&gt;RoBERTa&lt;/a&gt;, &lt;a href=&quot;https://openai.com/blog/better-language-models/&quot;&gt;GPT-2&lt;/a&gt; e outros modelos criados pela comunidade.&lt;/p&gt;
 
-&lt;h1 id=&quot;ética-em-inteligência-artificial-&quot;&gt;Ética em Inteligência Artificial 🚨&lt;/h1&gt;
+&lt;h1 id=&quot;Ética-em-inteligência-artificial-&quot;&gt;Ética em Inteligência Artificial 🚨&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Considerações éticas para modelos de NLP (Processamento de Linguagem Natural) e Machine Learning&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -3509,20 +3509,20 @@ Aprenda a treinar um modelo para &lt;a href=&quot;https://en.wikipedia.org/wiki/
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;&lt;em&gt;Assine a NLP Newsletter&lt;/em&gt;&lt;/a&gt; &lt;em&gt;🔖 para receber edições futuras via e-mail.&lt;/em&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter-PT-BR-_The_Annotated_GPT-2,_Understanding/&quot;&gt;NLP Newsletter: GPT-2 Anotado, Entendendo self-distillation, Haiku, GANILLA, Sparkwiki, Ética em NLP, Torchmeta,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on February 29, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter-PT-BR-_The_Annotated_GPT-2,_Understanding/&quot;&gt;NLP Newsletter: GPT-2 Anotado, Entendendo self-distillation, Haiku, GANILLA, Sparkwiki, Ética em NLP, Torchmeta,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on February 29, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ...]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/" />
-  <id>https://dair.ai/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More</id>
-  <published>2020-02-28T00:00:00-06:00</published>
-  <updated>2020-02-28T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/" />
+  <id>http://localhost:4000/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More</id>
+  <published>2020-02-28T00:00:00+01:00</published>
+  <updated>2020-02-28T00:00:00+01:00</updated>
   <author>
     <name>Sufian Diraneyya</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -3748,20 +3748,20 @@ MIT &lt;a href=&quot;http://introtodeeplearning.com/&quot;&gt;&lt;strong&gt;نش
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;&lt;strong&gt;اشترك&lt;/strong&gt;&lt;/a&gt; &lt;em&gt;🔖 في قائمة NLP البريدية لتصلك الأعداد القادمة مباشرة على صندوق بريدك.&lt;/em&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/&quot;&gt;الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ...&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on February 28, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter.AR._The_Annotated_GPT-2_And_More/&quot;&gt;الإصدار الخامس من قائمة معالجة اللغات الطبيعية (NLP) البريدية: GPT-2 المشروح، فهم التقطير-الذاتي، Haiku، GANILLA، Sparkwiki، الأخلاق في علم معالجة اللغات الطبيعية، Torchmeta، والمزيد ...&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on February 28, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP Newsletter #5: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP_Newsletter_The_Annotated_GPT-2,_Understanding/" />
-  <id>https://dair.ai/NLP_Newsletter_The_Annotated_GPT-2,_Understanding</id>
-  <published>2020-02-23T00:00:00-06:00</published>
-  <updated>2020-02-23T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP_Newsletter_The_Annotated_GPT-2,_Understanding/" />
+  <id>http://localhost:4000/NLP_Newsletter_The_Annotated_GPT-2,_Understanding</id>
+  <published>2020-02-23T00:00:00+01:00</published>
+  <updated>2020-02-23T00:00:00+01:00</updated>
   <author>
     <name>Elvis Saravia</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     <email>ellfae@gmail.com</email>
   </author>
   <content type="html">
@@ -3954,20 +3954,20 @@ Learn how to train a model for named entity recognition (NER) using a Transforme
 &lt;p&gt;&lt;br /&gt;
 &lt;a href=&quot;https://dair.ai/newsletter/&quot;&gt;&lt;em&gt;Subscribe&lt;/em&gt;&lt;/a&gt; &lt;em&gt;🔖 to the NLP Newsletter to receive future issues in your inbox.&lt;/em&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP_Newsletter_The_Annotated_GPT-2,_Understanding/&quot;&gt;NLP Newsletter #5: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on February 23, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP_Newsletter_The_Annotated_GPT-2,_Understanding/&quot;&gt;NLP Newsletter #5: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on February 23, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Boletín informativo NLP #5: GPT-2 Explicado, Entendiendo ‘Self-Distillation’, Haiku, GANILLA, Sparkwiki, Ética en el NLP, Torchmeta,...]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/Bolet%C3%ADn_informativo_NLP_GPT-2_Explicado,_Entendie/" />
-  <id>https://dair.ai/Boletín_informativo_NLP_GPT-2_Explicado,_Entendie</id>
-  <published>2020-02-23T00:00:00-06:00</published>
-  <updated>2020-02-23T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/Bolet%C3%ADn_informativo_NLP_GPT-2_Explicado,_Entendie/" />
+  <id>http://localhost:4000/Boletín_informativo_NLP_GPT-2_Explicado,_Entendie</id>
+  <published>2020-02-23T00:00:00+01:00</published>
+  <updated>2020-02-23T00:00:00+01:00</updated>
   <author>
     <name>Nicolas Araque Volk</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -4069,7 +4069,7 @@ Hay mucho interés en usar el self-supervised learning para aprender representac
 &lt;p&gt;&lt;br /&gt;
 Una &lt;a href=&quot;https://github.com/huggingface/transformers/releases/tag/v2.5.0&quot;&gt;nueva entrega de Transformers&lt;/a&gt; de Hugging Face ahora incluye la integración de su rápida librería de tokenización que intenta mejorar el tiempo de ejecución de modelos como BERT, RoBERTa, GPT2, y otro modelos construidos por la comunidad.&lt;/p&gt;
 
-&lt;h1 id=&quot;ética-en-la-inteligencia-artificial-&quot;&gt;Ética en la Inteligencia Artificial 🚨&lt;/h1&gt;
+&lt;h1 id=&quot;Ética-en-la-inteligencia-artificial-&quot;&gt;Ética en la Inteligencia Artificial 🚨&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Consideraciones éticas para modelos de NLP y ML.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -4159,20 +4159,20 @@ El MIT &lt;a href=&quot;http://introtodeeplearning.com/&quot;&gt;liberó&lt;/a&g
 &lt;p&gt;&lt;br /&gt;
 Aprende a entrenar un modelo para reconocimiento de entidades nombradas (NER) utilizando una aproximación vía Transformers en menos de &lt;a href=&quot;https://github.com/huggingface/transformers/blob/master/examples/ner/run_pl_ner.py&quot;&gt;300 líneas de código&lt;/a&gt;. Puedes encontrar el Google Colab que lo acompaña &lt;a href=&quot;https://colab.research.google.com/drive/184LPlygvdGGR64hgQl3ztqzZJu8MmITn&quot;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/Bolet%C3%ADn_informativo_NLP_GPT-2_Explicado,_Entendie/&quot;&gt;Boletín informativo NLP #5: GPT-2 Explicado, Entendiendo ‘Self-Distillation’, Haiku, GANILLA, Sparkwiki, Ética en el NLP, Torchmeta,...&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on February 23, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Bolet%C3%ADn_informativo_NLP_GPT-2_Explicado,_Entendie/&quot;&gt;Boletín informativo NLP #5: GPT-2 Explicado, Entendiendo ‘Self-Distillation’, Haiku, GANILLA, Sparkwiki, Ética en el NLP, Torchmeta,...&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on February 23, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Fundamentals of NLP (Chapter 1): Tokenization, Lemmatization, Stemming, and Sentence Segmentation]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/Fundamentals-of-NLP-Chapter-1/" />
-  <id>https://dair.ai/Fundamentals-of-NLP-Chapter-1</id>
-  <published>2020-02-21T00:00:00-06:00</published>
-  <updated>2020-02-21T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/Fundamentals-of-NLP-Chapter-1/" />
+  <id>http://localhost:4000/Fundamentals-of-NLP-Chapter-1</id>
+  <published>2020-02-21T00:00:00+01:00</published>
+  <updated>2020-02-21T00:00:00+01:00</updated>
   <author>
     <name>Elvis Saravia</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     <email>ellfae@gmail.com</email>
   </author>
   <content type="html">
@@ -4195,20 +4195,20 @@ Get access to the first chapter at this &lt;a href=&quot;https://colab.research.
 
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/640/1*mS5NcoJ_c8hYTjiJsuu_8g.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/Fundamentals-of-NLP-Chapter-1/&quot;&gt;Fundamentals of NLP (Chapter 1): Tokenization, Lemmatization, Stemming, and Sentence Segmentation&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on February 21, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Fundamentals-of-NLP-Chapter-1/&quot;&gt;Fundamentals of NLP (Chapter 1): Tokenization, Lemmatization, Stemming, and Sentence Segmentation&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on February 21, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/" />
-  <id>https://dair.ai/NLP简报_Tokenizers,_TensorFlow_2_1,_TextVectorization</id>
-  <published>2020-02-20T00:00:00-06:00</published>
-  <updated>2020-02-20T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/" />
+  <id>http://localhost:4000/NLP简报_Tokenizers,_TensorFlow_2_1,_TextVectorization</id>
+  <published>2020-02-20T00:00:00+01:00</published>
+  <updated>2020-02-20T00:00:00+01:00</updated>
   <author>
     <name>Elvis Saravia</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     <email>ellfae@gmail.com</email>
   </author>
   <content type="html">
@@ -4513,20 +4513,20 @@ Stanford CS224N 再次推出了流行的“Natural Language Processing with Deep
 &lt;p&gt;&lt;br /&gt;
 [31] &lt;strong&gt;Emmanuel Ameisen:&lt;/strong&gt; https://www.amazon.com/Building-Machine-Learning-Powered-Applications/dp/149204511X/&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/&quot;&gt;NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on February 20, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/&quot;&gt;NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on February 20, 2020.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[NLP简报 [CH]: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…]]></title>
-  <link rel="alternate" type="text/html" href="https://dair.ai/NLP%E7%AE%80%E6%8A%A5_ISSUE_4_PyTorch3D,_DeepSpeed,_Turing-NLG/" />
-  <id>https://dair.ai/NLP简报_ISSUE_4_PyTorch3D,_DeepSpeed,_Turing-NLG</id>
-  <published>2020-02-17T00:00:00-06:00</published>
-  <updated>2020-02-17T00:00:00-06:00</updated>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/NLP%E7%AE%80%E6%8A%A5_ISSUE_4_PyTorch3D,_DeepSpeed,_Turing-NLG/" />
+  <id>http://localhost:4000/NLP简报_ISSUE_4_PyTorch3D,_DeepSpeed,_Turing-NLG</id>
+  <published>2020-02-17T00:00:00+01:00</published>
+  <updated>2020-02-17T00:00:00+01:00</updated>
   <author>
     <name>Elvis Saravia</name>
-    <uri>https://dair.ai</uri>
+    <uri>http://localhost:4000</uri>
     <email>ellfae@gmail.com</email>
   </author>
   <content type="html">
@@ -4988,7 +4988,7 @@ Sebastian Raschka 最近发表了一篇题为《Python 中的机器学习：数�
 &lt;p&gt;&lt;br /&gt;
 [46] &lt;strong&gt;Python 中的机器学习：数据科学，机器学习和人工智能的主要发展和技术趋势:&lt;/strong&gt; https://arxiv.org/abs/2002.04803&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://dair.ai/NLP%E7%AE%80%E6%8A%A5_ISSUE_4_PyTorch3D,_DeepSpeed,_Turing-NLG/&quot;&gt;NLP简报 [CH]: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;https://dair.ai&quot;&gt;dair.ai&lt;/a&gt; on February 17, 2020.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/NLP%E7%AE%80%E6%8A%A5_ISSUE_4_PyTorch3D,_DeepSpeed,_Turing-NLG/&quot;&gt;NLP简报 [CH]: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…&lt;/a&gt; was originally published by dair.ai at &lt;a href=&quot;http://localhost:4000&quot;&gt;dair.ai&lt;/a&gt; on February 17, 2020.&lt;/p&gt;
   </content>
 </entry>
 

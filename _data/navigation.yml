@@ -1,0 +1,32 @@
+# Site navigation links
+
+- title: Blog ✍️
+  url: /posts/
+
+- title: About ℹ️
+  url: /about/
+
+- title: NLP Newsletter 🗞️
+  url: /newsletter/
+
+- title: Projects 💡
+  url: /projects/
+
+- title: GitHub 📁
+  url: https://github.com/dair-ai
+
+- title: Contribute ✨
+  url: https://github.com/dair-ai/dair-ai.github.io/contribute
+
+- title: Medium 📰
+  url: https://medium.com/dair-ai
+
+- title: NLP Overview 📘
+  url: https://nlpoverview.com/
+
+- title: 2019 NLP Highlights (PDF) 🔥
+  url: https://github.com/dair-ai/nlp_highlights
+
+
+#- title: Theme Setup
+#  url: /theme-setup/
