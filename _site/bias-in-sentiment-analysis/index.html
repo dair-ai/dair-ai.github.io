@@ -1,0 +1,374 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>Examining Gender and Race Bias in Sentiment Analysis Systems &#8211; dair.ai</title>
+<meta name="description" content="Examining Gender and Race Bias in Sentiment Analysis Systems">
+<meta name="keywords" content="">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Examining Gender and Race Bias in Sentiment Analysis Systems">
+<meta name="twitter:description" content="Examining Gender and Race Bias in Sentiment Analysis Systems">
+<meta name="twitter:site" content="@dair_ai">
+<meta name="twitter:creator" content="@omarsar0">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dair.ai/images/nlp_home.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Examining Gender and Race Bias in Sentiment Analysis Systems">
+<meta property="og:description" content="Examining Gender and Race Bias in Sentiment Analysis Systems">
+<meta property="og:url" content="https://dair.ai/bias-in-sentiment-analysis/">
+<meta property="og:site_name" content="dair.ai">
+
+<meta property="og:image" content="https://dair.ai/images/nlp_home.png">
+
+
+
+
+
+
+
+<link rel="canonical" href="https://dair.ai/bias-in-sentiment-analysis/">
+<link href="https://dair.ai/feed.xml" type="application/atom+xml" rel="alternate" title="dair.ai Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://dair.ai/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="https://dair.ai/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="https://dair.ai/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://dair.ai/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://dair.ai/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dair.ai/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dair.ai/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dair.ai/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1537934899816329";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43ef4f23bf37b0"></script>
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="https://dair.ai/">dair.ai</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				    <li><a href="https://dair.ai/posts/" >Blog ✍️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/about/" >About ℹ️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/newsletter/" >NLP Newsletter 🗞️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/projects/" >Projects 💡</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai" target="_blank">GitHub 📁</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/dair-ai.github.io/contribute" target="_blank">Contribute ✨</a></li>
+				
+				    
+				    <li><a href="https://medium.com/dair-ai" target="_blank">Medium 📰</a></li>
+				
+				    
+				    <li><a href="https://nlpoverview.com/" target="_blank">NLP Overview 📘</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/nlp_highlights" target="_blank">2019 NLP Highlights (PDF) 🔥</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="https://dair.ai/images/white_background_elvis.png" class="bio-photo" alt="Elvis Saravia bio photo">
+
+
+  <h3 itemprop="name">Elvis Saravia</h3>
+  <p>Editor at dair.ai</p>
+
+  <a href="http://twitter.com/omarsar0" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+  
+  
+  
+  
+  
+  
+  <a href="http://github.com/omarsar" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        
+          <h1><a href="https://dair.ai/bias-in-sentiment-analysis/" rel="bookmark" title="Examining Gender and Race Bias in Sentiment Analysis Systems">Examining Gender and Race Bias in Sentiment Analysis Systems</a></h1>
+        
+      
+    </div><!--/ .headline-wrap -->
+
+    
+    <div class="article-wrap">
+      <p><img src="https://github.com/omarsar/omarsar.github.io/blob/master/images/sa_bias/cover.png?raw=true" alt="alt txt" /></p>
+
+<p><br />
+A pressing issue in machine learning (ML) research is to examine whether automated algorithms discriminate against gender or race when making decisions. In a <a href="http://aclweb.org/anthology/S18-2005">recent study</a>, Kiritchenko and Mohammad conducted an extensive analysis to determine whether hundreds of sentiment analysis systems accentuate inappropriate human biases and how these are manifested.</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Automatic systems are beneficial to society but as they improve in predictive performance, comparable to human capabilities, they could perpetuate inappropriate human biases. In the context of sentiment analysis (SA), these biases may come in many forms. For instance, an SA system may consider the messages conveyed by a specific gender or race to be less positive simply because of their race and gender. Therefore, even when it is not clear how biases are manifested, it is the duty and responsibility of the natural language processing (NLP) system developer to proactively address these issues.</p>
+
+<h2 id="contributions">Contributions</h2>
+
+<p>In NLP, the sources of the bias may derive from the training data or language resources such as lexicons and word embeddings that a machine learning algorithm is designed to leverage for building the predictive model.</p>
+
+<p><br />
+There have been many works in computer vision and NLP that aim to detect these inappropriate biases, but few have focused on a large set of systems that aim to solve the same task, which is very common in the field of machine learning.</p>
+
+<p><br />
+The authors collected and proposed a benchmark dataset for examining inappropriate biases in sentiment analysis systems since none existed at the time of the study. Then 219 automatic sentiment analysis systems were examined for inappropriate biases using the dataset. The goal of the research was simply to examine whether the sentiment analysis systems were consistently assigning higher or lower sentiment intensity scores to sentence pairs involving a particular race or gender.</p>
+
+<h2 id="dataset">Dataset</h2>
+
+<p>A benchmark dataset, coined as Equity Evaluation Corpus (EEC), was compiled to test the fairness of the sentiment analysis systems. Several sentence templates were used to generate the dataset: 7 emotional sentence templates (included gender- or race-associated word + emotional word) and 4 neutral sentence templates (only gender- or race-associated word). (See the 11 templates in the table below)</p>
+
+<p><img src="https://github.com/omarsar/omarsar.github.io/blob/master/images/sa_bias/dataset.png?raw=true" alt="alt txt" /></p>
+
+<p><br />
+The <code class="highlighter-rouge">&lt;person&gt;</code> placeholder was instantiated by African American or European American names such as ‘Latisha’ and ‘Ellen’ and noun phrases such as ‘my daughter’ and ‘my son’. Whereas, the <code class="highlighter-rouge">&lt;emotion word&gt;</code> placeholder included an emotion state word with varying intensities or emotional situation word. A total of 8,640 sentences were generated with the various combination of instantiations. (Refer to the <a href="http://aclweb.org/anthology/S18-2005">paper</a> for the full list of noun phrases, names, and emotion words). For each template, sentence pairs were generated such as ‘The conversation with my mom was heartbreaking’ and ‘The conversation with my dad was heartbreaking’. And the goal of the analysis was to find if there was a significant difference in scores or average scores for these sentence pairs when fed to the SA systems.</p>
+
+<h2 id="the-sentiment-analysis-systems">The Sentiment Analysis Systems</h2>
+
+<p>The 219 automatic sentiment analysis systems that participated in the <a href="https://competitions.codalab.org/competitions/17751">SemEval-2018 Task 1: Affect in Tweets</a> were individually evaluated for discrimination based on gender and race bias. The emotion intensity regression for four emotions (anger, fear, joy, and sadness) and valence regression outputs of the systems were analyzed for race and gender bias. The outputs were scores between 0 and 1. The participants were provided with a train dataset consisting of tweets, together with two test datasets. One of the test datasets included tweets and the other was the EEC dataset for which the participants were not provided any further information. Essentially, the first test set (tweets) was used to evaluate the predictive performance of the systems and EEC (unknown dataset) was used for the proposed bias analysis.</p>
+
+<p><br />
+Most of the systems combined sentence embeddings or emotion lexicons with traditional ML algorithms (SVM and Logistic Regression) or deep neural networks (e.g., LSTMs and Bi-LSTMs). The embeddings were obtained either through a <a href="https://web.stanford.edu/~jurafsky/mintz.pdf">distant supervision</a> corpus, pre-trained models, or manually trained embeddings. The lexicons were often derived from the <a href="https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm">NRC</a> emotion and sentiment lexicons. A baseline SVM system was also trained with word unigrams as features. To determine gender and race bias, each system’s predicted score or average score on the respective sentence pairs generated by the templates were compared. Very high differences in scores indicated a higher bias by the systems.</p>
+
+<h2 id="gender-bias-results">Gender Bias Results</h2>
+
+<p>The study reports that on the four emotion intensity prediction tasks a whopping 75% to 86% of the systems consistently scored sentences of one gender higher than another, even when all that changed was the noun phrases or names in the sentence pairs. This phenomenon was more evident in the emotions of anger and joy. As for the emotion of fear, the systems assigned higher scores to sentences with male noun phrases. Sadness was more balanced than the rest of the emotions. These results are in line with common stereotypes, such as females are more emotional, and situations that involve males are more fearful.</p>
+
+<p><br />
+Additionally, the top 10 systems that performed the best on the first test dataset showed some sensitivity to the gender-associated words while the systems with medium to low performance had an even higher sensitivity to these words. Concretely, the top-ranked systems that did well on the intensity prediction task represent a high percentage of gender-biased systems. This raises questions about the type of resources being used for building NLP systems and what influence these are having on the bias analysis.</p>
+
+<h2 id="race-bias-results">Race Bias Results</h2>
+
+<p>The race bias analysis produced similar results as compared to the gender bias analysis. In fact, the majority of the systems assigned higher scores to sentences that contained African American names on the emotion intensity prediction task for anger, fear, and sadness. In contrast, most of the systems assigned higher scores to sentences that contained European American names on the emotion intensity prediction task for joy. These results reflect the stereotypes found in a <a href="https://link.springer.com/article/10.1023/A:1022986429748">previous study</a> which report that African Americans are commonly associated with more negative emotions.</p>
+
+<h2 id="the-future">The Future</h2>
+
+<p>As future work, the authors will continue to investigate the systems (and its components) to locate the exact source/s of the identified biases. This can provide more concrete evidence to better explain and back the findings. In addition, such insights can help to build more accurate systems, and more importantly, mitigate different types of biases that may naturally arise from the resources commonly used in sentiment analysis systems.</p>
+
+<p><br />
+From the results obtained by the baseline system, which only used the training dataset and no other language resource, bias was also observed in the form of some unigrams highly associated with a particular gender or race. Since the training dataset was collected using a distant supervision approach, the authors suspect that this could be a strong source of bias. Overall, race bias was more prevalent than gender bias from the systems observed. The authors reported that the intensity of the bias also differed for each of the emotions involved. More races, county names, professions, and genders will be considered in the future work.</p>
+
+<h2 id="requests-for-research">Requests for Research</h2>
+
+<ul>
+  <li>The EEC corpus only presents one setting to examine the fairness of sentiment analysis systems. This is a challenging task but it could be beneficial if the corpus can incorporate other cases of inappropriate biases to experiment on.</li>
+  <li>Crowdsourcing efforts could help to improve the quality of the corpus. In addition, you can also try other types of systems besides SA. How about emotion recognition systems or emoji recognition systems?</li>
+  <li>The goal of this research was only to examine whether the sentiment analysis systems were perpetrating inappropriate human biases. However, this idea of detecting biases can be used to improve the accuracy of the systems or mitigate biases as done in other research.</li>
+  <li>I believe that including context (e.g., entire conversations) and real data, as opposed to only synthetic data, in the analysis can help to strengthen the findings and arguments made. In fact, more interesting insights may emerge from the datasets.</li>
+</ul>
+
+<p><em>Let me know if you want to collaborate on any of the above tasks by emailing me directly to ellfae@gmail.com.</em> This was originally posted on my publication (<a href="https://medium.com/dair-ai/examining-gender-and-race-bias-in-sentiment-analysis-systems-b04b269a653">dair.ai</a>), where you can find further discussions.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+  <div class="addthis_inline_share_toolbox"></div>
+  <!--
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=https://dair.ai/bias-in-sentiment-analysis/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://dair.ai/bias-in-sentiment-analysis/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=https://dair.ai/bias-in-sentiment-analysis/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>-->
+</div><!-- /.social-share -->
+        <p class="byline"><strong>Examining Gender and Race Bias in Sentiment Analysis Systems</strong> was published on <time datetime="2018-12-22T00:00:00-06:00">December 22, 2018</time>.</p>
+        
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="https://dair.ai/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7-ZH-.md/" title="NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7/" title="NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_-7_-FR/" title="NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
+  <footer>
+    
+
+<span>&copy; 2020 dair.ai. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://dair.ai/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://dair.ai/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-158959084-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+
+
+
+</body>
+</html>

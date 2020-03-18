@@ -1,0 +1,611 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,… &#8211; dair.ai</title>
+<meta name="description" content="">
+<meta name="keywords" content="nlp_newsletter">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…">
+<meta name="twitter:description" content="">
+<meta name="twitter:site" content="@dair_ai">
+<meta name="twitter:creator" content="@omarsar0">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dair.ai/images/nlp_newsletter_1.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://dair.ai/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/">
+<meta property="og:site_name" content="dair.ai">
+
+<meta property="og:image" content="https://dair.ai/images/nlp_newsletter_1.png">
+
+
+
+
+
+
+
+<link rel="canonical" href="https://dair.ai/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/">
+<link href="https://dair.ai/feed.xml" type="application/atom+xml" rel="alternate" title="dair.ai Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://dair.ai/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="https://dair.ai/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="https://dair.ai/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://dair.ai/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://dair.ai/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dair.ai/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dair.ai/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dair.ai/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1537934899816329";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43ef4f23bf37b0"></script>
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="https://dair.ai/">dair.ai</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				    <li><a href="https://dair.ai/posts/" >Blog ✍️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/about/" >About ℹ️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/newsletter/" >NLP Newsletter 🗞️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/projects/" >Projects 💡</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai" target="_blank">GitHub 📁</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/dair-ai.github.io/contribute" target="_blank">Contribute ✨</a></li>
+				
+				    
+				    <li><a href="https://medium.com/dair-ai" target="_blank">Medium 📰</a></li>
+				
+				    
+				    <li><a href="https://nlpoverview.com/" target="_blank">NLP Overview 📘</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/nlp_highlights" target="_blank">2019 NLP Highlights (PDF) 🔥</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="https://dair.ai/images/white_background_elvis.png" class="bio-photo" alt="Elvis Saravia bio photo">
+
+
+  <h3 itemprop="name">Elvis Saravia</h3>
+  <p>Editor at dair.ai</p>
+
+  <a href="http://twitter.com/omarsar0" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+  
+  
+  
+  
+  
+  
+  <a href="http://github.com/omarsar" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        
+          <h1><a href="https://dair.ai/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/" rel="bookmark" title="NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…">NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…</a></h1>
+        
+      
+    </div><!--/ .headline-wrap -->
+
+    
+    <div class="article-wrap">
+      <p><img src="https://cdn-images-1.medium.com/max/2400/1*gLVPodYjYd4YaF9sJbSpjg.png" alt="" /></p>
+
+<p><br />
+<em>Thanks to</em> <a href="https://blog.csdn.net/Kaiyuan_sjtu"><em>Kaiyuan</em></a> <em>(WeChat: NewBeeNLP) for this great translation.</em></p>
+
+<p><br />
+欢迎来到船新栏目<strong>「NLP 简报」</strong>，本新闻简报的目的是让你不必花费太多时间就可以了解与 NLP 和 ML 有关的一些有趣和最新的故事。</p>
+
+<p><br />
+<strong>如果想让自己有趣的研究/项目出现在 NLP 简报中，随时在公众号后台留言联系我</strong></p>
+
+<p><br />
+下面来看看第一期的内容</p>
+
+<ul>
+  <li><strong>1、Publications 📙</strong>
+    <ul>
+      <li>1.1 用于乳腺癌筛查的AI系统</li>
+      <li>1.2 信息抽取</li>
+      <li>1.3 Improved recommendation</li>
+    </ul>
+  </li>
+  <li><strong>2、Creativity and Society 🎨</strong>
+    <ul>
+      <li>2.1 AI就业</li>
+    </ul>
+  </li>
+  <li><strong>3、Tools and Datasets ⚙️</strong>
+    <ul>
+      <li>3.1 一个极速分词器</li>
+      <li>3.2 用于搜索的ML&amp;NLP</li>
+      <li>3.3 医学图像分析</li>
+    </ul>
+  </li>
+  <li><strong>4、Ethics in AI 🚨</strong>
+    <ul>
+      <li>4.1 ML社区的欺诈行为</li>
+      <li>4.2 机器翻译中的性别偏见</li>
+      <li>4.3 ML偏差与公正性</li>
+    </ul>
+  </li>
+  <li><strong>5、Articles and Blog posts ✍️</strong>
+    <ul>
+      <li>5.1 NLP shortfalls</li>
+      <li>5.2 NLP和ML2019年亮点</li>
+    </ul>
+  </li>
+  <li><strong>6、Education 🎓</strong>
+    <ul>
+      <li>6.1 Democratizing AI education</li>
+      <li>6.2 Top NLP and ML Books</li>
+      <li>6.3 使用核方法的机器学习</li>
+    </ul>
+  </li>
+  <li><strong>7、Noteworthy Mentions ⭐️</strong></li>
+</ul>
+
+<h1 id="1publications-">1、Publications 📙</h1>
+
+<p><strong>1.1 用于乳腺癌筛查的 AI 系统</strong></p>
+
+<p><br />
+DeepMind 在 Nature 杂志上发表了一篇名为“International evaluation of an AI system for breast cancer screening[1]”的新论文。作者说，这项工作是关于在乳腺癌筛查方面超越人类专家的 AI 系统的评估。当前的 AI 系统是否真的可以实现这一点尚有争议，并且对于这种类型的系统及其评估方式一直存在批评。</p>
+
+<p><br />
+<strong>1.2 信息抽取</strong></p>
+
+<p><br />
+Pankaj Gupta 公开发布了他的博士学位论文，题目为“Neural Information Extraction From Natural Language Text[2]”。主要讨论如何使用基于神经的方法有效地从自然语言文本中提取语义关系， 此类研究工作旨在促进构建结构化的知识库，该知识库可用于一系列下游 NLP 应用程序，例如 Web 搜索，问题解答以及其他任务。</p>
+
+<p><br />
+<strong>1.3 Improved recommendations</strong></p>
+
+<p><br />
+MIT 和 IBM 的研究人员基于三种广泛使用的文本分析工具（主题建模，单词嵌入和最佳传输）的组合，开发了一种用于分类，显示和搜索相关文档的方法（于去年在 NeurIPS 上发布）。该方法还为文档排序提供了有希望的结果。此类方法适用于需要对大规模数据（例如搜索和推荐系统）进行改进和更快建议的各种场景和应用。</p>
+
+<h1 id="2creativity-and-society-">2、Creativity and Society 🎨</h1>
+
+<p><strong>2.1 AI 就业</strong></p>
+
+<p><br />
+Stanford 2019 年 AI 指数报告[3]表明，对 AI 从业者的需求更多。但是，与 AI 相关的工作有很多方面，例如职业转变和面试仍然没有适当定义。</p>
+
+<p><br />
+在博客”Shifting Careers to Autonomous Vehicles[4]”中，Vladimir Iglovivok 详细介绍了他的职业生涯和 ML 冒险，从构建传统的推荐系统到构建壮观的计算机视觉模型（赢得了 Kaggle 竞赛）。他现在在 Lyft 从事自动驾驶汽车的工作，但是到达那里的旅程并不容易。</p>
+
+<p><br />
+如果 n 真的对 AI 事业感兴趣并且很认真，Andrew Ng 的公司 deeplearning.ai 成立了 Workera，该公司专门致力于帮助数据科学家和机器学习工程师从事 AI 事业。可以在此处获取关于Workra 的官方报告[5]。</p>
+
+<h1 id="3tools-and-datasets-️">3、Tools and Datasets ⚙️</h1>
+
+<p><strong>3.1 一个极速分词器</strong></p>
+
+<p><br />
+Hugging Face 是一家的 NLP 初创公司，拥有开源的 Tokenizers，这是一种可在现代 NLP pipeline 中使用的超快速的分词器，可以查看Tokenizers GitHub 库[6]以获取有关如何使用 Tokenizer 的文档。</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/1600/1*BGcXk6Yf9fXGZlEtxz1hcg.jpeg" alt="" /></p>
+
+<p><br />
+TensorFlow 2.1 合并了一个新的TextVectorization 层[7]，你可以轻松处理原始字符串并有效地执行文本 normalization，tokenization，n-gram 生成和词汇索引。点击查看Chollet 的 Colab 笔记[8]本，演示如何使用该功能进行端到端文本分类。</p>
+
+<p><br />
+<strong>3.2 用于搜索的 ML&amp;NLP</strong></p>
+
+<p><br />
+去年，NLP 取得了巨大进步，其中一个领域是一系列改进和新的研究方向。搜索可能是可能从迁移学习 NLP 中受益的那些领域之一。</p>
+
+<p><br />
+尽管搜索属于信息检索领域，但仍有机会构建使用现代 NLP 技术（例如来自基于BERT[9]的基于变压器的模型的上下文表示）来改进语义搜索的搜索引擎。Google 在几个月前发布了一篇博客文章，讨论了他们如何利用 BERT 模型来改善和理解搜索[10]。</p>
+
+<p><br />
+如果您对如何将上下文化表示形式应用于使用 Elasticsearch 和 TensorFlow 等开放式搜索技术的搜索感到好奇，则可以查看”Elasticsearch meets BERT”[11]或”Building a Search Engine with BERT and TensorFlow”[12]。</p>
+
+<p><br />
+<strong>3.3 医学图像分析</strong></p>
+
+<p><br />
+TorchIO[13]是基于流行的深度学习库 PyTorch 的 Python 软件包。TorchIO 提供的功能可轻松高效地读取和采样 3D 医学图像。功能包括用于数据扩充和预处理的空间变换。</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/1600/0*FSPuSC8TK9X-NQ2q.gif" alt="" /></p>
+
+<h1 id="4ethics-in-ai-">4、Ethics in AI 🚨</h1>
+
+<p><strong>4.1 ML 社区的欺诈行为</strong></p>
+
+<p><br />
+Kaggle 比赛的第一名优胜者因欺诈活动而被取消参赛资格，其队伍使用了聪明但不负责任和不可接受的策略来赢得比赛的第一名。原文”PetFinder.my Contest: 1st Place Winner Disqualified[14]”重点介绍了机器学习社区想要缓解的许多严重且无法接受的行为，正确和道德地使用机器学习技术是前进的唯一方法。</p>
+
+<p><br />
+<strong>4.2 机器翻译中的性别偏见</strong></p>
+
+<p><br />
+关于机器翻译系统是否反映性别偏见的主题，一组研究人员发表了这篇出色的论文，”Assessing Gender Bias in Machine Translation – A Case Study with Google Translate[15]”，提出了使用 Google 翻译的案例研究。作者声称的一项发现是，Google 翻译“表现出强烈的男性违约倾向，特别是在与性别分布失衡有关的领域，例如 STEM 工作。”</p>
+
+<p><br />
+<strong>4.3 ML 偏差与公正性</strong></p>
+
+<p><br />
+如果您想让所有人都了解 AI 伦理和公平，那么这是一个由Timnit Gebru[16]主持，由 TWIML 主持的不错的播客。</p>
+
+<p><br />
+Timnit 是 ML 公平性方面的杰出研究者，他与 Eun Seo Jo 一起发表了一篇论文，”Lessons from Archives: Strategies for Collecting Sociocultural Data in Machine Learning”[17]他们确定了档案中文档收集实践的五种关键方法，这些方法可以为社会文化 ML 中的数据收集提供更可靠的方法。这可能会导致跨学科合作研究获得更系统的数据收集方法。</p>
+
+<p><br />
+Sina Fazelpour 和 Zachary Lipton 最近发表了一篇论文，”fairness-non-ideal-fazelpour-lipton-2020[18]”，他们认为，由于我们非理想世界的产生方式的性质，基于理想思维的公平 ML 可能会导致误导政策和干预措施。实际上，他们的分析表明“提出的公平 ML 算法的缺点反映了理想方法所面临的广泛问题。”</p>
+
+<h1 id="5articles-and-blog-posts-️">5、Articles and Blog posts ✍️</h1>
+
+<p><strong>5.1 NLP shortfalls</strong></p>
+
+<p><br />
+Benjamin Heinzerling 在 The Gradient 中发表了一篇有趣的文章，讨论了NLP 不足的领域[19]，例如论点理解和常识推理。本杰明参考了 Nivin＆Kao 的最新论文，”Probing Neural Network Comprehension of Natural Language Arguments[20]”，该论文挑战和质疑了转移学习和语言模型对高级自然语言理解的能力。</p>
+
+<p><br />
+<strong>5.2 NLP 和 ML2019 年亮点</strong></p>
+
+<p><br />
+对于新的一年，报告”NLP Year in Review — 2019[21]”，记录了 2019 年的一些最有趣的 NLP 和 ML 亮点。</p>
+
+<p><br />
+塞巴斯蒂安·鲁德（Sebastian Ruder）最近还写了一篇精彩而详尽的博客文章[22]，介绍了十大关于 ML 和 NLP 的研究方向，他认为这很有影响力 在 2019 年。列表中包括诸如通用无监督预训练，应用于科学的 ML 和 NLP，增强预训练模型，高效和远程 Transformers 等主题。</p>
+
+<p><br />
+Google AI 研究会发布他们一年来进行的研究的摘要以及他们正在关注的未来研究方向，”Google Research: Looking Back at 2019, and Forward to 2020 and Beyond[23]”。</p>
+
+<h1 id="6education-">6、Education 🎓</h1>
+
+<p><strong>6.1 Democratizing AI education</strong></p>
+
+<p><br />
+为了使 AI 教育民主化并向大众普及 AI 技术的影响，赫尔辛基大学与 Reaktor 合作发布了涵盖 AI 基础知识的精彩免费课程。受欢迎的课程称为“Elements of AI[24]”，包括诸如 AI 伦理学，AI 哲学，神经网络，朴素贝叶斯规则等主题，以及其他基础主题。</p>
+
+<p><br />
+Stanford CS224N 再次推出了流行的“Natural Language Processing with Deep Learning[25]”课程。该课程于今年 1 月 7 日正式开始，因此，如果您想学习该课程，请访问其网站以获取完整的课程提纲，幻灯片，视频，阅读建议等。</p>
+
+<p><br />
+<strong>6.2 Top NLP and ML Books</strong></p>
+
+<p><br />
+关于一些NLP 和 ML 领域书籍推荐[26]。</p>
+
+<p><br />
+<strong>6.3 使用核方法的机器学习</strong></p>
+
+<p><br />
+诸如 PCA 和 K-means 之类的核方法已经存在了很长一段时间，这是因为它们已成功应用于各种应用，例如图形和生物序列。查看这套涵盖了各种Kernel Methods[27]及其内部工作原理的综合幻灯片。这也是一个由 Francis Bach 维护很棒的博客，”Are all kernels cursed?[28]”，讨论了内核方法和其他机器学习主题。</p>
+
+<h1 id="7notable-mentions-️">7、Notable Mentions ⭐️</h1>
+
+<p>另外还有一些有趣的研究/项目：</p>
+
+<ul>
+  <li>
+    <p>John Langford 的博客[29]，讨论机器学习理论；</p>
+  </li>
+  <li>
+    <p>许多行业的面向机器学习的技术已经使用梯度增强机器多年了。看看这篇文章[30]，其中介绍了一个用于应用梯度增强的库 XGBoost。</p>
+  </li>
+  <li>
+    <p>如果你对学习如何设计和构建基于机器学习的应用程序并将其投入生产感兴趣，那么Emmanuel Ameisen[31]的书籍可以帮助你。</p>
+  </li>
+</ul>
+
+<p><br />
+<strong>本文参考资料</strong></p>
+
+<p><br />
+[1] <strong>International evaluation of an AI system for breast cancer screening:</strong> https://www.nature.com/articles/s41586-019-1799-6</p>
+
+<p><br />
+[2] <strong>Neural Information Extraction From Natural Language Text:</strong> https://www.researchgate.net/publication/336739252_PhD_Thesis_Neural_Information_Extraction_From_Natural_Language_Text</p>
+
+<p><br />
+[3] <strong>Stanford 2019 年 AI 指数报告:</strong> https://hai.stanford.edu/sites/g/files/sbiybj10986/f/ai_index_2019_report.pdf</p>
+
+<p><br />
+[4] <strong>Shifting Careers to Autonomous Vehicles:</strong> https://towardsdatascience.com/how-i-found-my-current-job-3fb22e511a1f</p>
+
+<p><br />
+[5] <strong>Workra 的官方报告:</strong> https://workera.ai/candidates/report</p>
+
+<p><br />
+[6] <strong>Tokenizers GitHub 库:</strong> https://github.com/huggingface/tokenizers</p>
+
+<p><br />
+[7] <strong>TextVectorization 层:</strong> https://www.tensorflow.org/api_docs/python/tf/keras/layers/experimental/preprocessing/TextVectorization</p>
+
+<p><br />
+[8] <strong>Chollet 的 Colab 笔记:</strong> https://colab.research.google.com/drive/1RvCnR7h0_l4Ekn5vINWToI9TNJdpUZB3</p>
+
+<p><br />
+[9] <strong>BERT:</strong> https://arxiv.org/abs/1810.04805</p>
+
+<p><br />
+[10] <strong>利用 BERT 模型来改善和理解搜索:</strong> https://www.blog.google/products/search/search-language-understanding-bert/</p>
+
+<p><br />
+[11] <strong>Elasticsearch meets BERT:</strong> https://towardsdatascience.com/elasticsearch-meets-bert-building-search-engine-with-elasticsearch-and-bert-9e74bf5b4cf2</p>
+
+<p><br />
+[12] <strong>Building a Search Engine with BERT and TensorFlow:</strong> https://towardsdatascience.com/building-a-search-engine-with-bert-and-tensorflow-c6fdc0186c8a</p>
+
+<p><br />
+[13] <strong>TorchIO:</strong> https://github.com/fepegar/torchio</p>
+
+<p><br />
+[14] <strong>PetFinder.my Contest: 1st Place Winner Disqualified:</strong> https://www.kaggle.com/c/petfinder-adoption-prediction/discussion/125436</p>
+
+<p><br />
+[15] <strong>Assessing Gender Bias in Machine Translation – A Case Study with Google Translate:</strong> https://arxiv.org/abs/1809.02208</p>
+
+<p><br />
+[16] <strong>Timnit Gebru:</strong> https://twimlai.com/twiml-talk-336-trends-in-fairness-and-ai-ethics-with-timnit-gebru/</p>
+
+<p><br />
+[17] <strong>Lessons from Archives: Strategies for Collecting Sociocultural Data in Machine Learning:</strong> https://arxiv.org/abs/1912.10389</p>
+
+<p><br />
+[18] <strong>fairness-non-ideal-fazelpour-lipton-2020:</strong> http://zacklipton.com/media/papers/fairness-non-ideal-fazelpour-lipton-2020.pdf</p>
+
+<p><br />
+[19] <strong>NLP 不足的领域:</strong> https://thegradient.pub/nlps-clever-hans-moment-has-arrived/</p>
+
+<p><br />
+[20] <strong>Probing Neural Network Comprehension of Natural Language Arguments:</strong> https://www.aclweb.org/anthology/P19-1459/</p>
+
+<p><br />
+[21] <strong>NLP Year in Review — 2019:</strong> https://medium.com/dair-ai/nlp-year-in-review-2019-fb8d523bcb19</p>
+
+<p><br />
+[22] <strong>精彩而详尽的博客文章:</strong> https://ruder.io/research-highlights-2019/</p>
+
+<p><br />
+[23] <strong>Google Research: Looking Back at 2019, and Forward to 2020 and Beyond:</strong> https://ai.googleblog.com/2020/01/google-research-looking-back-at-2019.html</p>
+
+<p><br />
+[24] <strong>Elements of AI:</strong> https://www.elementsofai.com/</p>
+
+<p><br />
+[25] <strong>Natural Language Processing with Deep Learning:</strong> http://web.stanford.edu/class/cs224n/</p>
+
+<p><br />
+[26] <strong>NLP 和 ML 领域书籍推荐:</strong> https://twitter.com/omarsar0/status/1214547402838986754?s=20</p>
+
+<p><br />
+[27] <strong>Kernel Methods:</strong> http://members.cbio.mines-paristech.fr/~jvert/svn/kernelcourse/slides/master2017/master2017.pdf</p>
+
+<p><br />
+[28] <strong>Are all kernels cursed?:</strong> https://francisbach.com/cursed-kernels/</p>
+
+<p><br />
+[29] <strong>John Langford 的博客:</strong> https://hunch.net/</p>
+
+<p><br />
+[30] <strong>这篇文章:</strong> https://opendatascience.com/xgboost-enhancement-over-gradient-boosting-machines/?utm_campaign=Learning%20Posts&amp;utm_content=111061559&amp;utm_medium=social&amp;utm_source=twitter&amp;hss_channel=tw-3018841323</p>
+
+<p><br />
+[31] <strong>Emmanuel Ameisen:</strong> https://www.amazon.com/Building-Machine-Learning-Powered-Applications/dp/149204511X/</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+  <div class="addthis_inline_share_toolbox"></div>
+  <!--
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=https://dair.ai/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://dair.ai/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=https://dair.ai/NLP%E7%AE%80%E6%8A%A5_Tokenizers,_TensorFlow_2_1,_TextVectorization/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>-->
+</div><!-- /.social-share -->
+        <p class="byline"><strong>NLP简报 [CH]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…</strong> was published on <time datetime="2020-02-20T00:00:00-06:00">February 20, 2020</time>.</p>
+        
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="https://dair.ai/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7-ZH-.md/" title="NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7/" title="NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_-7_-FR/" title="NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
+  <footer>
+    
+
+<span>&copy; 2020 dair.ai. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://dair.ai/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://dair.ai/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-158959084-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+
+
+
+</body>
+</html>

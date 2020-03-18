@@ -1,0 +1,542 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title>NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML &#8211; dair.ai</title>
+<meta name="description" content="This issue covers topics that range from extending the Transformer model to slowing publication in ML to a series of ML and NLP books and project releases.">
+<meta name="keywords" content="nlp_newsletter">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML">
+<meta name="twitter:description" content="This issue covers topics that range from extending the Transformer model to slowing publication in ML to a series of ML and NLP books and project releases.">
+<meta name="twitter:site" content="@dair_ai">
+<meta name="twitter:creator" content="@omarsar0">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dair.ai/images/nlp_newsletter_6.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML">
+<meta property="og:description" content="This issue covers topics that range from extending the Transformer model to slowing publication in ML to a series of ML and NLP books and project releases.">
+<meta property="og:url" content="https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5/">
+<meta property="og:site_name" content="dair.ai">
+
+<meta property="og:image" content="https://dair.ai/images/nlp_newsletter_6.png">
+
+
+
+
+
+
+
+<link rel="canonical" href="https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5/">
+<link href="https://dair.ai/feed.xml" type="application/atom+xml" rel="alternate" title="dair.ai Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://dair.ai/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="https://dair.ai/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="https://dair.ai/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="https://dair.ai/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://dair.ai/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://dair.ai/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dair.ai/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dair.ai/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dair.ai/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1537934899816329";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43ef4f23bf37b0"></script>
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="https://dair.ai/">dair.ai</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+				    
+				    <li><a href="https://dair.ai/posts/" >Blog ✍️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/about/" >About ℹ️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/newsletter/" >NLP Newsletter 🗞️</a></li>
+				
+				    
+				    <li><a href="https://dair.ai/projects/" >Projects 💡</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai" target="_blank">GitHub 📁</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/dair-ai.github.io/contribute" target="_blank">Contribute ✨</a></li>
+				
+				    
+				    <li><a href="https://medium.com/dair-ai" target="_blank">Medium 📰</a></li>
+				
+				    
+				    <li><a href="https://nlpoverview.com/" target="_blank">NLP Overview 📘</a></li>
+				
+				    
+				    <li><a href="https://github.com/dair-ai/nlp_highlights" target="_blank">2019 NLP Highlights (PDF) 🔥</a></li>
+				
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+	<img src="https://dair.ai/images/white_background_elvis.png" class="bio-photo" alt="Elvis Saravia bio photo">
+
+
+  <h3 itemprop="name">Elvis Saravia</h3>
+  <p>Editor at dair.ai</p>
+
+  <a href="http://twitter.com/omarsar0" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
+  
+  
+  
+  
+  
+  
+  <a href="http://github.com/omarsar" class="author-social" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        
+          <h1><a href="https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5/" rel="bookmark" title="NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML">NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML</a></h1>
+        
+      
+    </div><!--/ .headline-wrap -->
+
+    
+    <div class="article-wrap">
+      <p><img src="https://cdn-images-1.medium.com/max/1200/1*vWICxAehSy3xOnqGIXtpoQ.png" alt="" /></p>
+
+<p><br />
+Welcome to the sixth issue of the NLP Newsletter. Thanks for all the support and for taking the time to read through the latest in ML and NLP. This issue covers topics that range from extending the Transformer model to slowing publication in ML to a series of ML and NLP book and project launches.</p>
+
+<p><br />
+<strong><em>A few updates about the NLP Newsletter and dair.ai</em></strong></p>
+
+<p><br />
+We have been translating the newsletter to other languages such as Brazilian Portuguese, Chinese, Arabic, Spanish, among others. Thanks to those folks that have helped with the translations 🤗. You can also contribute <a href="https://github.com/dair-ai/dair-ai.github.io/issues/11">here</a>.</p>
+
+<p><br />
+A month ago, we officially launched our new <a href="https://dair.ai/">website</a>. You can look at our <a href="https://github.com/dair-ai">GitHub organization</a> for more information about dair.ai and projects. If you are interested in seeing how others are already contributing to dair.ai or are interested in contributing to democratizing artificial intelligence research, education, and technologies, check our <a href="https://github.com/dair-ai/dair-ai.github.io/issues">issues</a> section.</p>
+
+<p><br />
+<a href="https://dair.ai/newsletter/"><em>Subscribe</em></a> <em>🔖 to the NLP Newsletter to receive future issues in your inbox.</em></p>
+
+<h1 id="publications-">Publications 📙</h1>
+
+<p><strong><em>A Primer in BERTology: What we know about how BERT works</em></strong></p>
+
+<p><br />
+Transformer-based models have shown to be effective at approaching different types of NLP tasks that range from <em>sequence labeling</em> to <em>question answering</em>. One of those models called BERT <a href="https://arxiv.org/abs/1810.04805">(Devlin et al. 2019)</a> is widely used but, like other models that employ deep neural networks, we know very little about their inner workings. A new <a href="https://arxiv.org/abs/2002.12327">paper</a> titled “<strong>A Primer in BERTology: What we know about how BERT works</strong>” aims to answer some of the questions about why BERT performs well on so many NLP tasks. Some of the topics addressed in the paper include the type of knowledge learned by BERT and where it is represented, and how that knowledge is learned and other methods researchers are using to improve it.</p>
+
+<p><br />
+<strong><em>Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer</em></strong></p>
+
+<p><br />
+Google AI recently published a <a href="https://arxiv.org/abs/1910.10683">method</a> that brings together all the lessons learned and improvements from NLP transfer learning models into one unified framework called Text-to-Text Transfer Transformer (T5). This work proposes that most NLP tasks can be formulated in a text-to-text format, suggesting that both the inputs and outputs are texts. The authors claim that this “<em>framework provides a consistent training objective both for pre-training and fine-tuning</em>”. T5 is essentially an encoder-decoder Transformer that applies various improvements in particular to the attention components of the model. The model was pre-trained on a newly released dataset called <a href="https://www.tensorflow.org/datasets/catalog/c4">Colossal Clean Crawled Corpus</a> and achieved SOTA results on NLP tasks such as summarization, question answering, and text classification.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*T9MXxcDOd2fX6xblbu7VdQ.png" alt="" /></p>
+
+<p><a href="https://arxiv.org/abs/1910.10683"><em>(Raffel et al. 2020)</em></a></p>
+
+<p><br />
+<strong><em>12-in-1: Multi-Task Vision and Language Representation Learning</em></strong></p>
+
+<p><br />
+Current research uses independent tasks and datasets to perform vision-and-language research even when the “<em>visually-grounded language understanding skill</em>s” required to perform these tasks overlap. A new <a href="https://arxiv.org/abs/1912.02315">paper</a> (to be presented at CVPR) proposes a large-scale multi-task approach to better model and jointly train vision-and-language tasks to generate a more generic vision-and-language model. The model reduces the parameter size and performs well on tasks like caption-based image retrieval and visual question answering.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*yyvN4bK0K2iykyJ2-QVBjw.png" alt="" /></p>
+
+<p><a href="https://arxiv.org/abs/1912.02315"><em>(Lu et al. 2020)</em></a></p>
+
+<p><br />
+<strong><em>BERT Can See Out of the Box: On the Cross-modal Transferability of Text Representations</em></strong></p>
+
+<p><br />
+reciTAL researchers and collaborators published a paper that aims to answer the question of whether a BERT model can produce representations that generalize to other modalities beyond text such as vision. They propose a model called BERT-gen that leverages mono or multi-modal representations and achieve improved results on visual question generation datasets.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*2NgR7yBuVLDcEza9UT41dw.png" alt="" /></p>
+
+<p><a href="https://arxiv.org/abs/2002.10832"><em>(Scialom et al. 2020)</em></a></p>
+
+<h1 id="creativity-and-society-">Creativity and Society 🎨</h1>
+
+<p><strong><em>The Next Decade in AI: Four Steps Towards Robust Artificial Intelligence</em></strong></p>
+
+<p><br />
+Gary Marcus recently published a <a href="https://arxiv.org/abs/2002.06177">paper</a> where he explains a series of steps that, in his view, we should be taking to build more robust AI systems. Gary’s central idea in this paper is to focus on building hybrid and knowledge-driven systems guided by cognitive models as opposed to focusing on building larger systems that require more data and computation power.</p>
+
+<p><br />
+<strong><em>10 Breakthrough Technologies 2020</em></strong></p>
+
+<p><br />
+MIT Technology Review published a list of the <a href="https://www.technologyreview.com/lists/technologies/2020/">10 breakthroughs</a> they have identified that will make a difference in solving problems that could change the way we live and work. The list — in no particular order — includes unhackable internet, hyper-personalized medicine, digital money, anti-aging drugs, AI-discovered molecules, satellite mega-constellations, quantum supremacy, Tiny AI, differential privacy, and climate attribution.</p>
+
+<p><br />
+<strong><em>Time to rethink the publication process in machine learning</em></strong></p>
+
+<p><br />
+Yoshua Bengio recently <a href="https://yoshuabengio.org/2020/02/26/time-to-rethink-the-publication-process-in-machine-learning/">wrote</a> on his concerns about the fast-paced cycles of ML publications. The main concern is that due to the velocity of publishing, a lot of papers get published that contain errors and are just incremental, whereas spending more time and ensuring rigour, which is how it used to work many years ago, seems to be vanishing. On top of it all, students are the ones that have to deal with the negative consequences of this pressure and stress. To address the situation, Bengio talks about his actions to help in the process of slowing down research publications for the good of science.</p>
+
+<h1 id="tools-and-datasets-️">Tools and Datasets ⚙️</h1>
+
+<p><strong><em>PointerGenerator network implementation in AllenNLP</em></strong></p>
+
+<p><br />
+Pointer-Generator networks aim to augment sequence-to-sequence attentional models that are used to <a href="https://arxiv.org/abs/1704.04368">improve</a> <a href="https://arxiv.org/abs/1704.04368"><em>abstractive summarization</em></a>. If you wish to use this technique for abstractive summarization using AllenNLP, Kundan Krishna has developed a <a href="https://github.com/kukrishna/pointer-generator-pytorch-allennlp">library</a> that allows you to run a pretrained model (provided) or train your own model.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*Fa4G6BrnJm3NSDr3TDHhfw.jpeg" alt="" /></p>
+
+<p><br />
+<strong><em>Question answering for different languages</em></strong></p>
+
+<p><br />
+With the proliferation of Transformer models and their effectiveness for large-scale NLP tasks performed in other languages, there has been an impressive amount of effort to release different types of datasets in different languages. For instance, Sebastian Ruder <a href="https://twitter.com/seb_ruder/status/1231713840502657025?s=20">shared</a> a list of datasets that can be used for question answering research in different languages: <a href="https://www.aclweb.org/anthology/W18-2605/">DuReader</a>, <a href="https://arxiv.org/abs/1909.07005">KorQuAD</a>, <a href="https://arxiv.org/abs/1912.09723">SberQuAD</a>, <a href="https://arxiv.org/abs/2002.06071">FQuAD</a>, <a href="https://arxiv.org/abs/1906.05394">Arabic-SQuAD</a>, <a href="https://github.com/crux82/squad-it">SQuAD-it</a>, and <a href="https://arxiv.org/abs/1912.05200v2">Spanish SQuAD</a>.</p>
+
+<p><br />
+<strong><em>PyTorch Lightning</em></strong></p>
+
+<p><br />
+PyTorch Lightning is a <a href="https://towardsdatascience.com/from-pytorch-to-pytorch-lightning-a-gentle-introduction-b371b7caaf09">tool</a> that allows you to abstract training that could require setting up GPU/TPU training and the use of 16-bit precision. Getting those things to work can become tedious but the great news is that PyTorch Lightning simplifies this process and allows you to train models on multi GPUs and TPUs without the need to change your current PyTorch code.</p>
+
+<p><br />
+<strong><em>Graph Neural Networks in TF2</em></strong></p>
+
+<p><br />
+A Microsoft Research team releases a <a href="https://github.com/microsoft/tf2-gnn">library</a> that provides access to implementations of many different graph neural network (GNN) architectures. This library is based on TensorFlow 2 and also provides data-wrangling modules that can directly be used in training/evaluation loops.</p>
+
+<p><br />
+<strong><em>Pre-training SmallBERTa — A tiny model to train on a tiny dataset</em></strong></p>
+
+<p><br />
+Have you ever wanted to train your own language model from scratch but didn’t have enough resources to do so? If so, then Aditya Malte have you covered with this great <a href="https://gist.github.com/aditya-malte/2d4f896f471be9c38eb4d723a710768b#file-smallberta_pretraining-ipynb">Colab notebook</a> that teaches you how to train an LM from scratch with a smaller dataset.</p>
+
+<h1 id="ethics-in-ai-">Ethics in AI 🚨</h1>
+
+<p><strong><em>Why faces don’t always tell the truth about feelings</em></strong></p>
+
+<p><br />
+For some time now, many researchers and companies have attempted to build AI models that understand and can recognize emotions either in the textual or visual context. A new <a href="https://www.nature.com/articles/d41586-020-00507-5">article</a> reopens the debate that AI techniques that aim to recognize emotion directly from face images are not doing it right. The main argument, raised by prominent psychologists in the space, is that there is no evidence of universal expressions that can be used for emotion detection from face images alone. It would take a model better understanding of personality traits, body movement, among other things to really get closer to more accurately detecting the emotions displayed by humans.</p>
+
+<p><br />
+<strong><em>Differential Privacy and Federated Learning Explained</em></strong></p>
+
+<p><br />
+One of the ethical considerations when building AI systems is to ensure privacy. Currently, this can be achieved in two ways, either using differential privacy or federated learning. If you want to know more about these topics, Jordan Harrod provides us a great introduction in this <a href="https://www.youtube.com/watch?v=MOcTGM_UteM">video</a> which also includes a hands-on practice session with the use of a Colab notebook.</p>
+
+<h1 id="articles-and-blog-posts-️">Articles and Blog posts ✍️</h1>
+
+<p><strong><em>A Deep Dive into the Reformer</em></strong></p>
+
+<p><br />
+Madison May wrote a <a href="https://www.pragmatic.ml/reformer-deep-dive/">new blog post</a> that provides a deep dive into <a href="https://ai.googleblog.com/2020/01/reformer-efficient-transformer.html">Reformer</a>, which is a new and improved Transformer-based model recently proposed by Google AI. We also featured Reformer in a <a href="https://medium.com/dair-ai/nlp-newsletter-reformer-deepmath-electra-tinybert-for-search-vizseq-open-sourcing-ml-68d5b6eed057">previous issue</a> of the newsletter.</p>
+
+<p><br />
+<strong><em>A free blogging platform</em></strong></p>
+
+<p><br />
+<a href="https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html">fastpages</a> allows you to automatically set up a blog using GitHub pages for free. This solution simplifies the process of publishing a blog and it also supports the use of exported word documents and Jupyter notebooks.</p>
+
+<p><br />
+<strong><em>Tips for interviewing at Google</em></strong></p>
+
+<p><br />
+Pablo Castro, from the Google Brain team, published an <a href="https://psc-g.github.io/interviews/google/2020/02/25/interviewing-at-google.html">excellent blog post</a> highlighting a list of tips for those interested in interviewing for a job at Google. Topics include advice on how to prepare for the interview, what to expect during the interview, and what happens after the interview.</p>
+
+<p><br />
+<strong><em>Transformers are Graph Neural Networks</em></strong></p>
+
+<p><br />
+Both graph neural networks (GNNs) and Transformers have shown to be effective at different NLP tasks. To better understand the inner workings behind these approaches and how they relate, Chaitanya Joshi wrote a great <a href="https://graphdeeplearning.github.io/post/transformers-are-gnns/">article</a> explaining the connection between GNNs and Transformers and different ways these methods can be combined in a sort of hybrid model.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/0*u-BkejfKSKcnWOBx.jpg" alt="" /></p>
+
+<p><em>Representing a sentence as a fully-connected word graph —</em> <a href="https://graphdeeplearning.github.io/post/transformers-are-gnns/"><em>source</em></a></p>
+
+<p><br />
+<strong><em>CNNs and Equivariance</em></strong></p>
+
+<p><br />
+Fabian Fuchs and Ed Wagstaff <a href="https://fabianfuchsml.github.io/equivariance1of2/">discuss</a> the importance of equivariance and how CNNs enforce it. The concept of equivariance is first defined and then discussed in the context of CNNs with respect to translation.</p>
+
+<p><br />
+<strong><em>Self-supervised learning with images</em></strong></p>
+
+<p><br />
+Self-supervised has been discussed a lot in previous issues of the NLP Newsletter due to the role it has played in modern techniques for language modeling. This <a href="https://datasciencecastnet.home.blog/2020/02/22/self-supervised-learning-with-image%e7%bd%91/">blog post</a> by Jonathan Whitaker provides a nice and intuitive explanation of self-supervision in the context of images. If you are really interested in the topic, Amit Chaudhary also wrote an excellent <a href="https://amitness.com/2020/02/illustrated-self-supervised-learning/">blog post</a> describing the concept in a visual way.</p>
+
+<h1 id="education-">Education 🎓</h1>
+
+<p><strong><em>Stanford CS330: Deep Multi-Task and Meta-Learning</em></strong></p>
+
+<p><br />
+Stanford recently released video recordings, in the form of a YouTube playlist, for their new <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5">course on deep multi-task and meta-learning</a>. Topics include bayesian meta-learning, lifelong learning, a reinforcement learning primer, model-based reinforcement learning, among others.</p>
+
+<p><br />
+<strong><em>PyTorch Notebooks</em></strong></p>
+
+<p><br />
+dair.ai releases a <a href="https://github.com/dair-ai/pytorch_notebooks">series of notebooks</a> that aim to get you started with deep neural networks using PyTorch. This is a work in progress and some current topics include how to implement a logistic regression model from scratch and how to program a neural network or recurrent neural network from scratch. Colab notebooks are also available in the GitHub repository.</p>
+
+<p><br />
+<strong><em>The fastai book (draft)</em></strong></p>
+
+<p><br />
+Jeremy Howard and Sylvain Gugger release a <a href="https://github.com/fastai/fastbook">comprehensive list</a> of draft notebooks for an upcoming course that introduces deep learning concepts and how to develop different methods using PyTorch and the fastai library.</p>
+
+<p><br />
+<strong><em>Free Data Science courses</em></strong></p>
+
+<p><br />
+In case you missed it, Kaggle provides a series of <a href="https://www.kaggle.com/learn/overview">free micro-courses</a> to get you started with your Data Science journey. Some of these courses include machine learning explainability, an intro to machine learning and Python, data visualization, feature engineering, and deep learning, among others.</p>
+
+<p><br />
+Here is another excellent <a href="https://lewtun.github.io/dslectures/">online data science course</a> that provides a syllabus, slides, and notebooks on topics that range from exploratory data analysis to model interpretation to natural language processing.</p>
+
+<p><br />
+<strong><em>8 Creators and Core Contributors Talk About Their Model Training Libraries From PyTorch Ecosystem</em></strong></p>
+
+<p><br />
+nepture.ai published an <a href="https://neptune.ai/blog/model-training-libraries-pytorch-ecosystem?utm_source=twitter&amp;utm_medium=tweet&amp;utm_campaign=blog-model-training-libraries-pytorch-ecosystem">extensive article</a> that contains detailed discussions with core creators and contributors about their journey and philosophy of building PyTorch and tools around it.</p>
+
+<p><br />
+<strong><em>Visualizing Adaptive Sparse Attention Models</em></strong></p>
+
+<p><br />
+Sasha Rush shares an impressive <a href="http://Visualizing%20Adaptive%20Sparse%20Attention%20Models">Colab notebook</a> that explains and shows the technical details of how to produce sparse softmax outputs and induce sparsity into the attention component of a Transformer model which helps to produce zero probability for irrelevant words in a given context, improving performance and interpretability all at once.</p>
+
+<p><br />
+<img src="https://cdn-images-1.medium.com/max/800/1*7BB322LlVgt1zzk-cviSoA.png" alt="" /></p>
+
+<p><em>Visualizing probability distribution of a softmax output</em></p>
+
+<h1 id="noteworthy-mentions-️">Noteworthy Mentions ⭐️</h1>
+
+<p>You can access the previous issue of the 🗞 NLP Newsletter <a href="https://medium.com/dair-ai/nlp-newsletter-the-annotated-gpt-2-understanding-self-distillation-haiku-ganilla-sparkwiki-b0f47f595c82">here</a>.</p>
+
+<p><br />
+Conor Bell wrote this nice <a href="https://gist.github.com/connorbell/9269401d127f1e507cc9aaf2803067c4">python script</a> that allows you to view and prepare a dataset that can be used for a StyleGAN model.</p>
+
+<p><br />
+Manu Romero <a href="https://github.com/huggingface/transformers/tree/master/model_cards/mrm8488/bert-spanish-cased-finetuned-pos">contributes</a> a fine-tuned POS model for Spanish. The model is available for use in the Hugging Face Transformer library. It will be interesting to see this effort in other languages.</p>
+
+<p><br />
+This <a href="https://github.com/tomohideshibata/BERT-related-papers">repo</a> contains a long list of carefully curated BERT-related papers that approach different problems such as model compression, domain-specific, multi-model, generation, downstream tasks, etc.</p>
+
+<p><br />
+Connor Shorten published a short <a href="https://www.youtube.com/watch?time_continue=79&amp;v=-Bh_7tzyoR4&amp;feature=emb_logo">15-minute video</a> explaining a new general framework that aims to reduce the effect of “shortcut” features in self-supervised representation learning. This is important because if not done right, the model can fail to learn useful semantic representations and potentially prove ineffective in a transfer learning setting.</p>
+
+<p><br />
+Sebastian Ruder published a new issue of the NLP News newsletter that highlights topics and resources that range from an analysis of NLP and ML papers in 2019 to slides for learning about transfer learning and deep learning essentials. Check it out <a href="http://newsletter.ruder.io/issues/accelerating-science-memorizing-vs-learning-to-look-things-up-schmidhuber-s-2010s-greek-bert-arc-illustrated-reformer-annotated-gpt-2-olmpics-223195">here</a>.</p>
+
+<p><br />
+<a href="https://dair.ai/newsletter/"><em>Subscribe</em></a> <em>🔖 to the NLP Newsletter to receive future issues in your inbox.</em></p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="social-share">
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+  <div class="addthis_inline_share_toolbox"></div>
+  <!--
+  <h4>Share on</h4>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5/" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5/" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=https://dair.ai/NLP_Newsletter_BERTology_Primer_fastpages_T5/" class="google-plus" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+  </ul>-->
+</div><!-- /.social-share -->
+        <p class="byline"><strong>NLP Newsletter #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML</strong> was published on <time datetime="2020-03-02T00:00:00-06:00">March 02, 2020</time>.</p>
+        
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="https://dair.ai/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7-ZH-.md/" title="NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_NLP_7/" title="NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+      <li><a href="https://dair.ai/NLP_Newsletter_-7_-FR/" title="NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…">NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  
+  <footer>
+    
+
+<span>&copy; 2020 dair.ai. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://dair.ai/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://dair.ai/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-158959084-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dair-ai'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+
+
+
+
+</body>
+</html>
