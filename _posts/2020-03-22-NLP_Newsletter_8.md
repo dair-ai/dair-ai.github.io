@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter: NeRF, CORD-19, Stanza, Text Generation 101, Notebooks, NLP, SECNLP, Dreamer,…"
+title: "NLP Newsletter: NeRF, CORD-19, Stanza, Text Generation 101, Notebooks, SECNLP, Dreamer,…"
 author: billy_rick
 excerpt: "This issue covers topics that range from synthesizing novel views of complex scenes to tutorials for text generation and transfer learning to survey papers on contextual embeddings and pretrained language models."
 modified:
