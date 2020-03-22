@@ -98,7 +98,7 @@ This [article](https://blog.insightdatascience.com/ai-for-3d-generative-design-1
 ***Stanza — A Python NLP Library for Many Human Languages***
 
 \\
-The Stanford NLP Group releases [Stanza](https://stanfordnlp.github.io/stanza/) (formerly StanfordNLP), a Python NLP library that provides out-of-the-box text analytic tools for more than 70 languages. Capabilities include tokenization, multi-word token expansion, lemmatization, POS, NER, and much more. The tool is built on top of the PyTorch library with support for using GPU and pretrained neural models. [spaCy](https://github.com/explosion/spacy-stanza) has also built a wrapper around Stanza that allows you to interact with Stanza models as a spaCy pipeline.
+The Stanford NLP Group releases [Stanza](https://stanfordnlp.github.io/stanza/) (formerly StanfordNLP), a Python NLP library that provides out-of-the-box text analytic tools for more than 70 languages. Capabilities include tokenization, multi-word token expansion, lemmatization, POS, NER, and much more. The tool is built on top of the PyTorch library with support for using GPU and pretrained neural models. [Explosion](https://github.com/explosion/spacy-stanza) has also built a wrapper around Stanza that allows you to interact with Stanza models as a spaCy pipeline.
 
 \\
 ***GridWorld Playground***
