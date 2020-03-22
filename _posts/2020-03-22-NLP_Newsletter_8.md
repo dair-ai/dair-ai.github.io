@@ -13,6 +13,7 @@ image:
 
 ![](https://cdn-images-1.medium.com/max/1200/1*SptuncVzQw49OZFlDVaQdw.png)
 
+# dair.ai updates
 - We have added better categorization for all TL;DR and summaries included in the NLP paper summaries [repo](https://github.com/dair-ai/nlp_paper_summaries).
 - All issues and translations of the NLP Newsletter are being maintained [here](https://github.com/dair-ai/nlp_newsletter).
 - This week we also introduced [Notebooks,](https://github.com/dair-ai/notebooks) a hub for easily sharing data science notebooks with the community at large. If you have any notebooks that you would love to share with the community get in touch.
