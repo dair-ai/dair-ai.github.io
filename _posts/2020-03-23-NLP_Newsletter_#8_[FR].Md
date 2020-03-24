@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter: NeRF, CORD-19, Stanza, Text Generation 101, Notebooks, SECNLP, Dreamer,…"
+title: "NLP Newsletter [FR]: NeRF, CORD-19, Stanza, Text Generation 101, Notebooks, SECNLP, Dreamer,…"
 author: lbourdois
 excerpt: "This issue covers topics that range from synthesizing novel views of complex scenes to tutorials for text generation and transfer learning to survey papers on contextual embeddings and pretrained language models."
 modified:
@@ -13,7 +13,7 @@ image:
 
 ![](https://cdn-images-1.medium.com/max/1200/1*SptuncVzQw49OZFlDVaQdw.png)
 
-# Avant-propos d’Elvis	
+# Avant-propos d’Elvis
 - nous avons ajouté une meilleure catégorisation pour tous les TL;DR et les résumés des publications liées au NLP : [repo](https://github.com/dair-ai/nlp_paper_summaries).
 - tous les numéros et traductions de la newsletter sur le NLP sont répertoriés [ici](https://github.com/dair-ai/nlp_newsletter).
 - cette semaine, nous avons également introduit [Notebooks,](https://github.com/dair-ai/notebooks) une plateforme permettant de partager facilement les notebooks avec l'ensemble de la communauté. Si vous avez des notebooks que vous aimeriez partager avec la communauté, contactez-nous.
@@ -26,9 +26,11 @@ image:
 
 \\
 Ce [document](https://arxiv.org/abs/2003.07278v1) fournit une étude approfondie des approches d'apprentissage des embeddings contextuelles. Il comprend également un examen de ses applications pour l'apprentissage par transfert, les méthodes de compression de modèles et les analyses de modèles.
-\\
 
-Un autre rapport comporte un [résumé](https://arankomatsuzaki.files.wordpress.com/2020/03/written_report.pdf) des méthodes utilisées pour améliorer les modèles de langage basés sur les Transformers. 
+
+\\
+Un autre rapport comporte un [résumé](https://arankomatsuzaki.files.wordpress.com/2020/03/written_report.pdf) des méthodes utilisées pour améliorer les modèles de langage basés sur les Transformers.
+
 \\
 Enfin, une autre [enquête complète](https://arxiv.org/pdf/2003.08271.pdf) sur les modèles linguistiques et qui fournit une taxonomie des modèles pré-entrainés en NLP.
 
@@ -68,6 +70,7 @@ Un travail impliquant des chercheurs de l'Université de Californie à Berkeley,
 
 \\
 [Dreamer](https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html) est un agent d'apprentissage par renforcement proposé par les chercheurs de DeepMind et de Google AI. Son objectif est de remédier à certaines limitations (par exemple, la myopie et l'inefficacité des calculs) présentes dans les agents sans modèle. Dreamer est entraîné pour modéliser le monde, ce qui offre également la possibilité d'apprendre des comportements à long terme par rétropropagation en utilisant les prédictions du modèle. Les résultats de SoTA sont obtenus sur 20 tâches de contrôle continu basées sur les entrées d'images fournies. En outre, le modèle est efficace sur le plan des données et fait des prédictions en parallèle, ce qui le rend plus efficace sur le plan des calculs. Les trois tâches impliquées dans l’entraînement de l'agent qui permettent d'atteindre les différents objectifs sont résumées dans la figure ci-dessous :
+
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*DOlPDgvNu1kpTeogcLve-A.png)
 
@@ -86,6 +89,7 @@ Pour encourager l'utilisation de l'IA pour lutter contre le COVID-19, l’ Allen
 
 \\
 [SECNLP](https://www.sciencedirect.com/science/article/pii/S1532046419302436) est une enquête qui comprend un aperçu détaillé d'une grande variété de méthodes et de techniques de NLP appliquées dans le domaine clinique. L'aperçu met principalement l'accent sur les méthodes d'embedding, les problèmes/défis posés par ces méthodes et une discussion sur les futures orientations de recherche.
+
 \\
 ***AI for 3D Generative Design***
 
@@ -103,7 +107,9 @@ Cet [article](https://blog.insightdatascience.com/ai-for-3d-generative-design-17
 ***Stanza : une librairie Python applicable à plusieurs langues***
 
 \\
-Le Stanford NLP Group publie [Stanza](https://stanfordnlp.github.io/stanza/) (anciennement StanfordNLP), une librairie python qui fournit des outils d'analyse de texte prêts à l'emploi pour plus de 70 langues. Les capacités comprennent la tokenisation, la lemmatisation, le POS, la NER, et bien plus encore. L'outil est construit sur la librairie PyTorch et prend en charge l'utilisation de GPU et des modèles neuronaux pré-entraînés. \\
+Le Stanford NLP Group publie [Stanza](https://stanfordnlp.github.io/stanza/) (anciennement StanfordNLP), une librairie python qui fournit des outils d'analyse de texte prêts à l'emploi pour plus de 70 langues. Les capacités comprennent la tokenisation, la lemmatisation, le POS, la NER, et bien plus encore. L'outil est construit sur la librairie PyTorch et prend en charge l'utilisation de GPU et des modèles neuronaux pré-entraînés.
+
+\\
 [Explosion](https://github.com/explosion/spacy-stanza) a également construit un wrapper autour de Stanza qui vous permet d'interagir avec les modèles Stanza comme un pipeline spaCy.
 
 \\
@@ -184,7 +190,8 @@ Amit Chaudhary partage un [article](https://amitness.com/2020/02/back-translatio
 New York NLP organisera une [réunion en ligne](https://www.meetup.com/NY-NLP/events/269502774/) pour une conférence intitulée "Utiliser Wikipédia et Wikidata en NLP" .
 
 \\
-Lavanya Shukla a écrit un [tutoriel](https://app.wandb.ai/cayush/pytorchlightning/reports/Use-Pytorch-Lightning-with-Weights-%26-Biases--Vmlldzo2NjQ1Mw) sur la façon d'utiliser PyTorch Lightning pour optimiser les hyperparamètres d'un réseau de neurones tout en profitant des structures/styles de code simples fournis dans PyTorch Lightning. Le modèle résultant et ses performances sont visualisés à l'aide des résultats produits par le logger WandB. 
+Lavanya Shukla a écrit un [tutoriel](https://app.wandb.ai/cayush/pytorchlightning/reports/Use-Pytorch-Lightning-with-Weights-%26-Biases--Vmlldzo2NjQ1Mw) sur la façon d'utiliser PyTorch Lightning pour optimiser les hyperparamètres d'un réseau de neurones tout en profitant des structures/styles de code simples fournis dans PyTorch Lightning. Le modèle résultant et ses performances sont visualisés à l'aide des résultats produits par le logger WandB.
+
 \\
 Un groupe de chercheurs a publié une [étude](https://arxiv.org/abs/2003.07845) qui examine plus en détail pourquoi la batch normalization (BN) tend à dégrader les performances des méthodes basées sur les transformers. Sur la base de ces résultats, les auteurs proposent une nouvelle approche appelée « power normalization » pour traiter les problèmes rencontrés dans la BN. La méthode surpasse à la fois la BN et la normalisation des couches (couramment utilisée de nos jours) sur une variété de tâches de NLP.
 
@@ -193,10 +200,10 @@ Cet [article de blog] (https://www.datasciencecentral.com/profiles/blogs/10-time
 
 ----------
 
-Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-7_-FR/) \\
+Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-7_-FR/)
 
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à contacter Elvis à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0). 
 \\
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à contacter Elvis à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
 
+\\
 [Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
-
