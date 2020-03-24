@@ -152,7 +152,7 @@ Este excelente [artigo do TensorFlow](https://blog.tensorflow.org/2020/03/face-a
 ***NLP Paper Summaries***
 
 \\
-Nós criamos recentemente um [repositório]https://github.com/dair-ai/nlp_paper_summaries) contendo uma lista de resumos de artigos de NLP cuidadosamente formulados, para alguns dos mais interessantes e importantes *papers* da área nos últimos anos. O foco principal da iniciativa é expandir a acessibilidade do público-geral à tópicos e pesquisas de NLP.
+Nós criamos recentemente um [repositório](https://github.com/dair-ai/nlp_paper_summaries) contendo uma lista de resumos de artigos de NLP cuidadosamente formulados, para alguns dos mais interessantes e importantes *papers* da área nos últimos anos. O foco principal da iniciativa é expandir a acessibilidade do público-geral à tópicos e pesquisas de NLP.
 
 <!-- We recently created a [repository](https://github.com/dair-ai/nlp_paper_summaries) containing a list of carefully curated NLP paper summaries for some of the most interesting and important NLP papers in the past few years. The focus is to feature paper summaries and blog posts of important papers to help improve the approachability and accessibility of NLP topics and research. -->
 
