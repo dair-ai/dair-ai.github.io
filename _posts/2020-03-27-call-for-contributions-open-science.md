@@ -7,7 +7,7 @@ modified:
 comments: true
 tags: []
 image:
-  thumb: dair-ai.png
+  thumb: dair-header.png
 ---
 
 
