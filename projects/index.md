@@ -10,4 +10,4 @@ image:
   creditlink: http://www.ibelmopan.com/
 ---
 
-Coming soon!
+You can check out all the interesting projects that our community has been working on [here](https://github.com/dair-ai).
