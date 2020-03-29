@@ -68,7 +68,7 @@ In this step, I find the most frequent words in the data, extracting information
 \\
 When doing your analysis, remember to add domain-specific stop words, not just the known English stop words. I remove stop words from this particular analysis because they appear often but are not very informative.
 
-```python
+``` python
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.corpus import stopwords
 stops =  set(stopwords.words('english')+['com'])

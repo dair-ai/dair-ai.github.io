@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP 简报（Issue#7）: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…"
+title: "NLP 简报（Issue#7）[ZH]: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…"
 author: KaiyuanGao
 excerpt: "在本期中，我们涵盖的主题包括了从如何改进测量成分泛化到计算机视觉PyTorch库到最新的物理模拟器等."
 modified:

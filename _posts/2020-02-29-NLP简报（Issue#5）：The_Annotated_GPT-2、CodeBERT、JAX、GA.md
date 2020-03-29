@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP简报（Issue#5）[CH]：The Annotated GPT-2、CodeBERT、JAX、GANILLA等"
+title: "NLP简报（Issue#5）[ZH]：The Annotated GPT-2、CodeBERT、JAX、GANILLA等"
 author: billy_rick
 modified:
 comments: true
