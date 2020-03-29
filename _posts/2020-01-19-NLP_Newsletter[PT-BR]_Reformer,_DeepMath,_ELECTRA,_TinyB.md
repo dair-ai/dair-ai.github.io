@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter: Reformer, DeepMath, ELECTRA, TinyBERT para busca, VizSeq, Open-Sourcing ML,…"
+title: "NLP Newsletter #2 [PT-BR]: Reformer, DeepMath, ELECTRA, TinyBERT para busca, VizSeq, Open-Sourcing ML,…"
 author: fclesio
 modified:
 comments: true

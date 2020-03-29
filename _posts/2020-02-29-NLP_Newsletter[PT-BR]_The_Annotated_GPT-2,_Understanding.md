@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter: GPT-2 Anotado, Entendendo self-distillation, Haiku, GANILLA, Sparkwiki, Ética em NLP, Torchmeta,…"
+title: "NLP Newsletter #5 [PT-BR]: GPT-2 Anotado, Entendendo self-distillation, Haiku, GANILLA, Sparkwiki, Ética em NLP, Torchmeta,…"
 author: fclesio
 modified:
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #1: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…"
+title: "NLP Newsletter #1 [EN]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…"
 author: billy_rick
 modified:
 comments: true

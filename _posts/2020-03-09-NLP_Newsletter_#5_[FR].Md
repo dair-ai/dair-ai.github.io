@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter [FR] #5: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…"
+title: "NLP Newsletter #5 [FR]: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…"
 author: lbourdois
 excerpt: ""
 modified:
@@ -196,7 +196,7 @@ Apprenez comment entraîner un modèle de reconnaissance d'entités nommées (NE
 Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-4_-FR/)  
 
 \\
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à me contacter à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0). 
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à me contacter à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
 
 \\
 [Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.

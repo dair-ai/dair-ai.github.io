@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter [PT-BR]: Tokenizadores, TensorFlow 2.1, Vetorização de Texto, TorchIO, Déficits de NLP,…"
+title: "NLP Newsletter #1 [PT-BR]: Tokenizadores, TensorFlow 2.1, Vetorização de Texto, TorchIO, Déficits de NLP,…"
 author: billy_rick
 modified:
 comments: true

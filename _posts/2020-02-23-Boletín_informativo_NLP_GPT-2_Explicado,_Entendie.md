@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Boletín informativo NLP #5: GPT-2 Explicado, Entendiendo ‘Self-Distillation’, Haiku, GANILLA, Sparkwiki, Ética en el NLP, Torchmeta,..."
+title: "Boletín informativo NLP #5 [ES]: GPT-2 Explicado, Entendiendo ‘Self-Distillation’, Haiku, GANILLA, Sparkwiki, Ética en el NLP, Torchmeta,..."
 author: naraquev
 modified:
 comments: true

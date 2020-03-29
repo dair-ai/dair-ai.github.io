@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter [PT-BR] #6: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML"
+title: "NLP Newsletter #6 [PT-BR]: BERTology Primer, fastpages, T5, Data Science Education, PyTorch Notebooks, Slow Science in ML"
 author: VictorGarritano
 modified:
 comments: true

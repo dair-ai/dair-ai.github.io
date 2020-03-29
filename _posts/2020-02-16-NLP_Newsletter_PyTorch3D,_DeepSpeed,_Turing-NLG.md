@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #4: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…"
+title: "NLP Newsletter #4 [EN]: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…"
 author: billy_rick
 modified:
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter [FR] #4: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…"
+title: "NLP Newsletter #4 [FR]: PyTorch3D, DeepSpeed, Turing-NLG, Question Answering Benchmarks, Hydra, Sparse Neural Networks,…"
 author: lbourdois
 excerpt: ""
 modified:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #5: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…"
+title: "NLP Newsletter #5 [EN]: The Annotated GPT-2, Understanding self-distillation, Haiku, GANILLA, Sparkwiki, Ethics in NLP, Torchmeta,…"
 author: billy_rick
 modified:
 comments: true

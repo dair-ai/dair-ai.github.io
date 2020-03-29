@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter [FR] #1: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…"
+title: "NLP Newsletter #1 [FR]: Tokenizers, TensorFlow 2.1, TextVectorization, TorchIO, NLP Shortfalls,…"
 author: lbourdois
 excerpt: ""
 modified:

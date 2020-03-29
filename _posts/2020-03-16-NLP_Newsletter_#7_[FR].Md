@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter [FR] #7: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…"
+title: "NLP Newsletter #7 [FR]: NLP Paper Summaries, Learning to Simulate, Transformers Notebooks, Med7, Measuring Compositional Generalization, Neural Tangents,…"
 author: lbourdois
 modified:
 comments: true
