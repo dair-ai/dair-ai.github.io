@@ -20,7 +20,9 @@ Graph Deep Learning (GDL)* is an up-and-coming area of study. It’s super usefu
 ### **❓ Graph, who?**
 A graph is a data structure comprising of nodes (vertices) and edges connected together to represent information with no definite beginning or end. All the nodes occupy an arbitrary position in space, usually clustered according to similar features when plotted in *2D* (or even *nD*) space.
 
+\\
 ![](https://cdn-images-1.medium.com/max/640/1*MnES0hKfXEcNlhusqaftAA.png)
+
 *This is a graph: a bunch of interconnected nodes that represent entities.*
 
 \\
@@ -29,7 +31,9 @@ The black arrows on the edges represent the kind of relationship between the nod
 \\
 A graph can represent many things — social media networks, molecules, etc. Nodes can be thought of as users/products/atoms while the edges represent connections (following/usually-purchased-with/bonds). A social media graph may look like this with nodes as users and edges as connections:
 
+\\
 ![](https://cdn-images-1.medium.com/max/640/0*S6sohp4yKv3-G2FF.png)
+
 *Nodes represent users while edges represent the connection/relationship between two entities. Social media graphs are usually a whole lot more enormous and complex!]*
 
 
@@ -49,13 +53,17 @@ Each node has a set of features defining it. In the case of social network graph
 \\
 Suppose we have an arbitrary graph ***G*** with the following vertices and edges:
 
+\\
 ![](https://cdn-images-1.medium.com/max/640/1*YUHvwJvfTLWyqiqCYw2ToA.png)
+
 *It’s the same graph from above.*
 
 \\
 For simplicity’s sake, let’s assume that the feature vector is a one-hot-encoding of the current node’s index. Likewise, the label (or class) could be the colour of the node (green, red, and yellow as shown above). It’d look something like this:
 
+\\
 ![](https://cdn-images-1.medium.com/max/640/1*Ru3CizrB14hvpZQ7ZtgIag.png)
+
 *The order they are in doesn’t really matter.*
 
 
@@ -64,7 +72,9 @@ For simplicity’s sake, let’s assume that the feature vector is a one-hot-enc
 \\
 Now that we have our one-hot-encodings (or embeddings) of the nodes, let’s alter the graph by bringing in neural networks into the mix. All the nodes are converted into recurrent units (or *any* neural network architecture, actually; I’m using recurrent units here) and all the edges house simple feed-forward neural networks. It looks something like this:
 
+\\
 ![](https://cdn-images-1.medium.com/max/640/1*YUkgTeyGVzc5d8CuvcBeqA.png)
+
 *The envelopes are simply the one-hot-encoded (embedding) vectors for each node (recurrent unit, now).*
 
 ### **📮 Message Passing**
@@ -78,7 +88,9 @@ Once the conversion of nodes and edges are completed, the graph performs Message
 \\
 In terms of GNNs, for a single reference node, the neighbouring nodes pass their messages (embeddings) through the edge neural networks into the recurrent unit on the reference node. The new embedding of the reference recurrent unit is updated by applying said recurrent function on the current embedding and a summation of the edge neural network outputs of the neighbouring node embeddings. Let’s zoom into the top red node and visualise the process:
 
+\\
 ![](https://cdn-images-1.medium.com/max/640/1*ax6_pw2sXNa7fWjHiRT95Q.png)
+
 *[The violet square is a simple feed-forward NN applied on the embeddings (white envelopes) from the neighbouring nodes. The recurrent function (red triangle) applied to the current embedding (white envelope) and summation of edge neural network outputs (black envelopes) to obtain the new embedding (white envelope prime).*
 
 \\
@@ -104,7 +116,9 @@ Using **H** is way better than using an [adjacency matrix](https://www.khanacade
 \\
 To summarise this step, we sum together the final vector representations of all nodal recurrent units (order-invariant, of course) use this resulting vector as inputs to other pipelines or to simply represent the graph. This step looks like this:
 
+\\
 ![](https://cdn-images-1.medium.com/max/640/1*Rz0VPVDtmrdYFWwxy14ZCQ.png)
+
 *Here’s the final graph with the fully updated node embedding vectors after n repetitions of Message Passing. You can take the representations of all the nodes and sum them together to get H.*
 
 
