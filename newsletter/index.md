@@ -11,10 +11,10 @@ image:
 ![alt txt](https://github.com/dair-ai/dair-ai.github.io/blob/master/images/nlp_newsletter.png?raw=true)
 
 \\
-Check the index of all the issues and translations of the NLP Newsletter on [GitHub](https://github.com/dair-ai/nlp_newsletter).
+Access all the previous issues and translations of the NLP Newsletter on [GitHub](https://github.com/dair-ai/nlp_newsletter).
 
 \\
-The NLP newsletter provides (weekly or biweekly) quick summaries of some of the latest natural language processing (NLP) and machine learning (ML) stories across a range of important categories such as fairness & ethics, society, educational resources, publications, etc. Want your story or project to be featured in the NLP Newsletter? Reach out via ellfae@gmail.com or [Twitter](https://twitter.com/omarsar0).
+The NLP newsletter provides (weekly or biweekly) quick summaries of some of the latest natural language processing (NLP) and machine learning (ML) stories across a range of important categories such as fairness & ethics, society, educational resources, publications, etc. We also feature the latest stories and projects published on dair.ai. Want your story or project to be featured in the NLP Newsletter? Reach out via ellfae@gmail.com or [Twitter](https://twitter.com/omarsar0).
 
 \\
 If you are interested in translating any of the NLP Newsletter issues, you can check out this [GitHub issue](https://github.com/dair-ai/dair-ai.github.io/issues/11).
