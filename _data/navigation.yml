@@ -6,6 +6,9 @@
 - title: About ℹ️
   url: /about/
 
+- title: Chat on Slack 💬
+  url: /slack/
+
 - title: NLP Newsletter 🗞️
   url: /newsletter/
 
@@ -19,16 +22,13 @@
   url: https://github.com/dair-ai
 
 - title: Contribute ✨
-  url: https://github.com/dair-ai/dair-ai.github.io/issues/54
+  url: https://forms.gle/HaGQyGmtB5Kkxvao9
 
 - title: Medium 📰
   url: https://medium.com/dair-ai
 
 - title: NLP Overview 📘
   url: https://nlpoverview.com/
-
-- title: 2019 NLP Highlights (PDF) 🔥
-  url: https://github.com/dair-ai/nlp_highlights
 
 
 #- title: Theme Setup
