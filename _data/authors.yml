@@ -1,10 +1,18 @@
 # Authors
+rish-16:
+  name: Rishabh Anand
+  web: https://rish-16.github.io/
+  bio: "Rishabh is a Machine Learning research student currently using statistical analysis and modelling to study COVID-19 mutations as an intern at A*STAR, Singapore. He loves Natural Language Processing and is also a technical writer and active open-source contributor."
+  twitter: rishabh16_
+  github: rish-16
+  avatar: rishabh.jpeg
+
 dair.ai:
   name: dair.ai
   web: https://dair.ai/
   bio: "Democratizing Artificial Intelligence Research, Education, and Technologies"
-  twitter: http://twitter.com/dair_ai
-  github: http://github.com/dair-ai
+  twitter: dair_ai
+  github: dair-ai
   avatar: dair-ai.png
 
 naraquev:
