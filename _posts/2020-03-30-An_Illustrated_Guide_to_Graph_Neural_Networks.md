@@ -93,7 +93,7 @@ In terms of GNNs, for a single reference node, the neighbouring nodes pass their
 *The violet square is a simple feed-forward NN applied on the embeddings (white envelopes) from the neighbouring nodes. The recurrent function (red triangle) applied to the current embedding (white envelope) and summation of edge neural network outputs (black envelopes) to obtain the new embedding (white envelope prime).*
 
 \\
-This process is performed on all nodes in the network parallelly as embeddings in layer ***L+1*** depend on embeddings in layer ***L***. Which is why, in practice, we don’t need to ‘move’ from one node to another to carry out Message Passing.
+This process is performed, in parallel, on all nodes in the network as embeddings in layer ***L+1*** depend on embeddings in layer ***L***. Which is why, in practice, we don’t need to ‘move’ from one node to another to carry out Message Passing.
 
 \\
 **Note:** *The sum over the edge neural network outputs (black envelopes in the diagram) is invariant of the order of the outputs.*
@@ -110,7 +110,7 @@ Through the timesteps/rounds of Message Passing, the nodes know more about their
 For further processing in higher layers of a pipeline, or simply to represent the graph, you can take all the embeddings and sum them up together to get vector ***H*** that represents the whole graph.
 
 \\
-Using ***H*** is way better than using an [adjacency matrix](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs) because these matrices don’t represent the features or unique aspects of the graph despite any graph contortion--simply the edge connections between nodes (which isn’t really important based on some contexts).
+Using ***H*** is better than using an [adjacency matrix](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs) because these matrices don’t represent the features or unique aspects of the graph despite any graph contortion--simply the edge connections between nodes (which isn’t really important based on some contexts).
 
 \\
 To summarise this step, we sum together the final vector representations of all nodal recurrent units (order-invariant, of course) use this resulting vector as inputs to other pipelines or to simply represent the graph. This step looks like this:
@@ -123,7 +123,7 @@ To summarise this step, we sum together the final vector representations of all 
 
 ### **📝 Graph Neural Networks, a summary**
 
-Using GNNs are fairly simple. In fact, implementing them involved four steps.
+GNNs are fairly simple to use. In fact, implementing them involved four steps.
 
 1. Given a graph, we first convert the nodes to recurrent units and the edges to feed-forward neural networks.
 2. Then we perform Neighbourhood Aggregation (Message Passing, if that sounds better) for all nodes ***n*** number of times.
