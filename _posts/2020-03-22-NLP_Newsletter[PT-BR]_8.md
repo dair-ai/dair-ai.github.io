@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #8 [EN]: NeRF, CORD-19, Stanza, Text Generation 101, Notebooks, SECNLP, Dreamer,…"
+title: "NLP Newsletter #8 [PT-BR]: NeRF, CORD-19, Stanza, Text Generation 101, Notebooks, SECNLP, Dreamer,…"
 author: VictorGarritano
 excerpt: "Essa edição cobre tópicos como produção de novas perspectivas em cenários complexos, tutoriais para geração de textos, e coletâneas de artigos sobre embeddings contextualizados e modelos de linguagem pré-treinados."
 modified:
