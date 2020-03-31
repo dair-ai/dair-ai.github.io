@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP简报（Issue#8）: NeRF, CORD-19, Stanza, Text Generation 101, Notebooks, SECNLP, Dreamer,…"
+title: "NLP简报（Issue#8）[ZH]: NeRF, CORD-19, Stanza, Text Generation 101, Notebooks, SECNLP, Dreamer,…"
 author: KaiyuanGao
 excerpt: "本期涵盖的主题包括综合复杂场景的新颖视图、用于文本生成和转移学习的教程、有关上下文嵌入、以及预训练语言模型的调查论文等。"
 modified:
@@ -25,8 +25,10 @@ image:
 
 这篇综述文章，[A Survey on Contextual Embeddings](https://arxiv.org/abs/2003.07278v1)提供了有关学习上下文嵌入的方法简要概述，论文中还回顾了其在迁移学习，模型压缩方法和模型分析中的应用。
 
+\\
 另一份报告，[IMPROVING TRANSFORMER LANGUAGE MODEL](https://arankomatsuzaki.files.wordpress.com/2020/03/written_report.pdf)，介绍了改进基于Transformer的语言模型的方法。
 
+\\
 此外，复旦大学邱锡鹏老师团队整理了超全的NLP预训练模型综述，[Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/pdf/2003.08271.pdf)。该文从四个方面对用于NLP的预训练模型进行了全面的回顾：①首先简要介绍了语言表示学习及相关研究进展；②其次从四个方面对现有 PTM 进行系统分类（Contextual、Architectures、Task Types、Extensions）；
 
 ![](https://cdn-images-1.medium.com/max/800/1*1jLfdem3xZ0I3EVSyOy48g.png)
@@ -128,17 +130,20 @@ Thomas Wolf在NLP Zurich meetup介绍了他关于迁移学习的演讲，[transf
 # 6、Noteworthy Mentions ⭐️
 你知道Google表格提供免费的翻译功能吗？ Amit Chaudhary分享了一篇文章，[back-translation-in-google-sheets](https://amitness.com/2020/02/back-translation-in-google-sheets/)，其中显示了如何利用该功能进行反向翻译，这对于NLP任务中增强有限的文本语料库很有用。
 
+\\
 New York NLP将举办一个在线会议，[Using Wikipedia and Wikidata for NLP](https://www.meetup.com/NY-NLP/events/269502774/)，主题为“使用Wikipedia和Wikidata 的NLP”，演讲者将讨论如何将Wikipedia用于不同的NLP项目和用例。
 
+\\
 Lavanya Shukla撰写了一份不错的教程，[Use Pytorch Lightning with Weights & Biases](https://app.wandb.ai/cayush/pytorchlightning/reports/Use-Pytorch-Lightning-with-Weights-%26-Biases--Vmlldzo2NjQ1Mw)，有关如何使用PyTorch Lightning来优化神经网络的超参数，同时使用PyTorch Lightning中提供的简单代码结构。 使用WandB logger产生的结果，可以可视化结果模型及其在不同超参数下的性能，该结果可以作为记录器参数提供给训练对象。
 
+\\
 一组研究人员发表了一份研究，[Rethinking Batch Normalization in Transformers](https://arxiv.org/abs/2003.07845)，详细研究了为什么批处理归一化（BN）会降低应用于不同NLP任务的基于Transformer的方法的性能。 基于这些发现，作者提出了一种称为功率归一化（power normalization，PN）的新方法来处理BN中发现的问题。 在各种NLP任务上，该方法的性能均优于BN和如今已普遍使用的层归一化。
 
+\\
 这篇博客文章，[22 Timeless Reference Books](https://www.datasciencecentral.com/profiles/blogs/10-timeless-reference-books) 包含一长串书籍，可帮助你开始使用ML。
 
-
+\\
 如果您希望在下一期NLP新闻通讯中共享任何数据集，项目，博客文章，教程或论文，请随时通过ellfae@gmail.com或[**DM on Twitter**](https://twitter.com/omarsar0)。
 
-
-
+\\
 [*Subscribe*](https://dair.ai/newsletter/)*🔖至NLP新闻通讯，以在收件箱中接收以后的新闻。*
