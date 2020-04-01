@@ -29,7 +29,7 @@ image:
 ***Surveys on Contextual Embeddings***
 
 \\
-Esse [artigo](https://arxiv.org/abs/2003.07278v1) fornece um compilado de metodologias para o aprendizado de *embeddings* contextualizados. Também estão inclusos uma revisão dos casos de uso da técnica para *transfer learning*, métodos de compressão de modelos e análises.
+Esse [artigo](https://arxiv.org/abs/2003.07278v1) fornece um compilado de metodologias para o aprendizado de *embeddings* contextualizados. Também estão inclusas: revisão dos casos de uso da técnica para *transfer learning*; métodos de compressão de modelos e análises.
 
 Outro [trabalho](https://arankomatsuzaki.files.wordpress.com/2020/03/written_report.pdf) traz uma coleção de métodos utilizados para a melhoria de modelos de linguagem baseados no *Transformer*.
 
@@ -67,7 +67,7 @@ Diversos trabalhos demonstram como o *meta-learning* pode viabilizar a adoção 
 ***NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis***
 
 \\
-Um trabalho bastante interessante envolvendo pesquisadores da UC Berkeley, Google Research e da UC San Diego desenvolveu um método ([NeRF](http://www.matthewtancik.com/nerf)) para a criação de novas perspectivas em cenários complexos. Tomando um conjunto de imagens RGB como base de dados, o modelo utiliza coordenadas 5D (espaço, localização e direção) para o treinamento de uma rede neural profunda totalmente conectada, otimizando uma *continuous volumetric scene function*, e retornando a densidade de volume e radiância para aquela localização. Os diversos valores de saída são combinados ao longo de um *camera ray* e renderizados como *pixels*. Essas saídas renderizadas são utilizadas para otimizar representações de cenas através da minimização do erro de renderização para todos os *camera rays* das imagens RGB. Comparada com outras abordagens para a tarefa, a NeRF é quantitativa e qualitativamente melhor, além de conseguir resolver algumas inconsistências das outras abordagens, como a ausência de pequenos detalhes e *flickering* indesejado. 
+Um trabalho bastante interessante envolvendo pesquisadores da UC Berkeley, Google Research e da UC San Diego desenvolveu um método ([NeRF](http://www.matthewtancik.com/nerf)) para a criação de novas perspectivas em cenários complexos. Tomando um conjunto de imagens RGB como base de dados, o modelo utiliza coordenadas 5D (localização espacial e direção) para o treinamento de uma rede neural profunda totalmente conectada, otimizando uma *continuous volumetric scene function*, e retornando a densidade de volume e radiância para aquela localização. Os diversos valores de saída são combinados ao longo de um *camera ray* e renderizados como *pixels*. Essas saídas renderizadas são utilizadas para otimizar representações de cenas através da minimização do erro de renderização para todos os *camera rays* das imagens RGB. Comparada com outras abordagens para a tarefa, a NeRF é quantitativa e qualitativamente melhor, além de conseguir resolver algumas inconsistências das outras abordagens, como a ausência de pequenos detalhes e *flickering* indesejado. 
 
 <!-- An exciting work involving researchers from UC Berkeley, Google Research, and UC San Diego present a method ([NeRF](http://www.matthewtancik.com/nerf)) for synthesizing novel views of complex scenes. Using a collection of RGB image inputs, the model takes 5D coordinates (spatial location and direction), train a fully-connected DNN to optimize *a continuous volumetric scene function*, and outputs the volume density and view-dependent emitted RGB radiance for that location. The output values are composed together along a camera ray and rendered as pixels. These rendered differentiable outputs are used to optimize the scene representations *by minimizing the error of renderings all camera rays* from RGB images. Compared to other top-performing approaches for view synthesis, NeRF is qualitatively and quantitatively better and addresses inconsistencies in rendering such as lack of fine details and unwanted flickering artifacts. -->
 
@@ -92,7 +92,7 @@ O [Dreamer](https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html)
 ***COVID-19 Open Research Dataset (CORD-19)***
 
 \\
-Num esforço para encorajar a utilização da IA na luta contra a COVID-19, o *Allen Institute of AI* publicou o [COVID-19 Open Research Dataset (CORD-19)](https://pages.semanticscholar.org/coronavirus-research), um recurso publicamente disponível que busca promover colaboração global. A base de dados contêm milhares de artigos que permitem a obtenção de *insights*, através do emprego de técnicas de NLP, que podem ajudar na luta contra o coronavírus e a [doença](https://www.who.int/emergencies/diseases/novel-coronavirus-2019) causada por ele.
+Num esforço para encorajar a utilização da IA na luta contra a COVID-19, o *Allen Institute of AI* publicou o [COVID-19 Open Research Dataset (CORD-19)](https://pages.semanticscholar.org/coronavirus-research), um recurso publicamente disponível que busca promover colaboração global. A base de dados contém milhares de artigos que permitem a obtenção de *insights*, através do emprego de técnicas de NLP, que podem ajudar na luta contra o [coronavírus](https://www.who.int/emergencies/diseases/novel-coronavirus-2019).
 
 <!-- In an effort to encourage the use of AI to fight COVID-19, the Allen Institute of AI published the [COVID-19 Open Research Dataset (CORD-19)](https://pages.semanticscholar.org/coronavirus-research), a free and open resource to promote global research collaboration. The dataset contains thousands of scholarly articles that can allow NLP inspired research to obtain insights that can help in the fight against [COVID-19](https://www.who.int/emergencies/diseases/novel-coronavirus-2019). -->
 
@@ -100,7 +100,7 @@ Num esforço para encorajar a utilização da IA na luta contra a COVID-19, o *A
 ***SECNLP: A survey of embeddings in clinical natural language processing***
 
 \\
-O [SECNLP](https://www.sciencedirect.com/science/article/pii/S1532046419302436) é um *survey* que inclui uma revisão detalhada de uma ampla gama de técnicas de NLP aplicadas no contexto de saúde. O trabalho foca principalmente em métodos de *embedding*, problemas/desafios que essas representações buscam resolver, e uma discussão sobre possíveis direções de pesquisas.
+O [SECNLP](https://www.sciencedirect.com/science/article/pii/S1532046419302436) é um trabalho que inclui uma revisão detalhada de uma ampla gama de técnicas de NLP aplicadas no contexto de saúde. O trabalho foca principalmente em métodos de *embedding*, problemas/desafios que essas representações buscam resolver, e uma discussão sobre possíveis direções de pesquisas.
 
 <!-- [SECNLP](https://www.sciencedirect.com/science/article/pii/S1532046419302436) is a survey paper that includes a detailed overview of a wide variety of NLP methods and techniques applied in the clinical domain. The overview emphasizes mostly on embedding methods, problems/challenges addressed with embeddings, and discussion of future research directions. -->
 
