@@ -1,14 +1,17 @@
 ---
 layout: post
 title: "An Overview of Troubling Trends in Machine Learning Scholarship"
-author: 
-excerpt: "...troubling trends in machine learning (ML) scholarship…"
+author: billy_rick
+excerpt: "A new paper presented in ICML 2018 describes some of the troubling trends in machine learning (ML) scholarship."
 modified:
 comments: true
-tags: []
+tags: [ML]
 image:
-  thumb: 
----#
+  thumb: ml_troubling_trends.png
+---
+
+
+![](https://miro.medium.com/max/1400/1*LWxe_m9JnLIrZhHJnEOiBQ.png)
 
 \\
 A new [paper](https://arxiv.org/abs/1807.03341) presented in ICML 2018 describes some of the troubling trends in machine learning (ML) scholarship. The authors, Zachary C. Lipton and Jacob Steinhardt, discuss the implications of these trends on the field of ML and the proper distilling of machine learning research and knowledge.
@@ -49,7 +52,6 @@ The problem with this approach is that clarity suffers, distracting the readers 
 
 Lipton and Steinhardt currently identified three types of language misuse in machine learning research: *suggestive definitions*, *overloaded terminology*, and *suitcase words*. Let’s briefly describe the three below:
 
-\\
 - ***Suggestive definitions*** — This occurs when authors coin suggestive terms that convey human qualities (i.e., anthropomorphic characterizations) such as “thought vectors.” These type of terms are not necessarily bad but if not qualified may only confuse readers.
 - ***Overloaded terminology*** — This refers to the inappropriate or contradictory use of a technical term that already holds a very precise meaning in the literature. An example is the misuse of the term “deconvolution” to refer to transpose convolution as opposed to “reversing a convolution” which is what it originally describes.
 - ***Suitcase words*** — This refers to terms that may pack many different meanings, often creating a confusion to readers with different backgrounds. These type of words could also manifest in the form of suggestive definitions and overloaded terminology as explained above. Some notorious examples include “generalization”, “interpretability”, and “bias.” Loosely using these type of words is common practice but often detracts and confuse readers.
@@ -61,7 +63,6 @@ Lipton and Steinhardt currently identified three types of language misuse in mac
 
 Lipton and Steinhardt also discuss the potential causal factors to these troubling trends in ML scholarship:
 
-\\
 - **Complacency in the face of progress** — This describes the notion that authors feel entitled to make weak arguments because they are already providing strong results. This poses a problem since reviewers may feel pressured to accept potentially flawed papers only to compensate for the quantitative findings.
 - **Growing pains** — ML is expanding rapidly and thus increases the entrance of inexperienced researchers which are more susceptible to the misuse of language. This is not to say that experienced researchers cannot fall into these patterns, especially when their reviewing responsibilities increase with the rapid growth of the field. This is not to discourage junior researchers, but spreading awareness of these issues is key to conducting proper research.
 - **Misaligned incentives** — As ML becomes more popular, both the media and startup investors seek to provide incentives for things which may not be aligned with the objectives of the field. For instance, anthropomorphic descriptions, such as “simulated brain”, may be effective for popular coverage but could actually cause confusion in the ML community and literature.
@@ -72,7 +73,6 @@ Lipton and Steinhardt also discuss the potential causal factors to these troubli
 
 Besides recommending that authors — experienced and inexperienced — refrain from participating in these trends, Lipton and Steinhard outline a few preliminary suggestions:
 
-\\
 - **What, Why, How** — Identify “what worked” and provide clear details explaining “why it worked”, and not just “how well it worked.”
 - **Insights** — Authors are encouraged to provide error analysis, ablation studies, and robustness check. Besides identifying empirical gains, authors can also discuss insights with strong evidence to support them.
 - **Writing tips** — Authors are recommended to revise important questions and theorems reported in the research, with clarity, flow, and precision in mind. Open problems can also be separated from closed ones when offering discussions to avoid confusion and to encourage follow-up research. Other suggestions are also provided for publishers and reviewers. (See paper for more details)
@@ -88,5 +88,4 @@ Machine learning has grown tremendously over the past few years and it promises 
 
 ----------
 
-### *Ref:* [https://arxiv.org/abs/1807.03341](https://arxiv.org/abs/1807.03341) — “Troubling Trends in Machine Learning Scholarship**”** — ****Zachary C. Lipton and Jacob Steinhardt
-
+*Ref:* [https://arxiv.org/abs/1807.03341](https://arxiv.org/abs/1807.03341) — “Troubling Trends in Machine Learning Scholarship” — Zachary C. Lipton and Jacob Steinhardt
