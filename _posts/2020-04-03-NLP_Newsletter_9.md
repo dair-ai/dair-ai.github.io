@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #9: Illustrated GNN Guide, TextVQA and TextCaps, KeraStroke, SyferText, torchlayers,…"
+title: "NLP Newsletter #9 [EN]: Illustrated GNN Guide, TextVQA and TextCaps, KeraStroke, SyferText, torchlayers,…"
 author: billy_rick
 excerpt: "This issue includes topics that range from a privacy-preserving NLP tool to interactive tools for searching COVID-19 related papers to an illustrated guide to graph neural networks."
 modified:
