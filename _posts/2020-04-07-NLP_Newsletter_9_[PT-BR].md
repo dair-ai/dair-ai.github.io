@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #9[PT-BR]: Guia Ilustrado de GNN, TextVQA e TextCaps, KeraStroke, SyferText, torchlayers,…"
+title: "NLP Newsletter #9 [PT-BR]: Guia Ilustrado de GNN, TextVQA e TextCaps, KeraStroke, SyferText, torchlayers,…"
 author: haneybarg
 excerpt: "A edição inclui tópicos que variam de uma ferramenta de NLP que preserva a privacidade a ferramentas interativas para pesquisar artigos relacionados ao COVID-19 até um guia ilustrado para representar graficamente redes neurais."
 modified:
@@ -43,7 +43,8 @@ visual hints.*
 \\
 ***Introducing RONEC — the Romanian Named Entity Corpus***
 
-\\ [RONEC](https://arxiv.org/abs/1909.01247) é um corpus *named entity* para o idioma
+\\
+[RONEC](https://arxiv.org/abs/1909.01247) é um corpus *named entity* para o idioma
 romeno que contém mais de 26.000 entidades em ~ 5.000 frases rotuladas, pertencentes a 16
 classes distintas. As frases foram extraídas de um jornal sem direitos autorais, cobrindo
 vários estilos. Esse corpus representa a primeira iniciativa de língua romena
@@ -75,7 +76,8 @@ decisões de arquitetura, etc.
 \\
 ***Calibration of Pre-trained Transformers***
 
-\\ Com *Transformers* pré-treinados sendo cada vez mais usados em aplicações do mundo
+\\
+Com *Transformers* pré-treinados sendo cada vez mais usados em aplicações do mundo
 real, é importante entender quão *confiáveis* são suas saídas. Recente
 [trabalho](https://arxiv.org/abs/2003.07892) de UT Austin mostra que as probabilidades
 posteriores do *BERT* e do *RoBERTa* são relativamente calibradas (isto é, consistentes
@@ -96,7 +98,8 @@ domínio*.
 \\
 ***Statistical Mechanics of Deep Learning***
 
-\\ Um recente
+\\
+Um recente
 [artigo](https://www.annualreviews.org/doi/abs/10.1146/annurev-conmatphys-031119-050745)
 examina mais de perto a conexão entre tópicos físicos/matemáticos e aprendizado
 profundo. Os autores têm como objetivo discutir tópicos mais profundos que intersectam
@@ -107,7 +110,8 @@ bem sucedidas.
 \\
 ***Towards an ImageNet Moment for Speech-to-Text***
 
-\\ Em um novo
+\\
+Em um novo
 [artigo](https://thegradient.pub/towards-an-imagenet-moment-for-speech-to-text/) publicado
 no *The Gradient*, Alexander Veysov explica por que eles acreditam que o momento do
 ImageNet para *Speech-to-Text (STT)* chegou no contexto da língua russa. Nos últimos dois
@@ -120,7 +124,8 @@ acessibilidade de modelos grandes pré-treinados.
 
 ***Browsing and searching COVID-19 related articles***
 
-\\ Na semana passada, apresentamos um conjunto de dados públicos chamado
+\\
+Na semana passada, apresentamos um conjunto de dados públicos chamado
 [CORD-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) que
 contém documentos relacionados ao COVID. Gabriele Sarti escreveu [uma ferramenta
 interativa](https://github.com/gsarti/covid-papers-browser), que permite que você pesquise
@@ -131,7 +136,6 @@ e navegue com mais eficiência tais documentos, utilizando um [modelo SciBERT co
 ![](https://cdn-images-1.medium.com/max/800/0*tu8nzUIEuSizuW5-.gif)
 
 \\
-
 A reciTAL também lançou um projeto chamado [COVID-19 *Smart Search
 Engine*](https://covidsmartsearch.recital.ai/) para ajudar a melhorar na pesquisa e
 navegação de artigos relacionados ao COVID-19, com o objetivo de ajudar pesquisadores e
@@ -156,7 +160,6 @@ para começar.
 ***David over Goliath: towards smaller models for cheaper, faster, and greener NLP***
 
 \\
-
 Maior é sempre melhor? Ao analisar a evolução do tamanho de modelos de linguagem nos
 últimos anos, pode-se pensar que a resposta é sim. No entanto, o custo financeiro e
 ambiental de treinar tais monstros é muito alto. Além disso, maior nesse caso geralmente
@@ -185,7 +188,8 @@ de pesquisa e ferramentas.
 
 ***TextVQA and TextCaps***
 
-\\ Em um esforço para encorajar a construção de modelos que possam detectar e ler melhor
+\\
+Em um esforço para encorajar a construção de modelos que possam detectar e ler melhor
 textos em imagens e depois argumentar para responder perguntas e gerar legendas, a
 *Facebook AI* está hospedando duas competições separadas. As competições são chamadas
 [TextVQA](https://textvqa.org/challenge) *Challenge* e
@@ -228,7 +232,8 @@ no tamanho da entrada.*
 \\
 ***Haystack: Open-Source Framework for Question Answering at Scale***
 
-\\ [Haystack](https://github.com/deepset-ai/haystack/) permite que você use modelos de
+\\
+[Haystack](https://github.com/deepset-ai/haystack/) permite que você use modelos de
 *transformers* em escala para *question-answering*. Ele usa um
 *Retriever-Reader-Pipeline*, onde o *Retriever* é um algoritmo rápido para encontrar
 documentos candidatos e o *Reader* é um *Transformer* que extrai a resposta
@@ -238,7 +243,8 @@ granular. Baseia-se nos *Transformers* da Hugging Face e da Elasticsearch. É
 \\
 ***Teaching an AI to summarise news articles: A new dataset for abstractive summarisation***
 
-\\ A Curation Corp está fornecendo 40.000 resumos de notícias escritos por profissionais.
+\\
+A Curation Corp está fornecendo 40.000 resumos de notícias escritos por profissionais.
 Este
 [artigo](https://medium.com/curation-corporation/teaching-an-ai-to-abstract-a-new-dataset-for-abstractive-auto-summarisation-5227f546caa8)
 fornece uma boa introdução à sumarização de texto e aos desafios que existem com esta
@@ -264,7 +270,8 @@ permitem todos os tipos de tarefas de NLP, como *abstractive summarization*, tra
 
 ***An Illustrated Guide to Graph Neural Networks***
 
-\\ As redes neurais em grafo (*GNN*) recentemente tiveram mais adoção em tarefas como
+\\
+As redes neurais em grafo (*GNN*) recentemente tiveram mais adoção em tarefas como
 melhorar modelos de visão computacional e previsão de efeitos colaterais devido a
 interações medicamentosas. Nessa [visão
 geral](https://dair.ai/An_Illustrated_Guide_to_Graph_Neural_Networks/), Rish apresenta um
@@ -341,7 +348,7 @@ dados textuais.
 \\
 ***Embeddings in Natural Language Processing***
 
-\\ 
+\\
 Mohammad Taher Pilehvar e Jose Camacho-Collados publicaram seu primeiro rascunho de seu
 próximo
 [livro](https://medium.com/r/?url=http%3A%2F%2Fjosecamachocollados.com%2Fbook_embNLP_draft.pdf)
@@ -370,7 +377,8 @@ dele uma introdução ideal para o campo de evolução rápida que é a IA.
 \\
 ***Cursos de ML e Aprendizado Profundo***
 
-\\ Sebastian Raschka lançou dois
+\\
+Sebastian Raschka lançou dois
 [episódios](https://www.youtube.com/watch?time_continue=1&v=QQD9Y2FiotQ&feature=emb_logo)
 gravados para seu curso sobre "Introdução ao Aprendizado Profundo e Modelos
 Generativos". Você pode encontrar notas de aula e outros materiais neste
@@ -414,7 +422,6 @@ Luis discutindo um pouco mais sobre seu livro e sua jornada para se tornar um ed
 área de *ML*. pode valer sua atenção
 
 \\
-
 Aqui estão muitas *newsletters* que podem valer sua atenção: [Sebastian Ruder’s NLP
 News](http://newsletter.ruder.io/), [Made With
 ML](https://madewithml.com/blog/newsletter/2020-03-25/), [SIGTYP’s
