@@ -23,7 +23,7 @@ image:
 ***Bağlamsal Gömmeler ve Dil Modelleri İncelemeleri***
 
 \\
-Bu [bildiri] (https://arxiv.org/abs/2003.07278v1) bağlamsal gömme *(contextual embedding)* öğrenmesine yönelik yaklaşımların kolay anlaşılır bir incelemesini sunmaktadır. Bildiri ayrıca, öğrenme aktarımı *(transfer learning)*, model sıkıştırma yöntemleri *(model compression methods)* ve model analizinde kendi denemelerinin değerlendirmelerini de içeriyor. [Buradaki](https://arankomatsuzaki.files.wordpress.com/2020/03/written_report.pdf)  bir başka rapor ise *Transformer* tabanlı dil modellerini iyileştirmek için kullanılan yöntemlerin bir özetini içeriyor. Ayrıca, NLP *(doğal dil işleme - DDİ)*'nin ön-eğitim'e *(pre-trained)* tabi tutulmuş modellerinin taksonimisine ilişkin bir başka kapsamlı inceleme [burada](https://arxiv.org/pdf/2003.08271.pdf).
+Bu [bildiri](https://arxiv.org/abs/2003.07278v1) bağlamsal gömme *(contextual embedding)* öğrenmesine yönelik yaklaşımların kolay anlaşılır bir incelemesini sunmaktadır. Bildiri ayrıca, öğrenme aktarımı *(transfer learning)*, model sıkıştırma yöntemleri *(model compression methods)* ve model analizinde kendi denemelerinin değerlendirmelerini de içeriyor. [Buradaki](https://arankomatsuzaki.files.wordpress.com/2020/03/written_report.pdf)  bir başka rapor ise *Transformer* tabanlı dil modellerini iyileştirmek için kullanılan yöntemlerin bir özetini içeriyor. Ayrıca, NLP *(doğal dil işleme - DDİ)*'nin ön-eğitim'e *(pre-trained)* tabi tutulmuş modellerinin taksonimisine ilişkin bir başka kapsamlı inceleme [burada](https://arxiv.org/pdf/2003.08271.pdf).
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*1jLfdem3xZ0I3EVSyOy48g.png)
@@ -60,7 +60,7 @@ UC Berkeley, Google Research ve UC San Diego'dan araştırmacıların yaptığı
 ***Dreamer'a Giriş: Dünya Modellerini Kullanarak Ölçeklenebilir Reinforcement (Takviyeli) Öğrenme***
 
 \\
-[Dreamer] (https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html), zorlu görevlerin çözümünde karşılaşılan bazı kısıtları aşmak için sunulan ücretsiz ve model tabanlı Takviyeli Öğrenme (RL) ajanıdır. DeepMind ve Google AI araştırmacıları tarafından önerilen bu RL ajanı, model tahminlerini kullanan geri yayılım *(backpropagation)* aracılığı ile ileri görüşlü davranışları da öğrenebilen bir dünya modellemek için eğitildi. SoTA sonuçları, verilen görsel girdilere dayalı 20 sürekli kontrol görevileri üzerinden elde ediliyor. Ek olarak, modelin veri-efektif olduğu görülüyor ve tahminlerini onu hesaplama-efektif hale getirecek şekilde paralel yapabiliyor. Farklı hedefleri başarabilen bir ajan eğitmekle ilgili üç görev aşağıdaki gösterimde özetlenmiştir:
+[Dreamer](https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html), zorlu görevlerin çözümünde karşılaşılan bazı kısıtları aşmak için sunulan ücretsiz ve model tabanlı Takviyeli Öğrenme (RL) ajanıdır. DeepMind ve Google AI araştırmacıları tarafından önerilen bu RL ajanı, model tahminlerini kullanan geri yayılım *(backpropagation)* aracılığı ile ileri görüşlü davranışları da öğrenebilen bir dünya modellemek için eğitildi. SoTA sonuçları, verilen görsel girdilere dayalı 20 sürekli kontrol görevileri üzerinden elde ediliyor. Ek olarak, modelin veri-efektif olduğu görülüyor ve tahminlerini onu hesaplama-efektif hale getirecek şekilde paralel yapabiliyor. Farklı hedefleri başarabilen bir ajan eğitmekle ilgili üç görev aşağıdaki gösterimde özetlenmiştir:
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*DOlPDgvNu1kpTeogcLve-A.png)
