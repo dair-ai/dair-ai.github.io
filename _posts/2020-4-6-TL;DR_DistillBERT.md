@@ -47,7 +47,7 @@ This student network was trained on the same dataset as the original BERT model 
 
 ## **Results**
 
-DistillBERT is able to achieve 97% of BERT-base’s score on the GLUE benchmark and 99.3% on the IMDb classification task. This while reducing model size and computational time with around 40%.
+DistilBERT is able to achieve 97% of BERT-base’s score on the GLUE benchmark and 99.3% on the IMDb classification task. This while reducing model size and computational time with around 40%.
 An ablation study revival the importance of the different loss objectives, showing that both cosine distance between student and teacher hidden representations and distillation loss contribute the most to the overall student performance, increasing the GLUE score by about 4 points. Weight initialisation from the pre-trained model also prove to provide similar gains in performance, increasing the GLUE score by 4.83 when comparing to a distilled model trained without the initialisation.
 
 ## **Conclusion**
