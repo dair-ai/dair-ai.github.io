@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DistillBERT — Half the price, same performance"
+title: "DistilBERT — Half the price, same performance"
 author:
 excerpt: ""
 modified:
@@ -14,7 +14,7 @@ image:
 
 ## **Introduction**
 
-Recent publications within NLP present models with parameter counts that one after another continue to increase, now reaching parameter counts as high as in the tenths of billions ([Google T5 with 11B parameters](https://arxiv.org/abs/1910.10683)) While more parameters might be the key to optimal performance does it prevent model training and serving where the computational budget might be limited. The paper summarised in this article, [“DistillBERT, a distilled version of BERT: smaller, faster, cheaper and lighter”](https://arxiv.org/abs/1910.01108) address’ this issue through a method called Knowledge Distillation.
+Recent publications within NLP present models with parameter counts that one after another continue to increase, now reaching parameter counts as high as in the tenths of billions ([Google T5 with 11B parameters](https://arxiv.org/abs/1910.10683)) While more parameters might be the key to optimal performance does it prevent model training and serving where the computational budget might be limited. The paper summarised in this article, [“DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter”](https://arxiv.org/abs/1910.01108) address’ this issue through a method called Knowledge Distillation.
 
 ## **Knowledge distillation**
 
