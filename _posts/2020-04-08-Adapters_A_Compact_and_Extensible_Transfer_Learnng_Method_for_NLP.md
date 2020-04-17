@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "Adapters: A Compact and Extensible Transfer Learning Method for NLP"
-author: Saravia_Elvis
+author: billy_rick
 excerpt: "Adapters obtain comparable results to BERT on several NLP tasks while achieving parameter efficiency."
 modified:
 comments: true
 tags: [ML | NLP | Data Science | Artificial Intelligence | Technology]
 image:
-  thumb: 
+  thumb: compact_transfer_learning.png
 ---
 
-### **Parameter inefficiency, in the context of transfer learning for NLP, arises when an entirely new model needs to be trained for every downstream task and the number of parameters grows too large.**
+Parameter inefficiency, in the context of transfer learning for NLP, arises when an entirely new model needs to be trained for every downstream task and the number of parameters grows too large.
 
 \\
 A recent paper proposes *adapter modules* which provide parameter efficiency by only adding a few trainable parameters per task, and as new tasks are added previous ones don’t require revisiting.
@@ -23,14 +23,13 @@ A standard fine-tuning model copies weights from a pre-trained network and tunes
 
 ### **Adapters**
 
-\\
 The proposed *adapter model* adds new modules between layers of a pre-trained network called adapters. This means that parameters are copied over from pre-training (meaning they remain fixed) and only a few additional task-specific parameters are added for each new task, all without affecting previous ones.
 
 \\
 The innovation here is in the strategy that is used to design the adapter module to achieve parameter efficiency with one single model while not compromising performance. In fact, a simple model was compared with a fully fine-tuned BERT model on several text classification tasks. The findings show that only 3% of task-specific parameters are needed to almost match the results of the 100% task-specific parameters used by the fully fine-tuned model.
 
 \\
-The traditional way of fine-tuning involves: 1) adding a new layer to fit the targets specified in the downstream task, and 2) co-training the new layer with the original weights. In contrast, the adapter tuning strategy injects new layers (randomly initialized) into the original network. 
+The traditional way of fine-tuning involves: 1) adding a new layer to fit the targets specified in the downstream task, and 2) co-training the new layer with the original weights. In contrast, the adapter tuning strategy injects new layers (randomly initialized) into the original network.
 
 \\
 Parameter sharing between tasks is supported since the original network’s parameters are frozen.
@@ -50,7 +49,6 @@ The adapters project the original feature size to a smaller dimension and then p
 
 ### **Experiments**
 
-\\
 The resulting effect of the added adapter layers is that they allow the model to focus on the higher layers of the network, which has generally been found effective in transfer learning.
 
 \\
@@ -88,9 +86,10 @@ In summary, adapter-based tuning demonstrates comparable performance to full fin
 
 \\
 [Paper](https://arxiv.org/pdf/1902.00751.pdf)
-Other suggested readings:
 
 \\
+Other suggested readings:
+
 - [Deep Learning for NLP: A Complete Overview](https://medium.com/dair-ai/deep-learning-for-nlp-an-overview-of-recent-trends-d0d8f40a776d)
 - [A Light Introduction to Transfer Learning for NLP](https://medium.com/dair-ai/a-light-introduction-to-transfer-learning-for-nlp-3e2cb56b48c8)
 - [XLNet outperforms BERT on several NLP Tasks](https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563b)
