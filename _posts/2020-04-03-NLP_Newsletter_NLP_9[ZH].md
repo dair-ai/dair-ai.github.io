@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP简报(Issue#9): Illustrated GNN Guide, TextVQA and TextCaps, KeraStroke, SyferText, torchlayers,…"
+title: "NLP简报 Issue#9 [ZH]: Illustrated GNN Guide, TextVQA and TextCaps, KeraStroke, SyferText, torchlayers,…"
 author: KaiyuanGao
 excerpt: "本期包括从保护隐私的NLP工具到用于搜索与COVID-19相关的论文的交互式工具，再到到图解神经网络图形化指南的主题。"
 modified:
@@ -13,7 +13,7 @@ image:
 
 ![](https://cdn-images-1.medium.com/max/1200/1*Vq-bFSTjqYjDGAR4Ja1abw.png)
 
-
+\\
 欢迎阅读NLP简报第9期。 我们希望您和您的亲人身体健康并保持安全。 本期主题包括保护隐私的NLP工具、用于搜索与COVID-19相关的论文的交互式工具、图解图神经网络指南等主题。
 
 
@@ -23,6 +23,7 @@ image:
 
 唐等提出了一个有趣且有创意的工作，[Neuroevolution of Self-Interpretable Agents](https://attentionagent.github.io/)，旨在发展一种代理以吸收一部分视觉输入，以使任务得以生存（例如，避免崩溃）。 曲线和闪避的火球，如下图所示）。 使用[neuroevolution](https://en.wikipedia.org/wiki/Neuroevolution)来训练“自我注意”架构，作者能够训练强化学习代理执行不同的任务，而只允许输入的一小部分。 该模型的好处包括参数大小的大幅减少，策略的可解释性，以及使模型仅能够关注关键的视觉提示。
 
+\\
 ![](https://cdn-images-1.medium.com/max/800/1*Gm8jlCUvP_JECEPspDypWg.png)
 
 
@@ -35,6 +36,7 @@ image:
 #### 1.3 Scaling Laws for Neural Language Models
 John Hopkins和OpenAI的研究人员进行了一项实验性研究，[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)，以了解语言模型性能的scaling laws。 这种类型的研究可以用作一种指导，以便就如何更有效地利用资源做出更好的决策。 总体而言，研究发现较大的模型的样本效率明显更高； 如果计算和数据有限，则最好通过几步训练来训练大型模型，而不是训练较小的模型直到收敛为止，见下图中汇总的结果。 作者为训练大型语言模型（如Transformer）中的过拟合，最佳批大小，微调，架构等方面提供了更多建议。
 
+\\
 ![](https://cdn-images-1.medium.com/max/800/1*plbjqswVe4Cq8UVggqPH1w.png)
 
 [*Kaplan et al. (2020)*](https://arxiv.org/abs/2001.08361)
@@ -43,8 +45,7 @@ John Hopkins和OpenAI的研究人员进行了一项实验性研究，[Scaling La
 #### 1.3 预训练Transformers校准
 随着在实际中越来越多地使用经过预训练的Transformer模型，尤其重要的是要了解其输出的“可信赖性”。 UT Austin最近的一项工作，[Calibration of Pre-trained Transformers](https://arxiv.org/abs/2003.07892)，研究显示在三个任务（自然语言推理、释义检测、常识推理）的领域内以及领域外数据集上，BERT和RoBERTa的后验概率上相对校准（即与经验结果一致）。 结果表明：（1）开箱即用时，预训练的模型在域内校准； （2）temperature scaling有效地进一步减小了域内的校准误差，而标签平滑处理增加了经验不确定性则有助于校准领域外后验概率。
 
-
-
+\\
 ![](https://cdn-images-1.medium.com/max/800/1*ose0s-G0WfPFoleZJ1htrQ.png)
 
 [*Desai and Durrett (2020)*](https://arxiv.org/pdf/2003.07892.pdf)
@@ -61,15 +62,15 @@ John Hopkins和OpenAI的研究人员进行了一项实验性研究，[Scaling La
 # 2、Creativity, Ethics, and Society 🌎
 
 #### 2.1 浏览和搜索COVID-19相关文章
-在上一期NLP简报中，我们介绍了一个名为[CORD-19的公开数据集](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)，其中包含与COVID相关的论文。 Gabriele Sarti编写了一个[交互式工具](https://github.com/gsarti/covid-papers-browser)，通过使用[SciBERT精细调整的模型](https://huggingface.co/gsarti/scibert-nli)，可以让你更有效地搜索和浏览这些文件。 
+在上一期NLP简报中，我们介绍了一个名为[CORD-19的公开数据集](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)，其中包含与COVID相关的论文。 Gabriele Sarti编写了一个[交互式工具](https://github.com/gsarti/covid-papers-browser)，通过使用[SciBERT精细调整的模型](https://huggingface.co/gsarti/scibert-nli)，可以让你更有效地搜索和浏览这些文件。
 
+\\
 ![](https://cdn-images-1.medium.com/max/800/0*tu8nzUIEuSizuW5-.gif)
 
-
+\\
 reciTAL还发布了一个名为[COVID-19 Smart Search Engine](https://covidsmartsearch.recital.ai/)的项目，以帮助改进对COVID-19相关文章的搜索和浏览，目的是帮助研究人员和医疗保健专业人员快速并有效地发现与COVID-19相关的信息。
 
-
-
+\\
 ![](https://cdn-images-1.medium.com/max/800/1*Y5W3sib4y6UxSr3YkQSu5Q.png)
 
 
@@ -95,11 +96,11 @@ OpenMined发布了[SyferText](https://github.com/OpenMined/SyferText)，这是�
 #### 3.3 torchlayers
 [torchlayers](https://github.com/szymonmaszke/torchlayers)是在PyTorch之上构建的新工具，可自动推断`torch.nn`模块中可用层的形状和尺寸，例如卷积，递归，transformer等等。这意味着你无需显式定义必须在图层中手动指定的输入要素的形状。这简化了PyTorch中模型的定义。可以参考下面的用`Torchlayers`实现的基本分类器的示例：
 
+\\
 ![](https://cdn-images-1.medium.com/max/800/1*tHOme2pZ39sNziqdUCsn4g.png)
 
 *从代码片段中我们可以看到，线性层仅需要输出要素的大小，而不是输出和输入的大小。 这是由torchlayers根据输入大小来推断的。*
 
-\\
 #### 3.4 Haystack
 [Haystack](https://github.com/deepset-ai/haystack/)允许你大规模使用transformer模型进行问答任务。 它使用`Retriever-Reader-Pipeline`，其中Retriever是查找候选文档的快速算法，而Reader是提取细粒度答案的Transformer。 它基于Hugging Face的Transformers和Elasticsearch，它是开源的，高度模块化的且易于扩展。
 
@@ -113,8 +114,9 @@ Curation Corp正在开源40,000个新闻报道的专业摘要。 该篇文章，
 # 4、Articles and Blog posts ✍️
 
 #### 4.1 图神经网络指南
-图神经网络最近已经被越来越多的任务采用，例如增强计算机视觉模型和预测由于药物相互作用而产生的副作用等。 在此文章中，[An Illustrated Guide to Graph Neural Networks](https://dair.ai/An_Illustrated_Guide_to_Graph_Neural_Networks/)，Rish提出了有关GNN的直观说明性指南。 
+图神经网络最近已经被越来越多的任务采用，例如增强计算机视觉模型和预测由于药物相互作用而产生的副作用等。 在此文章中，[An Illustrated Guide to Graph Neural Networks](https://dair.ai/An_Illustrated_Guide_to_Graph_Neural_Networks/)，Rish提出了有关GNN的直观说明性指南。
 
+\\
 ![](https://cdn-images-1.medium.com/max/800/1*Ru3CizrB14hvpZQ7ZtgIag.png)
 
 
@@ -154,7 +156,7 @@ James V Stone博士最近发表了他的新书，“[A Brief Guide to Artificial
 \\
 ![](https://cdn-images-1.medium.com/max/800/0*I2YYXTCQTBmk_YiF.jpg)
 
-\\
+
 #### 5.4 ML和DL课程
 Sebastian Raschka发布了两份课程[Introduction to Deep Learning and Generative Models](https://www.youtube.com/watch?time_continue=1&v=QQD9Y2FiotQ&feature=emb_logo)视频。 n 可以在此[repo](https://github.com/rasbt/stat453-deep-learning-ss20)中找到讲义和其他材料。
 
@@ -171,23 +173,31 @@ Dimitris Katsios提供了一组出色的教程，[CNN Architectures - implementa
 # 6、Noteworthy Mentions ⭐️
 你可以在[此处](https://dair.ai/NLP_Newsletter_8/)找到以前的新闻通讯。 您还可以在[此处](https://github.com/dair-ai/nlp_newsletter)找到NLP简报先前版本的翻译版本。
 
+\\
 几个月前，我们介绍了Luis Serrano关于Grokking Machine Learning的出色著作，听Luis探讨更多有关他的书以及他成为ML领域成功的教育者的故事，[Grokking Machine Learning with Luis Serrano](https://content.alegion.com/podcast/grokking-machine-learning-with-luis-serrano)  。
 
+\\
 以下是一些可能会引起您注意的新闻简报：[Sebastian Ruder的NLP新闻简报](http://newsletter.ruder.io/)，[Made With ML](https://madewithml.com/blog/newsletter/2020-03-25/)，[SIGTYP的新闻简报](https://sigtyp.github.io/sigtyp-newsletter-Mar-2020.html)，[MLT新闻简报](https://mailchi.mp/c70ebcf424b2/mlt-newsletter-6)，[Nathan的AI新闻通讯](http://newsletter.airstreet.com/issues/your-guide-to-ai-in-q1-2020-part-1-2-212335)等…
 
+\\
 Jupyter现在带有[可视调试器](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)，这将使这个流行的数据科学框架更易于用于广泛用途。
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/0*FE5Fj5DFb0U9565a.gif)
 
+\\
 Abhishek Thakur开放了一个很棒的YouTube频道，[Abhishek Thakur](https://www.youtube.com/channel/UCBPRJjIWfyNG4X-CRbnv78A)，他在其中演示了如何在机器学习和NLP中使用现代方法的代码，一些视频包括从微调BERT模型分类到建立机器学习框架。
 
+\\
 著名的强化学习教授和研究员David Silver因其在计算机游戏方面的突破性进展而被[授予ACM计算奖](https://awards.acm.org/about/2019-acm-prize)，Silver带领Al Go团队击败了Lee Sedol。
 
+\\
 对于那些有兴趣了解NLP流行方法（例如BERT和word2vec）的差异和背后工作原理的人，Mohd提供了关于这些方法的极好易懂且详细的概述，[Demystifying BERT: A Comprehensive Guide to the Groundbreaking NLP Framework](https://www.analyticsvidhya.com/blog/2019/09/demystifying-bert-groundbreaking-nlp-framework/)。
 
+\\
 [TensorFlow 2.2.0-rc-1](https://github.com/tensorflow/tensorflow/releases/tag/v2.2.0-rc1?linkId=85073218) 已经发布，它包括诸如Profiler之类的功能，可以帮助你发现ML模型中的瓶颈并指导对这些模型的优化。 此外，[Colab](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/quickstart/advanced.ipynb?linkId=85251566)现在也已经默认使用TensorFlow 2。
 
+\\
 GabrielPeyré在ML[优化课程](https://mathematical-tours.github.io/book-sources/optim-ml/OptimML.pdf)中提供了一组不错的笔记，包括凸分析，SGD，autodiff，MLP等。
 
 
@@ -202,4 +212,5 @@ GabrielPeyré在ML[优化课程](https://mathematical-tours.github.io/book-sourc
 ----------
 如果您希望在下一期NLP新闻通讯中共享任何数据集，项目，博客文章，教程或论文，请直接填写这份[问卷](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
+\\
 [*Subscribe*](https://dair.ai/newsletter/)*🔖至NLP新闻通讯，以在收件箱中接收以后的新闻。*
