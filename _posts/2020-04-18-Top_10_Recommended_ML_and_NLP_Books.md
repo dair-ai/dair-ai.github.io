@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Top 10 Recommended ML and NLP Books"
-author: "Elvis"
+author: billy_rick
 excerpt: "This is a list of my top 10 book recommendations for learning the nitty-gritty of NLP and ML."
 modified:
 comments: true
-tags: [Artificial Intelligence,Technology,Innovation,Machine Learning,NLP]
+tags: ""
 image:
-  thumb: lm-progress.png
+  thumb: top10_ml.png
 ---
 
 
@@ -21,55 +21,55 @@ Note: This is a repost of a [Twitter thread](https://twitter.com/omarsar0/status
 When I went to NeurIPS a couple of months back, I noticed a couple of interesting books that I wanted to share. Here are a few that caught my attention and that I would recommend if you are serious about learning the nitty-gritty of NLP and ML:
 
 \\
-**[Reinforcement Learning, Second Edition (An Introduction)](https://mitpress.mit.edu/books/reinforcement-learning-second-edition)**_By Richard S. Sutton and Andrew G. Barto_
+**[Reinforcement Learning, Second Edition (An Introduction)](https://mitpress.mit.edu/books/reinforcement-learning-second-edition)** By Richard S. Sutton and Andrew G. Barto
 
 \\
 ![](https://miro.medium.com/max/550/0*Zje4vavhX2I36OK-.png)
 
 \\
-**[Introduction to Natural Language Processing](https://mitpress.mit.edu/books/introduction-natural-language-processing)**_By Jacob Eisenstein_
+**[Introduction to Natural Language Processing](https://mitpress.mit.edu/books/introduction-natural-language-processing)** By Jacob Eisenstein
 
 \\
 ![](https://miro.medium.com/max/550/0*V3oSF1kbdOfSybAS.png)
 
 \\
-**[Deep Learning](https://mitpress.mit.edu/books/deep-learning)**_By Ian Goodfellow, Yoshua Bengio and Aaron Courville_
+**[Deep Learning](https://mitpress.mit.edu/books/deep-learning)** By Ian Goodfellow, Yoshua Bengio and Aaron Courville
 
 \\
 ![](https://miro.medium.com/max/550/0*K050VhxYK2XQDGvk.png)
 
 \\
-**[Foundations of Machine Learning, Second Edition](https://mitpress.mit.edu/books/foundations-machine-learning-second-edition)**_By Mehryar Mohri, Afshin Rostamizadeh and Ameet Talwalkar_
+**[Foundations of Machine Learning, Second Edition](https://mitpress.mit.edu/books/foundations-machine-learning-second-edition)** By Mehryar Mohri, Afshin Rostamizadeh and Ameet Talwalkar
 
 \\
 ![](https://miro.medium.com/max/550/0*FF1CXzbRifU2vwGc.png)
 
 \\
-**[Introduction to Deep Learning](https://mitpress.mit.edu/books/introduction-deep-learning)**_By Eugene Charniak_
+**[Introduction to Deep Learning](https://mitpress.mit.edu/books/introduction-deep-learning)** By Eugene Charniak
 
 \\
 ![](https://miro.medium.com/max/550/0*A_Hvrf26YPVp4uz-.png)
 
 \\
-**[Dive into Deep Learning](http://d2l.ai/)**By Aston Zhang, Zack C. Lipton, Mu Li, and Alex J. Smola
+**[Dive into Deep Learning](http://d2l.ai/)** By Aston Zhang, Zack C. Lipton, Mu Li, and Alex J. Smola
 
 \\
 ![](https://miro.medium.com/max/700/0*KTWgTfdZWrJ97puV.png)
 
 \\
-**[Natural Language Processing with PyTorch](https://www.amazon.com/Natural-Language-Processing-PyTorch-Applications/dp/1491978236)**_By Delip Rao and Brian McMahan_
+**[Natural Language Processing with PyTorch](https://www.amazon.com/Natural-Language-Processing-PyTorch-Applications/dp/1491978236)** By Delip Rao and Brian McMahan
 
 \\
 ![](https://miro.medium.com/max/381/0*tBIfh3h_aa9Z-riQ.png)
 
 \\
-**[Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646/ref=dp_ob_image_bk)**_By Aurélien Géron_
+**[Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646/ref=dp_ob_image_bk)** By Aurélien Géron
 
 \\
 ![](https://miro.medium.com/max/381/0*94HB2oZOZtC8TCnY.png)
 
 \\
-**[Python Machine Learning — Third Edition](https://www.packtpub.com/eu/data/python-machine-learning-third-edition)**_By Sebastian Raschka and Vahid Mirjalili_
+**[Python Machine Learning — Third Edition](https://www.packtpub.com/eu/data/python-machine-learning-third-edition)** By Sebastian Raschka and Vahid Mirjalili
 
 \\
 ![](https://miro.medium.com/max/567/0*9sNEItu41ic7JonG.png)
@@ -85,4 +85,3 @@ Finally, I would also recommend the ebook I put together with [@soujanyaporia](h
 
 \\
 There are so many other great books, what others do you recommend?
-\\
