@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "XLNet outperforms BERT on several NLP Tasks"
-author: "Elvis"
+author: billy_rick
 excerpt: "XLNet is a new pretraining method for NLP that achieves state-of-the-art results on several NLP tasks."
 modified:
 comments: true
-tags: [ Machine Learning,NLP,Data Science,Artificial Intelligence, Technology]
+tags: ""
 image:
-  thumb: lm-progress.png
+  thumb: xlnet.png
 ---
 
 Two pretraining objectives that have been successful for pretraining neural networks used in transfer learning NLP are autoregressive (AR) language modeling and autoencoding (AE).
@@ -44,6 +44,7 @@ The core change happens in the hidden representation layers (see paper for detai
 \\
 From the following examples below, we can observe that both BERT and XLNet compute the objective differently. In general, XLNet captures more important dependencies between prediction targets, such as (New, York), which BERT omits.
 
+\\
 ![](https://miro.medium.com/max/598/0*Cd9pc-cuqQF5k0Oc.png)
 
 \\
@@ -54,7 +55,6 @@ Overall, XLNet makes a compelling case for bridging the gap between language mod
 
 ### **Experiments**
 
-\\
 Several sources like BooksCorpus, English Wikipedia, Giga5, and Common Crawl are combined and used for pretraining. Tokenization is achieved with SentencePiece.
 
 \\
@@ -62,24 +62,27 @@ The same architecture hyperparameters as BERT-Large are used in XLNet-Large and 
 
 ### **Results**
 
-\\
 RACE involves a reading comprehension dataset that is used to test the question answering and long text understanding capabilities of the model. As shown in the table below, XLNet outperforms (in terms of accuracy) both GPT and BERT pretraining models.
 
+\\
 ![](https://miro.medium.com/max/500/0*7xDJVCyYbphxn65f.png)
 
 \\
 SQuAD and NewsQA are also popular reading comprehension datasets which consist of two tasks. Specifically, XLNet jointly trains on SQuAD 2.0 and NewsQA and obtains state-of-the-art performance on this task, outperforming BERT even on the dev set (see results below).
 
+\\
 ![](https://miro.medium.com/max/753/0*CfvEjCH291LqOSqU.png)
 
 \\
 XLNet now holds state-of-the-art (SoTA) results on several text classification benchmarks such as IMDB and DBpedia (see results below).
 
+\\
 ![](https://miro.medium.com/max/711/0*GCN5tQTix-cl30Ne.png)
 
 \\
 GLUE consists of 9 natural language understanding tasks. Using XLNet, multiple settings such as single-task and multi-task, as well as single models and ensembles are tested on GLUE. In the end, a multi-task ensemble XLNet achieves SoTA results on 7 out of 9 tasks. XLNet outperforms BERT on the different datasets as seen in the table below.
 
+\\
 ![](https://miro.medium.com/max/769/0*jRNEM-D8HUIijxOW.png)
 
 \\
@@ -91,9 +94,9 @@ XLNet: _Generalized Autoregressive Pretraining for Language Understanding_ — (
 \\
 [Paper](https://arxiv.org/abs/1906.08237) | [Code](https://github.com/zihangdai/xlnet)
 
+\\
 **Other suggested readings:**
 
-\\
 - [Deep Learning for NLP: A Complete Overview](https://medium.com/dair-ai/deep-learning-for-nlp-an-overview-of-recent-trends-d0d8f40a776d)
 - [A Light Introduction to Transfer Learning for NLP](https://medium.com/dair-ai/a-light-introduction-to-transfer-learning-for-nlp-3e2cb56b48c8)
 - [Adapters: A Compact and Extensible Transfer Learning Method for NLP](https://medium.com/dair-ai/adapters-a-compact-and-extensible-transfer-learning-method-for-nlp-6d18c2399f62)
