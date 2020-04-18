@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "A Deep Learning Approach to Improve Emotion-Cause Extraction"
-author: saravia_elvis
+author: billy_rick
 excerpt: "A multi-task learning approach to improve emotion-cause extraction which can help to improve emotion analysis."
 modified:
 comments: true
-tags: [Machine Learning| Deep Learning| Artificial Intelligence| Data Science| Technology]
+tags: ""
 image:
-  thumb: 
+  thumb: emotion-extraction.png
 ---
 
-\\
+
 This paper aims to develop a deep learning method to extract causes behind emotions in a document. It’s a relatively new NLP task so the authors mainly aim to show its feasibility using a multi-task learning approach.
 
 \\
@@ -38,7 +38,6 @@ In contrast, the proposed ECPE task (shown on the right of the figure) outputs p
 
 ### **The Approach**
 
-\\
 The framework consists of two parts: 1) extract sets of emotion and cause clauses from each document via two kinds of multi-task learning networks, and 2) conduct emotion-cause pairing and filtering. The pairing is done via Cartesian product applied to the set of emotion and cause clauses. This yields a set of candidate emotion-cause pairs, on which a filter is applied to remove clause pairs that don’t contain a causal relationship.
 
 \\
@@ -61,7 +60,6 @@ The output of these models is a set of emotion clauses and a set of cause clause
 
 ### **Results**
 
-\\
 The benchmark emotion-cause dataset by [Gui et al., 2016](https://www.aclweb.org/anthology/D16-1170) is used for all experiments. Precision, recall, and F1 scores are used as the evaluation metrics. The table below shows the experimental results for all the separate tasks using the three proposed models based on multi-task learning.
 
 
@@ -96,4 +94,3 @@ In summary, the overall results indicate that emotion extraction helps to improv
 \\
 **Paper:** [Emotion-Cause Pair Extraction: A New Task to Emotion Analysis in Texts](https://arxiv.org/abs/1906.01267) — Rui Xia and Zixiang Ding
 **Source Code:** https://github.com/NUSTM/ECPE
-
