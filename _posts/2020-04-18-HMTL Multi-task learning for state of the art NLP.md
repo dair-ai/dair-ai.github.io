@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "HMTL: Multi-task learning for state of the art NLP"
-author: "Elvis"
+author: billy_rick
 excerpt: "This work aims to employ linguistic hierarchies and multi-task learning to improve semantic NLP tasks."
 modified:
 comments: true
-tags: [Artificial Intelligence,Technology,Innovation,Data Science,NLP]
+tags: ""
 image:
-  thumb: lm-progress.png
+  thumb: hmtl.png
 ---
 
 
@@ -22,6 +22,7 @@ The main question this [paper](https://arxiv.org/abs/1811.06031) aims to address
 \\
 Previously, multi-task frameworks have not been trained to leverage the strengths of _inductive transfer_ to achieve more generalized capabilities. Complimentary aspects of a sentence (e.g., _syntax_ and _word order_) can be combined to produce generalized sentence embeddings. This paper proposes a unified model that trains and combines four semantic NLP tasks on the basis that they share _inter-dependencies_ with each other. For instance, in the example provided in the table below (highlighted in blue) you can observe that by resolving that &quot;_Dell&quot;_ and &quot;_the company&quot;_ refer to the same real-world entity, it is also likely to represent an organization as opposed to a person. This knowledge could be beneficial and transferred to other tasks such as EMD and NER.
 
+\\
 ![](https://miro.medium.com/max/506/0*D-OhedD5ezIvPbyW.png)
 
 [Image source](https://arxiv.org/abs/1811.06031)
@@ -29,13 +30,13 @@ Previously, multi-task frameworks have not been trained to leverage the strength
 \\
 The proposed model (shown in the figure below) consists of a hierarchy between the tasks in the lower levels while encouraging complex interactions at deeper layers. This implies that simple supervised tasks will be placed at lower layers and more complex tasks at the higher layers. This is done in an end-to-end setting and without using hand-engineered features. A new sampling strategy for multi-task learning, called _proportional sampling,_ is also proposed (more on this later).
 
+\\
 ![](https://miro.medium.com/max/518/0*xrxqEuhaGIGzGDDg.png)
 
 HMTL framework— [Image source](https://arxiv.org/abs/1811.06031)
 
 # **Hierarchical Model**
 
-\\
 The _input_ of the model consists of the concatenations of three type of word embeddings: fine-tuned GloVe embeddings, ELMo embeddings, and character-level embeddings.
 
 \\
@@ -49,7 +50,6 @@ The highest level of the model is supervised by a Coreference resolution (CR) ta
 
 # **Experiments**
 
-\\
 Overall, two datasets are used for the experiments. For NER, the English portion of OntoNotes 5.0 ([Pradhan et al. 2013](http://www.aclweb.org/anthology/W13-3516)) is used. For CR, EMD, and RE, the ACE05 corpus ([Doddington et al. 2004](https://pdfs.semanticscholar.org/0617/dd6924df7a3491c299772b70e90507b195dc.pdf)) is used. Refer to the paper for more details on these datasets and how they were used. Data statistics can be found in the table below:
 
 ![](https://miro.medium.com/max/474/0*wxQJDgm85lQiAKq-.png)
@@ -61,7 +61,6 @@ To avoid _catastrophic forgetting_ (an issue common when training multi-task mod
 
 # **Results**
 
-\\
 In summary, the proposed hierarchical and multi-task learning framework, coined HMTL, achieved state-of-the-art (SOTA) results on three tasks, namely NER ([+0.52](https://paper.dropbox.com/doc/EtCywKBuxWyklTdLqMqhj) ), EMD([+3.8](https://paper.dropbox.com/doc/u8fL4ZXAuOpu2pXFokFqZ) ), and RE ([+6.8](https://paper.dropbox.com/doc/uGJwE6scjk3hrBOA2qGAl)). The results are summarized in the table below:
 
 \\
@@ -75,6 +74,7 @@ The full model (A-GM) model (highlighted in blue) produces SOTA results for EMD 
 \\
 The table below shows the ablation study conducted on the input embeddings:
 
+\\
 ![](https://miro.medium.com/max/511/0*4Q54GwEteJjBXDlL.png)
 
 [Image source](https://arxiv.org/abs/1811.06031)
@@ -90,11 +90,11 @@ In the table below, you can also observe the differences in training time (defin
 
 [Image source](https://arxiv.org/abs/1811.06031)
 
-\\
 # **References**
 
 **Paper:** [A Hierarchical Multi-task Approach for Learning Embeddings from Semantic Tasks](https://arxiv.org/abs/1811.06031) — (_Victor Sanh, Thomas Wolf, Sebastian Ruder_)
 
+\\
 **Code:** [GitHub repo](https://github.com/huggingface/hmtl)
 
 \\
@@ -104,8 +104,6 @@ In the table below, you can also observe the differences in training time (defin
 **Detailed post (includes code snippets):**[HuggingFace Blog](https://medium.com/huggingface/beating-the-state-of-the-art-in-nlp-with-hmtl-b4e1d5c3faf)
 
 ------------
-\\
-
 
 # **Task Definitions**
 \\
