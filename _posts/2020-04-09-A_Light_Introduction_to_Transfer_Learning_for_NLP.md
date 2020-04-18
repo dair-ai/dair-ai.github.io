@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "A Light Introduction to Transfer Learning for NLP"
-author: saravia_elvis
+author: billy_rick
 excerpt: "In this post, I will introduce transfer learning for natural language processing and key questions necessary to better understand this important area of study."
 modified:
 comments: true
-tags: [Machine Learning | Artificial Intelligence | Technology | Data Science | NLP]
+tags: ""
 image:
-  thumb: 
+  thumb: transfer-learning.png
 ---
 
 ![](https://miro.medium.com/max/747/1*D-CoqzlBxj37_j-_vwMLxA.png)
@@ -21,7 +21,6 @@ But recent progress in machine learning (ML) and natural language processing (NL
 \\
 In this post, I will briefly introduce some of the recent ideas that could enable generalizable NLP systems, specifically those that employ transfer learning through pretrained language models. By generalizable, I mean NLP systems that are able to perform many tasks at once. For instance, just imagine a scenario where an ML algorithm is able to recognize both sentiment and sarcasm from textual information. Why not? What kind of machine learning technology is needed to achieve this? Enter the world of transfer learning.
 
-\\
 ### **Transfer learning**
 
 
@@ -48,7 +47,6 @@ So far we know that the knowledge obtained from pretrained language models, such
 \\
 One recent, popular [method](https://arxiv.org/abs/1802.05365) coined as ELMo can be described as “pretraining the entire model with deep contextualized representations through stacked neural layers” as opposed to just employing the word embeddings (i.e., unary representations) as initialization. Don’t worry if it’s not clear what the above concept describes. My goal in this series is to clarify what these models are doing in a very intuitive manner, and answer several key questions that arise when considering them:
 
-\\
 - What do we mean by modeling deep contextualized representations in the context of language? What is the model really learning?
 - How to build and train these pretrained language models?
 - What are the key components of the pretrained language models and how to improve them?
@@ -61,5 +59,3 @@ One recent, popular [method](https://arxiv.org/abs/1802.05365) coined as ELMo ca
 
 \\
 I will stop with the questions here but you can already start to observe how complex this line of research is. It needs to be broken down into parts. All you need to understand for now is that in order to build a universal language model we need to consider many things, some of which are still not very clear today. In the next post of this series, I will begin to address each of these important questions while exploring the state-of-the-art research on transfer learning for NLP. *This post is part 1 of a series. There are a total of five parts to this series. Stay tuned for part 2. In the meantime, I encourage you to take a look at some of the links provided in this post.*
-
-
