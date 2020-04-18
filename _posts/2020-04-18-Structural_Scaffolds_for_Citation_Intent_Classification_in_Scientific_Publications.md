@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Structural Scaffolds for Citation Intent Classification in Scientific Publications"
-author:
+author: e-tony
 excerpt: "This post is a paper summary highlighting the main ideas of the paper “Structural Scaffolds for Citation Intent Classification in Scientific Publications” by Cohan et al. (2019)"
 modified:
 comments: true
