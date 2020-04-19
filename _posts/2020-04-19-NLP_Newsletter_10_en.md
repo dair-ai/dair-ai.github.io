@@ -239,7 +239,7 @@ Harvard is currently [offering](https://online-learning.harvard.edu/catalog?keyw
 [ARBML](https://github.com/zaidalyafeai/ARBML) provides implementations of many Arabic NLP and ML projects providing real-time experience using many interfaces like web, command line and notebooks.
 
 \\
-NLP Dashboard is a fun NLP web app to perform named entity recognition and statistical analysis of text and news stories. Built using spaCy, Flask, and Python.
+[NLP Dashboard](https://nlpdashboard.com) is a fun NLP web app to perform named entity recognition and statistical analysis of text and news stories. Built using spaCy, Flask, and Python.
 
 \\
 If you haven’t checked it out, Connor Shorten maintains this really informative [YouTube channel](https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw?sub_confirmation=1) where he summarizes interesting and recent ML papers. He covers the important details of each work while providing excellent short and concise summaries. He also started a [podcast](https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ) with other great researchers and explainers in the field.
