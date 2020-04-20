@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #10: Improving Reproducibility in ML, Privacy and Security in NLP, EXTREME, Longformer, VilBERT, exBERT,…"
+title: "NLP Newsletter #10: Improving Reproducibility in ML, Privacy and Security in NLP, XTREME, Longformer, VilBERT, exBERT,…"
 author: billy_rick
 excerpt: "In this issue, we cover topics that range from best practices regarding language models to reproducibility in machine learning to privacy and security in natural language processing (NLP)."
 modified:
@@ -30,7 +30,7 @@ Welcome to the 10th issue of the NLP Newsletter. We hope you are well and stayin
 # Research and Publications 📙
 
 ***XTREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalization***
-Earlier this week, researchers at Google AI and DeepMind published an interesting multi-task benchmark called [EXTREME](https://arxiv.org/abs/2003.11080) that aims to encourage evaluation of the cross-lingual generalization capabilities of language models that learn multilingual representations. The benchmark tests on 40 languages and 9 different tasks that collectively require reasoning about different levels of meaning either syntactically or semantically. The paper also provides baseline results using state-of-the-art models for multilingual representation such as mBERT, XLM, and MMTE.
+Earlier this week, researchers at Google AI and DeepMind published an interesting multi-task benchmark called [XTREME](https://arxiv.org/abs/2003.11080) that aims to encourage evaluation of the cross-lingual generalization capabilities of language models that learn multilingual representations. The benchmark tests on 40 languages and 9 different tasks that collectively require reasoning about different levels of meaning either syntactically or semantically. The paper also provides baseline results using state-of-the-art models for multilingual representation such as mBERT, XLM, and MMTE.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/0*kk7J1fCht_VZR_su.png)
