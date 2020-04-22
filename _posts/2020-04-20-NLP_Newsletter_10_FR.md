@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "NLP Newsletter #10: Améliorer la reproductibilité  en ML, protection de la vie privée et sécurité en NLP, XTREME, Longformer, VilBERT, exBERT,…"
+title: "NLP Newsletter #10 [FR]: Améliorer la reproductibilité  en ML, protection de la vie privée et sécurité en NLP, XTREME, Longformer, VilBERT, exBERT,…"
 author: lbourdois
-excerpt: "Dans ce numéro, nous abordons des sujets qui vont des meilleures pratiques concernant les modèles de langue à la reproductibilité dans l'apprentissage automatique, en passant par la protection de la vie privée et la sécurité dans le traitement du langage naturel (NLP)".
+excerpt: "Dans ce numéro, nous abordons des sujets qui vont des meilleures pratiques concernant les modèles de langue à la reproductibilité dans l'apprentissage automatique, en passant par la protection de la vie privée et la sécurité dans le traitement du langage naturel (NLP)"
 modified:
 comments: true
 tags: [nlp_newsletter]
@@ -13,25 +13,26 @@ image:
 
 ![](https://cdn-images-1.medium.com/max/1200/1*WxbP3uKvd2GB6B-NaxtiIw.png)
 
-\\
-
 # Avant-propos d’Elvis
 Bienvenue au dizième numéro de la lettre d’information consacrée au NLP.  Nous espérons que vous allez bien et que vous êtes en sécurité. Dans ce numéro, nous abordons des sujets qui vont des meilleures pratiques concernant les modèles de langue à la reproductibilité dans l'apprentissage automatique, en passant par le respect de la vie privée et la sécurité dans le traitement du langage naturel (NLP).
 
+\\
 ***Quelques mises à jour sur la lettre d’information sur le NLP et sur dair.ai :***
 
 - afin de faciliter l'exploration du jeu de données [COVID-19](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) et afin d'obtenir des informations à partir de la littérature scientifique, nous avons publié un [notebook](https://github.com/dair-ai/covid_19_search_application) qui retrace les étapes de la conception d'une application permettant de réaliser une recherche de similitude de texte à l'aide d'outils libres et de modèles linguistiques pré-entrainés en open-source.
 
-- nous avons organisé une formation virtuelle lors de la [Open Data Science Conference](https://odsc.com/boston/) la semaine dernière sur le thème ["Deep Learning for Modern NLP"](https://github.com/dair-ai/odsc_2020_nlp). 
+- nous avons organisé une formation virtuelle lors de la [Open Data Science Conference](https://odsc.com/boston/) la semaine dernière sur le thème ["Deep Learning for Modern NLP"](https://github.com/dair-ai/odsc_2020_nlp).
 
 - la semaine dernière, nous avons aussi publié deux articles en collaboration avec des membres de notre communauté. L'un d'entre eux concerne l'[apprentissage progressif non supervisé](https://medium.com/dair-ai/unsupervised-progressive-learning-upl-a-new-problem-for-ai-9a1c68c70a28), un problème qui implique un agent qui analyse une séquence de vecteurs de données non labellisées (flux de données) et en apprend des représentations. Le second [article](https://medium.com/dair-ai/structural-scaffolds-for-citation-intent-classification-in-scientific-publications-e5acd2f0ebf9) résume une approche de classification des intentions de citation utilisant ELMo.
 
 -	Enfin nous avons récemment publié un [notebook](https://colab.research.google.com/drive/1nwCE6b9PXIKhv2hvbqf1oZKIGkXMTi1X) qui fournit des idées sur la manière de fine-tuner des modèles de langage pré-entrainés pour la tâche de classification des émotions.
-\\
+
 
 # Publications 📙
 
 ***XTREME : Un benchmark multitâche multilingue pour l'évaluation de la généralisation interlinguistique***
+
+\\
 En début de semaine, des chercheurs de Google AI et DeepMind ont publié un benchmark multitâche appelé [XTREME](https://arxiv.org/abs/2003.11080) qui vise à encourager l'évaluation des capacités de généralisation multilingue des modèles linguistiques qui apprennent des représentations multilingues. Le benchmark porte sur 40 langues et 9 tâches différentes qui, collectivement, nécessitent de raisonner sur différents niveaux de signification, soit syntaxiquement, soit sémantiquement. Le document fournit également des résultats de référence en utilisant des modèles multilingues tels que mBERT, XLM et MMTE.
 
 \\
@@ -56,7 +57,7 @@ L'entraînement de modèles monolingues (FastText word embeddings et BERT) sur d
 *Figure par* [*Agerri et al. (2020)*](https://arxiv.org/abs/2004.00033)
 
 \\
-**Faire progresser l'apprentissage auto-supervisé et semi-supervisé avec SimCLR***
+***Faire progresser l'apprentissage auto-supervisé et semi-supervisé avec SimCLR***
 
 \\
 Dans un précédent [numéro](https://dair.ai/NLP_Newsletter_-5_-FR/) de la newsletter, nous avons présenté SimCLR, une méthode de Google AI qui propose un cadre pour l'apprentissage *contrastif et aut-osurpervisé* des représentations visuelles afin d'améliorer les résultats de la classification des images dans différents contextes tels que l'apprentissage par transfert et l'apprentissage semi-supervisé. Il s'agit d'une nouvelle approche de l'apprentissage auto et semi-supervisé pour apprendre des représentations visuelles à partir de données non labellisées. Les [résultats](https://ai.googleblog.com/2020/04/advancing-self-supervised-and-semi.html) démontrent qu'elle obtient des résultats de pointe sur ImageNet tout en ne s'appuyant que sur 1% de données labelissées, ce qui indique que la méthode pourrait également être bénéfique dans des environnements à faibles ressources.
@@ -67,7 +68,7 @@ Dans un précédent [numéro](https://dair.ai/NLP_Newsletter_-5_-FR/) de la news
 *Source:* [*Google AI Blog*](https://ai.googleblog.com/2020/04/advancing-self-supervised-and-semi.html)
 
 \\
-Il convient de mentionner que l'apprentissage auto-supervisé est l'un des sujets brûlants dans ce domaine. Si vous souhaitez en savoir plus, vous pouvez consulter les informations suivantes :
+Il convient de mentionner que l'apprentissage auto-supervisé est l'un des sujets brûlants dans ce domaine. Si vous souhaitez en savoir plus, vous pouvez consulter les informations suivantes:
 
 - [Computers Already Learn From Us. But Can They Teach Themselves?](https://www.nytimes.com/2020/04/08/technology/ai-computers-learning-supervised-unsupervised.html)
 - [The Illustrated Self-Supervised Learning](https://amitness.com/2020/02/illustrated-self-supervised-learning/)
@@ -75,7 +76,7 @@ Il convient de mentionner que l'apprentissage auto-supervisé est l'un des sujet
 
 
 \\
-**Le Byte Pair Encoding est sous-optimal pour le pré-entraînement de modèles de langue***
+***Le Byte Pair Encoding est sous-optimal pour le pré-entraînement de modèles de langue***
 
 \\
 Kaj Bostrom et Greg Durrett ont publié un [article](https://arxiv.org/pdf/2004.03720.pdf) dans lequel ils ont proposé une évaluation directe de l'impact de la tokenisation sur les performances des modèles linguistiques. Selon les auteurs, cette question est rarement examinée comme on le constate dans la littérature. Pour y parvenir, ils pré-entraînent les modèles à partir de zéro en utilisant des expériences contrôlées et appliquent différentes méthodes de tokenization, à savoir l'unigramme et le BPE. Ensuite, ils testent les modèles résultants sur plusieurs tâches. Les résultats montrent que la tokenization unigramme égale ou surpasse le BPE commun.
@@ -90,10 +91,10 @@ Les chercheurs d'Allen AI ont publié un nouveau modèle appelé [Longformer](ht
 ![](https://cdn-images-1.medium.com/max/800/1*uTxVqLtO_nQaDw4OedUUtQ.png)
 
 *Figure par* [*Beltagy et al. (2020)*](https://arxiv.org/abs/2004.05150)
-\\
 
 
-# Créativité, éthique et société 🌎 
+
+# Créativité, éthique et société 🌎
 
 ***Reproductibilité en ML***
 
@@ -124,7 +125,7 @@ Un autre [document](https://arxiv.org/abs/2004.06660), accepté à ACL 2020, exa
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*s4QscGOeDiN6tHOfM99pww.png)
 
-*Chiffre fourni par [*Kurita et al. (2020)*] (https://arxiv.org/abs/2004.06660)
+*Chiffre fourni par [*Kurita et al. (2020)*](https://arxiv.org/abs/2004.06660)
 
 
 \\
@@ -140,12 +141,14 @@ Un autre [document](https://arxiv.org/abs/2004.06660), accepté à ACL 2020, exa
 
 
 - ArCOV-19 est un ensemble de données en arabe portant sur COVID-19 qui couvre la période du 27 janvier au 31 mars 2020 (et toujours en cours). Il s'agit du premier ensemble de données Twitter en arabe accessible au public couvrant la pandémie COVID-19 qui comprend environ 748 000 tweets populaires (selon les critères de recherche de Twitter). Les réseaux de propagation comprennent à la fois des retweets et des fils de conversation (c'est-à-dire des fils de réponses). [ArCOV-19](https://gitlab.com/bigirqu/ArCOV-19) est conçu pour permettre la recherche dans plusieurs domaines, notamment le traitement du langage naturel, les sciences des données et l'informatique sociale, entre autres.
-\\
+
 
 # Outils et jeux de données ⚙️
 
 ***Machine Learning en Python : Principaux développements et tendances technologiques dans le domaine de la science des données, de l'apprentissage automatique et de l'intelligence artificielle***
-Ce n'est pas un outil ou un ensemble de données en soi, mais cet[article] (https://www.mdpi.com/2078-2489/11/4/193) de Sebastian Raschka, Joshua Patterson et Corey Nolet donne un aperçu complet de certains des principaux développements en termes de tendances technologiques dans l'apprentissage machine, en particulier en ce qui concerne le langage de programmation Python.
+
+\\
+Ce n'est pas un outil ou un ensemble de données en soi, mais cet[article](https://www.mdpi.com/2078-2489/11/4/193) de Sebastian Raschka, Joshua Patterson et Corey Nolet donne un aperçu complet de certains des principaux développements en termes de tendances technologiques dans l'apprentissage machine, en particulier en ce qui concerne le langage de programmation Python.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*OUpM4KS2uvT7zWlMYqy8RQ.png)
@@ -159,7 +162,7 @@ Ce n'est pas un outil ou un ensemble de données en soi, mais cet[article] (http
 HuggingFace a lancé un outil de visualisation appelé exBERT qui permet de visualiser les représentations apprises à partir de modèles de langage tels que BERT et RoBERTa. Cette fonctionnalité a été intégrée dans la [page des modèles](https://huggingface.co/models?filter=exbert) et vise à mieux comprendre comment les modèles linguistiques apprennent et quelles propriétés ils encodent potentiellement dans ces représentations apprises.
 
 \\
-OpenAI a récemment publié une application web appelée [Microscope] (https://microscope.openai.com/models) qui contient une collection de visualisations obtenues à partir de couches et de neurones significatifs de divers modèles de vision qui sont souvent étudiés dans le contexte de l'interprétabilité. L'objectif principal est de faciliter l'analyse et le partage des connaissances intéressantes qui émergent de ces caractéristiques apprises dans les réseaux de neurones afin de mieux les comprendre.
+OpenAI a récemment publié une application web appelée [Microscope](https://microscope.openai.com/models) qui contient une collection de visualisations obtenues à partir de couches et de neurones significatifs de divers modèles de vision qui sont souvent étudiés dans le contexte de l'interprétabilité. L'objectif principal est de faciliter l'analyse et le partage des connaissances intéressantes qui émergent de ces caractéristiques apprises dans les réseaux de neurones afin de mieux les comprendre.
 
 
 \\
@@ -169,7 +172,7 @@ OpenAI a récemment publié une application web appelée [Microscope] (https://m
 ***CloudCV: ViLBERT Multi-Task Demo***
 
 \\
-Dans le précédent [NLP Research Highlights](https://dair.ai/NLP_Research_Highlights_-_Issue_-1/), nous avons présenté ViLBERT, une méthode d'amélioration des modèles de vision et de langage qui peut être utilisée pour la recherche d'images basée sur les légendes et la réponse visuelle aux questions (VQA). Les auteurs fournissent maintenant une [application web] (https://vilbert.cloudcv.org/) pour tester les modèles sur huit tâches différentes de vision et de langage telles que le VQA.
+Dans le précédent [NLP Research Highlights](https://dair.ai/NLP_Research_Highlights_-_Issue_-1/), nous avons présenté ViLBERT, une méthode d'amélioration des modèles de vision et de langage qui peut être utilisée pour la recherche d'images basée sur les légendes et la réponse visuelle aux questions (VQA). Les auteurs fournissent maintenant une [application web](https://vilbert.cloudcv.org/) pour tester les modèles sur huit tâches différentes de vision et de langage telles que le VQA.
 
 \\
 ***Un ensemble de données Twitter de plus de 150 millions de tweets liés au COVID-19 pour la recherche ouverte***
@@ -196,7 +199,7 @@ Dans un nouvel [article](https://lilianweng.github.io/lil-log/2020/04/07/the-tra
 
 \\
 La compression des modèles est un domaine de recherche important en NLP en raison de la nature et de la grande taille des modèles linguistiques pré-entraînés. Idéalement, comme ces modèles continuent à produire des résultats de pointe pour une grande variété de tâches, il devient important de réduire leurs besoins en calcul afin de les rendre réalisables en production. Madison May a récemment publié un [article](https://www.pragmatic.ml/a-survey-of-methods-for-model-compression-in-nlp/) résumant quelques méthodes utilisées pour la compression des modèles, en particulier en NLP. Parmi les principaux sujets abordés, citons l'élagage, l'optimisation des graphes, la distillation, le remplacement progressif des modules, etc...
-\\
+
 
 # Education 🎓
 ***Conférence sur les modèles linguistiques par Alec Radford***
@@ -232,7 +235,7 @@ La simplification de phrase vise à modifier une phrase afin de la rendre plus f
 Yisong Yue a publié toutes les vidéos des conférences pour le cours [Data-Driven Algorithm Design](https://sites.google.com/view/cs-159-spring-2020/lectures?authuser=0). Il contient des sujets avancés sur l'apprentissage machine qui vont de l'optimisation bayésienne au calcul différentiable en passant par l'apprentissage par imitation.
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*8YFTbEPUw3Bqio70xP0WXQ.png)
-\\
+
 
 # Mentions spéciales ⭐️
 
@@ -245,16 +248,17 @@ Harvard [offre](https://online-learning.harvard.edu/catalog?keywords=&paid%5B1%5
 [NLP Dashboard](https://nlpdashboard.com) est une application web de NLP qui permet d'effectuer la reconnaissance d'entités nommées et l'analyse statistique de textes et d'articles. Construite en utilisant spaCy, Flask et Python.
 
 \\
-Si vous ne l'avez pas encore consulté, Connor Shorten tient à jour cette chaîne[YouTube] (https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw?sub_confirmation=1) où il résume des articles intéressants et récents sur le ML. Il couvre les détails importants de chaque travail tout en fournissant des résumés courts et concis. Il a également lancé un [podcast] (https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ) avec d'autres grands chercheurs et experts dans le domaine.
+Si vous ne l'avez pas encore consulté, Connor Shorten tient à jour cette chaîne[YouTube](https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw?sub_confirmation=1) où il résume des articles intéressants et récents sur le ML. Il couvre les détails importants de chaque travail tout en fournissant des résumés courts et concis. Il a également lancé un [podcast](https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ) avec d'autres grands chercheurs et experts dans le domaine.
 
 \\
 [Microsoft](https://github.com/microsoft/nlp-recipes) propsoe un référentiel qui fournit les meilleures pratiques et recommandations (via des notebooks et des explications) pour de nombreux scénarios de NLP tels que la classification des textes, le résumé des textes, la réponse aux questions, etc.
 
 ----------
 
-Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-9_-FR/) \\
+Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-9_-FR/)
 
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 \\
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
+\\
 [Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.

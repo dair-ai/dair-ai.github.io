@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #10: Improving Reproducibility in ML, Privacy and Security in NLP, XTREME, Longformer, VilBERT, exBERT,…"
+title: "NLP Newsletter #10 [EN]: Improving Reproducibility in ML, Privacy and Security in NLP, XTREME, Longformer, VilBERT, exBERT,…"
 author: billy_rick
 excerpt: "In this issue, we cover topics that range from best practices regarding language models to reproducibility in machine learning to privacy and security in natural language processing (NLP)."
 modified:
