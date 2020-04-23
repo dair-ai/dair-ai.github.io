@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DistillBERT — Half the price, same performance"
+title: "DistilBERT — Half the price, same performance"
 author:
 excerpt: ""
 modified:
@@ -14,7 +14,7 @@ image:
 
 ## **Introduction**
 
-Recent publications within NLP present models with parameter counts that one after another continue to increase, now reaching parameter counts as high as in the tenths of billions ([Google T5 with 11B parameters](https://arxiv.org/abs/1910.10683)) While more parameters might be the key to optimal performance does it prevent model training and serving where the computational budget might be limited. The paper summarised in this article, [“DistillBERT, a distilled version of BERT: smaller, faster, cheaper and lighter”](https://arxiv.org/abs/1910.01108) address’ this issue through a method called Knowledge Distillation.
+Recent publications within NLP present models with parameter counts that one after another continue to increase, now reaching parameter counts as high as in the tenths of billions ([Google T5 with 11B parameters](https://arxiv.org/abs/1910.10683)) While more parameters might be the key to optimal performance does it prevent model training and serving where the computational budget might be limited. The paper summarised in this article, [“DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter”](https://arxiv.org/abs/1910.01108) address’ this issue through a method called Knowledge Distillation.
 
 ## **Knowledge distillation**
 
@@ -47,7 +47,7 @@ This student network was trained on the same dataset as the original BERT model 
 
 ## **Results**
 
-DistillBERT is able to achieve 97% of BERT-base’s score on the GLUE benchmark and 99.3% on the IMDb classification task. This while reducing model size and computational time with around 40%.
+DistilBERT is able to achieve 97% of BERT-base’s score on the GLUE benchmark and 99.3% on the IMDb classification task. This while reducing model size and computational time with around 40%.
 An ablation study revival the importance of the different loss objectives, showing that both cosine distance between student and teacher hidden representations and distillation loss contribute the most to the overall student performance, increasing the GLUE score by about 4 points. Weight initialisation from the pre-trained model also prove to provide similar gains in performance, increasing the GLUE score by 4.83 when comparing to a distilled model trained without the initialisation.
 
 ## **Conclusion**
