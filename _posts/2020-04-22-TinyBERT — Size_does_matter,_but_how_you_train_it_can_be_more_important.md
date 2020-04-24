@@ -7,14 +7,9 @@ modified:
 comments: true
 tags: [NLP | Bert | Machine Learning]
 image:
-  thumb: 
+  thumb: tiny-bert.png
 ---
 
-
-![](https://miro.medium.com/max/4608/1*uRX29Yb8rAUyVd5JhqcOZA.jpeg) 
-Sometimes, performance numbers like these are not what you are looking for. Photo by [Matt Antonioli on Unsplash](https://unsplash.com/@antoniolio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
-
-\\
 While the best performing NLP models grow beyond the 10s of billions of parameters does the idea of *knowledge distillation* become more and more interesting. The idea is simple: let a massive, state-of-the-art model act as a *teacher* for a much smaller student model of similar architecture with the goal of replicating its behaviour. Implementing this in practice is what is interesting. If you want some context for the techniques and ideas presented in this article, please have a look at my article [summarising DistillBERT](https://medium.com/analytics-vidhya/tl-dr-distillbert-8fb0f9e3c03d) which will be used as a baseline comparison here. (Spoilers, TinyBERT crushes DistillBERT in every metric imaginable)
 
 \\
@@ -28,6 +23,7 @@ The authors of TinyBERT introduce **three** new techniques: 1) transformer disti
 
 Their first contribution is what is call *Transformer distillation*, a set of loss functions designed to help the student learn from its teacher at a fine-grained level. These allow the student to observe how the teacher’s embedding layer, attention matrices, hidden representations and prediction layer react given some input text. Here are the mathematical formulations of these:
 
+\\
 ![Superscript S indicates student and T teacher](https://miro.medium.com/max/974/1*6pHKhJ7HpOuKjpXObtERoA.png)
 
 \\
@@ -50,10 +46,8 @@ The fine-tuning step switches teacher models to a task specific one and continue
 
 To understand the authors choice of data for the fine-tuning step requires a holistic view of knowledge distillation. The goal of this process is to transfer the response, both internal and external, to an input from a teacher to a student. What exactly is used to probe the teacher’s response is of less importance. (*If you want to listen to the authors of DistillBERT talk about this, then I highly recommend this [podcast episode](https://soundcloud.com/nlp-highlights/104-model-distillation-with-victor-sanh-and-thomas-wolf) which does just that.*)
 
-\\
 > Any data that tells us something about the teachers decision process is useful for distilling its knowledge.
 
-\\
 The authors are because of this reason able to apply a clever data augmentation technique to expand their task specific dataset. They use a pre-trained BERT model (to replace sentence-piece tokens) and GloVe (for word-level tokens) to create alternate, highly probable versions of their input data. These are created through randomly selecting a subset of word/sentence-piece tokens from the dataset for which the helper models predict alternative tokens. For example, the sentence “how can anyone drive such a small car?” could be augmented into “how can anyone *operate* such a *tiny vehicle*”. Both these sentences would then be used in the fine-tuning distillation step!
 
 ### **Results**
@@ -69,7 +63,6 @@ TinyBERT is also able to outperform its related knowledge distillation models by
 \\
 The authors analyse the effect of the different contributions in their work. There key take-aways are:
 
-\\
 - Task specific distillation (fine-tuning) proves more important than general distillation (pre-training). This enables us to without hesitation use their [pre-trained General TinyBERT](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/TinyBERT) for our own fine-tuning experiments.
 - Data augmentation can be as important as task specific distillation in low resource tasks.
 - Distilling knowledge from the transformer layers (attention and hidden representations) is by far the most important loss to minimise in order to achieve competitive results with the distilled model.
@@ -81,3 +74,9 @@ This paper introduce transformer specific distillation techniques which enable s
 \\
 It should, for any one interested, be exciting to follow how these ideas and methods find their way into even larger models!
 
+---
+
+[Original](https://medium.com/swlh/tinybert-size-does-matter-but-how-you-train-it-can-be-more-important-a5834831fa7d). Reposted with permission.
+
+\\
+*About the author:* Viktor Karlsson is a Machine Learning Engineer with a growing interest of NLP. Trying to stay on-top of recent developments within the ML field in general, and NLP in particular, with the goal of sharing knowledge and understanding to a wider audience.
