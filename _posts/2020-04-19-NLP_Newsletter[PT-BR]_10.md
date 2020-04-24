@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #10: Aprimorando a reprodutibilidade em ML, Privacidade e Segurança em NLP, XTREME, Longformer, VilBERT, exBERT,…"
+title: "NLP Newsletter #10 [PT-BR]: Aprimorando a reprodutibilidade em ML, Privacidade e Segurança em NLP, XTREME, Longformer, VilBERT, exBERT,…"
 author: VictorGarritano
 excerpt: "Nessa edição, são cobertos tópicos como melhores práticas envolvendo modelos de linguagem, reprodutibilidade em ML e privacidade e segurança no Processamento de Linguagem Natural (NLP)"
 modified:
@@ -40,7 +40,6 @@ Seja muito bem-vindo à 10ª edição da NLP Newsletter. Nós esperamos que todo
 
 # Pesquisas e Publicações 📙
 
-\\
 ***XTREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalization***
 
 \\
@@ -101,7 +100,7 @@ Vale mencionar que o aprendizado auto-supervisionado (*self-supervised learning*
 ***Byte Pair Encoding is Suboptimal for Language Model Pretraining***
 
 \\
-Kaj Bostrom and Greg Durrett publicaram um [trabalho](https://arxiv.org/pdf/2004.03720.pdf) onde foi investigado se o *Byte Pair Encoding (BPE)*, um algoritmo para tokenização habitualmente utilizado, é a estratégia ótima para o treinamento de modelos de linguagem. Os autores propuseram uma avaliação direta do impacto da tokenização no desempenho desses modelos, o que, segundo eles, é raramente examinado, como observado na literatura. Para verificar isso, LMs foram treinados do zero em experimentos controlados, empregando diferentes técnicas de tokenização, a saber, *Unigram* e *BPE*. Após isso, os modelos pré-treinados foram testados em diversas tarefas. Os resultados mostraram que o desempenho utilizando a estratégia *Unigram* se equiparou e até mesmo foi superior ao BPE. 
+Kaj Bostrom and Greg Durrett publicaram um [trabalho](https://arxiv.org/pdf/2004.03720.pdf) onde foi investigado se o *Byte Pair Encoding (BPE)*, um algoritmo para tokenização habitualmente utilizado, é a estratégia ótima para o treinamento de modelos de linguagem. Os autores propuseram uma avaliação direta do impacto da tokenização no desempenho desses modelos, o que, segundo eles, é raramente examinado, como observado na literatura. Para verificar isso, LMs foram treinados do zero em experimentos controlados, empregando diferentes técnicas de tokenização, a saber, *Unigram* e *BPE*. Após isso, os modelos pré-treinados foram testados em diversas tarefas. Os resultados mostraram que o desempenho utilizando a estratégia *Unigram* se equiparou e até mesmo foi superior ao BPE.
 
 <!-- Kaj Bostrom and Greg Durrett published a [paper](https://arxiv.org/pdf/2004.03720.pdf) where they aimed to investigate whether the commonly used tokenization algorithm called Byte Pair Encoding (BPE) is the most optimal for pretraining language models (LMs). In other words, they proposed a direct evaluation of the tokenization impact on the performance of LMs. According to the authors, this is rarely ever examined as observed in the literature. To achieve this, they pretrain LMs from scratch using controlled experiments and apply different tokenization, namely unigram and BPE. Thereafter they would test the resulting pretrained LMs on several downstream tasks. Results demonstrate that the unigram tokenization matches or outperforms the more common BPE. -->
 
@@ -120,10 +119,8 @@ Pesquisadores do Allen AI publicaram um novo modelo baseado no Transformer, deno
 
 # Criatividade, Ética e Sociedade 🌎
 
-\\
 ***Reprodutibilidade em ML***
 
-\\
 - A questão da reprodutibilidade vem sendo discutida ativamente pelas comunidades de Aprendizado de Máquina. Com o intuito de encorajar uma ciência mais aberta, transparente e acessível, diversos esforços vêm sendo realizados a favor dela. Se você quiser entender como está essa questão no campo de ML, confira essa [publicação](https://arxiv.org/abs/2003.12206) feita por Joelle Pineau, dentre outros.
 
 <!-- - Reproducibility has been an ongoing topic of discussion amongst the machine learning communities. In order to encourage more open, transparent and accessible science, there have been many efforts around reproducibility. If you want to understand where the field of machine learning stands in terms of reproducibility, check out this [publication](https://arxiv.org/abs/2003.12206) by Joelle Pineau and others. -->
@@ -192,7 +189,6 @@ Outro [artigo interessante](https://arxiv.org/abs/2004.06660), aceito na ACL 202
 
 # Ferramentas e Bases de Dados ⚙️
 
-\\
 ***Machine Learning in Python: Main Developments and Technology Trends in Data Science, Machine Learning, and Artificial Intelligence***
 
 \\
@@ -214,7 +210,7 @@ A Hugging Face disponibilizou uma ferramenta de visualização denominada exBERT
 <!-- HuggingFace released a visualization tool called exBERT that allows you to visualize learned representations from language models such as BERT and RoBERTa. This feature was integrated into their [model pages](https://huggingface.co/models?filter=exbert) and aims at better understanding how language models are learning and what properties they are potentially encoding in these learned representations. -->
 
 \\
-A OpenAI disponibilizou recentemente uma aplicação web chamada [Microscope](https://microscope.openai.com/models) que contém uma coleção de visualizações obtidas de camadas e neurônios de diversos modelos de visão computacional que são comumente estudados no contexto de interpretabilidade. O objetivo principal é facilitar a análise e compartilhamento de *insights* interessantes, obtidos a partir das características aprendidas pelas redes neurais, assim como viabilizar um melhor entendimento dos mesmos. 
+A OpenAI disponibilizou recentemente uma aplicação web chamada [Microscope](https://microscope.openai.com/models) que contém uma coleção de visualizações obtidas de camadas e neurônios de diversos modelos de visão computacional que são comumente estudados no contexto de interpretabilidade. O objetivo principal é facilitar a análise e compartilhamento de *insights* interessantes, obtidos a partir das características aprendidas pelas redes neurais, assim como viabilizar um melhor entendimento dos mesmos.
 
 <!-- OpenAI recently released a web application called [Microscope](https://microscope.openai.com/models) that contains a collection of visualizations obtained from significant layers and neurons of various vision models that are often studied in the context of interpretability. The main objective is to allow ease of analysis and sharing of interesting insights that emerge from these features learned in the neural networks so as to better understand them. -->
 
@@ -248,11 +244,10 @@ Andrej Karpathy disponibilizou recentemente uma biblioteca conhecida como [micro
 
 # Artigos e Postagens ✍️
 
-\\
 ***The Transformer Family and Recent Developments***
 
 \\
-Numa nova e oportuna postagem, Lilian Weng resumiu alguns dos recentes avanços no modelo Transformer. O [artigo](https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html) utiliza uma notação amigável, apresenta uma revisão da literatura bem como as últimas melhorias propostas, como atenção com contextos mais longos (Transformer XL) e redução nos requisitos computacionais e de memória. 
+Numa nova e oportuna postagem, Lilian Weng resumiu alguns dos recentes avanços no modelo Transformer. O [artigo](https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html) utiliza uma notação amigável, apresenta uma revisão da literatura bem como as últimas melhorias propostas, como atenção com contextos mais longos (Transformer XL) e redução nos requisitos computacionais e de memória.
 
 <!-- In a new and timely blog post, Lilian Weng summarizes some of the recent developments of the Transformer model. The [article](https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html) provides nice notation, historical review, and the latest improvements such as longer attention span (Transformer XL), reduced computation and memory consumption. -->
 
@@ -266,7 +261,6 @@ A compressão de modelos é uma importante área de pesquisa em NLP, devido à n
 
 # Educação 🎓
 
-\\
 ***Guest Lecture on Language Models by Alec Radford***
 
 \\
@@ -281,7 +275,7 @@ Se você tem interesse em conhecer os aspectos teóricos dos métodos utilizados
 ***Python Numpy Tutorial (with Jupyter and Colab)***
 
 \\
-O popular curso online de Stanford, *Convolutional Neural Network for Visual Recognition*, agora inclui um *link* para um *notebook* do Colab com o seu [guia introdutório](https://cs231n.github.io/python-numpy-tutorial/) ao NumPy, que apresenta um passo a passo extenso mas muito interessante para iniciantes. 
+O popular curso online de Stanford, *Convolutional Neural Network for Visual Recognition*, agora inclui um *link* para um *notebook* do Colab com o seu [guia introdutório](https://cs231n.github.io/python-numpy-tutorial/) ao NumPy, que apresenta um passo a passo extenso mas muito interessante para iniciantes.
 
 <!-- Stanford’s popular online course on Convolutional Neural Network for Visual Recognition now includes a link to a Google Colab notebook for its [introductory guide](https://cs231n.github.io/python-numpy-tutorial/) to Numpy. It’s a very extensive walkthrough but it’s very nice for beginners. -->
 
@@ -314,7 +308,6 @@ Yisong Yue publicou todas as vídeo-aulas do curso [Data-Driven Algorithm Design
 
 # Menções Honrosas ⭐️
 
-\\
 Acesse as edições anteriores da NLP Newsletter [aqui](https://github.com/dair-ai/nlp_newsletter) ([última edição em PT-BR]((https://github.com/dair-ai/nlp_newsletter))).
 
 <!-- Get access to the previous issues of the NLP Newsletter [here](https://github.com/dair-ai/nlp_newsletter). -->
@@ -324,7 +317,7 @@ Harvard está [oferecendo](https://online-learning.harvard.edu/catalog?keywords=
 <!-- Harvard is currently [offering](https://online-learning.harvard.edu/catalog?keywords=&paid%5B1%5D=1&max_price=&start_date_range%5Bmin%5D%5Bdate%5D=&start_date_range%5Bmax%5D%5Bdate%5D=) a great selection of self-paced courses for free. -->
 
 \\
-[ARBML](https://github.com/zaidalyafeai/ARBML) fornece implementações de diversos projetos de NLP e ML para a língua árabe, incluindo experiências em tempo real utilizando diversas interfaces, como a *web*, linha de comando e *notebooks*. 
+[ARBML](https://github.com/zaidalyafeai/ARBML) fornece implementações de diversos projetos de NLP e ML para a língua árabe, incluindo experiências em tempo real utilizando diversas interfaces, como a *web*, linha de comando e *notebooks*.
 
 <!-- [ARBML](https://github.com/zaidalyafeai/ARBML) provides implementations of many Arabic NLP and ML projects providing real-time experience using many interfaces like web, command line and notebooks. -->
 
