@@ -7,7 +7,7 @@ modified:
 comments: true
 tags: ""
 image:
-  thumb:
+  thumb: emoji_prediction.png
 ---
 
 ### Overview
