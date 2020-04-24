@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "TinyBERT — Size does matter, but how you train it can be more important 🐣"
-author: Viktor_Karlsson
+author: dair.ai
 excerpt: "*7x smaller and 9x faster than BERT while achieving 96% of its performance. What more do I need to tell you for you to be excited about TinyBERT?*"
 modified:
 comments: true
-tags: [NLP | Bert | Machine Learning]
+tags: ""
 image:
   thumb: tiny-bert.png
 ---
