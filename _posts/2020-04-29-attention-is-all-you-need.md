@@ -39,7 +39,7 @@ Some extra details:
   - Label smoothing.
 - Beam search is used to generate the text.
 
-(for further explanations in these concepts you can check my [deep dive of this paper](https://cfierro94.github.io/blog_posts/nlp-deep-dive/attention-is-all-you-need))
+(for further explanations in these concepts you can check my [deep dive of this paper](https://cfierro94.github.io/nlp-deep-dive/attention-is-all-you-need))
 
 {% include _image-with-caption.html file="../images/summary-attention-is-all-you-need/architecture.png"
 description="Figure 1. The Transformer architecture." zoom=60 %}
