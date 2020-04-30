@@ -9,16 +9,16 @@
 - title: Chat on Slack 💬
   url: /slack/
 
+- title: Meetups 🌐
+  url: https://www.meetup.com/dair-ai/
+
 - title: NLP Newsletter 🗞️
   url: /newsletter/
-
-- title: Projects 💡
-  url: /projects/
 
 - title: Notebooks 🔬
   url: https://dair.ai/notebooks/
 
-- title: GitHub 📁
+- title: Projects 💡
   url: https://github.com/dair-ai
 
 - title: Contribute ✨

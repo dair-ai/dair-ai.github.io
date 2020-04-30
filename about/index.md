@@ -10,10 +10,13 @@ image:
   creditlink: http://www.ibelmopan.com/
 ---
 
-dair.ai is a community effort to democratize Artificial Intelligence (AI) research, education, and technologies.
+dair.ai is a community-driven effort to democratize Artificial Intelligence (AI) research, education, and technologies.
+
+\\
+All our projects are hosted on [GitHub](https://github.com/dair-ai).
 
 \\
 Follow our Twitter page [here](https://twitter.com/dair_ai).
 
 \\
-Join our ([Slack](https://join.slack.com/t/dairai/shared_invite/zt-d2srv503-bQ01ZPLC4t4OoolEN9saSg)) to find out how others are contributing.
+Join our [Slack](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g) group to find out about all our initiatives and join the conversation.

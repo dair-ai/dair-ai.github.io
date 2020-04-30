@@ -7,7 +7,7 @@ modified:
 comments: true
 tags: ""
 image:
-  thumb: lm-progress.png
+  thumb: BERT-aspects.png
 ---
 
 
