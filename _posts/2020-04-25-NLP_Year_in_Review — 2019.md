@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "NLP Year in Review — 2019"
-author: saravia_elvis
+author: elvis
 excerpt: "NLP highlights for the year 2019."
 modified:
 comments: true
-tags: [Machine Learning | Data Science | Artificial Intelligence | Technology | Programming | NLP]
+tags: ""
 image:
-  thumb: 
+  thumb: nlp-2019.png
 ---
 
 ![](https://miro.medium.com/max/1842/1*T08rCNctBW5zUvol0gfIig.png)
@@ -25,7 +25,7 @@ image:
 - Articles and Blog Posts
 - Ethics in AI
 - ML/NLP Education
-----------
+
 
 ### **Publications 📙**
 
@@ -34,8 +34,9 @@ Google AI introduces [ALBERT](https://ai.googleblog.com/2019/12/albert-lite-bert
 \\
 Earlier this year, researchers at NVIDIA published a [popular paper](https://arxiv.org/pdf/1812.04948.pdf) (coined StyleGAN) which proposed an alternative generator architecture for GANs, adopted from [style transfer](https://en.wikipedia.org/wiki/Neural_Style_Transfer). Here is a [follow-up work](https://arxiv.org/pdf/1912.04958v1.pdf) where that focuses on improvements such as redesigning the generator normalization process.
 
+\\
 ![](https://miro.medium.com/max/1058/1*Oc0EmkL9Scp5WZ4m5bq-cA.png)
-The top row shows target images and the bottom row shows synthesized images — [source](https://arxiv.org/pdf/1912.04958v1.pdf)
+*The top row shows target images and the bottom row shows synthesized images — [source](https://arxiv.org/pdf/1912.04958v1.pdf)*
 
 \\
 One of my favorite papers this year was [code2seq](https://code2seq.org/) which is a method for generating natural language sequences from the structured representation of code. Such research can give way to applications such as automated code summarization and documentation.
@@ -49,11 +50,10 @@ After the release of BERT, Facebook researchers published [RoBERTa](https://ai.f
 \\
 Researchers from Facebook AI also recently published a [method](https://ai.facebook.com/blog/making-transformer-networks-simpler-and-more-efficient/) based on an all-attention layer for improving the efficiency of a Transformer language model. More work from this research group includes a [method](https://ai.facebook.com/blog/-teaching-ai-to-plan-using-language-in-a-new-open-source-strategy-game/) to teach AI systems on how to plan using natural language.
 
-
+\\
 ![](https://miro.medium.com/max/968/1*0ZYSozImqnmFHxKmREpzmw.png)
 
-
-Explainability continues to be an important topic in machine learning and NLP. This [paper](https://arxiv.org/abs/1910.10045) provides a comprehensive overview of works addressing explainability, taxonomies, and opportunities for future research.
+*Explainability continues to be an important topic in machine learning and NLP. This [paper](https://arxiv.org/abs/1910.10045) provides a comprehensive overview of works addressing explainability, taxonomies, and opportunities for future research.*
 
 \\
 Sebastian Ruder published his [thesis](https://ruder.io/thesis/) on Neural Transfer Learning for Natural Language Processing.
@@ -70,10 +70,10 @@ As mentioned earlier, one of the areas of neural network architectures that requ
 \\
 [Neural Logic Machine](https://arxiv.org/abs/1904.11694) is a neural-symbolic network architecture that is able to do well at both inductive learning and logic reasoning. The model does significantly well on tasks such as sorting arrays and finding shortest paths.
 
-
+\\
 ![](https://miro.medium.com/max/1298/1*t7rfBC1pdn0wGgE1L0VNXw.png)
 
-
+\\
 And [here](https://arxiv.org/abs/1909.03186) is a paper that applies Transformer language models to Extractive and Abstractive Neural document summarization.
 
 \\
@@ -129,9 +129,10 @@ The [2019 AI Index Report](https://hai.stanford.edu/ai-index/2019) was finally r
 \\
 [Activation Atlases](https://openai.com/blog/introducing-activation-atlases/) is a technique developed by researchers at Google and Open AI to better understand and visualize the interactions happening between neurons of a neural network.
 
+\\
+![](https://miro.medium.com/max/1600/0*MQUIQ6n7i1RwfCbK.jpg)
 
-![] (https://miro.medium.com/max/1600/0*MQUIQ6n7i1RwfCbK.jpg)
-An activation atlas of the InceptionV1 vision classification network reveals many fully realized features, such as electronics, buildings, food, animal ears, plants, and watery backgrounds.” — [source](https://openai.com/blog/introducing-activation-atlases/)
+*An activation atlas of the InceptionV1 vision classification network reveals many fully realized features, such as electronics, buildings, food, animal ears, plants, and watery backgrounds.” — [source](https://openai.com/blog/introducing-activation-atlases/)*
 
 \\
 Check out the [Turing Lecture](https://fcrc.acm.org/turing-lecture-at-fcrc-2019) delivered by Geoffrey Hinton and Yann LeCun who were [awarded](https://medium.com/dair-ai/turing-award-goes-to-deep-learning-pioneers-38d37cc6d0dd?source=collection_home---4------10-----------------------), together with Yoshua Bengio, the Turing Award this year.
@@ -146,7 +147,7 @@ OpenAI published an extensive [report](https://d4mucfpksywv.cloudfront.net/paper
 Emotion analysis continues to be used in a diverse range of applications. [The Mojifier](https://themojifier.com/) is a cool project that looks at an image, detects the emotion, and replaces the face with the emojis matching the emotion detected.
 
 \\
-Work on radiology with the use of AI techniques has also been trending this year. Here is a nice [summary](https://arxiv.org/abs/1903.11726) of trends and perspectives in this area of study. 
+Work on radiology with the use of AI techniques has also been trending this year. Here is a nice [summary](https://arxiv.org/abs/1903.11726) of trends and perspectives in this area of study.
 
 \\
 Researchers from NYU also released a [Pytorch implementation](https://medium.com/@jasonphang/deep-neural-networks-improve-radiologists-performance-in-breast-cancer-screening-565eb2bd3c9f) of a deep neural network that improves radiologists’ performance on breast cancer screening. And here is a major [dataset](https://physionet.org/content/mimic-cxr/2.0.0/) release called MIMIC-CXR which consists of a database of chest Xrays and text radiology reports.
@@ -166,13 +167,14 @@ If you haven’t subscribed already, the DeepMind team has an excellent [podcast
 \\
 This year also witnessed incredible advancement in ML for health applications. For instance, researchers at Massachusetts [developed](https://venturebeat.com/2019/01/04/massachusetts-generals-ai-can-spot-brain-hemorrhages-as-accurately-as-humans/) an AI system capable of spotting brain hemorrhages as accurate as humans.
 
-![] https://miro.medium.com/max/1104/0*HQad0irUNeJ79Ib9
-“Brain scans analyzed by the AI system.”
+\\
+![](https://miro.medium.com/max/1104/0*HQad0irUNeJ79Ib9)
+*“Brain scans analyzed by the AI system.”*
 
 \\
 Janelle Shane summarizes a set of [“weird” experiments](https://aiweirdness.com/post/181621835642/10-things-artificial-intelligence-did-in-2018) showing how machine learning can be used in creative ways to conduct fun experimentation. Sometimes this is the type of experiment that’s needed to really understand what an AI system is actually doing and not doing. Some experiments include neural networks generating fake snakes and telling jokes.
 
-
+\\
 ![](https://miro.medium.com/max/400/0*5DZujahMQxmWHG-J.png)
 [Snake Species](https://aiweirdness.com/post/181621835642/10-things-artificial-intelligence-did-in-2018)
 
@@ -185,9 +187,10 @@ OpenAI [discusses](https://openai.com/blog/better-language-models/#sample1) the 
 \\
 This [Colab notebook](https://colab.research.google.com/github/google/nucleus/blob/master/nucleus/examples/dna_sequencing_error_correction.ipynb) provides a great introduction on how to use Nucleus and TensorFlow for “DNA Sequencing Error Correction”. And here is a great detailed [post](https://blog.floydhub.com/exploring-dna-with-deep-learning/) on the use of deep learning architectures for exploring DNA.
 
-
+\\
 ![](https://miro.medium.com/max/819/1*m6Olf8Vu5M0VLdd8-TU2Nw.jpeg)
-[source](https://raw.githubusercontent.com/google/nucleus/master/nucleus/examples/images/consensus-approach-overview.jpg)
+
+*[source](https://raw.githubusercontent.com/google/nucleus/master/nucleus/examples/images/consensus-approach-overview.jpg)*
 
 \\
 Alexander Rush is a Harvard NLP researcher who wrote an important article about the [issues](http://nlp.seas.harvard.edu/NamedTensor) with tensors and how some current libraries expose them. He also went on to talk about a proposal for tensors with named indices.
@@ -201,8 +204,10 @@ Alexander Rush is a Harvard NLP researcher who wrote an important article about 
 \\
 Hugging Face released a popular Transformer [library](https://github.com/huggingface/transformers) based on Pytorch names pytorch-transformers. It allows NLP practitioners and researchers to easily use state-of-the-art general-purpose architectures such as BERT, GPT-2, and XLM, among others. If you are interested in how to use pytorch-transformers there are a few places to start but I really liked this detailed [tutorial](https://rsilveira79.github.io/fermenting_gradients/machine_learning/nlp/pytorch/pytorch-transformer-squad/) by Roberto Silveira showing how to use the library for machine comprehension
 
-![]https://miro.medium.com/max/425/0*wHSaulTrUQzX4mRd.png)
-[source](https://github.com/huggingface/transformers)
+\\
+![](https://miro.medium.com/max/425/0*wHSaulTrUQzX4mRd.png)
+
+*[source](https://github.com/huggingface/transformers)*
 
 \\
 TensorFlow 2.0 was released with a bunch of [new features](https://medium.com/tensorflow/whats-coming-in-tensorflow-2-0-d3663832e9b8). Read more about best practices [here](https://medium.com/tensorflow/effective-tensorflow-2-0-best-practices-and-whats-changed-a0ca48767aff). François Chollet also wrote an extensive overview of the new features in this [Colab notebook](https://colab.research.google.com/drive/1UCJt8EYjlzCs1H1d1X0iDGYJsHKwu-NO).
@@ -219,9 +224,10 @@ spaCy [releases](https://explosion.ai/blog/spacy-transformers) a new library to 
 \\
 The Facebook AI team released [PHYRE](https://phyre.ai/) which is a benchmark for physical reasoning aiming to test the physical reasoning of AI systems through solving various physics puzzles.
 
+\\
+![](https://miro.medium.com/max/416/1*1sNrObRoffXbfX2D61bXTw.gif)
 
-![] https://miro.medium.com/max/416/1*1sNrObRoffXbfX2D61bXTw.gif)
-[source](https://phyre.ai/)
+*[source](https://phyre.ai/)*
 
 \\
 StanfordNLP released [StanfordNLP 0.2.0](https://stanfordnlp.github.io/stanfordnlp/) which is a Python library for natural language analysis. You can perform different types of linguistic analysis such as lemmatization and part of speech recognition on over 70 different languages.
@@ -232,9 +238,10 @@ StanfordNLP released [StanfordNLP 0.2.0](https://stanfordnlp.github.io/stanfordn
 \\
 exBERT is a visual interactive tool to explore the embeddings and attention of Transformer language models. You can find the paper [here](https://arxiv.org/abs/1910.05276) and the demo [here](http://exbert.net/).
 
+\\
+![](https://miro.medium.com/max/1600/0*eHjrWea2jeGqhvI_.png)
 
-![] https://miro.medium.com/max/1600/0*eHjrWea2jeGqhvI_.png)
-exBERT — [source](http://exbert.net/)
+*exBERT — [source](http://exbert.net/)*
 
 \\
 Distill published an [article](https://distill.pub/2019/memorization-in-rnns/) on how to visualize memorization in Recurrent Neural Networks (RNNs).
@@ -242,9 +249,10 @@ Distill published an [article](https://distill.pub/2019/memorization-in-rnns/) o
 \\
 [Mathpix](https://mathpix.com/) is a tool that lets you take a picture of an equation and then it provides you with the latex version.
 
-
+\\
 ![](https://miro.medium.com/max/400/1*d3BlwVO1E9ndiLVOj4BPcQ.gif)
-[source](https://mathpix.com/)
+
+*[source](https://mathpix.com/)*
 
 \\
 [Parl.ai](https://parl.ai/) is a platform that hosts many popular datasets for all works involving dialog and conversational AI.
@@ -269,9 +277,9 @@ Reiichiro Nakano published a [blog post](https://reiinakano.com/2019/06/21/robus
 \\
 Saif M. Mohammad started a great [series](https://medium.com/@nlpscholar/state-of-nlp-cbf768492f90) discussing a diachronic analysis of ACL anthology.
 
-
+\\
 ![](https://miro.medium.com/max/1570/0*zfM9ED6W74NyxMln.png)
-“Graphs showing average academic age, median academic age, and percentage of first-time publishers in AA over time.” — [source](https://medium.com/@nlpscholar/state-of-nlp-cbf768492f90)
+*“Graphs showing average academic age, median academic age, and percentage of first-time publishers in AA over time.” — [source](https://medium.com/@nlpscholar/state-of-nlp-cbf768492f90)*
 
 \\
 The question is: can a language model learn syntax? Using structural probes, this [work](https://nlp.stanford.edu/~johnhew/structural-probe.html) aims to show that it is possible to do so using contextualized representations and a method for finding tree structures.
@@ -291,6 +299,7 @@ With a lot of development of machine learning tools recently, there are also man
 \\
 NVIDIA [breaks the record](https://techcrunch.com/2019/08/13/nvidia-breaks-records-in-training-and-inference-for-real-time-conversational-ai/) for creating the biggest language model trained on billions of parameters.
 
+\\
 Abigail See wrote this excellent blog [post](http://www.abigailsee.com/2019/08/13/what-makes-a-good-conversation.html) about what makes a good conversation in the context of systems developed to perform natural language generation task.
 
 \\
@@ -302,9 +311,10 @@ Deep reinforcement learning continues to be one of the most widely discussed top
 \\
 Samira Abner wrote this excellent [blog post](https://staff.fnwi.uva.nl/s.abnar/?p=108) summarizing the main building blocks behind Transformers and capsule networks and their connections. Adam Kosiorek also wrote this magnificent [piece](http://akosiorek.github.io/ml/2019/06/23/stacked_capsule_autoencoders.html) on stacked capsule-based autoencoders (an unsupervised version of capsule networks) which was used for object detection.
 
+\\
+![](https://miro.medium.com/max/819/0*R4x3osVbWIuUUPrn.png)
 
-![] https://miro.medium.com/max/819/0*R4x3osVbWIuUUPrn.png)
-[source](https://staff.fnwi.uva.nl/s.abnar/?p=108)
+*[source](https://staff.fnwi.uva.nl/s.abnar/?p=108)*
 
 \\
 Researchers published an [interactive article](https://distill.pub/2019/visual-exploration-gaussian-processes/) on Distill that aims to show a visual exploration of Gaussian Processes.
@@ -339,9 +349,10 @@ Graph neural networks were heavily discussed this year. David Mack wrote a [nice
 \\
 Bayesian approaches remain an interesting subject, in particular how they can be applied to neural networks to avoid common issues like over-fitting. Here is a [list](https://medium.com/neuralspace/bayesian-neural-network-series-post-1-need-for-bayesian-networks-e209e66b70b2) of suggested reads by Kumar Shridhar on the topic.
 
-
+\\
 ![](https://miro.medium.com/max/1600/0*E8ScZUhm9npwaZQm.png)
-“Network with point-estimates as weights vs Network with probability distribution as weights” - [Source](https://arxiv.org/pdf/1806.05978.pdf)
+
+*“Network with point-estimates as weights vs Network with probability distribution as weights” - [Source](https://arxiv.org/pdf/1806.05978.pdf)*
 
 ### **Ethics in AI 🚨**
 
@@ -382,9 +393,10 @@ CMU released materials and syllabus for their [“Neural Networks for NLP”](ht
 \\
 [Elvis Saravia](https://twitter.com/omarsar0) and [Soujanya Poria](https://github.com/soujanyaporia) released a project called [NLP-Overview](https://nlpoverview.com/) that is intended to help students and practitioners to get a condensed overview of modern deep learning techniques applied to NLP, including theory, algorithms, applications, and state of the art results — [Link](https://github.com/omarsar/nlp_overview)
 
+\\
+![](https://miro.medium.com/max/992/0*FN-wy7HwrSN1dmW0.png)
 
-![] https://miro.medium.com/max/992/0*FN-wy7HwrSN1dmW0.png)
-[NLP Overview](https://nlpoverview.com/)
+*[NLP Overview](https://nlpoverview.com/)*
 
 \\
 Microsoft Research Lab published a free [ebook](https://www.datasciencecentral.com/profiles/blogs/new-book-foundations-of-data-science-from-microsoft-research-lab) on the foundation of data science with topics ranging from Markov Chain Monte Carlo to Random Graphs.
@@ -398,9 +410,10 @@ Stanford releases a [playlist of videos](https://www.youtube.com/playlist?list=P
 \\
 On the topic of learning, OpenAI put together this great [list](https://openai.com/blog/learning-day/) of suggestions on how to keep learning and improving your machine learning skills. Apparently, their employees use these methods on a daily basis to keep learning and expanding their knowledge.
 
+\\
+![](https://miro.medium.com/max/792/1*VIcTGpIn2GoHQbZx3rPucQ.png)
 
-![] (https://miro.medium.com/max/792/1*VIcTGpIn2GoHQbZx3rPucQ.png)
-[source](https://openai.com/blog/learning-day/)
+*[source](https://openai.com/blog/learning-day/)*
 
 \\
 Adrian Rosebrock [published](https://www.pyimagesearch.com/start-here/) an 81-page guide on how to do computer vision with Python and OpenCV.
@@ -460,9 +473,10 @@ Here are the [materials](https://github.com/huggingface/naacl_transfer_learning_
 \\
 Another great [blog post](https://jalammar.github.io/visual-numpy/) from Jay Alammar on the topic of data representation. He also wrote many other interesting illustrated guides that include [GPT-2](http://jalammar.github.io/illustrated-gpt2/) and [BERT](http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/). Peter Bloem also published a very detailed [blog post](http://peterbloem.nl/blog/transformers) explaining all the bits that make up a Transformer.
 
+\\
+![](https://miro.medium.com/max/1094/1*MIS8yQRqbP-c6eldo9K4QQ.png)
 
-![] (https://miro.medium.com/max/1094/1*MIS8yQRqbP-c6eldo9K4QQ.png)
-A visual illustration of basic self-attention — [source](http://peterbloem.nl/blog/transformers)
+*A visual illustration of basic self-attention — [source](http://peterbloem.nl/blog/transformers)*
 
 \\
 Here is a nice overview of trends in NLP at ACL 2019, written by [Mihail Eric](https://www.mihaileric.com/posts/nlp-trends-acl-2019/). Some topics include infusing knowledge into NLP architectures, interpretability, and reducing bias among others. Here are a couple more overviews if you are interested: [link 2](https://medium.com/@mgalkin/knowledge-graphs-in-natural-language-processing-acl-2019-7a14eb20fce8) and [link 3](http://noecasas.com/post/acl2019/).
@@ -476,14 +490,14 @@ David Abel [posted](https://david-abel.github.io/notes/iclr_2019.pdf) a set of n
 \\
 This is an excellent [book](http://d2l.ai/) that provides learners with a proper introduction to deep learning with notebooks provided as well.
 
-
+\\
 ![](https://miro.medium.com/max/560/0*_Rr1ogWtztlm3ffH.png)
-[source](http://d2l.ai/)
+*[source](http://d2l.ai/)*
 
 \\
 An illustrated [guide](http://jalammar.github.io/illustrated-bert/) to BERT, ELMo, and co. for transfer learning NLP.
 
-
+\\
 ![](https://miro.medium.com/max/1098/0*wywWzpKhTISgCtq5.png)
 
 \\
@@ -525,22 +539,13 @@ Aerin Kim is a senior research engineer at Microsoft and [writes](https://toward
 \\
 Tai-Danae Bradley wrote this [blog post](https://www.math3ma.com/blog/matrices-as-tensor-network-diagrams) discussing ways on how to think about matrices and tensors. The article is written with some incredible visuals which help to better understand certain transformations and operations performed on matrices.
 
-![] (https://miro.medium.com/max/1600/0*TLepZbfBk5EjK1E0.jpg)
-[source](https://www.math3ma.com/blog/matrices-as-tensor-network-diagrams)
+\\
+![](https://miro.medium.com/max/1600/0*TLepZbfBk5EjK1E0.jpg)
+
+*[source](https://www.math3ma.com/blog/matrices-as-tensor-network-diagrams)*
 
 ----------
 
 I hope you found the links useful. I wish you a successful and healthy 2020!
 Due to the holidays, I didn’t get much chance to proofread the article so any feedback or corrections are welcomed!
 >> [PDF version](https://github.com/omarsar/nlp_highlights) <<
-
-
-
-
-
-
-
-
-
-
-
