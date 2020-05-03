@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Detecting Emotions with CNN Fusion Models"
-author: saravia_elvis
-excerpt: " "
+author: elvis
+excerpt: ""
 modified:
 comments: true
-tags: [Machine Learning | Artificial Intelligence | Data Science | Deep Learning | NLP]
+tags: ""
 image:
-  thumb: 
+  thumb: cnn-fusion.png
 ---
 
 ### ***Overview***
@@ -22,7 +22,7 @@ Multimodal approaches become more important as social media networks allow for u
 
 Consider the examples of multimodal posts in the pictures below. If we only paid attention to the images (left to right), we would predict emotions such as *joy, fear, and contentment*. If we considered both the image and text: the first example remains as joy; the second example is probably mixed emotion (the text convey joy); and the third example is also mixed emotion (the text convey sadness). These simple examples emphasize on the importance of considering both modalities to deduce the overall emotion conveyed in the social post.
 
-
+\\
 ![](https://miro.medium.com/max/603/0*41psnmiy82gxVMaI.png)
 
 
@@ -43,7 +43,7 @@ I believe this is an important discussion that this paper highlights in the rela
 - Late fusion — combination of results obtained by different classifiers (trained on different modalities); i.e., fusion is done at the *decision level*.
 - Early fusion — information from different modalities are combined at the *feature level, and classification* is done on the combined representations.
 
-### *** Multimodal Classification***
+### ***Multimodal Classification***
 
 This work employs an adaptation of early fusion for combining modalities for emotion recognition through CNNs. Two prominent modalities of social media are used, i.e. text and image. If both image and text are available for a social post, they are assumed to have semantic relation — the text describes the image. Images are represented by vectors, which are obtained after feeding images into a [CNN trained on ImageNet](https://arxiv.org/pdf/1409.4842.pdf). Texts are represented through pre-trained word embeddings (GloVe).
 
@@ -64,7 +64,7 @@ The second approach, *common feature space fusion*, aims to enforce visual and t
 
 An emotion classification task is used to evaluate the proposed multimodal approaches. Different discrete emotion categories from Plutchik’s wheel of emotions are employed to label two types of datasets.
 
-
+\\
 ![](https://miro.medium.com/max/345/0*krUw4mhJLqy1Pji6.png)
 
 
@@ -76,13 +76,13 @@ A *flickr* image dataset was crawled and assigned to Amazon Mechanical Turk work
 
 Unimodal baselines (FastText model for text and InceptionNet model for images), traditional multimodal approaches (early and late fusion), and the proposed multimodal models (joint fusion and common space fusion) are trained on the datasets. For the embedding layer, [GloVe](https://nlp.stanford.edu/projects/glove/) pre-trained word vectors are considered.
 
-
+\\
 ![](https://miro.medium.com/max/509/0*KDLDeuuw6W2mhn6B.png)
 
-
+\\
 From the results in the table above, we can observe that the proposed fusion models (joint fusion and common space fusion) outperform all the other models in both datasets, including the traditional fusion techniques. The common space fusion model, in particular, performs extremely well even when only one modality for a post existed (see results below).
 
-
+\\
 ![](https://miro.medium.com/max/300/0*igjb0L68DL0VqsS_.png)
 
 
@@ -90,7 +90,7 @@ From the results in the table above, we can observe that the proposed fusion mod
 
 Classification results on several examples are provided for error analysis (see figure below). We can observe that for the highlighted example, the common space fusion model can detect fear when using both the text and image information. Somehow, the model can detect that in this particular example, the image descriptor expresses sarcasm, which is obvious from the creepy doll in the closet show in the image. Kind on interesting and weird at the same time, no pun intended. (See paper for more interesting analysis and examples)
 
-
+\\
 ![](https://miro.medium.com/max/586/0*aKbxStWRXWhMNk0F.png)
 
 
@@ -110,8 +110,6 @@ Classification results on several examples are provided for error analysis (see 
 
 - Datasets and code for this work are available [here](https://emoclassifier.github.io/)
 - Ref: [https://arxiv.org/abs/1708.02099](https://arxiv.org/abs/1708.02099) — “Multimodal Classification for Analysing Social Media”
-----------
 
+\\
 👋 *Thanks for all the love you gave to the last article [“Detecting Sarcasm with Deep Convolutional Neural Networks”](https://medium.com/dair-ai/detecting-sarcasm-with-deep-convolutional-neural-networks-4a0657f79e80). I hope you enjoyed this one too! If you have any questions, feel free to reach out to me [(@omarsar0)](https://twitter.com/omarsar0) — I am very active there and discuss about AI, NLP, Affective Computing, among other things.*
-
-
