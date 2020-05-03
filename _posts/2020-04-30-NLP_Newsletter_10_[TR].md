@@ -21,7 +21,7 @@ NLP Haber Bülteni'nin 10. sayısına hoş geldiniz. Umarız iyi ve güvendesini
 
 - Geçtiğimiz hafta "Modern NLP için Derin Öğrenme" hakkında [Açık Veri Bilimi Konferansı](https://odsc.com/boston/)'nda sanal bir eğitim verdik. Kaynakları [burada](https://github.com/dair-ai/odsc_2020_nlp) bulabilirsiniz.
 
-- Geçen hafta topluluğumuzun üyeleriyle birlikte iki makale yayımladık. Bunlardan biri; etiketlenmemiş veri vektörlerinin (veri akışı) bir dizisini analiz etme ve bunların temsillerini öğrenme problemine yönelik [denetimsiz aşamalı öğrenme] (https://medium.com/dair-ai/unsupervised-progressive-learning-upl-a-new-problem-for-ai-9a1c68c70a28) (İng. unsupervised progressive learning) ile ilgili. İkinci [makale](https://medium.com/dair-ai/structural-scaffolds-for-citation-intent-classification-in-scientific-publications-e5acd2f0ebf9) ise ELMo kullanarak atıf niyet sınıflandırması (İng. citation intent classification) için bir yaklaşımı özetlemektedir.
+- Geçen hafta topluluğumuzun üyeleriyle birlikte iki makale yayımladık. Bunlardan biri; etiketlenmemiş veri vektörlerinin (veri akışı) bir dizisini analiz etme ve bunların temsillerini öğrenme problemine yönelik [denetimsiz aşamalı öğrenme](https://medium.com/dair-ai/unsupervised-progressive-learning-upl-a-new-problem-for-ai-9a1c68c70a28) (İng. unsupervised progressive learning) ile ilgili. İkinci [makale](https://medium.com/dair-ai/structural-scaffolds-for-citation-intent-classification-in-scientific-publications-e5acd2f0ebf9) ise ELMo kullanarak atıf niyet sınıflandırması (İng. citation intent classification) için bir yaklaşımı özetlemektedir.
 
 - Kısa süre önce, duygu sınıflandırması (İng. emotion classification) görevi için ön-eğitime tabi tutulmuş dil modellerinin ince-ayarını (İng. fine-tune) yapmanıza yardımcı olacak bir [notebook](https://colab.research.google.com/drive/1nwCE6b9PXIKhv2hvbqf1oZKIGkXMTi1X) yayımladık.
 
@@ -31,7 +31,8 @@ NLP Haber Bülteni'nin 10. sayısına hoş geldiniz. Umarız iyi ve güvendesini
 
 ***XTREME: Dillerarası Genelleştirmenin Değerlendirilmesinde Çokdilli Çoklu-Görevli (multi-task) Geniş Bir Başarım Ölçümü***
 
-Hafta başında, Google AI ve DeepMind araştırmacıları, [XTREME] (https://arxiv.org/abs/2003.11080) adında, çokdilli temsilleri öğrenen dil modellerinin dillerarası genelleştirme kabiliyetlerini desteklemeyi amaçlayan ilginç bir başarım ölçümü yayımladılar. Bu başarım ölçümü, sözdizimsel veya anlamsal olarak farklı anlam düzeyleri hakkında akıl yürütmeyi gerektiren 40 dil ve 9 farklı görev üzerinde test içeriyor. Bu bildiri ayrıca, mBERT, XLM ve MMTE gibi çokdilli temsiller için kabul görmüş en iyi modelleri kullanarak temel sonuçlar vermektedir.
+\\
+Hafta başında, Google AI ve DeepMind araştırmacıları, [XTREME](https://arxiv.org/abs/2003.11080) adında, çokdilli temsilleri öğrenen dil modellerinin dillerarası genelleştirme kabiliyetlerini desteklemeyi amaçlayan ilginç bir başarım ölçümü yayımladılar. Bu başarım ölçümü, sözdizimsel veya anlamsal olarak farklı anlam düzeyleri hakkında akıl yürütmeyi gerektiren 40 dil ve 9 farklı görev üzerinde test içeriyor. Bu bildiri ayrıca, mBERT, XLM ve MMTE gibi çokdilli temsiller için kabul görmüş en iyi modelleri kullanarak temel sonuçlar vermektedir.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/0*kk7J1fCht_VZR_su.png)
@@ -42,7 +43,7 @@ Hafta başında, Google AI ve DeepMind araştırmacıları, [XTREME] (https://ar
 ***Makinelerin Gerçek Dünya Dil Kullanımlarına Göre Değerlendirilmesi***
 
 \\
-Dil modellerinin soru cevaplama (QA) ve dizilim etiketleme (İng. sequence labeling) gibi çeşitli görevlerde nispeten iyi performans gösterdiği gösterilmiştir. Ancak, yeni bir [bildiri] (https://arxiv.org/abs/2004.03607), dil modellerinin gerçek dünya dil kullanımında daha karmaşık ayarlarla başarı gösterip gösteremeyeceğini daha iyi değerlendirmek için bir framework ve kıyaslama önermektedir (ör. güncel durumlar için faydalı tavsiyeler üretmek). Ampirik sonuçlar, T5 gibi kabul görmüş en iyi modellerin, vakaların sadece %9'unda insan tarafından yazılmış tavsiye kadar faydalı tavsiyeler ürettiğini göstermektedir. Bu sonuçlar dil modellerinin gerçek dünya bilgisini ve sağduyulu muhakemeyi anlama ve modelleme yeteneğindeki eksikliklere işaret etmektedir.
+Dil modellerinin soru cevaplama (QA) ve dizilim etiketleme (İng. sequence labeling) gibi çeşitli görevlerde nispeten iyi performans gösterdiği gösterilmiştir. Ancak, yeni bir [bildiri](https://arxiv.org/abs/2004.03607), dil modellerinin gerçek dünya dil kullanımında daha karmaşık ayarlarla başarı gösterip gösteremeyeceğini daha iyi değerlendirmek için bir framework ve kıyaslama önermektedir (ör. güncel durumlar için faydalı tavsiyeler üretmek). Ampirik sonuçlar, T5 gibi kabul görmüş en iyi modellerin, vakaların sadece %9'unda insan tarafından yazılmış tavsiye kadar faydalı tavsiyeler ürettiğini göstermektedir. Bu sonuçlar dil modellerinin gerçek dünya bilgisini ve sağduyulu muhakemeyi anlama ve modelleme yeteneğindeki eksikliklere işaret etmektedir.
 
 \\
 ***Metin Temsili Modellerinize Sevgi Katın: Basque Örneği***
@@ -83,7 +84,7 @@ Kaj Bostrom ve Greg Durrett, bir dil modelinin ön-eğitimi için sıklıkla kul
 ***Longformer: Uzun Doküman Transformatörü***
 
 \\
-Allen AI'daki araştırmacılar, uzun metinlerle daha yüksek verimde performans göstermeyi hedefleyen [Longformer] (https://arxiv.org/abs/2004.05150) adlı transformatör tabanlı yeni bir model yayımladı. Transformatör tabanlı modellerin öz-dikkat (İng. self-attention) işlemlerinin büyüklüğünün katlanarak artması (sekans uzunluğunun kuadratik etkisi ile) ve bu nedenle hesaplama açısından çok pahalı olması bilinen bir transformatör tabanlı model limitasyondur. Son zamanlarda, Transformatörlerin uzun dokümanlara uygulanabilirliğini sağlamak için [Reformer] (https://arxiv.org/abs/2001.04451) ve [Sparse Transformers] (https://arxiv.org/abs/1904.10509) gibi birçok çaba gösteriliyor. Longformer, daha az bellek tüketmek ve uzun doküman modellemesinde yüksek verim göstermek için karakter düzeyinde modelleme ile öz-dikkati (yerel ve genel dikkat karışımı) birleştiriyor. Yazarlar ayrıca, ön-eğitime tabi tutulmuş modellerinin soru cevaplama (İng. question answering - QA) ve metin sınıflandırması da dahil olmak üzere doküman düzeyi alt görevlerine uygulandığında diğer yöntemlerden daha iyi performans gösterdiğini ortaya koymaktadır.
+Allen AI'daki araştırmacılar, uzun metinlerle daha yüksek verimde performans göstermeyi hedefleyen [Longformer](https://arxiv.org/abs/2004.05150) adlı transformatör tabanlı yeni bir model yayımladı. Transformatör tabanlı modellerin öz-dikkat (İng. self-attention) işlemlerinin büyüklüğünün katlanarak artması (sekans uzunluğunun kuadratik etkisi ile) ve bu nedenle hesaplama açısından çok pahalı olması bilinen bir transformatör tabanlı model limitasyondur. Son zamanlarda, Transformatörlerin uzun dokümanlara uygulanabilirliğini sağlamak için [Reformer](https://arxiv.org/abs/2001.04451) ve [Sparse Transformers](https://arxiv.org/abs/1904.10509) gibi birçok çaba gösteriliyor. Longformer, daha az bellek tüketmek ve uzun doküman modellemesinde yüksek verim göstermek için karakter düzeyinde modelleme ile öz-dikkati (yerel ve genel dikkat karışımı) birleştiriyor. Yazarlar ayrıca, ön-eğitime tabi tutulmuş modellerinin soru cevaplama (İng. question answering - QA) ve metin sınıflandırması da dahil olmak üzere doküman düzeyi alt görevlerine uygulandığında diğer yöntemlerden daha iyi performans gösterdiğini ortaya koymaktadır.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*uTxVqLtO_nQaDw4OedUUtQ.png)
@@ -203,7 +204,7 @@ Eğer CBOW, Word2Vec, ELMo, GPT, BERT, ELECTRA ve T5 gibi dil modellerinde kulla
 ***Python Numpy Rehberi(Jupyter ve Colab'lı)***
 
 \\
-Stanford'un popüler çevrimiçi Görsel Tanıma için Evrişimsel Sinir Ağları(Convolutional Neural Network for Visual Recognition) dersi, Numpy'ye [giriş rehberi]() için artık Google Colab'a bir bağlantı içermektedir. Oldukça geniş bir rehber; ancak yeni başlayanlar için olukça iyidir. 
+Stanford'un popüler çevrimiçi Görsel Tanıma için Evrişimsel Sinir Ağları(Convolutional Neural Network for Visual Recognition) dersi, Numpy'ye [giriş rehberi]() için artık Google Colab'a bir bağlantı içermektedir. Oldukça geniş bir rehber; ancak yeni başlayanlar için olukça iyidir.
 
 \\
 ***Yeni mobil sinir ağı mimarisi***
