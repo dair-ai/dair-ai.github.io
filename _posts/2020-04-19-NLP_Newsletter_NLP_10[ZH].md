@@ -69,7 +69,7 @@ Google AI和DeepMind的研究人员发布了一个有趣的多任务基准，称
 - [The Illustrated Self-Supervised Learning](https://amitness.com/2020/02/illustrated-self-supervised-learning/)
 - [Self-supervised learning and computer vision](https://www.fast.ai/2020/01/13/self_supervised/)
 
-\\
+
 #### 1.5 字节对编码在语言模型预训练中次优
 
 Kaj Bostrom和Greg Durrett发表了一篇论文，[](https://arxiv.org/pdf/2004.03720.pdf)，他们的目的是研究常用的称为**字节对编码（BPE）** 这一tokenization algorithm对于预训练语言模型（LM）是否是最优的。 换句话说，他们提出了tokenization对LM性能影响的直接评估。 根据作者的说法，之前的文献中很少对此进行研究。 为此，他们从零开始对LM进行了预训练，并应用了不同的tokenization，即unigram和BPE。 之后他们在几个下游任务上测试最终的预训练LM模型， 结果表明，unigram tokenization或优于更常见的BPE方式。
@@ -91,7 +91,7 @@ Allen AI的研究人员发布了一种新的基于Transformer的模型，称为[
 
 - 在机器学习社区中，可重复性一直是一个被讨论的话题。 为了鼓励更加开放，透明和可访问的科学，围绕可重复性已进行了许多努力。如果你想了解机器学习领域在可重复性方面的地位，请查看Joelle Pineau等人的论文，[Improving Reproducibility in Machine Learning Research](https://arxiv.org/abs/2003.12206)。
 
-- 最近，在先前这些工作的启发下，Papers With Code小组（现已成为Facebook AI的一员）发表了博客文章，[ML Code Completeness Checklist](https://medium.com/paperswithcode/ml-code-completeness-checklist-e9127b168501)， 有用的[机器学习可重现性清单](https://github.com/paperswithcode/releasing-research-code)，以“ *促进在大型ML会议上提出的可重现性研究*”。 该清单评估以下方面的代码提交： 
+- 最近，在先前这些工作的启发下，Papers With Code小组（现已成为Facebook AI的一员）发表了博客文章，[ML Code Completeness Checklist](https://medium.com/paperswithcode/ml-code-completeness-checklist-e9127b168501)， 有用的[机器学习可重现性清单](https://github.com/paperswithcode/releasing-research-code)，以“ *促进在大型ML会议上提出的可重现性研究*”。 该清单评估以下方面的代码提交：
 
 ![](https://cdn-images-1.medium.com/max/800/1*BQH6F1J3TE1T_GREv5xSew.png)
 
@@ -104,13 +104,12 @@ Allen AI的研究人员发布了一种新的基于Transformer的模型，称为[
 
 通过API公开使用的预训练语言模型是否可以被盗，是否会对安全性有影响？ 在一篇新论文中，[Thieves on Sesame Street! Model Extraction of BERT-based APIs](https://arxiv.org/abs/1910.12366)，研究人员旨在测试基于BERT的API的安全性。 他们发现，攻击者可以通过仅输入乱码并在受害者模型的预测标签上微调自己的模型来窃取微调的模型。更多有关model extraction attacks的信息，可以查看博客，[如何用乱码窃取NLP系统?](http://www.cleverhans.io/2020/04/06/stealing-bert.html).
 
-
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*K9ZD4USdovdyHXomB7csfA.png)
 
 Model extraction pipeline applied to a victim model trained on SQuAD ([Source](http://www.cleverhans.io/2020/04/06/stealing-bert.html)).
 
-
+\\
 在ACL 2020上接受的另一篇有趣的论文，[Weight Poisoning Attacks on Pre-trained Models](https://arxiv.org/abs/2004.06660)，研究了预训练的语言模型是否容易受到攻击。作者开发了一种“poisoning”方法，该方法能够将漏洞注入预先训练的权重中，从而使这些预训练模型容易受到严重威胁。由于存在此漏洞，有可能表明这些模型暴露了后门，攻击者可以通过简单地注入任意关键字来利用后门来操纵模型的预测。 为了测试这一点，使用了经过预训练的模型来执行下游任务，这些任务涉及注入了特定关键字的数据集，这些关键字旨在迫使模型对实例进行错误分类。
 
 \\
@@ -118,10 +117,10 @@ Model extraction pipeline applied to a victim model trained on SQuAD ([Source](h
 
 *Figure by* [*Kurita et al. (2020)*](https://arxiv.org/abs/2004.06660)
 
-\\
+
 #### 2.3 一系列基于AI的COVID-19应用和研究
 
-- 事实证明，COVID-19是近来最大的挑战之一。从搜索引擎到公布数据集，世界各地的研究人员都在尝试寻找方法来帮助和理解COVID-19。Sebastian Ruder最近发表一份专门的issue，（http://newsletter.ruder.io/issues/covid-19-edition-236509），重点介绍了AI研究人员正在进行的一些[关于COVID-19有趣的项目](http://newsletter.ruder.io/issues/covid-19-edition-236509。
+- 事实证明，COVID-19是近来最大的挑战之一。从搜索引擎到公布数据集，世界各地的研究人员都在尝试寻找方法来帮助和理解COVID-19。Sebastian Ruder最近发表一份专门的issue，重点介绍了AI研究人员正在进行的一些[关于COVID-19有趣的项目](http://newsletter.ruder.io/issues/covid-19-edition-236509)。
 
 - 此外关于COVID-19，Allen AI的研究人员将在本月底举行的[虚拟研讨会](https://www.meetup.com/NY-NLP/events/269849442)中讨论现在流行的COVID-19开放研究数据集（CORD-19）。
 - 许多研究人员正在使用CORD-19数据集来构建NLP驱动的应用程序，例如搜索引擎。看看最近的这篇论文，[Rapidly Deploying a Neural Search Engine for the COVID-19 Open Research Dataset](https://openreview.net/forum?id=PlUA_mgGaPq)，以搜索引擎实现为例，它可以帮助研究人员从学术文章中报告的结果中快速获得与CORD-19相关的信息。作者认为，这样的工具可以帮助为基于证据的决策提供依据。
@@ -139,21 +138,21 @@ Sebastian Raschka，Joshua Patterson和Corey Nolet的出色论文，[Machine Lea
 
 *Figure by* [*Raschka et al. (2020)*](https://www.mdpi.com/2078-2489/11/4/193)
 
-\\
 #### 3.2 机器学习的可解释性
 
 HuggingFace发布了一个名为**exBERT**的可视化工具，该工具可让你可视化从BERT和RoBERTa等语言模型中学到的表示。 此功能已集成到[huggingface的模型页面](https://huggingface.co/models?filter=exbert)中，旨在更好地了解语言模型是如何学习的以及它们在这些学习出的表示中可能encode的信息。
 
+\\
 OpenAI最近发布了一个名为[Microscope](https://microscope.openai.com/models)的Web应用程序，其中包含从各种视觉模型的重要层和神经元获得的可视化效果的集合，这些视觉效果通常是在可解释性的背景下进行研究的。 主要目的是使分析和共享有趣的见解变得容易，这些见解是从神经网络中学习到的这些特征中得出的，以便更好地理解它们。
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*4VdcqSSyzWDMvVDPEuKzIQ.png)
 
-\\
+
 #### 3.3 CloudCV
 在先前的[NLP Research HighLight](https://dair.ai/NLP_Research_Highlights_-_Issue_-1/)中，我们介绍了多任务ViLBERT，这是一种改进视觉和语言模型的方法，该模型可用于基于字幕的图像检索和视觉问题解答（VQA）。 现在，作者提供了一个网站，[CloudCV](https://vilbert.cloudcv.org/)，以测试八种不同的视觉和语言任务（例如VQA和指向问题的答案）的模型。
 
-\\
+
 #### 3.4 COVID-19相关Twitter数据集
 
 由于COVID-19全球性蔓延，研究人员正在发布从Twitter获得的与COVID-19聊天相关的推文的[数据集](https://zenodo.org/record/3738018)。 从第一个版本开始，已添加了来自新协作者的其他数据，从而使该资源增长到当前的大小。 从3月11日开始，专用数据收集每天产生超过400万条推文。
@@ -184,7 +183,7 @@ Andrej Karpathy最近发布了一个名为[micrograd](https://github.com/karpath
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*GUxoCXqhozkp_aaRxpT3Sg.png)
 
-\\
+
 #### 5.2 Python Numpy教程
 
 斯坦福大学流行的在线课程，[ Convolutional Neural Network for Visual Recognition](https://cs231n.github.io/python-numpy-tutorial/),现在包括Google Colab的链接。 这是一个非常广泛的教程，但对初学者来说非常好。
@@ -206,17 +205,21 @@ Yisong Yue发布了[数据驱动算法设计](https://sites.google.com/view/cs-1
 
 哈佛目前正在免费提供许多自定进度的[课程](https://online-learning.harvard.edu/catalog?keywords=&paid%5B1%5D=1&max_price=&start_date_range%5Bmin%5D%5Bdate%5D=&start_date_range%5Bmax%5D%5Bdate%5D=)。
 
+\\
 [ARBML](https://github.com/zaidalyafeai/ARBML)提供了许多阿拉伯语NLP和ML项目的实现，它们使用Web，命令行和笔记本等许多界面提供了实时体验。
 
+\\
 [NLP Dashboard](https://nlpdashboard.com)是一个有趣的NLP Web应用程序，基于spaCy，Flask和Python构建，用于执行命名实体识别以及文本和新闻报道的统计分析。
 
+\\
 如果你还没有注意到，Connor Shorten维护了这个非常有用的YouTube频道，他在其中总结了[有趣的最新ML论文](https://www.youtube.com/channel/UCHB9VepY6kYvZjj0Bgxnpbw?sub_confirmation=1)，介绍了每项工作的重要细节，同时提供了简短而简洁的摘要。此外，他还与该领域的其他杰出研究人员一起开了[播客](https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ)。
 
+\\
 这是一个内容丰富而令人印象深刻的[github库](https://github.com/microsoft/nlp-recipes)，它通过代码和注释为许多NLP场景提供了最佳实践和建议，例如文本分类，文本蕴含，文本摘要，问答等。
 
 
 ----------
 如果您希望在下一期NLP新闻通讯中共享任何数据集，项目，博客文章，教程或论文，请直接填写这份[问卷](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
-
+\\
 [Subscribe](https://dair.ai/newsletter/)🔖至NLP新闻通讯，以在收件箱中接收以后的新闻。
