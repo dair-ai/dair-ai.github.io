@@ -140,6 +140,9 @@ This [article](https://towardsdatascience.com/whats-new-for-transformers-at-the-
 If you are interested to know more about other works published in ICLR this year, you can check out the [Papers with Code website](https://paperswithcode.com/conference/iclr-2020-1/official) for those papers.
 
 \\
+ICLR just made all the [conference talks](https://iclr.cc/virtual_2020/papers.html?filter=keywords) available as open-access.
+
+\\
 ***The AI Economist: Improving Equality and Productivity with AI-Driven Tax Policies***
 
 \\
