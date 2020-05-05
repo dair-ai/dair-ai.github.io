@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter #11: Jukebox, HybridQA, TLDR generation, Blender: the SOTA Chatbot, TorchServe, AI Economist, WT5,..."
+title: "NLP Newsletter #11 [EN]: Jukebox, HybridQA, TLDR generation, Blender: the SOTA Chatbot, TorchServe, AI Economist, WT5,..."
 author: billy_rick
 excerpt: "In this issue, we cover topics that range from reinforcement learning frameworks for tax policy design to state-of-the-art conversational AI to improving text generation frameworks."
 modified:

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "NLP Newsletter #11: Jukebox, HybridQA, TLDR generation, Blender: the SOTA Chatbot, TorchServe, AI Economist, WT5,..."
+title: "NLP Newsletter #11 [FR]: Jukebox, HybridQA, TLDR generation, Blender: the SOTA Chatbot, TorchServe, AI Economist, WT5,..."
 author: lbourdois
-excerpt: "In this issue, we cover topics that range from reinforcement learning frameworks for tax policy design to state-of-the-art conversational AI to improving text generation frameworks."
+excerpt: ""
 modified:
 comments: true
 tags: [nlp_newsletter]
@@ -19,9 +19,8 @@ Bienvenue au onzième numéro de la lettre d’information consacrée au NLP.
 ***Quelques mises à jour sur la lettre d’information sur le NLP et sur dair.ai :***
 - Nous avons publié un [jeu de données](https://github.com/dair-ai/emotion_dataset) qui peuvent être utilisées pour la recherche d'émotions basée sur des textes. Le répertoire comprend un [notebook]( https://colab.research.google.com/drive/1nwCE6b9PXIKhv2hvbqf1oZKIGkXMTi1X#scrollTo=t23zHggkEpc-)) qui montre comment fine-tuner les modèles BERT pré-entraînés pour la tâche de classification des émotions. Plus récemment, un modèle a été fine-tuneé sur notre jeu de données et [hébergé]( https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment) sur HuggingFace, permettant une intégration simple à une pipeline de NLP.
 
-- Nous avons récemment tenu notre toute première séance de lecture de d’articles. Plus de 124 personnes se sont inscrites et une grande partie de ce groupe a participé à l'événement à distance. La première discussion a porté sur le document du [T5](https://arxiv.org/abs/1910.10683%27). Nous organisons une deuxième session où nous aurons une discussion approfondie sur le document. Pour en savoir plus sur les prochains événements, rejoignez notre groupe [Meetup](https://www.meetup.com/dair-ai), ou participez à la discussion dans notre [groupe Slack](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g). 
+- Nous avons récemment tenu notre toute première séance de lecture de d’articles. Plus de 124 personnes se sont inscrites et une grande partie de ce groupe a participé à l'événement à distance. La première discussion a porté sur le document du [T5](https://arxiv.org/abs/1910.10683%27). Nous organisons une deuxième session où nous aurons une discussion approfondie sur le document. Pour en savoir plus sur les prochains événements, rejoignez notre groupe [Meetup](https://www.meetup.com/dair-ai), ou participez à la discussion dans notre [groupe Slack](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g).
 
-\\
 
 # Publications 📙
 
@@ -69,6 +68,7 @@ Dans ce travail, les TLDR sont définis comme une alternative et un résumé com
 \\
 ***WT5 ?! Entraînement des modèles de texte à texte pour expliquer leurs prévisions***
 
+\\
 Un nouveau travail appelé [WT5](https://arxiv.org/abs/2004.14546) (abréviation de "Why, T5 ?") fine-tune un modèle T5 de Google pour produire des explications aux prévisions qu'il fait. Cela peut aider à mieux comprendre pourquoi un modèle fait certaines prédictions. Le modèle est alimenté par des exemples avec des explications cibles et des labels cibles. Le texte d'entrée, qui comprend un préfixe de tâche (par exemple, sentiment) et le texte réel peuvent également être précédés d'une étiquette "explain" (voir l'exemple dans la figure ci-dessous). Cela permet un apprentissage semi-supervisé où des données entièrement étiquetées sont fournies au modèle et où seuls des exemples limités ont les balises d'explication. Les auteurs font état de résultats quantitatifs et qualitatifs démontrant que leur approche permet d'obtenir des résultats de pointe sur les ensembles de données d'explicabilité, y compris la capacité à obtenir de bons résultats dans les données hors domaine. Ce travail présente un modèle de base intéressant qui peut être utilisé pour mieux comprendre les prédictions des modèles basés sur le texte mais, comme le soulignent les auteurs, l'approche n'est qu'une amélioration superficielle de l'interprétabilité et qu'il est possible de l'améliorer.
 
 
@@ -77,7 +77,6 @@ Un nouveau travail appelé [WT5](https://arxiv.org/abs/2004.14546) (abréviation
 
 *Narang et al. (2020)*
 
-\\
 
 # Outils et jeux de données ⚙️
 
@@ -87,7 +86,7 @@ Un nouveau travail appelé [WT5](https://arxiv.org/abs/2004.14546) (abréviation
 [MONAI](https://blogs.nvidia.com/blog/2020/04/21/monai-open-source-framework-ai-healthcare/?ncid=so-twit-79443#cid=ix11_so-twit_en-us) est un framework d'IA en imagerie médicale destiné à soutenir le développement scientifique dans le domaine des soins de santé. Comme indiqué dans les notes de publication, MONAI vise à fournir une bibliothèque conviviale et optimisée pour le traitement des données relatives aux soins de santé. Comme d'autres bibliothèques, elle fournit également des outils de traitement et de transformation des données spécifiques à un domaine, des modèles de réseaux neuronaux couramment utilisés dans l'espace, y compris l'accès à des méthodes d'évaluation et la possibilité de reproduire les résultats.
 
 \\
-***Un émulateur Python pour Game Boy ***
+***Un émulateur Python pour Game Boy***
 
 \\
 [PyBoy](https://github.com/Baekalfen/PyBoy) est un outil construit en Python capable de gérer une interface Game Boy. Il comprend aussi une enveloppe expérimentale pour entraîner un agent basé sur l'IA qui interagit avec le jeu.
@@ -133,15 +132,14 @@ Au cas où vous l'auriez manqué, Goku Mohandas a construit un site web appelé 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*eoyqzd6XYVBOqOnU_jqjNA.png)
 
-\\
 
 
 # Articles et Blog ✍️
 
-***Quelles sont les nouveautés pour les Transformers lors de la conférence ICLR 2020 ?
+***Quelles sont les nouveautés pour les Transformers lors de la conférence ICLR 2020 ?***
 
 \\
-L'une des plus importantes conférences sur l'apprentissage automatique, l'ICLR, a dû se tenir virtuellement cette année en raison des restrictions de voyage imposées par les pays du monde entier. 
+L'une des plus importantes conférences sur l'apprentissage automatique, l'ICLR, a dû se tenir virtuellement cette année en raison des restrictions de voyage imposées par les pays du monde entier.
 Voici quelques articles présentés lors de cette conférence.
 
 \\
@@ -156,7 +154,7 @@ Enfin, l'ICLR vient de mettre en libre accès toutes les [conférences](https://
 
 
 \\
-*** AI Economist : Améliorer l'égalité et la productivité grâce à des politiques fiscales axées sur l'IA***
+***AI Economist : Améliorer l'égalité et la productivité grâce à des politiques fiscales axées sur l'IA***
 
 \\
 Un groupe de chercheurs a proposé un framework d'apprentissage par renforcement ([AI Economist](https://blog.einstein.ai/the-ai-economist/)) qui vise à apprendre les *politiques fiscales dynamiques* uniquement par la simulation et les solutions basées sur des données. Certaines des améliorations obtenues par l'AI Economist montrent des résultats et des calendriers prometteurs qui pourraient déboucher sur un cadre susceptible d'améliorer les résultats sociaux et l'état des inégalités économiques.
@@ -237,11 +235,11 @@ Cette [conférence vidéo](https://www.youtube.com/watch?v=1CT-kxjYbFU&feature=y
 
 \\
 Aurélien Geron partage un [notebook](https://colab.research.google.com/github/ageron/handson-ml2/blob/master/math_differential_calculus.ipynb#scrollTo=mnywx0pgMCLA) qui vise à introduire les concepts de base du calcul différentiel tels que les dérivées, les dérivées partielles et les gradients. Ces sujets sont tous importants dans le domaine de l'apprentissage profond et Aurélien Géron résume les concepts ainsi que les mises en œuvre, y compris des visualisations faciles à comprendre pour guider l'apprenant. Il recommande également de consulter un autre [notebook](https://github.com/ageron/handson-ml2/blob/master/extra_autodiff.ipynb) sur l'autodifférenciation.
-\\
 
+\\
 ![](https://cdn-images-1.medium.com/max/800/1*NU6s4j-GE5PjaDsCsgcuNw.png)
 
-\\
+
 # Mentions spéciales ⭐️
 - Andrej Karpathy [partage](https://www.youtube.com/watch?v=hx7BXih7zx8&feature=youtu.be) certains des développements récents chez Tesla afin d’aboutir à une conduite autonome complète. Les sujets abordés comprennent la modélisation des HydraNets, les moteurs de données, les mesures d'évaluation et la manière d'effectuer efficacement des inférences sur ces modèles de réseaux neuronaux à grande échelle.
 - Il s'agit d'un [dépôt](https://github.com/Machine-Learning-Tokyo/Interactive_Tools) préparé par MLT contenant une liste d'outils interactifs pour l'apprentissage automatique, l'apprentissage approfondi et les mathématiques.
@@ -254,10 +252,10 @@ Aurélien Geron partage un [notebook](https://colab.research.google.com/github/a
 
 ----------
 
-Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-9_-FR/) \\
+Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-9_-FR/)
 
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 \\
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
+\\
 [Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
-
