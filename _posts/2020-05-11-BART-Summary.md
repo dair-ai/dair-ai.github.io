@@ -20,20 +20,20 @@ image:
 Lewis and et al. in this paper present valuable comparative work on different pre-training techniques and show how this kind of work can be used to guide large pre-training experiments reaching state-of-the-art(SOTA) results. 
 
 ## **What does it propose?**
-The authors propose a framework to compare pre-training techniques and Language Model objectives. This framework focuses on how these techniques can be viewed as **Corrupting text with an arbitrary noising function while the Language Model is tasked with denoising it.** After some comparative experiments using this framework, BART is introduced as a Transformers-based LM that reaches SOTA performance.
+The authors propose a framework to compare pre-training techniques and language model(LM) objectives. This framework focuses on how these techniques can be viewed as **Corrupting text with an arbitrary noising function while the Language Model is tasked with denoising it.** After some comparative experiments using this framework, BART is introduced as a transformers-based LM that reaches SOTA performance.
 
 ## **How does it work?** 
 
 ### **The Framework**
 ![image](https://lh3.googleusercontent.com/_ZYOOgt3efQF8LlFM_rmlJdiQyj3bkFeKfeihhbOK3w-UvPUPvFX9K_YFMh7SIURsyFclNwkL8oVByH3XlQKXPnhZYO8IFY54nhFBlE9wuk0vJBKxI1Ci_7xnbePqT8thQC-vB1ZUvs)
-The idea behind the framework the authors propose is simple, they suggest that decoupling Language Models and the functions with which we corrupt the text is useful to compare different pre-training techniques and see how they fare on similar models and diverse benchmarks. Viewed this way pre-training is a sequence of repeated steps 
+The idea behind the framework the authors propose is simple, they suggest that decoupling language models and the functions with which we corrupt the text is useful to compare different pre-training techniques and see how they fare on similar models and diverse benchmarks. Viewed this way pre-training is a sequence of repeated steps 
 * We apply a noising function to the text 
 * The language model attempts to reconstruct the text
 * We calculate the Loss Function, typically CrossEntropy over the original text, we back-propagate the gradients and update the model's weights.
         
 ### **Comparing different Text-Noising techniques and LM Objectives**
 ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FAntonioLprd%2FdqcEKBSd0Y.png?alt=media&token=2cee8cc9-cb39-472f-9377-82c995a7ee85)
-In the first experiment detailed in the paper Lewis et al., using the framework they introduced at the beginning of the article, compare different pre-training techniques and LM Objectives on a smaller than usual model, BART-base. The model uses a 6 layered, transformer-based, Seq2Seq architecture for autoencoding as introduced in the [Attention is all you need paper](https://arxiv.org/pdf/1706.03762.pdf) from Vaswani et al. The pre-training techniques compared in the experiments can be divided between those that work at the token level and the ones that work at the sentence level.
+In the first experiment detailed in the paper Lewis et al., using the framework they introduced at the beginning of the article, compare different pre-training techniques and LM objectives on a smaller than usual model, BART-base. The model uses a 6 layered, transformer-based, seq2seq architecture for autoencoding as introduced in the [Attention is all you need paper](https://arxiv.org/pdf/1706.03762.pdf) from Vaswani et al. The pre-training techniques compared in the experiments can be divided between those that work at the token level and the ones that work at the sentence level.
 
 **Token Masking** random tokens are sampled and replaced with [MASK]<br />
 **Token Deletion** similar to masking but the token sampled are deleted and the model has to add new token in their place.<br />
@@ -48,7 +48,7 @@ Besides the pre-training techniques, the authors also compare different LM objec
 **Autoregressive, left to right, LM** ([GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf))<br />
 **Masked LM**([BERT](https://arxiv.org/abs/1810.04805)) replace 15% of the token with [MASK] and predict the corresponding words.<br />
 **Permuted LM** ([XLNet](https://arxiv.org/pdf/1906.08237.pdf)) left to right, autoregressive LM training but with the order of the words to predict chosen at random. (worth looking into more, very interesting approach)<br />
-**Multitask Masked LM** ([UniLM](https://arxiv.org/pdf/1905.03197.pdf)) combination of right-to-left, left-to-right and Bidirectional. ⅓ of the time using each with shared parameters.<br />
+**Multitask Masked LM** ([UniLM](https://arxiv.org/pdf/1905.03197.pdf)) combination of right-to-left, left-to-right and bidirectional. ⅓ of the time using each with shared parameters.<br />
 **Masked Seq2Seq** ([MASS](https://arxiv.org/pdf/1905.02450.pdf)) masking a span containing 50% of the tokens and train to  predict the masked tokens.<br />
         
 ### **Results of the first experiment**
@@ -59,13 +59,13 @@ From the results of this first experiments the authors draw some important concl
 **Left-to-right pre-training improves NLG** The Classical Language Model objective despite not doing well in inference or question answering tasks achieves SOTA on ELI5(Explain Like I'm 5) a NLG benchmark that with longer sequences values coherent and grammatically correct text.<br />
 **Bidirectional encoders are crucial for QA** Ignoring future context hinders the performance of left-to-right models.<br />
 
-While pre-training techniques and LM objectives are important, the authors make note of the fact that they do not provide the full picture. They report that their Permuted Language model performs much worse than XLNet bbecause BART lacks some of the valuable architectural innovations introduced in XLNet.
+While pre-training techniques and LM objectives are important, the authors make note of the fact that they do not provide the full picture. They report that their Permuted Language model performs much worse than XLNet because BART lacks some of the valuable architectural innovations introduced in XLNet.
     
 ### **Results of the Large Scale Pre-training experiment**
 After the comparative experiment, the authors trained a bigger model with 12 layers, transformer-based architecture for autoencoding, and similar hyperparameters to [RoBERTa](https://arxiv.org/pdf/1907.11692.pdf). They used both a form of token masking at 30% and sentence permutation as pre-training text-noising techniques and run the model on 160GB of news, books, stories, and web text, again similarly to RoBERTa
 ![](https://lh4.googleusercontent.com/grHkzO3a2zUtdo-_AkH3sGhWmfGQ9_n4bAD0wm78kzVLpuzYFFdSwycnLIevdGUb5jVMJpGdA46LvZN_k0PDrCCObljSvgfcTo6PHevfpa5ZonMXn-C5tEXsUW1V33akbAIINi7whkA)
 
-BART is at its best in abstractive summarization tasks especially in the **XSum** benchmark that contains very few examples of summaries where phrases are present both in the summary and the original text. Besides surpassing the previous best systems in summarization by a considerable margin BART does well also in Natural language Inference(NLI) tasks and QA, where it is on par with the SOTA. 
+BART is at its best in abstractive summarization tasks especially in the **XSum** benchmark that contains very few examples of summaries where phrases are present both in the summary and the original text. Besides surpassing the previous best systems in summarization by a considerable margin BART does well also in natural language inference(NLI) tasks and QA, where it is on par with the SOTA. 
 
 ### **Qualitative Analysis**
 The paper features also examples of the summaries produced by BART that can really give a sense of how well it does on the XSum data-set.
