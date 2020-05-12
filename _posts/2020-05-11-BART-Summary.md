@@ -17,57 +17,105 @@ image:
 > Paper summary: BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension , Oct. 2019. ([link](https://arxiv.org/abs/1910.13461))
 
 ## **Why is this important?**
-Lewis and et al. in this paper present valuable comparative work on different pre-training techniques and show how this kind of work can be used to guide large pre-training experiments reaching state-of-the-art(SOTA) results. 
+In this paper, Lewis et al. present valuable comparative work on different pre-training techniques and show how this kind of work can be used to guide large pre-training experiments reaching state-of-the-art (SOTA) results.
 
 ## **What does it propose?**
-The authors propose a framework to compare pre-training techniques and language model(LM) objectives. This framework focuses on how these techniques can be viewed as **Corrupting text with an arbitrary noising function while the Language Model is tasked with denoising it.** After some comparative experiments using this framework, BART is introduced as a transformers-based LM that reaches SOTA performance.
+The authors propose a framework to compare pre-training techniques and language model (LM) objectives. This framework focuses on how these techniques can be viewed as **corrupting text with an arbitrary noising function while the Language Model is tasked with denoising it.** After some comparative experiments using this framework, BART is introduced as a transformer-based LM that reaches SOTA performance.
 
-## **How does it work?** 
+## **How does it work?**
 
 ### **The Framework**
 ![image](https://lh3.googleusercontent.com/_ZYOOgt3efQF8LlFM_rmlJdiQyj3bkFeKfeihhbOK3w-UvPUPvFX9K_YFMh7SIURsyFclNwkL8oVByH3XlQKXPnhZYO8IFY54nhFBlE9wuk0vJBKxI1Ci_7xnbePqT8thQC-vB1ZUvs)
-The idea behind the framework the authors propose is simple, they suggest that decoupling language models and the functions with which we corrupt the text is useful to compare different pre-training techniques and see how they fare on similar models and diverse benchmarks. Viewed this way pre-training is a sequence of repeated steps 
-* We apply a noising function to the text 
+The idea behind the proposed framework is simple, they suggest that decoupling language models and the functions with which the text are corrupted is useful to compare different pre-training techniques and see how they perform on similar models and diverse benchmarks. Viewed this way, pre-training is a sequence of repeated steps:
+* Apply a noising function to the text
 * The language model attempts to reconstruct the text
-* We calculate the Loss Function, typically CrossEntropy over the original text, we back-propagate the gradients and update the model's weights.
-        
-### **Comparing different Text-Noising techniques and LM Objectives**
+* Then calculate the loss function (typically cross entropy over the original text) and then back-propagate the gradients and update the model's weights.
+
+### **Comparing different text-noising techniques and LM Objectives**
 ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FAntonioLprd%2FdqcEKBSd0Y.png?alt=media&token=2cee8cc9-cb39-472f-9377-82c995a7ee85)
-In the first experiment detailed in the paper Lewis et al., using the framework they introduced at the beginning of the article, compare different pre-training techniques and LM objectives on a smaller than usual model, BART-base. The model uses a 6 layered, transformer-based, seq2seq architecture for autoencoding as introduced in the [Attention is all you need paper](https://arxiv.org/pdf/1706.03762.pdf) from Vaswani et al. The pre-training techniques compared in the experiments can be divided between those that work at the token level and the ones that work at the sentence level.
 
-**Token Masking** random tokens are sampled and replaced with [MASK]<br />
-**Token Deletion** similar to masking but the token sampled are deleted and the model has to add new token in their place.<br />
-**Token Infilling** a number of text spans, i.e. contiguous group tokens, are sampled, and then they are replaced by the [MASK] token.<br />
-**Sentence Permutation** random shuffling of the document’s sentences.<br />
-**Document Rotation** a token is chosen randomly to be the start of the document, the section before the starting token is appended at the end.<br />
+\\
+In the first experiment, using the framework they introduced at the beginning of the article, the authors compared different pre-training techniques and LM objectives on a smaller than usual model, BART-base. The model uses a 6 layered, transformer-based, seq2seq architecture for autoencoding as introduced by [Vaswani et al](https://arxiv.org/pdf/1706.03762.pdf). The pre-training techniques compared in the experiments can be divided between those that work at the token level and those that work at the sentence level:
 
-Intuitively the techniques that work at the sentence level should help the LM learn the different roles of sentences in a paragraph or longer text and so help in natural language generation(NLG) tasks.
+\\
+**Token Masking:** random tokens are sampled and replaced with [MASK]
 
-Besides the pre-training techniques, the authors also compare different LM objectives focusing on the ones used by BERT and GPT as well as the ones that tried to get the best of both worlds.
+\\
+**Token Deletion:** similar to masking but the sampled tokens are deleted and the model has to add a new token in their place.
 
-**Autoregressive, left to right, LM** ([GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf))<br />
-**Masked LM**([BERT](https://arxiv.org/abs/1810.04805)) replace 15% of the token with [MASK] and predict the corresponding words.<br />
-**Permuted LM** ([XLNet](https://arxiv.org/pdf/1906.08237.pdf)) left to right, autoregressive LM training but with the order of the words to predict chosen at random. (worth looking into more, very interesting approach)<br />
-**Multitask Masked LM** ([UniLM](https://arxiv.org/pdf/1905.03197.pdf)) combination of right-to-left, left-to-right and bidirectional. ⅓ of the time using each with shared parameters.<br />
-**Masked Seq2Seq** ([MASS](https://arxiv.org/pdf/1905.02450.pdf)) masking a span containing 50% of the tokens and train to  predict the masked tokens.<br />
-        
+\\
+**Token Infilling:** a number of text spans, i.e. contiguous group tokens, are sampled, and then they are replaced by the [MASK] token.
+
+\\
+**Sentence Permutation:** random shuffling of the document’s sentences.
+
+\\
+**Document Rotation** a token is chosen randomly to be the start of the document, the section before the starting token is appended at the end.
+
+\\
+Intuitively, the techniques that work at the sentence level should help the LM learn the different roles of sentences in a paragraph or longer text and in the process help dealing with natural language generation(NLG) tasks.
+
+\\
+Besides the pre-training techniques, the authors also compare different LM objectives focusing on the ones used by BERT and GPT as well as techniques that tried to incorporate the best of both worlds:
+
+\\
+**Autoregressive, left to right, LM** ([GPT-2](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf))
+
+\\
+**Masked LM** ([BERT](https://arxiv.org/abs/1810.04805)) replace 15% of the token with the [MASK] token and predict the corresponding words.
+
+\\
+**Permuted LM** ([XLNet](https://arxiv.org/pdf/1906.08237.pdf)) left to right, autoregressive LM training but with the order of the words to predict chosen at random.
+
+\\
+**Multitask Masked LM** ([UniLM](https://arxiv.org/pdf/1905.03197.pdf)) combination of right-to-left, left-to-right and bidirectionality. ⅓ of the time using each with shared parameters.
+
+\\
+**Masked Seq2Seq** ([MASS](https://arxiv.org/pdf/1905.02450.pdf)) masking a span containing 50% of the tokens and train to predict the masked tokens.
+
+
+
 ### **Results of the first experiment**
 ![](https://lh6.googleusercontent.com/YxPMuTJc7EY2rFYIXUBVIYMjV-rloyEj2UmgJ6pbxyyMDCWzdwu4KOgRErOKJcmDe4QfC7LO-2bGE6-_0pCF1lRwJfFbjGvBbuk73oFQ8AgMdHAYDNIwDH8HlEcBI15SQKTUMIUhc_8)
-    
-From the results of this first experiments the authors draw some important conclusions.<br />
-**Token masking is crucial** Only the configurations with token masking or its variations achieve consistently great performance on different tasks.<br />
-**Left-to-right pre-training improves NLG** The Classical Language Model objective despite not doing well in inference or question answering tasks achieves SOTA on ELI5(Explain Like I'm 5) a NLG benchmark that with longer sequences values coherent and grammatically correct text.<br />
-**Bidirectional encoders are crucial for QA** Ignoring future context hinders the performance of left-to-right models.<br />
 
-While pre-training techniques and LM objectives are important, the authors make note of the fact that they do not provide the full picture. They report that their Permuted Language model performs much worse than XLNet because BART lacks some of the valuable architectural innovations introduced in XLNet.
-    
-### **Results of the Large Scale Pre-training experiment**
-After the comparative experiment, the authors trained a bigger model with 12 layers, transformer-based architecture for autoencoding, and similar hyperparameters to [RoBERTa](https://arxiv.org/pdf/1907.11692.pdf). They used both a form of token masking at 30% and sentence permutation as pre-training text-noising techniques and run the model on 160GB of news, books, stories, and web text, again similarly to RoBERTa
+\\
+From the results of this first experiments the authors draw some important conclusions.
+
+\\
+**Token masking is crucial**
+
+\\
+Only the configurations with token masking or its variations achieve consistently great performance on different tasks.
+
+\\
+**Left-to-right pre-training improves NLG**
+
+\\
+The classical LM objective despite not doing well in inference or question answering tasks, achieves SOTA on ELI5 (Explain Like I'm 5).
+
+\\
+**Bidirectional encoders are crucial for QA**
+
+\\
+Ignoring future context hinders the performance of left-to-right models.
+
+\\
+While pre-training techniques and LM objectives are important, the authors make note of the fact that they do not provide the full picture. They report that their permuted language model performs much worse than XLNet because BART lacks some of the valuable architectural innovations introduced in XLNet.
+
+### **Results of the large-scale pre-training experiment**
+After the comparative experiment, the authors trained a 12 layered, transformer-based architecture for autoencoding, and using similar hyperparameters to [RoBERTa](https://arxiv.org/pdf/1907.11692.pdf). They used both a form of token masking at 30% and sentence permutation as pre-training text-noising techniques and run the model on 160GB of news, books, stories, and web text, similar to what's done in RoBERTa.
+
+\\
 ![](https://lh4.googleusercontent.com/grHkzO3a2zUtdo-_AkH3sGhWmfGQ9_n4bAD0wm78kzVLpuzYFFdSwycnLIevdGUb5jVMJpGdA46LvZN_k0PDrCCObljSvgfcTo6PHevfpa5ZonMXn-C5tEXsUW1V33akbAIINi7whkA)
 
-BART is at its best in abstractive summarization tasks especially in the **XSum** benchmark that contains very few examples of summaries where phrases are present both in the summary and the original text. Besides surpassing the previous best systems in summarization by a considerable margin BART does well also in natural language inference(NLI) tasks and QA, where it is on par with the SOTA. 
+\\
+BART performs best in abstractive summarization tasks especially in the **XSum** benchmark that contains very few examples of summaries where phrases are present both in the summary and the original text. Besides surpassing the previous best systems in summarization by a considerable margin, BART does well also in natural language inference (NLI) tasks and QA, where it is on par with SOTA results.
 
 ### **Qualitative Analysis**
-The paper features also examples of the summaries produced by BART that can really give a sense of how well it does on the XSum data-set.
+The paper also features examples of the summaries produced by BART that can really give a sense of how well it does on the XSum dataset:
+
+\\
 ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FAntonioLprd%2F7kziiycrsc.png?alt=media&token=a6812c61-8d4b-4f0b-ac0c-e36c470dad45)
-If you want to summarize some text of your own we have set up a [Google Colab notebook](https://colab.research.google.com/drive/1ufNmxZz3v8LloGAYFJvTM2Git2aNe83R?usp=sharing) using the Hugging Face library. 
+
+\\
+If you want to summarize some text of your own we have set up a [Google Colab notebook](https://colab.research.google.com/drive/1ufNmxZz3v8LloGAYFJvTM2Git2aNe83R?usp=sharing) using the Hugging Face library.
