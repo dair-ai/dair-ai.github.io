@@ -1,0 +1,245 @@
+---
+layout: post
+title: "NLP Newsletter #11 [EN]: Jukebox, HybridQA, TLDR generation, Blender: the SOTA Chatbot, TorchServe, AI Economist, WT5,..."
+author: billy_rick
+excerpt: "In this issue, we cover topics that range from reinforcement learning frameworks for tax policy design to state-of-the-art conversational AI to improving text generation frameworks."
+modified:
+comments: true
+tags: [nlp_newsletter]
+image:
+  thumb: nlp_newsletter_11.png
+---
+
+
+![](https://cdn-images-1.medium.com/max/1200/1*X_c0mVECV9rtl6ozuE-oPA.png)
+
+\\
+Welcome to the 11th issue of the NLP Newsletter. In this issue, we cover topics that range from reinforcement learning frameworks for tax policy design to state-of-the-art conversational AI to improving text generation frameworks.
+
+
+# dair.ai updates
+- We have released a [dataset](https://github.com/dair-ai/emotion_dataset) that can be used for text-based emotion research. The repository includes a [notebook](https://colab.research.google.com/drive/1nwCE6b9PXIKhv2hvbqf1oZKIGkXMTi1X#scrollTo=t23zHggkEpc-) that shows how to fine-tune pretrained BERT models for the task of emotion classification. More recently, a model was fine-tuned on our dataset and [hosted](https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment) on HuggingFace which can easily be integrated into an NLP pipeline.
+- We recently held our first-ever paper reading session. Over 124 people registered and a huge portion of that group participated in the remote event. The first discussion was on the [T5 paper](https://arxiv.org/abs/1910.10683%27). We are hosting a second session where we will have an in-depth discussion of the paper. All are invited to the event posted [here](https://www.meetup.com/dair-ai/events/270419989/). To find out more about future events, join our [Meetup group](https://www.meetup.com/dair-ai), or join the discussion in our [Slack group](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g). You can also [*subscribe*](https://dair.ai/newsletter/) *🔖 to the NLP Newsletter to receive information about future events.*
+
+
+# Research and Publications 📙
+
+***OpenAI’s Jukebox***
+
+\\
+The latest work from OpenAI is called Jukebox which is essentially a neural network architecture trained to generate music (from scratch) in various genres and artistic styles. The model, based on a quantization-based approach called VQ-VAE, is fed genre, artist, and lyrics as input and it outputs a novel audio sample. The idea is to process and compress long raw audio inputs via a multi-level autoencoder and reducing the dimensionality but preserving essential musical information. Thereafter, transformers are used to generate codes that are then reconstructed to raw audio via the VQ-VAE decoder. More details of this work in this [blog post](https://openai.com/blog/jukebox/) or the [full paper.](https://cdn.openai.com/papers/jukebox.pdf)
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*JvZuEnM8O4B2PmYSi3RivA.png)
+
+\\
+***HybridQA: A Dataset of Multi-Hop Question Answering over Tabular and Textual Data***
+
+\\
+So far, most question answering datasets focus on homogeneous information. [HybridQA](https://github.com/wenhuchen/HybridQA) is a large-scale question answering dataset for encouraging research and methods that require reasoning on heterogeneous information. The (multi-hop) QA dataset consists of a structured Wikipedia table and unstructured information in the form of entities in the table linking to free-form corpora. The authors also discuss two baselines where they highlight the advantages of working with heterogeneous information as opposed to just using the table or text alone. However, they do point out that results are far behind human performance and this calls for QA systems that can better reason over heterogeneous information and address *coverage* problems.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/0*ojEoPUGxzskGUc1F.png)
+
+*[Source](https://github.com/wenhuchen/HybridQA)*
+
+\\
+***A state-of-the-art open-source chatbot***
+
+\\
+Facebook AI has [built](https://ai.facebook.com/blog/state-of-the-art-open-source-chatbot) and open-sourced Blender, an AI-based model which they refer to as the *largest-ever open-domain chatbot*. Following the success of [Meena](https://arxiv.org/abs/2001.09977) (a recent conversational AI system proposed by Google), they proposed a model that blends conversational skills like empathy and personality to improve the generated conversation quality. The model was trained using a Transformer-based model (with up to 9.4 billion parameters) on ~1.5 billion training samples. Then it was fine-tuned using a dataset ([Blended Skill Talk](https://arxiv.org/abs/2004.08449)) that aims to provide the identified desirable traits that could improve the conversational abilities of the model. The authors claim that the model is able to generate responses that human evaluators deemed more human than those generated by Meena.
+
+\\
+***TLDR: Extreme Summarization of Scientific Documents***
+
+\\
+This [paper](https://arxiv.org/abs/2004.15011) proposes an approach, including a dataset (SCITLDR), for the novel task of *TLDR generation* of scientific papers. In this work, TLDRs are defined as an alternative and compact summarization of the scientific article. TLDRs, as suggested by the authors, can serve as a way to quickly understand what a paper is about and potentially help the reader decide whether they want to continue reading the paper. Due to variation in human-generated summaries, multiple TLDRs are obtained from experts via a peer review style. A BART-based model with a multitask fine-tuning schedule (including title generation and TLDR generation) was used for the final task.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*eeRZ4T1CG0lhgHr_ia-8MA.png)
+
+*[Cachola et al. (2020)](https://arxiv.org/abs/2004.15011)*
+
+\\
+***WT5?! Training Text-to-Text Models to Explain their Predictions***
+
+\\
+*Text-to-Text Transfer Transformer* ([T5](https://arxiv.org/abs/1910.10683)) is a method that brings together all the recent improvements in NLP transfer learning models into one unified framework. This work proposes that most NLP tasks can be formulated in a text-to-text format, suggesting that both the inputs and outputs are texts. The authors claim that this “*framework provides a consistent training objective both for pre-training and fine-tuning*”. T5 is essentially an encoder-decoder Transformer that applies various improvements in particular to the attention components of the model. The model was pre-trained on a newly released dataset called [Colossal Clean Crawled Corpus](https://www.tensorflow.org/datasets/catalog/c4) and achieved SOTA results on NLP tasks such as summarization, question answering, and text classification.
+
+\\
+New follow-up work called [WT5](https://arxiv.org/abs/2004.14546) (shorthand for “Why, T5?”) fine-tunes a Transformer-based T5 model to produce explanations to the predictions it makes. This can help to provide more understanding of why a model is making certain predictions. The model is fed examples with target explanations and with only target labels. The input text, which includes a task prefix (e.g. sentiment) and the actual text can also have an “explain” tag prepended (see example in the figure below). This enables semi-supervised learning where fully labeled data is provided to the model and only limited examples have the explanation tags. The authors report quantitative and qualitative results demonstrating that their approach achieves state-of-the-art results on explainability datasets including the ability to perform well in out-of-domain data. This work presents an interesting basic model that can be used to better understand the predictions of text-based models but as the authors emphasize the approach is only a surface-level improvement of interpretability and that there is room for improvements.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*5TFSiu_G6ofmwM9FhpokHQ.png)
+
+*Narang et al. (2020)*
+
+# Tools and Datasets ⚙️
+
+***NVIDIA’s Medical Imaging Framework***
+
+\\
+[MONAI](https://blogs.nvidia.com/blog/2020/04/21/monai-open-source-framework-ai-healthcare/?ncid=so-twit-79443#cid=ix11_so-twit_en-us) is a medical imaging AI framework to support scientific development in healthcare. As reported in the release notes, MONAI aims to provide a user-friendly and domain-optimized library for dealing with healthcare-data. Similar to other libraries, it also provides domain-specific data processing and transformation tools, neural network models commonly used in the space, including access to evaluation methods and the ability to reproduce results.
+
+\\
+***A Python Game Boy Emulator***
+
+\\
+[PyBoy](https://github.com/Baekalfen/PyBoy) is a tool built with Python to help interfacing with Game Boy hardware. It even includes an experimental wrapper to train an AI-based agent that interacts with the game.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*WDJdaEyRjK660-0b6KvVjQ.png)
+
+\\
+***Jupyter Notebooks as PDF***
+
+\\
+Have you ever wanted to properly render your notebooks as PDFs? Check out this Jupyter [extension](https://github.com/betatim/notebook-as-pdf) written by Tim Head that lets your produce PDFs from your notebooks with the least requirements in terms of plugins and allowing notebooks to be attached to the PDF for reproducibility.
+
+\\
+***On Building More Realistic Conversational AI systems***
+
+\\
+Transformers now include [DialoGPT](https://huggingface.co/transformers/model_doc/dialogpt.html) giving access to the first conversational response model available in the library. [DialoGPT](https://www.microsoft.com/en-us/research/publication/dialogpt-large-scale-generative-pre-training-for-conversational-response-generation/) is a large-scale neural conversational response generation model proposed by Microsoft. It differs from the previous models that depend on general text data such as wiki and news since it uses massive amounts of conversations extracted from Reddit comments. DialoGPT is based on the GPT-based autoregressive language model and aims to provide large-scale pretraining for response generation and enabling conversational AI more representative of human interaction.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*HTtADQcR20iRxvPh3DhJ2Q.png)
+
+\\
+***TorchServe and [TorchElastic for Kubernetes], new PyTorch libraries for serving and training models at scale***
+
+\\
+[TorchServe](https://medium.com/pytorch/torchserve-and-torchelastic-for-kubernetes-new-pytorch-libraries-for-serving-and-training-models-2efd12e09adc) is an open-source library that allows developers to train and serve their models while aiming to reduce friction in the process. The tool is built on top of PyTorch and allows developers to deploy their model as jobs using AWS. Torchserve is meant to be the canonical way to serve trained models providing features such as secure deployment, clean inference APIs, logging and real-time metrics of inference service, and easy model management.
+
+\\
+***MLSUM: The Multilingual Summarization Corpus***
+
+\\
+To encourage and strengthen multilingual research in NLP, Thomas Scialom and other researchers recently [proposed](https://arxiv.org/abs/2004.14900) a multilingual summarization corpus. The dataset was obtained from newspapers and contains ~1.5 million articles in French, German, Spanish, Russian, and Turkish.
+
+\\
+***Made with ML***
+
+\\
+In case you missed it, Goku Mohandas has built a website called Made with ML that aims to provide a tool to discover relevant and interesting ML projects. It’s a platform that allows makers to share their projects with the community. A recent upgrade to the website includes a section that provides carefully [curated topics](https://madewithml.com/topics/) that can help users to quickly find relevant projects.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*eoyqzd6XYVBOqOnU_jqjNA.png)
+
+# Articles and Blog posts ✍️
+
+***What’s new for Transformers at the ICLR 2020 Conference?***
+
+\\
+One of the premier conferences in machine learning, ICLR, had to be held virtually this year due to the travel restrictions imposed by countries all over the world. Being a top conference there is always expectations of novel work, especially improvements on previous works that have been considered groundbreaking. As an example, Transformers have shown to produce state-of-the-art results on a variety of NLP tasks and there were a couple of accepted works at ICLR proposing ways to improve such models.
+
+\\
+This [article](https://towardsdatascience.com/whats-new-for-transformers-at-the-iclr-2020-conference-4285a4294792) summarizes some of the works related to Transformers which include architectural revisions (e.g. [ALBERT](https://openreview.net/pdf?id=H1eA7AEtvS), [Reformer](https://openreview.net/pdf?id=rkgNKkHtvB), and [Transformer-XH](https://openreview.net/pdf?id=r1eIiCNYwS)), novel learning procedures (e.g. [ELECTRA](https://openreview.net/pdf?id=r1xMH1BtvB) and [Pretrained Encyclopedia](https://openreview.net/pdf?id=BJlzm64tDH)), and improving other domains such as large-scale retrieval, text generation, and visual-linguistic representations. One [interesting paper](https://openreview.net/pdf?id=HJlnC1rKPB) even provides a detailed analysis describing the common aspects of self-attention and convolutional layers, with interesting findings suggesting that Transformer architectures are a potential generalization of CNNs.
+
+\\
+If you are interested to know more about other works published in ICLR this year, you can check out the [Papers with Code website](https://paperswithcode.com/conference/iclr-2020-1/official) for those papers.
+
+\\
+ICLR just made all the [conference talks](https://iclr.cc/virtual_2020/papers.html?filter=keywords) available as open-access.
+
+\\
+***The AI Economist: Improving Equality and Productivity with AI-Driven Tax Policies***
+
+\\
+Reinforcement learning has allowed AI labs to produce some of the most groundbreaking advancements in the field of AI. In an effort to tackle global problems with AI systems, specifically tax policy design, a group of researchers proposed a reinforcement learning framework ([AI economist](https://blog.einstein.ai/the-ai-economist/)) that aims to learn *dynamic tax policies* purely through simulation and data-driven solutions. Some of the improvements obtained by the AI Economist show promising results and schedules that could lead to a framework that potentially improves social outcomes and the state of economic inequality.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*erIkiJKxa6jJgJEyNAnvbA.png)
+
+\\
+***On bringing common-sense reasoning abilities to AI systems***
+
+\\
+It is argued that one of the capabilities lacking in many of today’s AI systems is common-sense reasoning. This detailed [article](https://www.quantamagazine.org/common-sense-comes-to-computers-20200430/) provides a brief history of this problem and how researchers working on the cutting-edge are beginning to make progress in this aspect of the field. Not surprisingly, many of the recent efforts include the building of knowledge bases to teach a neural network (specifically language models) to learn faster and more efficiently about the world. This can be considered as an effort to combine symbolic reasoning with neural networks to deal with the problems of *coverage* and model *brittleness*.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*X6kfr8dyhvhjhQAPD-oh2A.png)
+
+*[COMET](https://arxiv.org/abs/1906.05317) — Bosselut et al. (2019)*
+
+\\
+***Keeping up with the BERTs: a review of the main NLP benchmarks***
+
+\\
+What can NLP do better than humans and where is there still room for improvement? In a [recent blog post](https://creatext.ai/blog-posts/nlp-benchmarking-superglue-xtreme), Manuel Tonneau reviews model performance on the GLUE benchmark, identifying tasks where NLP systems excel already and others on which humans still have the lead. The SuperGLUE and XTREME benchmarks are also presented as an initiative to set the bar higher and further motivate research on new tasks and new languages.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*7tD3nxDuzazUFGSWNZOXWQ.png)
+
+*[SuperGLUE benchmark](https://super.gluebenchmark.com/leaderboard/)*
+
+\\
+***Benchmarking Triton (TensorRT) Inference Server for Transformer Models***
+
+\\
+This detailed [blog post](https://blog.einstein.ai/benchmarking-tensorrt-inference-server/) discusses interesting benchmarking experiments for serving Transformer-based language models for production use. The authors use [NVIDIA’s Triton (TensorRT) Inference Server](https://docs.nvidia.com/deeplearning/sdk/triton-inference-server-guide/docs/index.html) for hosting the models and experiment with different configurations and setup to provide comparable results between TensorFlow and PyTorch served models. The report includes results obtained on the different aspects of the model serving such as the latency with concurrency, throughput with concurrency, and other configurations involving batch size and sequence length. Many aspects of model serving are missing in the report but the authors are interested in testing with model versioning and different tasks such as object detection. Such guides provide best practices and techniques for benchmarking models that are useful for practitioners putting their models in production.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*zTIAB4-Q4TdEX32RpEC-hg.png)
+
+*Latency and throughput for different models — [source](https://blog.einstein.ai/benchmarking-tensorrt-inference-server/)*
+
+\\
+***A Visual Guide to Recurrent Layers in Keras***
+
+\\
+This [article](https://amitness.com/2020/04/recurrent-layers-keras/) by Amit Chaudhary provides a visual explanation of recurrent layers available in Keras and the effect of various arguments on the input and output. This is meant to provide a better understanding of how to interact with Keras RNN layers when preparing and processing the data. A useful tutorial for beginners interested in modeling language with RNN models.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*XvJRVz993m5TaOTilodcmg.png)
+
+
+# Education 🎓
+
+***Practical Deep Learning Book for Cloud, Mobile & Edge***
+
+\\
+If you are interested in taking your deep learning models to the cloud, mobile, and edge devices, this is a relevant [book](https://www.practicaldeeplearning.ai/) written by Anirudh Koul, Siddha Ganju, and Meher Kasam. The book is titled “Practical Deep Learning Book for Cloud, Mobile & Edge” and consists of topics that range from tuning and deploying your computer vision models to an introduction of 40+ industry case studies to the use of transfer learning to train models quickly.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/0*XE_--TTGI9fQCTij.jpg)
+
+\\
+***ML courses***
+- Stanford has made available a newly recorded set of [videos](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) of the ML course taught by Andrew Ng. This course provides content that could serve well for students getting started in the world of machine learning.
+- As we move ML and NLP systems into production for real-world use, it becomes crucial for building more trustworthy and privacy-preserving systems. This [course](https://cseweb.ucsd.edu/classes/sp20/cse291-b/index.html) covers topics in *trustworthy machine learning*.
+- Thomas Wolf recorded this comprehensive [video-based summary](https://www.youtube.com/watch?v=G5lmya6eKtc) explaining the recent trends and future topics in transfer learning for NLP.
+
+\\
+***Learning about GAN***
+
+\\
+This [video lecture](https://www.youtube.com/watch?v=1CT-kxjYbFU&feature=youtu.be) by Pieter Abbeel provides a comprehensive overview of generative adversarial networks (GANs) which are being used for all sorts of creative applications today, from generating realistic images to digital painting. The lecture is part of the [Deep Unsupervised Learning](https://sites.google.com/view/berkeley-cs294-158-sp20/home) course currently being delivered at UC Berkley. See the outline of the lecture below.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*1BKlAYDwyUheMMRl59TFFQ.png)
+
+\\
+***Differential Calculus for Deep Learning***
+
+\\
+Aurélien Geron shares an interesting Colab [notebook](https://colab.research.google.com/github/ageron/handson-ml2/blob/master/math_differential_calculus.ipynb#scrollTo=mnywx0pgMCLA) that aims to introduce the basic concepts of differential calculus such as derivatives, partial derivatives, and gradients. These topics are all important in the field of deep learning and Geron summarizes the concepts along with implementations including easy to understand visualizations to guide the learner. He also recommends looking at another [notebook](https://github.com/ageron/handson-ml2/blob/master/extra_autodiff.ipynb) on auto-differentiation.
+
+\\
+![](https://cdn-images-1.medium.com/max/800/1*NU6s4j-GE5PjaDsCsgcuNw.png)
+
+# Noteworthy Mentions ⭐️
+- Andrej Karpathy [shares](https://www.youtube.com/watch?v=hx7BXih7zx8&feature=youtu.be) some of the recent developments in AI technology related to their efforts towards full-serving driving at Tesla. Topics include modeling of HydraNets, data engines, evaluation metrics, and how to efficiently perform inference on these large-scale neural network models.
+- This is a neat [repository](https://github.com/Machine-Learning-Tokyo/Interactive_Tools) prepared by MLT containing a list of interactive tools for machine learning, deep learning, and mathematics.
+- A recent [paper](https://arxiv.org/abs/2004.08900) aims to provide a concise overview of the costs associated with training large NLP models and how to derive these costs.
+- Recently, Springer has made freely available 100s of books with titles ranging from maths to deep learning. This [article](https://towardsdatascience.com/springer-has-released-65-machine-learning-and-data-books-for-free-961f8181f189) summarizes some of the machine learning related books that are available to download for free.
+- Kra-Mania is a simple question-answering app built with [Haystack](https://github.com/deepset-ai/haystack) (tools for question answering and search) using an open QA dataset built from the Seinfeld show. This [tutorial](https://colab.research.google.com/drive/17kZqK2i0CYzR6ZDjL6ULEtpDUOYwQAbK) shows how easy it is to build QA pipelines with the library. And this [link](https://kra-mania.firebaseapp.com/) takes you the demo app.
+- Explainability is the process by which researchers aim to better understand deep neural networks. It’s an important and active area of study as AI systems are being used in real-world critical domains. This [paper](https://arxiv.org/abs/2004.14545) provides a *“field guide” to deep learning explainability for the uninitiated*.
+- Here is a short [survey](https://ai.stanford.edu/blog/data-augmentation/) describing recent works on data augmentation which has recently become a popular area of study in ML and NLP.
+- In the previous newsletter, we featured the Longformer a variation of the Transformer which improves performance on various NLP tasks, particularly for longer documents. In this [video](https://www.youtube.com/watch?v=_8KNb5iqblE&t=463s), Yannic Kilcher provides a great explanation of the novelty proposed in this work.
+
+\\
+If you have any finished datasets, projects, blog posts, tutorials, or papers that you wish to share in the next issue of the NLP Newsletter, please submit them directly using this [form](https://forms.gle/3b7Q2w2bzsXE6uYo9).
+
+\\
+[*Subscribe*](https://dair.ai/newsletter/) *🔖 to the NLP Newsletter to receive future issues in your inbox.*
