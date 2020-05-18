@@ -210,7 +210,7 @@ VentureBeat rapporte que Google Researchers, en collaboration avec d'autres grou
 Dans un [podcast](https://soundcloud.com/nlp-highlights/104-model-distillation-with-victor-sanh-and-thomas-wolf) de NLP Highlights, Thomas Wolf et Victor Sanh parlent de la distillation de modèles et de la façon dont elle peut être utilisée comme une approche réalisable pour comprimer de grands modèles comme BERT. Ce concept est discuté plus en détail dans la méthode qu'ils proposent, appelée [DistilBERT](https://arxiv.org/abs/1910.01108), dans laquelle ils construisent des modèles plus petits (basés sur la même architecture qu'un modèle plus grand) pour essayer d'imiter le comportement du modèle plus grand. En substance, le petit modèle (l'étudiant) essaie de s'adapter à la distribution de probabilité de l'enseignant.
 
 \\
-***BERT, ELMo, & GPT-2: Dans quelle mesure les représentations contextuelles des mots sont-elles contextualisées ? ***
+***BERT, ELMo, & GPT-2: Dans quelle mesure les représentations contextuelles des mots sont-elles contextualisées ?***
 
 \\
 On a beaucoup parlé du succès des méthodes contextualisées comme BERT pour aborder une grande variété de tâches complexes de NLP. Dans cet [article](https://kawine.github.io/blog/nlp/2020/02/03/contextual.html), Kawin Ethayarajh tente de répondre à la question qui consiste à savoir comment sont contextualisés les mots dans les modèles comme BERT, ELMo et le GPT-2. Les sujets abordés comprennent les mesures de la contextualité, la spécificité du contexte et les comparaisons entre les embeddings statiques et les représentations contextualisées.
@@ -318,7 +318,7 @@ Sebastian Raschka a récemment publié un [article](https://arxiv.org/abs/2002.0
 Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-3_-FR/)
 
 \\
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à me contacter à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
 \\
-[Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
+[Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
