@@ -203,7 +203,7 @@ Cet [article de blog] (https://www.datasciencecentral.com/profiles/blogs/10-time
 Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-7_-FR/)
 
 \\
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à contacter Elvis à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
 \\
-[Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
+[Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
