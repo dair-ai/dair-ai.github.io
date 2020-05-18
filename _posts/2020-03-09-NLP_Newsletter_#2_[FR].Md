@@ -14,7 +14,7 @@ image:
 ![](https://cdn-images-1.medium.com/max/1200/1*mgWc3FhHPRfCxdPir6wSeg.png)
 
 
-# Avant-propos
+# Avant-propos d'Elvis
 Bienvenue à cette nouvelle newsletter consacrée au NLP ! Ce deuxième numéro aborde des sujets qui vont de l'interprétabilité des modèles au repliement des protéines en passant par l'apprentissage par transfert actif.
 
 # Publications 📙
@@ -238,7 +238,7 @@ Neural Data Server (NDS) est un moteur de recherche dédié à l’obtention de 
 Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-1_-FR/)
 
 \\
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à me contacter à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
 \\
-[Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
+[Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
