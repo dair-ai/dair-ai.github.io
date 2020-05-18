@@ -14,7 +14,7 @@ image:
 
 ![](https://cdn-images-1.medium.com/max/1200/1*vWICxAehSy3xOnqGIXtpoQ.png)
 
-# Avant-propos
+# Avant-propos d'Elvis
 Bienvenue au sixième numéro de la lettre d'information consacrée au NLP. Merci pour votre soutien et pour avoir pris le temps de lire les dernières nouvelles sur le ML et le NLP. Ce numéro traite de sujets allant de l'extension du modèle Transformer au ralentissement de la publication en ML, en passant par une série de livres et de lancements de projets en ML et en NLP.
 
 
@@ -186,7 +186,7 @@ Stanford a récemment publié une [playlist vidéo YouTube](https://www.youtube.
 dair.ai publie une [série de notebook](https://github.com/dair-ai/pytorch_notebooks) qui visent à vous faire découvrir les réseaux neuronaux profonds à l'aide de PyTorch. Il s'agit d'un travail en cours et certains sujets d'actualité comprennent la façon de mettre en œuvre un modèle de régression logistique à partir de zéro et la façon de programmer un NN ou un RNN à partir de zéro. Les notebooks sont également disponibles dans le dépôt GitHub.
 
 \\
-***Le livre de fastai book (ébauche) ***
+***Le livre de fastai book (ébauche)***
 
 \\
 Jeremy Howard et Sylvain Gugger ont publié une [liste complète](https://github.com/fastai/fastbook) de notebooks (non terminés) en vue de leur prochain cours qui présentera des concepts de deep learning et différentes méthodes d’utilisation de PyTorch et la librairie fastai.
@@ -237,7 +237,10 @@ Sebastian Ruder a publié un nouveau numéro de sa newsletter qui met en lumièr
 Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-5_-FR/)  
 
 \\
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à me contacter à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
+
+\\
+[Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
 
 \\
 [Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
