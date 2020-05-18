@@ -150,6 +150,8 @@ DIET (Dual Intent and Entity Transformer) est une architecture multitâche de co
 
 \\
 ***Perdu parmi toutes les langues disponibles pour BERT ?***
+
+\\
 [BERT Lang Street](https://bertlang.unibocconi.it/) est un site web qui offre la possibilité de rechercher plus de 30 modèles basés sur le BERT, en 18 langues et 28 tâches, soit un total de 177 entrées. Par exemple, si vous souhaitez connaître les résultats de la classification des sentiments à l'aide des modèles de BERT, il vous suffit de rechercher "sentiment" dans la barre de recherche (exemple illustré dans la capture d'écran ci-dessous).
 
 \\
@@ -293,7 +295,7 @@ OpenMined [évoque](https://blog.openmined.org/introducing-openmined-research/) 
 Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-6_-FR/)
 
 \\
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à contacter Elvis à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
 \\
-[Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
+[Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
