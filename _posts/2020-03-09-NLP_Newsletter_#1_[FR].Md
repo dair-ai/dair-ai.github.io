@@ -14,9 +14,9 @@ image:
 ![](https://cdn-images-1.medium.com/max/2400/1*gLVPodYjYd4YaF9sJbSpjg.png)
 
 
-# Avant-propos
+# Avant-propos d'Elvis
 
-Bonjour et bonne année ! Suite à de nombreuses demandes, j'ai décidé de recommencer la **Newsletter consacré au NLP**. Cette fois-ci, je vais la garder courte et ciblée (également maintenue dans ce [reportoire](https://github.com/dair-ai/nlp_newsletter)). L'objectif de ce bulletin est de vous tenir informé de certaines des avancées intéressantes et récentes liées au NLP et au ML sans prendre trop de temps sur votre journée chargée.
+Bonjour et bonne année ! Suite à de nombreuses demandes, j'ai décidé de recommencer la **Newsletter consacrée au NLP**. Cette fois-ci, je vais la garder courte et ciblée (également maintenue dans ce [reportoire](https://github.com/dair-ai/nlp_newsletter)). L'objectif de ce bulletin est de vous tenir informé de certaines des avancées intéressantes et récentes liées au NLP et au ML sans prendre trop de temps sur votre journée chargée.
 
 
 # Publications 📙
@@ -41,7 +41,7 @@ Des chercheurs du MIT et d'IBM ont mis au point une [méthode](news.mit.edu/2019
 ***Carrières***
 
 \\
-Le [rapport] https://hai.stanford.edu/sites/g/files/sbiybj10986/f/ai_index_2019_report.pdf) 2019 de l’AI Index suggère qu'il y a plus de demandes que d'offres de diplômés en AI. Toutefois, certains aspects des emplois liés à l'IA, tels que les transitions de carrière et les entretiens, ne sont pas encore bien définis.
+Le [rapport](https://hai.stanford.edu/sites/g/files/sbiybj10986/f/ai_index_2019_report.pdf) 2019 de l’AI Index suggère qu'il y a plus de demandes que d'offres de diplômés en AI. Toutefois, certains aspects des emplois liés à l'IA, tels que les transitions de carrière et les entretiens, ne sont pas encore bien définis.
 
 \\
 Dans ce [post](https://towardsdatascience.com/how-i-found-my-current-job-3fb22e511a1f), Vladimir Iglovivok décrit en détail sa carrière et son aventure dans le domaine de l'IA. Allant de la construction de systèmes de recommandation traditionnels à la construction de modèles de vision par ordinateur qui ont remporté des concours sur Kaggle. Il travaille maintenant sur des véhicules autonomes à Lyft, mais le chemin pour y parvenir n'a pas été si facile.
@@ -118,13 +118,13 @@ Benjamin Heinzerling a publié un [article](https://thegradient.pub/nlps-clever-
 ***Temps forts du NLP et du ML en 2019***
 
 \\
-Pour la nouvelle année, Elvis (créateur de cette newsletter et du site dair.ai )a publié un [document](https://medium.com/dair-ai/nlp-year-in-review-2019-fb8d523bcb19) sur certains des points intéressants du NLP et du ML qu’il a rencontré en 2019.
+Pour la nouvelle année, Elvis (créateur de cette newsletter et du site dair.ai) a publié un [document](https://medium.com/dair-ai/nlp-year-in-review-2019-fb8d523bcb19) sur certains des points intéressants du NLP et du ML qu’il a rencontré en 2019.
 
 \\
 Sebastian Ruder a également écrit récemment un [article](https://ruder.io/research-highlights-2019/) détaillé sur les dix principales orientations de recherche en ML et en NLP qu'il a trouvées percutantes en 2019. Parmi la liste figurent des sujets tels que l’entraînement universel non supervisée, l'augmentation des modèles pré-entrainés, les Transformers, entre autres.
 ![](https://cdn-images-1.medium.com/max/1600/0*8zoPc5OnYERIaaMP.png)
 
-*“VideoBERT (*[*Sun et al., 2019*](https://arxiv.org/abs/1904.01766 une récente variante multimodale de BERT qui génère des "tokens" vidéo en fonction d'une recette (ci-dessus) et prédit les futurs tokens à différentes échelles de temps en fonction d'un tokens vidéo (ci-dessous).” —* [*source*](https://arxiv.org/pdf/1904.01766.pdf)
+“VideoBERT (*[*Sun et al., 2019*](https://arxiv.org/abs/1904.01766 une récente variante multimodale de BERT qui génère des "tokens" vidéo en fonction d'une recette (ci-dessus) et prédit les futurs tokens à différentes échelles de temps en fonction d'un tokens vidéo (ci-dessous).” — [*source*](https://arxiv.org/pdf/1904.01766.pdf)
 
 \\
 Google AI Research publie un [résumé](https://ai.googleblog.com/2020/01/google-research-looking-back-at-2019.html) des recherches qu'ils ont menées au cours de l'année et les futures orientations de recherche auxquelles ils prêtent attention.
@@ -137,10 +137,10 @@ Google AI Research publie un [résumé](https://ai.googleblog.com/2020/01/google
 Dans un effort pour démocratiser l'enseignement de l'IA et pour éduquer les masses sur les implications de la technologie de l'IA, l'Université d'Helsinki s'est associée à Reaktor pour publier un cours gratuit couvrant les bases de l'IA. Ce [cours](https://www.elementsofai.com/) s'intitule "Elements de l'IA" et aborde des sujets tels que l'éthique de l'IA, la philosophie de l'IA, les réseaux de neurones, la règle de Bayes naïve, entre autres sujets fondamentaux.
 
 \\
-***Le Stanford CS224N est de retour avec une nouvelle***
+***Cours de Stanford CS224N** 
 
 \\
-[session](http://web.stanford.edu/class/cs224n/) de leurs cours "Natural Language Processing with Deep Learning". Le cours a officiellement débuté le 7 janvier de cette année. Si vous souhaitez le suivre, rendez-vous sur leur site web pour obtenir le programme complet, des diapositives, des vidéos, des suggestions de lecture de documents, etc.
+Stanford CS224N est de retour avec une nouvelle [session](http://web.stanford.edu/class/cs224n/) de leurs cours "Natural Language Processing with Deep Learning". Le cours a officiellement débuté le 7 janvier de cette année. Si vous souhaitez le suivre, rendez-vous sur leur site web pour obtenir le programme complet, des diapositives, des vidéos, des suggestions de lecture de documents, etc.
 
 \\
 ***Machine Learning avec les méthodes à noyaux***
@@ -158,10 +158,9 @@ Si vous souhaitez apprendre à concevoir et à construire des applications de ML
 
 
 
-
 ----------
 
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à me contacter à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
 \\
-[Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
+[Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
