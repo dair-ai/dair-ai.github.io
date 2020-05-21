@@ -13,7 +13,7 @@ image:
 ![](https://cdn-images-1.medium.com/max/2400/1*qaOM0D2tfy3chvnWRdycGA.png)
 
 
-# Avant-propos
+# Avant-propos d'Elvis
 Bienvenue à la Newsletter sur le NLP ! Le troisième numéro traite de sujets tels que l'amélioration des agents conversationnels, les versions de BERT spécifiques à chaque langue, les ensembles de données gratuits, les versions des bibliothèques d'apprentissage approfondi, et bien plus encore.
 
 
@@ -193,7 +193,7 @@ Le Dr David Leslie a publié ce [rapport](https://www.turing.ac.uk/sites/default
 ***Tutoriel sur l'accélération de la tokenisation***
 
 \\
-Steven van de Graaf a écrit cet [article] https://towardsdatascience.com/a-small-timing-experiment-on-the-new-tokenizers-library-a-write-up-7caab6f80ea6) à propos des performances de la librairie [Tokenizers](https://github.com/huggingface/tokenizers) d’Hugging Face par rapport au tokenizer standard intégré utilisé dans la librairie [Transformers](https://github.com/huggingface/transformers). Steven constate qu’une implémentation prend 10,6 secondes pour tokenizer 1 million de phrases et que le temps d’exécution est divisé par 9.
+Steven van de Graaf a écrit cet [article](https://towardsdatascience.com/a-small-timing-experiment-on-the-new-tokenizers-library-a-write-up-7caab6f80ea6) à propos des performances de la librairie [Tokenizers](https://github.com/huggingface/tokenizers) d’Hugging Face par rapport au tokenizer standard intégré utilisé dans la librairie [Transformers](https://github.com/huggingface/transformers). Steven constate qu’une implémentation prend 10,6 secondes pour tokenizer 1 million de phrases et que le temps d’exécution est divisé par 9.
 
 \\
 ***Les modèles linguistiques peuvent-ils vraiment comprendre ?***
@@ -274,7 +274,7 @@ John Schulman [partage](http://joschu.net/blog/opinionated-guide-ml-research.htm
 Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-2_-FR/)
 
 \\
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à me contacter à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
 \\
-[Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
+[Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.

@@ -14,9 +14,11 @@ image:
 ![](https://cdn-images-1.medium.com/max/1200/1*X_c0mVECV9rtl6ozuE-oPA.png)
 
 # Avant-propos d’Elvis
-Bienvenue au onzième numéro de la lettre d’information consacrée au NLP.  
+Bienvenue au onzième numéro de la lettre d’information consacrée au NLP.
+\\
 
 ***Quelques mises à jour sur la lettre d’information sur le NLP et sur dair.ai :***
+\\
 - Nous avons publié un [jeu de données](https://github.com/dair-ai/emotion_dataset) qui peuvent être utilisées pour la recherche d'émotions basée sur des textes. Le répertoire comprend un [notebook]( https://colab.research.google.com/drive/1nwCE6b9PXIKhv2hvbqf1oZKIGkXMTi1X#scrollTo=t23zHggkEpc-)) qui montre comment fine-tuner les modèles BERT pré-entraînés pour la tâche de classification des émotions. Plus récemment, un modèle a été fine-tuneé sur notre jeu de données et [hébergé]( https://huggingface.co/mrm8488/distilroberta-base-finetuned-sentiment) sur HuggingFace, permettant une intégration simple à une pipeline de NLP.
 
 - Nous avons récemment tenu notre toute première séance de lecture de d’articles. Plus de 124 personnes se sont inscrites et une grande partie de ce groupe a participé à l'événement à distance. La première discussion a porté sur le document du [T5](https://arxiv.org/abs/1910.10683%27). Nous organisons une deuxième session où nous aurons une discussion approfondie sur le document. Pour en savoir plus sur les prochains événements, rejoignez notre groupe [Meetup](https://www.meetup.com/dair-ai), ou participez à la discussion dans notre [groupe Slack](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g).
@@ -252,7 +254,7 @@ Aurélien Geron partage un [notebook](https://colab.research.google.com/github/a
 
 ----------
 
-Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-9_-FR/)
+Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-10_-FR/)
 
 \\
 Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).

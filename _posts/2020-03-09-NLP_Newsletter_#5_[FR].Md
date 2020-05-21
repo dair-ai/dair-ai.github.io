@@ -14,7 +14,7 @@ image:
 ![](https://cdn-images-1.medium.com/max/1200/1*YIhZsPaiBFkRMMWo5FAhGw.png)
 
 
-# Avant-propos
+# Avant-propos d'Elvis
 Tout d'abord, je ne saurais trop tous vous remercier pour le soutien et les encouragements incroyables que vous avez apportés à cette newsletter. Son élaboration nécessite des recherches et une rédaction fastidieuse que je trouve à la fois enrichissantes et utiles, afin de vous fournir le meilleur contenu. J'espère que vous les appréciez, car c'est le cas pour moi. 😉
 
 
@@ -196,7 +196,7 @@ Apprenez comment entraîner un modèle de reconnaissance d'entités nommées (NE
 Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-4_-FR/)  
 
 \\
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, n'hésitez pas à me contacter à ellfae@gmail.com ou par message sur [Twitter](https://twitter.com/omarsar0).
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
 \\
-[Abonnez-vous]( https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
+[Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.

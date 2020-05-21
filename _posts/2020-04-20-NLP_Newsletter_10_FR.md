@@ -192,7 +192,7 @@ Andrej Karpathy a récemment publié une bibliothèque appelée [micrograd] (htt
 ***La famille des Transformers et les développements récents***
 
 \\
-Dans un nouvel [article](https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html), Lilian Weng résume certains des développements récents du modèle Transformer. L'artilce[fournit une notation agréable, un historique et les dernières améliorations telles que l'allongement de la durée d'attention (Transformer XL), la réduction des calculs et de la consommation de mémoire.
+Dans un nouvel [article](https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html), Lilian Weng résume certains des développements récents du modèle Transformer. L'article fournit une notation agréable, un historique et les dernières améliorations telles que l'allongement de la durée d'attention (Transformer XL), la réduction des calculs et de la consommation de mémoire.
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/1*i-4V-EIirg2cvGMVLd8BWA.png)
