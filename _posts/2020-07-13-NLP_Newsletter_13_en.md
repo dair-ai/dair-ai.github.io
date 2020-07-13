@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NLP Newsletter 13: ACL Highlights, TaBERT, Texthero, ML Methods, Climbing towards NLU,…"
+title: "NLP Newsletter 13 [EN]: ACL Highlights, TaBERT, Texthero, ML Methods, Climbing towards NLU,…"
 author: elvis
 excerpt: "In this issue, we cover topics that range from interesting works presented at the ACL conference to tools for improving the exploration of papers and code to several useful NLP tool recommendations."
 modified:
