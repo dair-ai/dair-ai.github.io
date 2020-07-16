@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Making monolingual sentence embeddings multilingual using knowledge distillation"
+title: "Summary of 'Making monolingual sentence embeddings multilingual using knowledge distillation'"
 author: viktor2k
 excerpt: "A paper summary of _Making monolingual sentence embeddings multilingual using knowledge distillation_ which covers the main motivation behind this work, their contribution and experimental findings."
 modified:
