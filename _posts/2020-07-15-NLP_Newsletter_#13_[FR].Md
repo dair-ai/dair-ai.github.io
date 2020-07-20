@@ -16,15 +16,15 @@ image:
 # Avant-propos d’Elvis
 Bienvenue au treizième numéro de la lettre d’information consacrée au NLP.  
 
-Dans ce numéro, nous abordons des sujets qui vont des travaux présentés lors de la [conférence ACL] (https://acl2020.org/) aux outils permettant d'améliorer l'exploration des documents et des codes, en passant par plusieurs recommandations utiles en  NLP.
+\\
+Dans ce numéro, nous abordons des sujets qui vont des travaux présentés lors de la [conférence ACL](https://acl2020.org/) aux outils permettant d'améliorer l'exploration des documents et des codes, en passant par plusieurs recommandations utiles en  NLP.
 
 \\
 Nous remercions tout particulièrement [Keshaw Singh](https://twitter.com/_skeshaw) et [Manikandan Sivanesan](https://twitter.com/manisnesan) pour leur contribution significative à cette édition de la lettre d'information de la NLP.
 
-
+\\
 ***Quelques mises à jour sur la lettre d’information sur le NLP et sur dair.ai :***
-
-- Dans l'une de nos prochaines conférences, le Dr Juan M. Banda discutera de la motivation et de la raison d'être de sa boîte à outils pour l'exploitation des médias sociaux (Social Media Mining Toolkit ([SMMT](https://github.com/thepanacealab/SMMT)) ainsi que de la manière de l'utiliser pour définir des frameworks pour la collecte de données à grande échelle sur les médias sociaux pour les projets de recherche en NLP et en ML. Il présentera toutes les leçons apprises, les erreurs et les décisions difficiles prises pour produire et maintenir un ensemble de données à grande échelle sur la COVID-19 issues de conversations sur Twitter. Le jeu de données comprent plus de [424 millions de tweets dans plus de 60 langues et provenant de plus de 60 pays] (https://zenodo.org/record/3911930).
+- Dans l'une de nos prochaines conférences, le Dr Juan M. Banda discutera de la motivation et de la raison d'être de sa boîte à outils pour l'exploitation des médias sociaux (Social Media Mining Toolkit ([SMMT](https://github.com/thepanacealab/SMMT)) ainsi que de la manière de l'utiliser pour définir des frameworks pour la collecte de données à grande échelle sur les médias sociaux pour les projets de recherche en NLP et en ML. Il présentera toutes les leçons apprises, les erreurs et les décisions difficiles prises pour produire et maintenir un ensemble de données à grande échelle sur la COVID-19 issues de conversations sur Twitter. Le jeu de données comprent plus de [424 millions de tweets dans plus de 60 langues et provenant de plus de 60 pays](https://zenodo.org/record/3911930).
 - Nous avons récemment organisé un stream en direct sur [comment débuter en NLP](https://www.youtube.com/watch?v=O2TZPrwhPhE). Si vous débutez en NLP et que vous cherchez des conseils de recherche, n'hésitez pas à consulter la discussion. Si vous souhaitez être informé, vous pouvez vous inscrire sur la [chaîne YouTube](https://www.youtube.com/watch?v=O2TZPrwhPhE) ou sur la [page Meetup](https://www.meetup.com/dair-ai/).
 - Dans la [prochaine discussion](https://www.meetup.com/dair-ai/events/271794687/), nous discuterons du document intitulé "Deep Learning Based Text Classification: A Comprehensive Overview ».
 
@@ -34,6 +34,8 @@ Nous remercions tout particulièrement [Keshaw Singh](https://twitter.com/_skesh
 ***Au-delà de la précision : test comportemental de modèles de NLP avec CheckList***
 \\
 L'une des stratégies les plus courantes pour mesurer la généralisation dans les modèles de NLP consiste à évaluer des séries de tests. Bien qu'utile, cette approche présente deux inconvénients majeurs : la surestimation de la capacité de généralisation d'un modèle et l'incapacité à déterminer ses points d'échec. Dans un travail présenté lors de l'ACL de cette année (qui a également remporté le prix du meilleur article), [Ribeiro et al. (2020)](https://www.aclweb.org/anthology/2020.acl-main.442) proposent une méthodologie d'évaluation plus complète qui est à la fois agnostique au modèle et à la tâche.
+
+\\
 Elle applique le principe de test comportemental consistant à "découpler le test de la mise en œuvre" en traitant le modèle comme une boîte noire, ce qui permet de comparer différents modèles entraînés à partir de données différentes. Le [code](https://github.com/marcotcr/checklist), à l'aide de modèles et d'autres abstractions, permet aux utilisateurs de générer facilement un grand nombre de cas de test. Le travail contient également de multiples études d'utilisateurs, démontrant l'efficacité de ce framework pour identifier les points d'échec dans les modèles commerciaux et de l’état de l’art.
 
 \\
@@ -59,10 +61,10 @@ Pouvons-nous utiliser des méthodes d'apprentissage automatique pour réduire le
 \\
 ![](https://cdn-images-1.medium.com/max/800/0*pkgq7AR0Df0De2cq.png)
 
-*Figure par [*Rolnick et al. (2020)*] (https://arxiv.org/abs/1906.05433v2)
+*Figure par [*Rolnick et al. (2020)*](https://arxiv.org/abs/1906.05433v2)
 
 \\
-***Embeddings contextuels : Quand en valent-ils la peine ?
+***Embeddings contextuels : Quand en valent-ils la peine ?***
 \\
 Des embeddings contextuels profonds comme ELMo et BERT ont été largement utilisés dans l'industrie ces dernières années, en plus de permettre des progrès rapides sur plusieurs critères de référence comme GLUE. Outre les coûts importants en termes de temps et de mémoire lors de l’entraînement, il y a des coûts supplémentaires lors du fine-tuning ou de l'inférence sur les tâches en aval. Dans un travail présenté lors de l'ACL qui vient de s'achever, [Arora et al. (2020)](https://www.aclweb.org/anthology/2020.acl-main.236) évaluent les avantages de l'utilisation des embeddings BERT par rapport aux embeddings non contextuels (GloVe, aléatoire). Grâce à leurs expériences sur des tâches de référence en aval comme la reconnaissance d'entités nommées (NER), l'analyse des sentiments et les tâches de compréhension du langage naturel (GLUE), ils montrent qu'il est souvent possible d'obtenir des performances absolues de 5 à 10 % de celles des embeddings BERT en utilisant GloVe ou des embeddings aléatoires.
 
@@ -108,7 +110,7 @@ L'équipe de Papers with Code a récemment lancé une nouvelle fonctionnalité a
 \\
 ***Code Finder for Research Papers***
 \\
-Cette extension de navigateur gratuite récemment publiée (https://chrome.google.com/webstore/detail/code-finder-for-research/aikkeehnlfpamidigaffhfmgbkdeheil) est utile pour trouver et afficher automatiquement des liens vers des implémentations de code pour les documents ML n'importe où sur le web, comme Google Search, Arxiv, Twitter, Scholar et d'autres sites.
+[Cette extension de navigateur gratuite récemment publiée](https://chrome.google.com/webstore/detail/code-finder-for-research/aikkeehnlfpamidigaffhfmgbkdeheil) est utile pour trouver et afficher automatiquement des liens vers des implémentations de code pour les documents ML n'importe où sur le web, comme Google Search, Arxiv, Twitter, Scholar et d'autres sites.
 
 
 # Articles et Blog ✍️
@@ -121,12 +123,13 @@ Le codage de la sémantique des mots et des phrases est une chose que nous consi
 \\
 ***DeViSe sur PyTorch***
 \\
-Cet [article de blog] (https://medium.com/@vijayabhaskar96/fun-project-devise-on-pytorch-83eb09694d41) présente le modèle d'intégration Deep Visual-Semantic (DeViSe) mis en œuvre dans PyTorch. DeViSe utilise comme cible les vecteurs de mots des labels, ce qui facilite l'apprentissage de la signification sémantique des labels. Le modèle est entraîné pour identifier les objets visuels en utilisant les données des images étiquetées et les informations sémantiques du texte non annoté. Ces modèles peuvent ensuite être utilisés pour générer des résultats intéressants pour des tâches telles que la recherche par mot-clé, la recherche inversée d'images et la recherche d'images par mot-clé.
+Cet [article de blog](https://medium.com/@vijayabhaskar96/fun-project-devise-on-pytorch-83eb09694d41) présente le modèle d'intégration Deep Visual-Semantic (DeViSe) mis en œuvre dans PyTorch. DeViSe utilise comme cible les vecteurs de mots des labels, ce qui facilite l'apprentissage de la signification sémantique des labels. Le modèle est entraîné pour identifier les objets visuels en utilisant les données des images étiquetées et les informations sémantiques du texte non annoté. Ces modèles peuvent ensuite être utilisés pour générer des résultats intéressants pour des tâches telles que la recherche par mot-clé, la recherche inversée d'images et la recherche d'images par mot-clé.
 
 \\
 ***Découverte de la structure et de la fonction des protéines grâce à la modélisation du langage***
 \\
-Les modèles de langage se sont révélés très efficaces pour encoder des informations séquentielles telles que des phrases en langage naturel, ce qui est utile pour construire des modèles hautement prédictifs qui permettent d'effectuer un large éventail de tâches de NLP. Au fur et à mesure de leur amélioration, les modèles Transformer ont également été adoptés dans d'autres domaines tels que [la vision par ordinateur pour la détection d'objets] (https://ai.facebook.com/blog/end-to-end-object-detection-with-transformers/). Il n'est pas surprenant que le mécanisme d'attention sous-jacent utilisé dans ces modèles de langage puisse être appliqué efficacement à d'autres problèmes difficiles et à fort impact, comme la découverte de la structure des protéines.
+Les modèles de langage se sont révélés très efficaces pour encoder des informations séquentielles telles que des phrases en langage naturel, ce qui est utile pour construire des modèles hautement prédictifs qui permettent d'effectuer un large éventail de tâches de NLP. Au fur et à mesure de leur amélioration, les modèles Transformer ont également été adoptés dans d'autres domaines tels que [la vision par ordinateur pour la détection d'objets](https://ai.facebook.com/blog/end-to-end-object-detection-with-transformers/). Il n'est pas surprenant que le mécanisme d'attention sous-jacent utilisé dans ces modèles de langage puisse être appliqué efficacement à d'autres problèmes difficiles et à fort impact, comme la découverte de la structure des protéines.
+
 \\
 [Des travaux récents](https://blog.einstein.ai/provis/) d'un groupe de recherche de Salesforce montrent le potentiel de l'utilisation d'un modèle de langage Transformer pour récupérer la structure et les propriétés fonctionnelles des protéines en entraînant le modèle à prédire les acides aminés masqués dans une séquence protéique. Comme ces informations peuvent être traitées de manière séquentielle, une stratégie de préentraînement similaire à celle du modèle BERT peut être utilisée et appliquée à des séquences de protéines non marquées à grande échelle. Il est démontré que le mécanisme d'attention permet de saisir les relations de contact qui pourraient être utiles pour la prédiction des interactions entre protéines et alimenter la découverte scientifique en biologie.
 
@@ -136,15 +139,15 @@ Les modèles de langage se sont révélés très efficaces pour encoder des info
 *Figure source:* [*Salesforce Einstein*](https://blog.einstein.ai/provis/)
 
 \\
-***Nettoyage des données textuelles à l'aide Dynamic Embedding Visualisation ***
+***Nettoyage des données textuelles à l'aide Dynamic Embedding Visualisation***
 \\
 Il est primordial de disposer de données d’entraînement de haute qualité pour les tâches de traduction automatique, ce qui est plus difficile dans le cas des langues à faibles ressources. Dans ce [blogpost](https://t.co/JmAJn6L6HG), Morgan McGuire démontre comment utiliser des techniques telles que l'intégration contextuelle multilingue, ainsi que la réduction de la dimensionnalité en utilisant UMAP pour identifier de manière interactive les groupes bruyants et les supprimer afin d'améliorer les ensembles de données. L'animation suivante présente un groupe bruyant aléatoire contenant des données en arabe et en pied de page de site web dans un ensemble de données irlandais-anglais.
 
 # Education 🎓
-	
+
 ***Ethical & Responsible NLP***
 \\
-Rachel Tatman aborde des sujets importants dans son discours d'ouverture [What I won't build](https://slideslive.com/38929585/what-i-wont-build) à [@WiNLPWorkshop] (https://twitter.com/WiNLPWorkshop). Les chercheurs et les praticiens doivent déterminer si les systèmes qu'ils mettent en place peuvent causer du tort, de la discrimination ou porter atteinte à la vie privée. Rachel nous invite à poser une série de questions sur les utilisateurs, l'utilisation du système et son effet sur l'inégalité systémique. Elle préconise également de sensibiliser les autres aux risques et à la manière dont l'organisation d'un effort coordonné peut donner des résultats.
+Rachel Tatman aborde des sujets importants dans son discours d'ouverture [What I won't build](https://slideslive.com/38929585/what-i-wont-build) à [@WiNLPWorkshop](https://twitter.com/WiNLPWorkshop). Les chercheurs et les praticiens doivent déterminer si les systèmes qu'ils mettent en place peuvent causer du tort, de la discrimination ou porter atteinte à la vie privée. Rachel nous invite à poser une série de questions sur les utilisateurs, l'utilisation du système et son effet sur l'inégalité systémique. Elle préconise également de sensibiliser les autres aux risques et à la manière dont l'organisation d'un effort coordonné peut donner des résultats.
 
 \\
 ***Full Stack Deep Learning***
@@ -156,7 +159,7 @@ Ce nouveau cours appelé [Full Stack Deep Learning](https://course.fullstackdeep
 \\
 ***Reinforcement Learning Tutorial***
 \\
-Dans ce tutoriel d'apprentissage par renforcement (https://github.com/eemlcommunity/PracticalSessions2020/blob/master/rl/EEML2020_RL_Tutorial.ipynb) (disponible sous forme de Google Colab), Feryal démontre d'importants concepts de RL qui comprennent des algorithmes tels que l'itération des politiques, le Q-Learning et le Q ajusté aux neurones. En outre, une courte introduction à l'apprentissage du renforcement profond est également couverte, qui comprend des explications et le code de l'algorithme du réseau Q profond (DQN).
+[Dans ce tutoriel d'apprentissage par renforcement](https://github.com/eemlcommunity/PracticalSessions2020/blob/master/rl/EEML2020_RL_Tutorial.ipynb) (disponible sous forme de Google Colab), Feryal démontre d'importants concepts de RL qui comprennent des algorithmes tels que l'itération des politiques, le Q-Learning et le Q ajusté aux neurones. En outre, une courte introduction à l'apprentissage du renforcement profond est également couverte, qui comprend des explications et le code de l'algorithme du réseau Q profond (DQN).
 
 \\
 ![](https://cdn-images-1.medium.com/max/800/0*bMU-UL-wPPGmZMKo.png)
@@ -172,7 +175,7 @@ Si vous cherchez d'autres aperçus et faits marquants de l'ACL de cette année, 
 Quelques suggestions de challenges en cours si vous cherchez des idées pour démarrer et mettre en pratique vos connaissances en NLP et en ML :
 - [Dravidian-CodeMix](https://dravidian-codemix.github.io/2020/index.html) - analyser des sentiments pour les langues dravidiennes dans le texte codé que l'on trouve dans les médias sociaux
 - [NLC2CMD](http://nlc2cmd.us-east.mybluemix.net/) - traduire les descriptions en anglaise des dans leur syntaxe Bash correspondante
-- [IEEE BigData 2020 Cup] (https://knowledgepit.ml/predicting-escalations-in-customer-support/) - un défi d'exploration de données pour prédire l'augmentation de l'assistance technique aux clients en utilisant des techniques de langage naturel
+- [IEEE BigData 2020 Cup](https://knowledgepit.ml/predicting-escalations-in-customer-support/) - un défi d'exploration de données pour prédire l'augmentation de l'assistance technique aux clients en utilisant des techniques de langage naturel
 
 
 
@@ -185,9 +188,10 @@ Quelques suggestions de challenges en cours si vous cherchez des idées pour dé
 
 ----------
 
-Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-12_-FR/) \\
+Vous pouvez retrouver la précédente newsletter [ici](https://dair.ai/NLP_Newsletter_-12_-FR/)
 
-Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 \\
+Si vous avez des jeux de données, des projets, des articles de blog, des tutoriels ou des documents que vous souhaitez partager dans la prochaine édition de la newletter, vous pouvez utiliser ce [formulaire](https://forms.gle/3b7Q2w2bzsXE6uYo9).
 
+\\
 [Abonnez-vous](https://dair.ai/newsletter/) pour recevoir les prochains numéros dans votre boîte mail.
