@@ -6,7 +6,7 @@ Check out how other people are already contributing to dair.ai in the [issues](h
 
 Find out how you can start contributing to dair.ai in the [issues](https://github.com/dair-ai/dair-ai.github.io/issues) section. Feel free to ask anything related to dair.ai in this dedicated [issue](https://github.com/dair-ai/dair-ai.github.io/issues/29).
 
-Feel free to join our Slack at this [link](https://join.slack.com/t/dairai/shared_invite/zt-d2srv503-bQ01ZPLC4t4OoolEN9saSg) or send me an email at ellfae@gmail and I will send you an invite directly.
+Feel free to reach out to me on [Twitter](https://twitter.com/omarsar0) for an invite to our Slack group.
 
 ## Contributors
 
