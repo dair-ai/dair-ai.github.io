@@ -19,4 +19,4 @@ All our projects are hosted on [GitHub](https://github.com/dair-ai).
 Follow our Twitter page [here](https://twitter.com/dair_ai).
 
 \\
-Join our [Slack](https://join.slack.com/t/dairai/shared_invite/zt-dv2dwzj7-F9HT047jIGkunNKv88lQ~g) group to find out about all our initiatives and join the conversation.
+Subscribe to our newsletter [here](https://nlpnews.substack.com/)
