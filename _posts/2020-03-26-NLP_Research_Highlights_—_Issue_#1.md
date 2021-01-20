@@ -354,5 +354,16 @@ Results from their qualitative analysis are shown below:
 Miryam de Lhoneux released her Ph.D. thesis titled “[Linguistically Informed Neural Dependency Parsing for Typologically Diverse Languages](http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1357373&dswid=7905)”. This work is about using neural approaches for [dependency parsing](http://nlpprogress.com/english/dependency_parsing.html) in typologically diverse languages (i.e. languages that construct and express meaning in structurally different ways). This paper reports that RNNs and recursive layers could be beneficial for incorporating into parsers as they help to inform models with important linguistic knowledge needed for parsing. Other ideas include the use of polyglot parsing and parameter sharing strategies for parsing in related and unrelated languages.
 
 ----------
+In academic context, please consider citing:
+
+```
+@misc{elvis2020researchhighlights,
+  author = {Elvis, Saravia},
+  title = {{NLP Research Highlights 2020}},
+  year = {2020},
+  howpublished = {\url{https://dair.ai/NLP_Research_Highlights_-_Issue_-1/}},
+}
+```
+
 
 Thanks for reading and we hope you found the information useful. Don’t forget to keep track of other summaries in our new [**GitHub repo**](https://github.com/dair-ai/nlp_paper_summaries). 🙏
