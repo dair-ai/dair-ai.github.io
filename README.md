@@ -4,6 +4,6 @@
 
 Find out how you can start contributing to DAIR.AI in the [issues](https://github.com/dair-ai/dair-ai.github.io/issues) section. We thank all our contributors. 
 
-Join our Slack group [here](https://join.slack.com/t/dairai/shared_invite/zt-pcxkmoip-b4nJkci8L_dynpMwLvlCcQ).
+Join our [Discord](https://discord.gg/SKgkVT8BGJ)!
 
 Feel free to reach out to me on [Twitter](https://twitter.com/omarsar0) if you want to discuss ideas of projects or talks. 
