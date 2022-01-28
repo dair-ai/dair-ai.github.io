@@ -6,8 +6,8 @@
 - title: About ℹ️
   url: /about/
 
-- title: Chat on Slack 💬
-  url: /slack/
+- title: Join our Discord 💬
+  url: https://discord.gg/SKgkVT8BGJ
 
 - title: GitHub 🐙
   url: https://github.com/dair-ai
@@ -15,8 +15,8 @@
 - title: Meetups 🌐
   url: https://www.meetup.com/dair-ai/
 
-- title: Contribute 👩‍💻
-  url: https://forms.gle/HaGQyGmtB5Kkxvao9
+#- title: Contribute 👩‍💻
+#  url: https://forms.gle/HaGQyGmtB5Kkxvao9
 
 - title: NLP Overview 📘
   url: https://nlpoverview.com/
