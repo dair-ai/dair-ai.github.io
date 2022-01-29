@@ -71,9 +71,11 @@ When doing your analysis, remember to add domain-specific stop words, not just t
 ``` python
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.corpus import stopwords
+
 stops =  set(stopwords.words('english')+['com'])
 co = CountVectorizer(stop_words=stops)
 counts = co.fit_transform(data.Tweet_Text)
+
 pd.DataFrame(counts.sum(axis=0),columns=co.get_feature_names()).T.sort_values(0,ascending=False).head(50)
 ```
 
@@ -117,13 +119,16 @@ In this analysis, I will use an English word list from [https://github.com/dwyl/
 words = pd.read_table('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt')
 words.columns=['word']
 words = words['word'].str.lower().values.tolist()
+
 data['clean_text'] = data.Tweet_Text.apply(lambda x: ' '.join([i for i in x.split(' ') if not (i.startswith('@') or i.startswith('#'))]))
 data['clean_text'] = data.clean_text.str.lower().str.replace('[^a-zA]', ' ')
 non_list = {}
+
 for sent in tqdm(data.clean_text.str.split().values):
   for token in sent:
     if token not in words:
       non_list[token] = 1 if token not in non_list else non_list[token]+1
+
 pd.Series(non_list).sort_values(ascending=False).head(30)
 ```
 
@@ -156,11 +161,14 @@ I use the Latent Dirichlet Allocation algorithm with 10 topics and print the mos
 
 ```python
 from sklearn.decomposition import LatentDirichletAllocation, NMF
+
 vectorizer = CountVectorizer(stop_words=stops)
 model = vectorizer.fit(data.clean_text)
 docs = vectorizer.transform(data.clean_text)
+
 lda = LatentDirichletAllocation(20)
 lda.fit(docs)
+
 def print_top_words(model, feature_names, n_top_words):
   for topic_idx, topic in enumerate(model.components_):
     message = "Topic #%d: " % topic_idx
@@ -168,6 +176,7 @@ def print_top_words(model, feature_names, n_top_words):
     for i in topic.argsort()[:-n_top_words - 1:-1]])
       print(message)
   print()
+
 print_top_words(lda,vectorizer.get_feature_names(),10)
 ```
 
@@ -202,6 +211,7 @@ In many applications, our text corpus is associated with a time series (ie: news
 ```python
 data['Date']=pd.to_datetime(data.Date,yearfirst=True)
 data.index = data.Date
+
 for i in range(10):
   temp = data[data.topic==i]
   temp.resample('7D').size().plot()
