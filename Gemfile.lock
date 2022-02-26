@@ -60,14 +60,14 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
-    mini_portile2 (2.6.1)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
+    nokogiri (1.13.2)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.12.5-x64-mingw32)
+    nokogiri (1.13.2-x64-mingw32)
       racc (~> 1.4)
-    nokogiri (1.12.5-x86-mingw32)
+    nokogiri (1.13.2-x86-mingw32)
       racc (~> 1.4)
     octopress (3.0.12.pre.1)
       jekyll (>= 2.0)
@@ -117,7 +117,7 @@ DEPENDENCIES
   jekyll-sitemap
   jemoji
   kramdown-parser-gfm
-  nokogiri (~> 1.12.5)
+  nokogiri (~> 1.13.2)
   octopress (~> 3.0.0.rc.12)
   pygments.rb
   webrick (~> 1.7)
