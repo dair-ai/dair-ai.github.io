@@ -12,6 +12,7 @@ image:
 
 DAIR.AI aims to democratize Artificial Intelligence (AI) research, education, and technologies.
 
+\\
 We also provide expert support for AI projects and businesses.
 
 \\
