@@ -13,9 +13,6 @@ image:
 DAIR.AI aims to democratize Artificial Intelligence (AI) research, education, and technologies.
 
 \\
-We also provide expert support for AI projects and businesses.
-
-\\
 All our projects are hosted on [GitHub](https://github.com/dair-ai).
 
 \\
