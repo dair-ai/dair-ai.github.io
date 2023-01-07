@@ -6,4 +6,4 @@ Find out how you can start contributing to DAIR.AI in the [issues](https://githu
 
 Join our [Discord](https://discord.gg/SKgkVT8BGJ)!
 
-Feel free to reach out to me on [Twitter](https://twitter.com/omarsar0) if you want to discuss ideas of projects or talks. 
+Feel free to reach out to me on [Twitter](https://twitter.com/omarsar0) for contributions, sponsorship, and collaborations.
