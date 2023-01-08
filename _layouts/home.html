@@ -9,10 +9,9 @@
 
 <body class="home">
 
-
-
 {% include _browser-upgrade.html %}
 
+<!-- Navigation Bar -->
 {% include _navigation.html %}
 
 <!--
@@ -31,13 +30,29 @@
   </div>
 {% endif %} -->
 
+
 <div id="main" role="main">
   <div class="article-author-side">
     {% include _author-bio.html %}
   </div>
   <div id="index">
-    <!--<h3><a href="{{ site.url}}/posts/">Recent Projects</a></h3>-->
-    {% for post in site.posts limit:10 %}
+    <!--Add Projects section-->
+    <h3><a href="{{ site.url}}/projects/">Recent Projects</a></h3>
+    {% for project in site.categories.projects limit:10 %}
+    <article>
+      {% if project.link %}
+        <h2 class="link-post"><a href="{{ site.url }}{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a> <a href="{{ project.link }}" target="_blank" title="{{ project.title }}"><i class="fa fa-link"></i></h2>
+      {% else %}
+        <h2><a href="{{ site.url }}{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h2>
+        <!--<p>{{ project.excerpt | strip_html | truncate: 160 }}</p>-->
+        <!--<p class="byline"> <time datetime="{{ project.date | date_to_xmlschema }}">{{ project.date | date: "%B %d, %Y" }}</time></p>-->
+      {% endif %}
+    </article>
+    {% endfor %}
+  </br>
+    <!--Blog section-->
+    <h3><a href="{{ site.url}}/posts/">Blog</a></h3>
+    {% for post in site.categories.posts limit:10 %}
     <article>
       {% if post.link %}
         <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>

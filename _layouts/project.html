@@ -9,6 +9,9 @@
 </head>
 
 <body class="post">
+{% if page.language == "arabic" %}
+<body class="post", style="direction: rtl ! important; font-family: Dubai ! important;">
+{% endif %}
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -18,8 +21,9 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43ef4f23bf37b0"></script> 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e43ef4f23bf37b0"></script>
+
 
 {% include _browser-upgrade.html %}
 
@@ -47,18 +51,27 @@
   <article class="post">
     <div class="headline-wrap">
       {% if page.link %}
-        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+        {% if page.language == "arabic" %}
+          <h1 style="direction: rtl ! important; font-family: Dubai ! important;"><a href="{{ page.link }}">{{ page.title }}</a></h1>
+        {% else %}
+          <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+        {% endif %}
       {% else %}
-        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+        {% if page.language == "arabic" %}
+          <h1 style="direction: rtl ! important; font-family: Dubai ! important;"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+        {% else %}
+          <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+        {% endif %}
       {% endif %}
     </div><!--/ .headline-wrap -->
+
     <div class="article-wrap">
       {{ content }}
       <hr />
       <footer role="contentinfo">
         {% if page.share != false %}{% include _social-share.html %}{% endif %}
         <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
-        {% include _facebook_comments.html %}
+        {% include _disqus_comments.html %}
       </footer>
     </div><!-- /.article-wrap -->
   {% if site.owner.disqus-shortname and page.comments == true %}
@@ -67,6 +80,7 @@
   </article>
 </div><!-- /#main -->
 
+<!--
 <div class="footer-wrap">
   {% if site.related_posts.size > 0 %}
   <div class="related-articles">
@@ -77,14 +91,14 @@
     {% endfor %}
     </ul>
     <hr />
-  </div><!-- /.related-articles -->
+  </div>
   {% endif %}
   <footer>
     {% include _footer.html %}
   </footer>
-</div><!-- /.footer-wrap -->
+</div>-->
 
-{% include _scripts.html %}	        
+{% include _scripts.html %}
 
 </body>
 </html>
