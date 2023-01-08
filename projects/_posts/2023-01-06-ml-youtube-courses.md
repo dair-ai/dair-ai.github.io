@@ -6,8 +6,13 @@ modified:
 comments: true
 excerpt: "ML YouTube Courses"
 tags: []
+image:
+  thumb: ml-youtube-courses.png
 ---
 
+![](/images/ml-youtube-courses.png)
+
+\\
 At DAIR.AI we ❤️ open AI education. We have created a new repo to index and organize some of the best and most recent machine learning courses available on YouTube.
 
 \\
