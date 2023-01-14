@@ -19,7 +19,7 @@ Further, the difficulties in fine-tuning small student models after the initial 
 What would be possible if, instead, knowledge distillation was put front and centre during design and training of the teacher model? Could we design and successfully train a model that is _supposed_ to be distilled and could the distilled version successfully be fine-tuned on any down stream task? These are some of the questions adressed in [MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices](https://www.aclweb.org/anthology/2020.acl-main.195.pdf) which this article will provide a summary of.
 
 # The MobileBERT architectures
-![Architecture visualisation of transformer blocks within (a) BERT, (b) MobileBERT teacher and (c) MobileBERT student. The green trapezoids marked with “Linear” are referred to as bottlenecks. [Source](https://www.aclweb.org/anthology/2020.acl-main.195.pdf)](../images/summary-mobilebert/architecture-teacher-and-student.jpg)
+![Architecture visualisation of transformer blocks within (a) BERT, (b) MobileBERT teacher and (c) MobileBERT student. The green trapezoids marked with “Linear” are referred to as bottlenecks. [Source](https://www.aclweb.org/anthology/2020.acl-main.195.pdf)](../../images/summary-mobilebert/architecture-teacher-and-student.jpg)
 
 ## Linear
 Knowledge distillation require us to compare teacher and student representations so that the difference between these can be minimised. This is straight forward when both matrices or vectors are of the same dimension. Therefore, MobileBERT introduces a _bottleneck_ layer into the transformer block. This allows the input to both student and teacher to be equivalent in size while their internal representations can differ. These bottlenecks are shown as green trapezoids marked with “Linear” in the figure above. In this particular case is the shared dimension 512, while the internal representation sizes for teacher and student are 1024 and 128 respectively. This allows us to use a BERT-large (340M parameters) equivalent model to train a 25M parameter student.
@@ -50,7 +50,7 @@ With these objectives, there are more than one way we can perform knowledge dist
 3. **Progressive knowledge transfer** - The two step approach can be taken even further. Errors not yet minimised properly in early layers will propagate and affect the training of later layers if all layers are trained simultaneously. It might, therefore, be better to train one layer at a time while freezing or reducing the learning rate of previous layers.
 
 \\
-![Knowledge transfer techniques. (a) Auxiliary knowledge transfer, (b) joint knowledge transfer, (c) progressive knowledge transfer. [Source](https://www.aclweb.org/anthology/2020.acl-main.195.pdf)](../images/summary-mobilebert/training-strategies.jpg)
+![Knowledge transfer techniques. (a) Auxiliary knowledge transfer, (b) joint knowledge transfer, (c) progressive knowledge transfer. [Source](https://www.aclweb.org/anthology/2020.acl-main.195.pdf)](../../images/summary-mobilebert/training-strategies.jpg)
 
 # Experimental results
 The authors evaluate their proposed MobileBERT in three configurations; the main model with 25M parameters (MobileBERT), the same model without the operational optimisations (MobileBERT w/o OPT), as well as a model with only 15M parameters (MobileBERT-tiny). These models were compared to both baseline algorithms such ELMo, GPT and BERT-base as wells as related distillation work: BERT-PKD, [DistilBERT](https://medium.com/dair-ai/tl-dr-distillbert-8fb0f9e3c03d) and [TinyBERT](https://medium.com/dair-ai/tinybert-size-does-matter-but-how-you-train-it-can-be-more-important-a5834831fa7d).
@@ -59,7 +59,7 @@ The authors evaluate their proposed MobileBERT in three configurations; the main
 Training these variations of MobileBERT was found to be most effective through the progressive knowledge transfer process, which consistently outperformed the other two by a significant margin.
 
 \\
-![Experimental results on the GLUE benchmark. [Source](https://www.aclweb.org/anthology/2020.acl-main.195.pdf)](../images/summary-mobilebert/results-glue.jpg)
+![Experimental results on the GLUE benchmark. [Source](https://www.aclweb.org/anthology/2020.acl-main.195.pdf)](../../images/summary-mobilebert/results-glue.jpg)
 
 \\
 What we find is that MobileBERT w/ o OPT outperforms the much larger BERT-base by 0.2 average GLUE score, while being 4x smaller. MobileBERT on the other hand is only 0.6 points behind BERT-base while having a much faster inference time - 62 ms for a sequence of 128 tokens on a Pixel 4 phone! Its performance is however still competitive, since it outperform GTP and ELMo by a significant margin.
