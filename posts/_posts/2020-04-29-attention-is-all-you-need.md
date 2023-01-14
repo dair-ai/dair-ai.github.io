@@ -93,7 +93,7 @@ The authors decided to use a dot-product attention over an additive attention be
 
 In training we don't want to show the complete output sentence to our model, but instead we want to present the words one by one to not let extra information flow in the decoder. That's why in Figure 2 we see a "Mask opt." which refers to setting those vectors to -inf, making them 0 after the softmax. Figure 3 can help to understand how this affects the architecture overall.
 
-{% include _image-with-caption.html file="../images/summary-attention-is-all-you-need/mask-transformer.png"
+{% include _image-with-caption.html file="../../images/summary-attention-is-all-you-need/mask-transformer.png"
 description="Figure 3. The Transformer architecture masking the output." zoom=70 %}
 
 ## What’s next!
