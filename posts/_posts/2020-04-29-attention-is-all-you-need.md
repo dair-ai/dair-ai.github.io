@@ -43,7 +43,7 @@ Some extra details:
 
 (for further explanations in these concepts you can check my [deep dive of this paper](https://cfierro94.github.io/nlp-deep-dive/attention-is-all-you-need))
 
-{% include _image-with-caption.html file="../images/summary-attention-is-all-you-need/architecture.png"
+{% include _image-with-caption.html file="../../images/summary-attention-is-all-you-need/architecture.png"
 description="Figure 1. The Transformer architecture." zoom=60 %}
 
 ### Positional Encoding
@@ -75,7 +75,7 @@ Instead of just having one attention layer the authors found beneficial to linea
 \\
 The intuition behind is that having just one attention will lead to average all the different aspects of the text, whereas when we do parallel attention we are able to look at each of these details separately (the subject, the intention, the action, etc).
 
-{% include _image-with-caption.html file="../images/summary-attention-is-all-you-need/attentions.png"
+{% include _image-with-caption.html file="../../images/summary-attention-is-all-you-need/attentions.png"
 description="Figure 2. Attention mechanisms of the Transformer." zoom=70 %}
 
 #### Scaled Dot-Product Attention
